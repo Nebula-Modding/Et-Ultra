@@ -1,8 +1,11 @@
 package io.github.nebulamodding.etultra;
 
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import io.github.nebulamodding.etultra.EtUltra.*;
@@ -25,10 +28,19 @@ public class EtUltraBlocks {
                     .lightLevel(state -> 7)
             ));
 
-    public static void ModRegisterBlocks() {
-        EtUltra.LOGGER.info("Registering Et Ultra Blocks");
+
+
+    private static BlockBehaviour.Properties deepslateProperties() {
+        return BlockBehaviour.Properties.of()
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(3,6);
     }
 
 
+
+    public static void ModRegisterBlocks() {
+        EtUltra.LOGGER.info("Registering Et Ultra Blocks");
+    }
 }
 
