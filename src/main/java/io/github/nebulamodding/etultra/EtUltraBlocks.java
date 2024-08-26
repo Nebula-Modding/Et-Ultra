@@ -10,5 +10,5 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 //Blocks Go Here
 
 public class EtUltraBlocks {
-
+    public static final DeferredBlock<Block>
 }
