@@ -1,6 +1,8 @@
 # Et Ultra
 ==========
 
+I'll redo this later -Dyl
+
 Et ultra is an addon to the popular space mod Ad Astra.
 Ad Astra: Et Ultra Is The Official project name
 
