@@ -1,4 +1,4 @@
-### Et Ultra
+# Et Ultra
 ==========
 
 Et ultra is an addon to the popular space mod Ad Astra.
@@ -19,7 +19,7 @@ Ad Astra: Et Ultra Is The Official project name
 ## Dependencies(Not Neccesarily Final)
 - Neoforge
 
-# License
+### License
 
 
    Copyright 2024 Nebula Modding Group
