@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://www.modrinth.com/mod/ad-astra"><img alt="Requires Ad Astra" height="56" src="https://svgshare.com/i/19cv.svg"></a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra-et-ultra"><img alt="Available on Curseforge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"></a>
-<a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra-et-ultra"><img alt="Available on Modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">
+<a href="https://modrinth.com/project/et-ultra/"><img alt="Available on Modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">
 </a>
 <a href="https://www.neoforged.net"><img alt="Available on Neoforge" height="56" src="https://www.svgshare.com/i/19dA.svg"></a>
 <a href="https://www.neoforged.net/news/2023-retrospection/"><img alt="Won't Support Forge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/unsupported/forge_vector.svg"></a>
