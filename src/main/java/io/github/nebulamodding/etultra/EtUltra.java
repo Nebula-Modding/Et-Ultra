@@ -1,6 +1,7 @@
 package io.github.nebulamodding.etultra;
 
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -54,8 +55,22 @@ public class EtUltra
     }
 
     // Item / Block Registrars
+    /*
+        Dear Dyl
+        Do you see that etultra modbus down there?
+        whenever you add items/blocks in a new file
+        you have to add it formatted like so
+        ClassClassClass.BLOCKS/ITEMS.register(modBus);
 
 
+
+
+
+     */
+    public EtUltra(IEventBus modBus) {
+        EtUltraBlocks.BLOCKS.register(modBus);
+        //Other stuff here
+    }
 
 
 
