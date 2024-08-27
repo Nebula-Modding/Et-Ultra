@@ -42,8 +42,9 @@ public class EtUltraBlocks {
 
 
 
-    public static void ModRegisterBlocks() {
+    public static int ModRegisterBlocks() {
         EtUltra.LOGGER.info("Registering Et Ultra Blocks");
+        return  1;
     }
 }
 
