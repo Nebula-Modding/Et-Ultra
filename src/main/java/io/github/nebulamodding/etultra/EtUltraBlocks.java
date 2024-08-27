@@ -31,6 +31,7 @@ public class EtUltraBlocks {
 
     private static BlockBehaviour.Properties deepslateProperties() {
         return BlockBehaviour.Properties.of()
+                .sound(SoundType.DEEPSLATE)
                 .instrument(NoteBlockInstrument.BASEDRUM)
                 .requiresCorrectToolForDrops()
                 .strength(3,6);
