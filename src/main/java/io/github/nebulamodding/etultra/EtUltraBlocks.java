@@ -15,17 +15,16 @@ import io.github.nebulamodding.etultra.EtUltra.*;
 public class EtUltraBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MODID);
 
+
+
     //Block Declarations Should Be Seperated By Three Lines of Whitespace
     //No, screw you.
 
     // Block Name Goes Here
-    public static final DeferredBlock<Block> MY_BETTER_BLOCK = BLOCKS.register(
-            "my_better_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .destroyTime(2.0f)
-                    .explosionResistance(10.0f)
-                    .sound(SoundType.STONE)
-                    .lightLevel(state -> 7)
+    public static final DeferredBlock<Block> MARS_DEEPSLATE = BLOCKS.register(
+            "mars_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
             ));
 
 
