@@ -10,6 +10,9 @@ import io.github.nebulamodding.etultra.EtUltra.*;
 //Blocks Go Here
 
 public class EtUltraBlocks {
+
+
+
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MODID);
 
     //Block Declarations Should Be Seperated By Three Lines of Whitespace
