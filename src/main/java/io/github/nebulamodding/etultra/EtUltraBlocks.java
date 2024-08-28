@@ -28,6 +28,24 @@ public class EtUltraBlocks {
                     .mapColor(MapColor.TERRACOTTA_ORANGE)
             ));
 
+    public static final DeferredBlock<Block> COBBLED_MARS_DEEPSLATE = BLOCKS.register(
+            "cobbled_mars_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+    public static final DeferredBlock<Block> GRAPHITE_BLOCK = BLOCKS.register(
+            "graphite_block",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.COLOR_BLACK)
+            ));
+
+    public static final DeferredBlock<Block> GRAPHITE_DUST = BLOCKS.register(
+            "graphite_dust",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
+            ));
+
     // Common properties (meant to be at the bottom)
     private static BlockBehaviour.Properties deepslateProperties() {
         return BlockBehaviour.Properties.of()
