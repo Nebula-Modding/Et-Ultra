@@ -9,6 +9,8 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.concurrent.BlockingQueue;
+
 //Blocks Go Here
 
 public class EtUltraBlocks {
@@ -41,7 +43,7 @@ public class EtUltraBlocks {
 
     public static final DeferredBlock<Block> GRAPHITE_DUST = BLOCKS.register(
             "graphite_dust",
-            () -> new Block(deepslateProperties()
+            () -> new Block(dustProperties()
                     .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
@@ -52,6 +54,17 @@ public class EtUltraBlocks {
                 .instrument(NoteBlockInstrument.BASEDRUM)
                 .requiresCorrectToolForDrops()
                 .strength(3, 6);
+    }
+    private static BlockBehaviour.Properties dustProperties() {
+        return  BlockBehaviour.Properties.of()
+                .sound(SoundType.SAND)
+                .instrument(NoteBlockInstrument.BANJO)
+                .friction(-13f)
+
+                .strength(3,2);
+
+
+
     }
 }
 
