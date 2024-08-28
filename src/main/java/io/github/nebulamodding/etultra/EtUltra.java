@@ -57,15 +57,17 @@ public class EtUltra
     // Item / Block Registrars
     /*
         Dear Dyl
+
         Do you see that etultra modbus down there?
         whenever you add items/blocks in a new file
         you have to add it formatted like so
         ClassClassClass.BLOCKS/ITEMS.register(modBus);
+     */
 
+    /*
+        Dear Areth:
 
-
-
-
+        No.
      */
     public EtUltra(IEventBus modBus) {
         EtUltraBlocks.BLOCKS.register(modBus);
