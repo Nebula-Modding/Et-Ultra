@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "et_ultra:mars_deepslate",
+      "et_ultra:cobbled_mars_deepslate",
+      "et_ultra:graphite_block",
+      "et_ultra:graphite_dust"
+    ]
+  }
