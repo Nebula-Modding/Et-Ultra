@@ -69,7 +69,7 @@ public class EtUltra
      */
     public EtUltra(IEventBus modBus) {
         EtUltraBlocks.BLOCKS.register(modBus);
-        //Other stuff here
+
     }
 
 
