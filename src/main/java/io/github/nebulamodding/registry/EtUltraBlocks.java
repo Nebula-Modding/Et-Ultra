@@ -43,7 +43,7 @@ public class EtUltraBlocks {
 
     public static final DeferredBlock<Block> GRAPHITE_DUST = BLOCKS.register(
             "graphite_dust",
-            () -> new Block(dustProperties()
+            () -> new Block(dustBlockProperties()
                     .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
@@ -55,16 +55,11 @@ public class EtUltraBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(3, 6);
     }
-    private static BlockBehaviour.Properties dustProperties() {
+    private static BlockBehaviour.Properties dustBlockProperties() {
         return  BlockBehaviour.Properties.of()
                 .sound(SoundType.SAND)
-                .instrument(NoteBlockInstrument.BANJO)
-                .friction(100)
-
-                .strength(3,2);
-
-
-
+                .instrument(NoteBlockInstrument.SNARE)
+                .strength(0.5F,0.5F);
     }
 }
 

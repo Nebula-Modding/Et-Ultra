@@ -1,6 +1,7 @@
-package io.github.nebulamodding;
+package io.github.nebulamodding.data;
 
 
+import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.registry.EtUltraBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
