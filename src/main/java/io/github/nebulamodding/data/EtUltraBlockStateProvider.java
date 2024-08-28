@@ -15,7 +15,7 @@ public class EtUltraBlockStateProvider extends BlockStateProvider {
     // Parameter values are provided by GatherDataEvent.
     public EtUltraBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         // Replace "examplemod" with your own mod id.
-        super(output, EtUltra.MODID, existingFileHelper);
+        super(output, EtUltra.MOD_ID, existingFileHelper);
     }
 
     @Override

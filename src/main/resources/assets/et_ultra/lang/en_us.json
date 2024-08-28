@@ -1,4 +1,21 @@
 {
+  "tab.et_ultra.creative": "Et Ultra",
+  
+
+  "block.et_ultra.mars_deepslate": "Mars Deepslate",
+  "block.et_ultra.cobbled_mars_deepslate": "Cobbled Mars Deepslate",
+
+  "block.et_ultra.graphite_block": "Block of Graphite",
+  "block.et_ultra.graphite_dust": "Block of Graphite Dust",
+
+
+
+
+
+
+
+
+
   "solar_system.et_ultra.hades": "Hades",
   "planet.minecraft.the_nether": "Infurnix",
   "planet.et_ultra.infurnix_orbit": "Infurnix orbit",
@@ -26,13 +43,5 @@
   "planet.et_ultra.pluto": "Pluto",
   "planet.et_ultra.pluto_orbit": "Pluto orbit",
   "planet.et_ultra.charon": "Charon",
-  "planet.et_ultra.charon_orbit": "Charon orbit",
-
-  "block.et_ultra.mars_deepslate": "Mars Deepslate",
-  "block.et_ultra.cobbled_mars_deepslate": "Cobbled Mars Deepslate",
-
-  "block.et_ultra.graphite_block": "Block of Graphite",
-  "block.et_ultra.graphite_dust": "Block of Graphite Dust"
-
-
+  "planet.et_ultra.charon_orbit": "Charon orbit"
 }

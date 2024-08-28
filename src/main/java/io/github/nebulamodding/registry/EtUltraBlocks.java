@@ -9,8 +9,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.concurrent.BlockingQueue;
-
 //Blocks Go Here
 
 public class EtUltraBlocks {
@@ -20,7 +18,7 @@ public class EtUltraBlocks {
     //No, screw you.
 
     // Block Name Goes Here
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
 
     public static final DeferredBlock<Block> MARS_DEEPSLATE = BLOCKS.register(

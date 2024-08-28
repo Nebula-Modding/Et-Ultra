@@ -1,5 +1,6 @@
 package io.github.nebulamodding;
 
+import io.github.nebulamodding.registry.EtUltraTab;
 import io.github.nebulamodding.registry.EtUltraBlocks;
 import io.github.nebulamodding.registry.EtUltraItems;
 import org.slf4j.Logger;
@@ -16,12 +17,12 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(EtUltra.MODID)
+@Mod(EtUltra.MOD_ID)
 public class EtUltra
 {
     // Define mod id in a common place for everything to reference
 
-    public static final String MODID = "et_ultra";
+    public static final String MOD_ID = "et_ultra";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -52,6 +53,7 @@ public class EtUltra
     public EtUltra(IEventBus modBus) {
         EtUltraBlocks.BLOCKS.register(modBus);
         EtUltraItems.ITEMS.register(modBus);
+        EtUltraTab.CREATIVE_MODE_TABS.register(modBus);
     }
 
 
@@ -59,7 +61,7 @@ public class EtUltra
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
