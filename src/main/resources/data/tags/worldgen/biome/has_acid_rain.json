@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "minecraft:bassalt_deltas",
+      "required": false
+    },
+    {
+      "id": "minecraft:crimson_forest",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_depths",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_wastes",
+      "required": false
+    },
+    {
+      "id": "minecraft:warped_forest",
+      "required": false
+    },
+    {
+      "id": "ad_astra:venus_wastelands",
+      "required": false
+    },
+    {
+      "id": "ad_astra:infernal_venus_barrens",
+      "required": false
+    }
+  ]
+}

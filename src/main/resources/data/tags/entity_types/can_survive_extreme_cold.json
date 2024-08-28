@@ -1,0 +1,22 @@
+{
+  "values": [
+    "#minecraft:freeze_immune_entity_types",
+    "minecraft:snow_golem",
+    "minecraft:stray",
+    "minecraft:skeleton",
+    "minecraft:zombie",
+    "minecraft:drowned",
+    "minecraft:spider",
+    "minecraft:silverfish",
+    "minecraft:slime",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "minecraft:enderman",
+    "minecraft:warden",
+    "minecraft:endermite",
+    "ad_astra:corrupted_lunarian",
+    "ad_astra:star_crawler",
+    "ad_astra:martian_raptor",
+    "ad_astra:lunarian"
+  ]
+}
