@@ -1,4 +1,4 @@
-package io.github.nebulamodding.etultra;
+package io.github.nebulamodding;
 
 import java.util.List;
 import java.util.Set;

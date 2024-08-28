@@ -1,6 +1,6 @@
-package io.github.nebulamodding.etultra;
+package io.github.nebulamodding.registry;
 
-import net.minecraft.client.resources.sounds.Sound;
+import io.github.nebulamodding.EtUltra;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import io.github.nebulamodding.etultra.EtUltra.*;
 
 //Blocks Go Here
 

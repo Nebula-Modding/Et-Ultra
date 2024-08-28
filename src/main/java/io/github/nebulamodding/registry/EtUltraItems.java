@@ -1,7 +1,8 @@
-package io.github.nebulamodding.etultra;
+package io.github.nebulamodding.registry;
 
 // Items Go Here
 
+import io.github.nebulamodding.EtUltra;
 import net.minecraft.world.item.BlockItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
