@@ -65,7 +65,7 @@ public class EtUltra
      */
 
     /*
-        Dear Areth:
+        Dear Areth
 
         No.
      */
