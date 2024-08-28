@@ -59,7 +59,7 @@ public class EtUltraBlocks {
         return  BlockBehaviour.Properties.of()
                 .sound(SoundType.SAND)
                 .instrument(NoteBlockInstrument.BANJO)
-                .friction(-13f)
+                .friction(3f)
 
                 .strength(3,2);
 
