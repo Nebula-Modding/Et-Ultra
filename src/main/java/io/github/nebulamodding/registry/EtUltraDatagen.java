@@ -24,7 +24,7 @@ public class EtUltraDatagen {
             EtUltraBlockTagProvider modBlockTagsProvider = new EtUltraBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
             generator.addProvider(true, modBlockTagsProvider);
             generator.addProvider(true, new EtUltraItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
-            generator.addProvider(true, new ModLootTables(output, event.getLookupProvider()));
+            generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
             //generator.addProvider(true, new EtUltraWorldGenProvider(output, event.getLookupProvider()));
             generator.addProvider(true, new EtUltraRecipeProvider(generator, event.getLookupProvider()));
             //generator.addProvider(true, new ModGlobalLootModifiersProvider(output, event.getLookupProvider()));
