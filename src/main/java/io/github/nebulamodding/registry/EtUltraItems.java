@@ -39,5 +39,8 @@ public class EtUltraItems {
 
     // Items
 
-    public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()
+            .stacksTo(16)
+            .setNoRepair()
+    ));
 }
