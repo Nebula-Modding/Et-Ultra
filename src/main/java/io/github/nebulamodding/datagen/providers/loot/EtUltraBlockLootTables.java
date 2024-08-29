@@ -27,7 +27,20 @@ public class EtUltraBlockLootTables extends BlockLootSubProvider {
 
         add(EtUltraBlocks.MARS_DEEPSLATE.get(), b -> createSingleItemTableWithSilkTouch(b, EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get()));
 
+        dropSelf(EtUltraBlocks.COBBLED_MOON_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.CHISELED_MOON_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.POLISHED_MOON_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.MOON_DEEPSLATE_BRICKS.get());
+        dropSelf(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS.get());
+        dropSelf(EtUltraBlocks.MOON_DEEPSLATE_TILES.get());
+
         dropSelf(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.CHISELED_MARS_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.POLISHED_MARS_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.MARS_DEEPSLATE_BRICKS.get());
+        dropSelf(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS.get());
+        dropSelf(EtUltraBlocks.MARS_DEEPSLATE_TILES.get());
+
         dropSelf(EtUltraBlocks.GRAPHITE_BLOCK.get());
         dropSelf(EtUltraBlocks.GRAPHITE_DUST.get());
 

@@ -16,8 +16,24 @@ public class EtUltraItems {
 
     // Block Items
 
+    public static final Supplier<BlockItem> COBBLED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.COBBLED_MOON_DEEPSLATE);
+    public static final Supplier<BlockItem> CHISELED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_MOON_DEEPSLATE);
+    public static final Supplier<BlockItem> POLISHED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_MOON_DEEPSLATE);
+    public static final Supplier<BlockItem> MOON_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MOON_DEEPSLATE_BRICKS);
+    public static final Supplier<BlockItem> CRACKED_MOON_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS);
+    public static final Supplier<BlockItem> MOON_DEEPSLATE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MOON_DEEPSLATE_TILES);
+
     public static final Supplier<BlockItem> MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE);
     public static final Supplier<BlockItem> COBBLED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.COBBLED_MARS_DEEPSLATE);
+    public static final Supplier<BlockItem> CHISELED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_MARS_DEEPSLATE);
+    public static final Supplier<BlockItem> POLISHED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_MARS_DEEPSLATE);
+    public static final Supplier<BlockItem> MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_BRICKS);
+    public static final Supplier<BlockItem> CRACKED_MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS);
+    public static final Supplier<BlockItem> MARS_DEEPSLATE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_TILES);
+
+
+
+
     public static final Supplier<BlockItem> GRAPHITE_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_BLOCK);
     public static final Supplier<BlockItem> GRAPHITE_DUST = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_DUST);
 

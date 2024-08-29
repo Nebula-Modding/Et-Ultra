@@ -6,6 +6,7 @@ import io.github.nebulamodding.registry.EtUltraItems;
 import io.github.nebulamodding.registry.EtUltraCreativeTab;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
+import org.codehaus.plexus.util.StringUtils;
 
 public class EtUltraLangProvider extends LanguageProvider {
 
@@ -25,8 +26,21 @@ public class EtUltraLangProvider extends LanguageProvider {
         addItem(EtUltraItems.PENCIL, "Pencil");
 
         // Block Items
+        addItem(EtUltraItems.COBBLED_MOON_DEEPSLATE, "Cobbled Moon Deepslate");
+        addItem(EtUltraItems.CHISELED_MOON_DEEPSLATE, "Chiseled Moon Deepslate");
+        addItem(EtUltraItems.POLISHED_MOON_DEEPSLATE, "Polished Moon Deepslate");
+        addItem(EtUltraItems.MOON_DEEPSLATE_BRICKS, "Moon Deepslate Bricks");
+        addItem(EtUltraItems.CRACKED_MOON_DEEPSLATE_BRICKS, "Cracked Moon Deepslate Bricks");
+        addItem(EtUltraItems.MOON_DEEPSLATE_TILES, "Moon Deepslate Tiles");
+
         addItem(EtUltraItems.MARS_DEEPSLATE, "Mars Deepslate");
         addItem(EtUltraItems.COBBLED_MARS_DEEPSLATE, "Cobbled Mars Deepslate");
+        addItem(EtUltraItems.CHISELED_MARS_DEEPSLATE, "Chiseled Mars Deepslate");
+        addItem(EtUltraItems.POLISHED_MARS_DEEPSLATE, "Polished Mars Deepslate");
+        addItem(EtUltraItems.MARS_DEEPSLATE_BRICKS, "Mars Deepslate Bricks");
+        addItem(EtUltraItems.CRACKED_MARS_DEEPSLATE_BRICKS, "Cracked Mars Deepslate Bricks");
+        addItem(EtUltraItems.MARS_DEEPSLATE_TILES, "Mars Deepslate Tiles");
+
         addItem(EtUltraItems.GRAPHITE_BLOCK, "Graphite Block");
         addItem(EtUltraItems.GRAPHITE_DUST, "Graphite Dust");
 

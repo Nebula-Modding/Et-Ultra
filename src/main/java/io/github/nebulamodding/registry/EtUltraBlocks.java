@@ -20,9 +20,47 @@ public class EtUltraBlocks {
     //Block Declarations Should Be Seperated By Three Lines of Whitespace
     //No, screw you.
 
-    // Block Name Goes Here
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
+    // Moon
+
+    public static final DeferredBlock<Block> COBBLED_MOON_DEEPSLATE = BLOCKS.register(
+            "cobbled_moon_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    public static final DeferredBlock<Block> CHISELED_MOON_DEEPSLATE = BLOCKS.register(
+            "chiseled_moon_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    public static final DeferredBlock<Block> POLISHED_MOON_DEEPSLATE = BLOCKS.register(
+            "polished_moon_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    public static final DeferredBlock<Block> MOON_DEEPSLATE_BRICKS = BLOCKS.register(
+            "moon_deepslate_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    public static final DeferredBlock<Block> CRACKED_MOON_DEEPSLATE_BRICKS = BLOCKS.register(
+            "cracked_moon_deepslate_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    public static final DeferredBlock<Block> MOON_DEEPSLATE_TILES = BLOCKS.register(
+            "moon_deepslate_tiles",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.DEEPSLATE)
+            ));
+
+    // Mars
 
     public static final DeferredBlock<Block> MARS_DEEPSLATE = BLOCKS.register(
             "mars_deepslate",
@@ -35,6 +73,40 @@ public class EtUltraBlocks {
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.TERRACOTTA_ORANGE)
             ));
+
+    public static final DeferredBlock<Block> CHISELED_MARS_DEEPSLATE = BLOCKS.register(
+            "chiseled_mars_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+    public static final DeferredBlock<Block> POLISHED_MARS_DEEPSLATE = BLOCKS.register(
+            "polished_mars_deepslate",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+    public static final DeferredBlock<Block> MARS_DEEPSLATE_BRICKS = BLOCKS.register(
+            "mars_deepslate_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+    public static final DeferredBlock<Block> CRACKED_MARS_DEEPSLATE_BRICKS = BLOCKS.register(
+            "cracked_mars_deepslate_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+    public static final DeferredBlock<Block> MARS_DEEPSLATE_TILES = BLOCKS.register(
+            "mars_deepslate_tiles",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
+
+
 
     public static final DeferredBlock<Block> GRAPHITE_BLOCK = BLOCKS.register(
             "graphite_block",
