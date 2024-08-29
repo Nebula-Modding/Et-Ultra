@@ -1,4 +1,4 @@
-package io.github.nebulamodding.data;
+package io.github.nebulamodding.datagen.providers;
 
 
 import io.github.nebulamodding.EtUltra;
