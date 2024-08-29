@@ -13,7 +13,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 public class EtUltraDatagen {
 
     public static void gatherData(GatherDataEvent event) {
-        //try {
+        try {
             DataGenerator generator = event.getGenerator();
             PackOutput output = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
@@ -28,8 +28,8 @@ public class EtUltraDatagen {
             //generator.addProvider(true, new EtUltraWorldGenProvider(output, event.getLookupProvider()));
             generator.addProvider(true, new EtUltraRecipeProvider(generator, event.getLookupProvider()));
             //generator.addProvider(true, new ModGlobalLootModifiersProvider(output, event.getLookupProvider()));
-        //} catch (RuntimeException e) {
-            //EtUltra.logger.error("Failed to gather data", e);
-        //}
+        } catch (RuntimeException e) {
+                EtUltra.LOGGER.error("Failed to gather data", e);
+        }
     }
 }

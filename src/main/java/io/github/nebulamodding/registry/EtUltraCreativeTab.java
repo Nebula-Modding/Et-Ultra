@@ -12,10 +12,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.HashSet;
 import java.util.Set;
 
-public class EtUltraTab {
+public class EtUltraCreativeTab {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EtUltra.MOD_ID);
 
-    public static String ETULTRA_TAB_TITLE = "tab.et_ultra.creative";
+    public static String ETULTRA_TAB_TITLE = "itemGroup.et_ultra.main";
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ETULTRA_TAB = CREATIVE_MODE_TABS.register("et_ultra_creative_tab", () -> {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();

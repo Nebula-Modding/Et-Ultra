@@ -1,7 +1,8 @@
 package io.github.nebulamodding;
 
-import io.github.nebulamodding.registry.EtUltraTab;
+import io.github.nebulamodding.registry.EtUltraCreativeTab;
 import io.github.nebulamodding.registry.EtUltraBlocks;
+import io.github.nebulamodding.registry.EtUltraDatagen;
 import io.github.nebulamodding.registry.EtUltraItems;
 import org.slf4j.Logger;
 
@@ -53,7 +54,9 @@ public class EtUltra
     public EtUltra(IEventBus modBus) {
         EtUltraBlocks.BLOCKS.register(modBus);
         EtUltraItems.ITEMS.register(modBus);
-        EtUltraTab.CREATIVE_MODE_TABS.register(modBus);
+        EtUltraCreativeTab.CREATIVE_MODE_TABS.register(modBus);
+
+        modBus.addListener(EtUltraDatagen::gatherData);
     }
 
 
