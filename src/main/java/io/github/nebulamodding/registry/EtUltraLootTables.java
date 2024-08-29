@@ -2,7 +2,7 @@ package io.github.nebulamodding.registry;
 
 import com.google.common.collect.Sets;
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.datagen.providers.EtUltraBlockLootTables;
+import io.github.nebulamodding.datagen.providers.loot.EtUltraBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.WritableRegistry;
 import net.minecraft.data.PackOutput;

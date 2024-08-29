@@ -1,13 +1,8 @@
 package io.github.nebulamodding.datagen.providers.recipes;
 
-import io.github.nebulamodding.datagen.providers.EtUltraRecipeProvider;
-import io.github.nebulamodding.registry.EtUltraTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
-import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.concurrent.CompletableFuture;
 

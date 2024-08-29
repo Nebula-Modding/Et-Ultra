@@ -1,8 +1,6 @@
-package io.github.nebulamodding.datagen.providers;
+package io.github.nebulamodding.datagen.providers.recipes;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.datagen.providers.recipes.EtUltraCraftingProvider;
-import io.github.nebulamodding.datagen.providers.recipes.EtUltraFurnaceProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.RecipeOutput;

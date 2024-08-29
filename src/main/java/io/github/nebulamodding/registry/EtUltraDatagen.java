@@ -2,7 +2,9 @@ package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.datagen.providers.EtUltraLangProvider;
-import io.github.nebulamodding.datagen.providers.EtUltraRecipeProvider;
+import io.github.nebulamodding.datagen.providers.models.EtUltraBlockStateProvider;
+import io.github.nebulamodding.datagen.providers.models.EtUltraItemModelProvider;
+import io.github.nebulamodding.datagen.providers.recipes.EtUltraRecipeProvider;
 import io.github.nebulamodding.datagen.providers.tags.EtUltraBlockTagProvider;
 import io.github.nebulamodding.datagen.providers.tags.EtUltraItemTagProvider;
 import net.minecraft.data.DataGenerator;
@@ -19,15 +21,15 @@ public class EtUltraDatagen {
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
             generator.addProvider(true, new EtUltraLangProvider(output));
-            //generator.addProvider(true, new ModItemStateProvider(output, existingFileHelper));
-            //generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
+            generator.addProvider(true, new EtUltraItemModelProvider(output, existingFileHelper));
+            generator.addProvider(true, new EtUltraBlockStateProvider(output, existingFileHelper));
             EtUltraBlockTagProvider modBlockTagsProvider = new EtUltraBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
             generator.addProvider(true, modBlockTagsProvider);
             generator.addProvider(true, new EtUltraItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
             generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
             //generator.addProvider(true, new EtUltraWorldGenProvider(output, event.getLookupProvider()));
             generator.addProvider(true, new EtUltraRecipeProvider(generator, event.getLookupProvider()));
-            //generator.addProvider(true, new ModGlobalLootModifiersProvider(output, event.getLookupProvider()));
+            //generator.addProvider(true, new EtUltraMobLootTables(output, event.getLookupProvider()));
         } catch (RuntimeException e) {
                 EtUltra.LOGGER.error("Failed to gather data", e);
         }

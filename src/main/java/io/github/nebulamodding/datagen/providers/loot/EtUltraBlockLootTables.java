@@ -1,8 +1,7 @@
-package io.github.nebulamodding.datagen.providers;
+package io.github.nebulamodding.datagen.providers.loot;
 
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.registry.EtUltraBlocks;
-import io.github.nebulamodding.registry.EtUltraItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -26,7 +25,15 @@ public class EtUltraBlockLootTables extends BlockLootSubProvider {
         //add(EtUltraBlocks.EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
         //add(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
 
-        dropSelf(EtUltraBlocks.MARS_DEEPSLATE.get());
+        add(EtUltraBlocks.MARS_DEEPSLATE.get(), b -> createSingleItemTableWithSilkTouch(b, EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get()));
+
+        dropSelf(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get());
+        dropSelf(EtUltraBlocks.GRAPHITE_BLOCK.get());
+        dropSelf(EtUltraBlocks.GRAPHITE_DUST.get());
+
+
+        //add(EtUltraBlocks.LAUNCH_PAD.get(), b ->
+        //        createSinglePropConditionTable(b, LaunchPadBlock.PART, LaunchPadPartProperty.CENTER));
     }
 
     @Override

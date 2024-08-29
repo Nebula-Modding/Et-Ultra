@@ -21,15 +21,27 @@ public class EtUltraLangProvider extends LanguageProvider {
         addItem(EtUltraBlocks.EXAMPLE_ITEM, "Example Translation");
          */
 
+        //Items
+        addItem(EtUltraItems.PENCIL, "Pencil");
+
+        // Block Items
         addItem(EtUltraItems.MARS_DEEPSLATE, "Mars Deepslate");
+        addItem(EtUltraItems.COBBLED_MARS_DEEPSLATE, "Cobbled Mars Deepslate");
+        addItem(EtUltraItems.GRAPHITE_BLOCK, "Graphite Block");
+        addItem(EtUltraItems.GRAPHITE_DUST, "Graphite Dust");
 
         /*
         How to add Blocks:
 
         addItem(EtUltraBlocks.EXAMPLE_BLOCK, "Example Translation");
+
+        (might be broken)
          */
 
-        addBlock(EtUltraBlocks.MARS_DEEPSLATE, "Mars Deepslate");
+        //addBlock(EtUltraBlocks.MARS_DEEPSLATE, "Mars Deepslate");
+        //addBlock(EtUltraBlocks.COBBLED_MARS_DEEPSLATE, "Cobbled Mars Deepslate");
+        //addBlock(EtUltraBlocks.GRAPHITE_BLOCK, "Graphite Block");
+        //addBlock(EtUltraBlocks.GRAPHITE_DUST, "Graphite Dust");
 
         // Other Stuff
 

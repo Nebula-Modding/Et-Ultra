@@ -40,5 +40,8 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.MARS_DEEPSLATE.get())
                 .add(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get())
                 .add(EtUltraBlocks.GRAPHITE_BLOCK.get());
+
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(EtUltraBlocks.GRAPHITE_DUST.get());
     }
 }

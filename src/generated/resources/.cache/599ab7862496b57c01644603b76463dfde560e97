@@ -1,0 +1,13 @@
+// 1.21.1	2024-08-29T17:10:47.9736401	Block States: et_ultra
+8c64eaa7845598efb142dfface25921b7c790eb5 assets/et_ultra/blockstates/cobbled_mars_deepslate.json
+8da607ac5863e345585916a319b2316228f1e0ba assets/et_ultra/blockstates/graphite_block.json
+70793ea630a80ac09bf88a3b0e1c8209187ce7d3 assets/et_ultra/blockstates/graphite_dust.json
+e058866dbc23ca4c26d12362e43f344e0f123b00 assets/et_ultra/blockstates/mars_deepslate.json
+05495dde821361df95bde5f34af63137965af442 assets/et_ultra/models/block/cobbled_mars_deepslate.json
+6ec57c3a042ef2d123e3ccec6c2d1b24f51316be assets/et_ultra/models/block/graphite_block.json
+d95c9065af8d5bbe79e3e8ea1d8cf701e9840055 assets/et_ultra/models/block/graphite_dust.json
+8c511e81591c8e00a61ea158eaf982def1192a62 assets/et_ultra/models/block/mars_deepslate.json
+ea30164a042620b04c6c5398de37db3bb689bd09 assets/et_ultra/models/item/cobbled_mars_deepslate.json
+c91884fd72d82568d38298d06fe079584ddb32d3 assets/et_ultra/models/item/graphite_block.json
+ccf92f6291dd3d91c2ebd97ee1dc5d498eb1f647 assets/et_ultra/models/item/graphite_dust.json
+e09c1564d05ed6dc26086338f7d6b5d76b7caba7 assets/et_ultra/models/item/mars_deepslate.json
