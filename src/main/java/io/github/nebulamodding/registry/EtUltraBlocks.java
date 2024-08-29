@@ -1,7 +1,10 @@
 package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ColoredFallingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -41,7 +44,7 @@ public class EtUltraBlocks {
 
     public static final DeferredBlock<Block> GRAPHITE_DUST = BLOCKS.register(
             "graphite_dust",
-            () -> new Block(dustBlockProperties()
+            () -> new ColoredFallingBlock(new ColorRGBA(0x48433b), dustBlockProperties()
                     .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
@@ -54,10 +57,7 @@ public class EtUltraBlocks {
                 .strength(3, 6);
     }
     private static BlockBehaviour.Properties dustBlockProperties() {
-        return  BlockBehaviour.Properties.of()
-                .sound(SoundType.SAND)
-                .instrument(NoteBlockInstrument.SNARE)
-                .strength(0.5F,0.5F);
+        return  BlockBehaviour.Properties.ofFullCopy(Blocks.SAND);
     }
 }
 
