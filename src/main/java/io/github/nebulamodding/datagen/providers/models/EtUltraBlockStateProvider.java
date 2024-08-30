@@ -16,7 +16,6 @@ public class EtUltraBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
         normalBlock(EtUltraBlocks.COBBLED_MOON_DEEPSLATE.get());
         normalBlock(EtUltraBlocks.CHISELED_MOON_DEEPSLATE.get());
         normalBlock(EtUltraBlocks.POLISHED_MOON_DEEPSLATE.get());

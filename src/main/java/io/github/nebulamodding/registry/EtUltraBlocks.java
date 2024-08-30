@@ -21,6 +21,13 @@ public class EtUltraBlocks {
     //No, screw you.
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+    public static final DeferredRegister.Blocks STAIRS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+    public static final DeferredRegister.Blocks SLABS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+    public static final DeferredRegister.Blocks BUTTONS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+    public static final DeferredRegister.Blocks PRESSURE_PLATES = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+    public static final DeferredRegister.Blocks WALLS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
+
+    public static final DeferredRegister.Blocks FLUIDS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Moon
 
@@ -29,31 +36,26 @@ public class EtUltraBlocks {
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.DEEPSLATE)
             ));
-
     public static final DeferredBlock<Block> CHISELED_MOON_DEEPSLATE = BLOCKS.register(
             "chiseled_moon_deepslate",
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.DEEPSLATE)
             ));
-
     public static final DeferredBlock<Block> POLISHED_MOON_DEEPSLATE = BLOCKS.register(
             "polished_moon_deepslate",
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.DEEPSLATE)
             ));
-
     public static final DeferredBlock<Block> MOON_DEEPSLATE_BRICKS = BLOCKS.register(
             "moon_deepslate_bricks",
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.DEEPSLATE)
             ));
-
     public static final DeferredBlock<Block> CRACKED_MOON_DEEPSLATE_BRICKS = BLOCKS.register(
             "cracked_moon_deepslate_bricks",
             () -> new Block(deepslateProperties()
                     .mapColor(MapColor.DEEPSLATE)
             ));
-
     public static final DeferredBlock<Block> MOON_DEEPSLATE_TILES = BLOCKS.register(
             "moon_deepslate_tiles",
             () -> new Block(deepslateProperties()
