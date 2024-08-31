@@ -1,4 +1,4 @@
-package io.github.nebulamodding.registry;
+package io.github.nebulamodding.datagen.builders;
 
 import com.google.common.base.Suppliers;
 import com.mojang.serialization.MapCodec;

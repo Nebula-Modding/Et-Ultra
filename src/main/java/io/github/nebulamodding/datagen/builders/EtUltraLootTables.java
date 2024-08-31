@@ -1,4 +1,4 @@
-package io.github.nebulamodding.registry;
+package io.github.nebulamodding.datagen.builders;
 
 import com.google.common.collect.Sets;
 import io.github.nebulamodding.EtUltra;

@@ -1,12 +1,13 @@
 package io.github.nebulamodding.datagen.providers.recipes;
 
+import io.github.nebulamodding.datagen.builders.EtUltraRecipes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.RecipeOutput;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EtUltraFurnaceProvider extends EtUltraRecipeProvider {
+public class EtUltraFurnaceProvider extends EtUltraRecipes {
     private final RecipeOutput recipeOutput;
 
     public EtUltraFurnaceProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> pRegistries, RecipeOutput recipeOutput) {
