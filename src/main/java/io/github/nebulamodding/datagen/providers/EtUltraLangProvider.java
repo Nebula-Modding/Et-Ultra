@@ -20,34 +20,44 @@ public class EtUltraLangProvider extends LanguageProvider {
         super(output, EtUltra.MOD_ID, "en_us");
     }
 
-    private static final Set<RegistryAccess.RegistryEntry<Item>> ITEM_NAME_OVERRIDES = Set.of();
-    private static final Set<RegistryAccess.RegistryEntry<Block>> BLOCK_NAME_OVERRIDES = Set.of();
+    private static final Set<RegistryAccess.RegistryEntry<Item>> BLOCK_NAME_OVERRIDES = Set.of(
+            // Block name overrides here
+    );
+
+    private static final Set<RegistryAccess.RegistryEntry<Item>> ITEM_NAME_OVERRIDES = Set.of(
+            // Item name overrides here
+    );
 
     @Override
     protected void addTranslations() {
-        // Auto Generation
+        // Automatically provide translations
         EtUltraBlocks.BLOCKS.getEntries()
+                .stream().filter(b -> !(BLOCK_NAME_OVERRIDES.contains(b)))
                 .forEach(entry -> addBlock(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
                                 .getPath()
                                 .replace("_", " "))));
 
+        EtUltraItems.ITEMS.getEntries()
+                .stream().filter(i -> !(i.get() instanceof BlockItem))
+                .filter(i -> !(ITEM_NAME_OVERRIDES.contains(i)))
+                .forEach(entry -> addItem(entry,
+                        StringUtils.capitaliseAllWords(entry
+                                .getId()
+                                .getPath()
+                                .replace("_", " "))));
+
+        //Blocks
+
+        //addBlock(EtUltraBlocks.GRAPHITE_BLOCK, "Block of Graphite");
+        //addBlock(EtUltraBlocks.GRAPHITE_DUST, "Block of Graphite Dust");
 
         // Items
-        addItem(EtUltraItems.PENCIL, "Pencil");
 
-        // Block Items
-        //addItem(EtUltraItems.MARS_DEEPSLATE, "Mars Deepslate");
-
-        // Blocks
-        //addBlock(EtUltraBlocks.MARS_DEEPSLATE, "Mars Deepslate");
-        //addBlock(EtUltraBlocks.COBBLED_MARS_DEEPSLATE, "Cobbled Mars Deepslate");
-        //addBlock(EtUltraBlocks.GRAPHITE_BLOCK, "Graphite Block");
-        //addBlock(EtUltraBlocks.GRAPHITE_DUST, "Graphite Dust");
+        // Items go here
 
         // Other Stuff
-
         add(EtUltraCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");
     }
 }
