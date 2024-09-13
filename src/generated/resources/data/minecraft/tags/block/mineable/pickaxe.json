@@ -1,7 +1,23 @@
 {
   "values": [
+    "et_ultra:cobbled_moon_deepslate",
+    "et_ultra:chiseled_moon_deepslate",
+    "et_ultra:polished_moon_deepslate",
+    "et_ultra:moon_deepslate_bricks",
+    "et_ultra:cracked_moon_deepslate_bricks",
+    "et_ultra:moon_deepslate_tiles",
     "et_ultra:mars_deepslate",
     "et_ultra:cobbled_mars_deepslate",
-    "et_ultra:graphite_block"
+    "et_ultra:chiseled_mars_deepslate",
+    "et_ultra:polished_mars_deepslate",
+    "et_ultra:mars_deepslate_bricks",
+    "et_ultra:cracked_mars_deepslate_bricks",
+    "et_ultra:mars_deepslate_tiles",
+    "et_ultra:graphite_block",
+    "et_ultra:chiseled_graphite",
+    "et_ultra:polished_graphite",
+    "et_ultra:graphite_bricks",
+    "et_ultra:cracked_graphite_bricks",
+    "et_ultra:graphite_tiles"
   ]
 }

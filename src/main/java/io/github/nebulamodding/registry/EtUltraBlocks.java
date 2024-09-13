@@ -95,12 +95,70 @@ public class EtUltraBlocks {
                     .mapColor(MapColor.TERRACOTTA_ORANGE)
             ));
 
+    // Salt
+
+    public static final DeferredBlock<Block> SALT_BLOCK = BLOCKS.register(
+            "salt_block",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+    public static final DeferredBlock<Block> SALT_DUST = BLOCKS.register(
+            "salt_dust",
+            () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustBlockProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+    public static final DeferredBlock<Block> CHISELED_SALT = BLOCKS.register(
+            "chiseled_salt",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+
+
+    public static final DeferredBlock<Block> POLISHED_SALT = BLOCKS.register(
+            "polished_salt",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+
+
+    public static final DeferredBlock<Block> SALT_BRICKS = BLOCKS.register(
+            "salt_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+
+
+    public static final DeferredBlock<Block> CRACKED_SALT_BRICKS = BLOCKS.register(
+            "cracked_salt_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
+
+
+
+    public static final DeferredBlock<Block> SALT_TILES = BLOCKS.register(
+            "salt_tiles",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.SNOW)
+            ));
+
     // Graphite
 
     public static final DeferredBlock<Block> GRAPHITE_BLOCK = BLOCKS.register(
             "graphite_block",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.COLOR_BLACK)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
     public static final DeferredBlock<Block> GRAPHITE_DUST = BLOCKS.register(
@@ -112,35 +170,35 @@ public class EtUltraBlocks {
     public static final DeferredBlock<Block> CHISELED_GRAPHITE = BLOCKS.register(
             "chiseled_graphite",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
 
     public static final DeferredBlock<Block> POLISHED_GRAPHITE = BLOCKS.register(
             "polished_graphite",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
 
     public static final DeferredBlock<Block> GRAPHITE_BRICKS = BLOCKS.register(
             "graphite_bricks",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
 
     public static final DeferredBlock<Block> CRACKED_GRAPHITE_BRICKS = BLOCKS.register(
             "cracked_graphite_bricks",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
 
     public static final DeferredBlock<Block> GRAPHITE_TILES = BLOCKS.register(
             "graphite_tiles",
             () -> new Block(deepslateProperties()
-                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
 
 

@@ -1,12 +1,14 @@
-// 1.21.1	2024-09-13T17:44:47.5144006	Loot Tables
+// 1.21.1	2024-09-13T19:12:17.497568	Loot Tables
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
 5dad7867099afc59706b3e6ce4ca5d1cca1be62a data/et_ultra/loot_table/blocks/chiseled_moon_deepslate.json
+f9f12e40e030fb4ea0ba7c03a40ba419d714d0f3 data/et_ultra/loot_table/blocks/chiseled_salt.json
 4539357d529d7b99d32257343c6514bdce2d4df7 data/et_ultra/loot_table/blocks/cobbled_mars_deepslate.json
 da281310d765a3fbba231994aa935207cb1aa018 data/et_ultra/loot_table/blocks/cobbled_moon_deepslate.json
 1780308e8225606c8cda631205b98027f8961d8c data/et_ultra/loot_table/blocks/cracked_graphite_bricks.json
 49a18d50ef6d08311c88049b573e90d1252a78cb data/et_ultra/loot_table/blocks/cracked_mars_deepslate_bricks.json
 c83c0f085b3f3265bfc714634394dbe12174b158 data/et_ultra/loot_table/blocks/cracked_moon_deepslate_bricks.json
+26e99c7a5031ff9a6c7e7935b3e68d47bd0b7777 data/et_ultra/loot_table/blocks/cracked_salt_bricks.json
 e63f45998dcd6b41c732c105bcfcc5cd7e9fa0ea data/et_ultra/loot_table/blocks/graphite_block.json
 f6ae01dd3a1b651b8d055e15c65c7b9d9d83f344 data/et_ultra/loot_table/blocks/graphite_bricks.json
 811d67abee4dafb3ff76cefdea8109ec5dda11d9 data/et_ultra/loot_table/blocks/graphite_dust.json
@@ -19,3 +21,8 @@ c3c410680aca2a88524e02263284f885fbf4dbe4 data/et_ultra/loot_table/blocks/moon_de
 2976aa9752315001162d65c3f8390caa2e0e117b data/et_ultra/loot_table/blocks/polished_graphite.json
 d45af6145fc277a01819bdb1e6000fc6abeccf62 data/et_ultra/loot_table/blocks/polished_mars_deepslate.json
 955b86d0859162921d29a595fccb11cb4dae9c82 data/et_ultra/loot_table/blocks/polished_moon_deepslate.json
+02d3bf7b00ec0eec2cf6f8e9efb417e11e0d74af data/et_ultra/loot_table/blocks/polished_salt.json
+0e211810f98ac64656c164ba2a2c0846a459c2a8 data/et_ultra/loot_table/blocks/salt_block.json
+555d784802376fcaa2734a8709827d85daa1c9e9 data/et_ultra/loot_table/blocks/salt_bricks.json
+af5b43c3e008a431c93e1dabe709ac917307f3ac data/et_ultra/loot_table/blocks/salt_dust.json
+f227de036df057c0a4e497931521a15613a69c93 data/et_ultra/loot_table/blocks/salt_tiles.json

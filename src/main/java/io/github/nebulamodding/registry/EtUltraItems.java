@@ -30,6 +30,14 @@ public class EtUltraItems {
     public static final Supplier<BlockItem> MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_BRICKS);
     public static final Supplier<BlockItem> CRACKED_MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS);
     public static final Supplier<BlockItem> MARS_DEEPSLATE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_TILES);
+    // Salt
+    public static final Supplier<BlockItem> SALT_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_BLOCK);
+    public static final Supplier<BlockItem> SALT_DUST = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_DUST);
+    public static final Supplier<BlockItem> CHISELED_SALT = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_SALT);
+    public static final Supplier<BlockItem> POLISHED_SALT = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_SALT);
+    public static final Supplier<BlockItem> SALT_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_BRICKS);
+    public static final Supplier<BlockItem> CRACKED_SALT_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_SALT_BRICKS);
+    public static final Supplier<BlockItem> SALT_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_TILES);
     // Graphite
     public static final Supplier<BlockItem> GRAPHITE_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_BLOCK);
     public static final Supplier<BlockItem> GRAPHITE_DUST = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_DUST);
