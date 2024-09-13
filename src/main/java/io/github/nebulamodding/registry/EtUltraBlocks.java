@@ -15,19 +15,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 //Blocks Go Here
 
 public class EtUltraBlocks {
-
-
-    //Block Declarations Should Be Seperated By Three Lines of Whitespace
-    //No, screw you.
-
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-    public static final DeferredRegister.Blocks STAIRS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
     public static final DeferredRegister.Blocks SLABS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-    public static final DeferredRegister.Blocks BUTTONS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-    public static final DeferredRegister.Blocks PRESSURE_PLATES = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-    public static final DeferredRegister.Blocks WALLS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-
-    public static final DeferredRegister.Blocks FLUIDS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Moon
 
@@ -108,8 +97,6 @@ public class EtUltraBlocks {
 
 
 
-
-
     public static final DeferredBlock<Block> GRAPHITE_BLOCK = BLOCKS.register(
             "graphite_block",
             () -> new Block(deepslateProperties()
@@ -132,13 +119,6 @@ public class EtUltraBlocks {
     }
     private static BlockBehaviour.Properties dustBlockProperties() {
         return  BlockBehaviour.Properties.ofFullCopy(Blocks.SAND);
-    }
-    private static BlockBehaviour.Properties wetBlockProperties() {
-        return BlockBehaviour.Properties.of()
-                .mapColor(MapColor.COLOR_BROWN)
-                .sound(SoundType.MUD)
-                .strength(0.5f, 3);
-                //DYL DON'T REMOVE THIS PLEASE
     }
 }
 
