@@ -16,6 +16,7 @@ public class EtUltraBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Automatically provide models to blocks and block items
         EtUltraBlocks.BLOCKS.getEntries()
                 .forEach(entry -> {
                     cubeAll(entry.get());
