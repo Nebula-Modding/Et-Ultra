@@ -18,11 +18,7 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        /*
-        Copying block tags to the item:
-
-        copy(EtUltraTags.EtUltraBlockTags.EXAMPLE_BLOCKS, EtUltraTags.EtUltraItemTags.EXAMPLE_BLOCKS);
-         */
+        // Copy block tags onto the item
 
         copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
 

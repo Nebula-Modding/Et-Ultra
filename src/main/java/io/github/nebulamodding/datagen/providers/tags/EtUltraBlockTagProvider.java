@@ -37,9 +37,35 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.MARS_DEEPSLATE.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // Moon
+                .add(EtUltraBlocks.COBBLED_MOON_DEEPSLATE.get())
+                .add(EtUltraBlocks.CHISELED_MOON_DEEPSLATE.get())
+                .add(EtUltraBlocks.POLISHED_MOON_DEEPSLATE.get())
+                .add(EtUltraBlocks.MOON_DEEPSLATE_BRICKS.get())
+                .add(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS.get())
+                .add(EtUltraBlocks.MOON_DEEPSLATE_TILES.get())
+
+                // Mars
+
                 .add(EtUltraBlocks.MARS_DEEPSLATE.get())
                 .add(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get())
-                .add(EtUltraBlocks.GRAPHITE_BLOCK.get());
+                .add(EtUltraBlocks.CHISELED_MARS_DEEPSLATE.get())
+                .add(EtUltraBlocks.POLISHED_MARS_DEEPSLATE.get())
+                .add(EtUltraBlocks.MARS_DEEPSLATE_BRICKS.get())
+                .add(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS.get())
+                .add(EtUltraBlocks.MARS_DEEPSLATE_TILES.get())
+
+                // Graphite
+                .add(EtUltraBlocks.GRAPHITE_BLOCK.get())
+                .add(EtUltraBlocks.CHISELED_GRAPHITE.get())
+                .add(EtUltraBlocks.POLISHED_GRAPHITE.get())
+                .add(EtUltraBlocks.GRAPHITE_BRICKS.get())
+                .add(EtUltraBlocks.CRACKED_GRAPHITE_BRICKS.get())
+                .add(EtUltraBlocks.GRAPHITE_TILES.get())
+
+
+        // Note To Self: Move this semicolon whenever I finish adding tags
+        ;
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(EtUltraBlocks.GRAPHITE_DUST.get());

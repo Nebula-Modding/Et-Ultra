@@ -95,7 +95,7 @@ public class EtUltraBlocks {
                     .mapColor(MapColor.TERRACOTTA_ORANGE)
             ));
 
-
+    // Graphite
 
     public static final DeferredBlock<Block> GRAPHITE_BLOCK = BLOCKS.register(
             "graphite_block",
@@ -108,6 +108,42 @@ public class EtUltraBlocks {
             () -> new ColoredFallingBlock(new ColorRGBA(0x48433b), dustBlockProperties()
                     .mapColor(MapColor.TERRACOTTA_BLACK)
             ));
+
+    public static final DeferredBlock<Block> CHISELED_GRAPHITE = BLOCKS.register(
+            "chiseled_graphite",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
+    public static final DeferredBlock<Block> POLISHED_GRAPHITE = BLOCKS.register(
+            "polished_graphite",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
+    public static final DeferredBlock<Block> GRAPHITE_BRICKS = BLOCKS.register(
+            "graphite_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
+    public static final DeferredBlock<Block> CRACKED_GRAPHITE_BRICKS = BLOCKS.register(
+            "cracked_graphite_bricks",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
+    public static final DeferredBlock<Block> GRAPHITE_TILES = BLOCKS.register(
+            "graphite_tiles",
+            () -> new Block(deepslateProperties()
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
+
+
 
     // Common properties (meant to be at the bottom)
     private static BlockBehaviour.Properties deepslateProperties() {

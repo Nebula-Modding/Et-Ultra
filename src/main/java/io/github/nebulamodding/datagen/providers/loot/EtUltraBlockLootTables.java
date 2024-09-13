@@ -3,9 +3,12 @@ package io.github.nebulamodding.datagen.providers.loot;
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.registry.EtUltraBlocks;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,31 +21,20 @@ public class EtUltraBlockLootTables extends BlockLootSubProvider {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), p_344943_);
     }
 
+    private static final Set<RegistryAccess.RegistryEntry<Item>> BLOCK_DROP_OVERRIDES = Set.of();
+
     @Override
     protected void generate() {
-        //Remind me to leave instructions here
+
+        EtUltraBlocks.BLOCKS.getEntries()
+                .stream().filter(b -> !(BLOCK_DROP_OVERRIDES.contains(b)))
+                .forEach(entry ->
+                        dropSelf(entry.get()));
 
         //add(EtUltraBlocks.EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
         //add(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
 
-        add(EtUltraBlocks.MARS_DEEPSLATE.get(), b -> createSingleItemTableWithSilkTouch(b, EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get()));
-
-        dropSelf(EtUltraBlocks.COBBLED_MOON_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.CHISELED_MOON_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.POLISHED_MOON_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.MOON_DEEPSLATE_BRICKS.get());
-        dropSelf(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS.get());
-        dropSelf(EtUltraBlocks.MOON_DEEPSLATE_TILES.get());
-
-        dropSelf(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.CHISELED_MARS_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.POLISHED_MARS_DEEPSLATE.get());
-        dropSelf(EtUltraBlocks.MARS_DEEPSLATE_BRICKS.get());
-        dropSelf(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS.get());
-        dropSelf(EtUltraBlocks.MARS_DEEPSLATE_TILES.get());
-
-        dropSelf(EtUltraBlocks.GRAPHITE_BLOCK.get());
-        dropSelf(EtUltraBlocks.GRAPHITE_DUST.get());
+        //add(EtUltraBlocks.MARS_DEEPSLATE.get(), b -> createSingleItemTableWithSilkTouch(b, EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get()));
 
 
         //add(EtUltraBlocks.LAUNCH_PAD.get(), b ->
