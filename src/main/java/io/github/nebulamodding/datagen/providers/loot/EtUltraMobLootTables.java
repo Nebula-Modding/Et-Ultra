@@ -15,17 +15,6 @@ public class EtUltraMobLootTables extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-        //Remind me to make a tutorial
-
-        /*
-        add("example_item_from_igloo_chest", new EtUltraItemModifiers(new LootItemCondition[]{
-                LootTableIdCondition.builder(ResourceLocation.parse("chests/igloo_chest")).build(),
-                LootItemRandomChanceCondition.randomChance(0.35f).build()},
-                ItemInit.EXAMPLE_ITEM.get()));
-
-        add("example_item_from_iron_golem", new EtUltraItemModifiers(new LootItemCondition[]{
-                LootTableIdCondition.builder(ResourceLocation.parse("entities/iron_golem")).build()},
-                EtUltraItems.EXAMPLE_ITEM.get()));
-         */
+        // Rewriting later
     }
 }
