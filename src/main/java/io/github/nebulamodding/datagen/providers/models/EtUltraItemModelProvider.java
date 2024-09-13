@@ -9,7 +9,7 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 
-public class EtUltraItemModelProvider extends ItemModelProvider {
+public class    EtUltraItemModelProvider extends ItemModelProvider {
     public EtUltraItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, EtUltra.MOD_ID, existingFileHelper);
     }

@@ -133,6 +133,13 @@ public class EtUltraBlocks {
     private static BlockBehaviour.Properties dustBlockProperties() {
         return  BlockBehaviour.Properties.ofFullCopy(Blocks.SAND);
     }
+    private static BlockBehaviour.Properties wetBlockProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.COLOR_BROWN)
+                .sound(SoundType.MUD)
+                .strength(0.5f, 3);
+                //DYL DON'T REMOVE THIS PLEASE
+    }
 }
 
 
