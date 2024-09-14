@@ -68,6 +68,6 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
         ;
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(EtUltraBlocks.GRAPHITE_DUST.get());
+                .add(EtUltraBlocks.GRAPHITE_DUST_BLOCK.get());
     }
 }

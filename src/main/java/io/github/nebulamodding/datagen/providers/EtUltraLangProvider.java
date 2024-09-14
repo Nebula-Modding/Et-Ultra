@@ -20,12 +20,13 @@ public class EtUltraLangProvider extends LanguageProvider {
         super(output, EtUltra.MOD_ID, "en_us");
     }
 
-    private static final Set<RegistryAccess.RegistryEntry<Item>> BLOCK_NAME_OVERRIDES = Set.of(
+    private static final Set<RegistryAccess.RegistryEntry<Block>> BLOCK_NAME_OVERRIDES = Set.of(
             // Block name overrides here
     );
 
     private static final Set<RegistryAccess.RegistryEntry<Item>> ITEM_NAME_OVERRIDES = Set.of(
             // Item name overrides here
+            //EtUltraBlocks.GRAPHITE_BLOCK
     );
 
     @Override

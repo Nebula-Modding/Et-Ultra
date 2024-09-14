@@ -1,2 +1,12 @@
-// 1.21.1	2024-08-31T21:02:48.2496137	Item Models: et_ultra
+// 1.21.1	2024-09-14T15:06:16.4151257	Item Models: et_ultra
+9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
+dc60c0db2e553bc61d9ed346b40e2529d0f7b7ac assets/et_ultra/models/item/desh_axe.json
+9038cd27ba3498744f5ab11ccdb5e9b40625da9a assets/et_ultra/models/item/desh_sword.json
+15b489eaa2d6fd7e3413d139084af87edb82fc3f assets/et_ultra/models/item/diamond_shard.json
+32003d6fc2cd5fea9ea433f67c7e7b844713d1fa assets/et_ultra/models/item/obdurium_ingot.json
+130fd52365dcea3839babb0e33755466556230ce assets/et_ultra/models/item/obdurium_nugget.json
+a4a49e5289d0a612af0a3eaa0f14f25ab3096551 assets/et_ultra/models/item/obdurium_plate.json
+f8785c4b944d6f42c32b72e34408fd9889164fe1 assets/et_ultra/models/item/obdurium_rod.json
 17e9a6d28b6574e74e6e510b4ca5ee5cf4a2d172 assets/et_ultra/models/item/pencil.json
+ba478e72db47eb64499f4e4c8c2f181f78d44e3d assets/et_ultra/models/item/raw_etrium.json
+7f79cb2f4d252ffcdacd11bd1e94837d5a920a5b assets/et_ultra/models/item/raw_obdurium.json

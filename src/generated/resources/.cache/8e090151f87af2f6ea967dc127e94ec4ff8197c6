@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-13T19:12:17.4985665	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2024-09-14T12:38:15.3844207	Tags for minecraft:block mod id et_ultra
 84fceb3acdafcd3516bf5bbc243e0907424b92a5 data/et_ultra/tags/block/test_blocks.json
 a0e07f0207238ffa60e7f5c1f72b99a8eda8ea46 data/minecraft/tags/block/mineable/pickaxe.json
-230317ab382386cec882ac73bcb8529f13003710 data/minecraft/tags/block/mineable/shovel.json
+41ca934fa3aa1639c243e444e0239f6913bf1e8c data/minecraft/tags/block/mineable/shovel.json
