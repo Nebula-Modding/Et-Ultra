@@ -46,7 +46,6 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.MOON_DEEPSLATE_TILES.get())
 
                 // Mars
-
                 .add(EtUltraBlocks.MARS_DEEPSLATE.get())
                 .add(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get())
                 .add(EtUltraBlocks.CHISELED_MARS_DEEPSLATE.get())
