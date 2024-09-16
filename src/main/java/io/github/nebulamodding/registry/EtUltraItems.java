@@ -3,6 +3,7 @@ package io.github.nebulamodding.registry;
 // Items Go Here
 
 import io.github.nebulamodding.EtUltra;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
@@ -88,16 +89,27 @@ public class EtUltraItems {
     public static final DeferredItem<Item> OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties()));
 
     // Tools
-
-    public static final Supplier<SwordItem> DESH_SWORD = ITEMS.register("desh_sword", () -> new SwordItem(
+    public static final Supplier<ShovelItem> DESH_SHOVEL = ITEMS.register("desh_shovel", () -> new ShovelItem(
             DESH_TIER,
             new Item.Properties().attributes(
-                    SwordItem.createAttributes(
+                    ShovelItem.createAttributes(
                             DESH_TIER,
                             // Attack Damage
-                            3,
+                            1,
                             // Attack Speed
-                            -2.4f
+                            -3
+                    )
+            )
+    ));
+    public static final Supplier<PickaxeItem> DESH_PICKAXE = ITEMS.register("desh_pickaxe", () -> new PickaxeItem(
+            DESH_TIER,
+            new Item.Properties().attributes(
+                    PickaxeItem.createAttributes(
+                            DESH_TIER,
+                            // Attack Damage
+                            1.5f,
+                            // Attack Speed
+                            -2.8f
                     )
             )
     ));
@@ -113,9 +125,28 @@ public class EtUltraItems {
                     )
             )
     ));
-
-    //public static final Supplier<PickaxeItem> DESH_PICKAXE = ITEMS.register("desh_pickaxe", () -> new PickaxeItem());
-    //public static final Supplier<ShovelItem> DESH_SHOVEL = ITEMS.register("desh_shovel", () -> new ShovelItem());
-    //public static final Supplier<HoeItem> DESH_HOE = ITEMS.register("desh_hoe", () -> new HoeItem());
-
+    public static final Supplier<HoeItem> DESH_HOE = ITEMS.register("desh_hoe", () -> new HoeItem(
+            DESH_TIER,
+            new Item.Properties().attributes(
+                    HoeItem.createAttributes(
+                            DESH_TIER,
+                            // Attack Damage
+                            -2,
+                            // Attack Speed
+                            -1
+                    )
+            )
+    ));
+    public static final Supplier<SwordItem> DESH_SWORD = ITEMS.register("desh_sword", () -> new SwordItem(
+            DESH_TIER,
+            new Item.Properties().attributes(
+                    SwordItem.createAttributes(
+                            DESH_TIER,
+                            // Attack Damage
+                            3,
+                            // Attack Speed
+                            -2.4f
+                    )
+            )
+    ));
 }

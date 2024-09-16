@@ -1,6 +1,9 @@
-// 1.21.1	2024-09-14T15:06:16.4151257	Item Models: et_ultra
+// 1.21.1	2024-09-16T17:12:16.7773654	Item Models: et_ultra
 9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
 dc60c0db2e553bc61d9ed346b40e2529d0f7b7ac assets/et_ultra/models/item/desh_axe.json
+86e77b09fb4e94dbc3c66dd66c94684b4bcd1eb3 assets/et_ultra/models/item/desh_hoe.json
+bd2d8a91af7263bc99f3ddaec710e950a9d6d316 assets/et_ultra/models/item/desh_pickaxe.json
+63a97f29d8008518813ec48da0163c6019d8e789 assets/et_ultra/models/item/desh_shovel.json
 9038cd27ba3498744f5ab11ccdb5e9b40625da9a assets/et_ultra/models/item/desh_sword.json
 15b489eaa2d6fd7e3413d139084af87edb82fc3f assets/et_ultra/models/item/diamond_shard.json
 32003d6fc2cd5fea9ea433f67c7e7b844713d1fa assets/et_ultra/models/item/obdurium_ingot.json

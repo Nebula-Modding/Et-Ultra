@@ -31,8 +31,8 @@ public class EtUltraItemModelProvider extends ItemModelProvider {
                 .forEach(entry ->
                     basicItem(entry.get()));
 
-        handheldItems.add((AxeItem) EtUltraItems.DESH_AXE);
-        handheldItems.add((SwordItem) EtUltraItems.DESH_SWORD);
+        //handheldItems.add((AxeItem) EtUltraItems.DESH_AXE);
+        //handheldItems.add((SwordItem) EtUltraItems.DESH_SWORD);
 
     }
 }

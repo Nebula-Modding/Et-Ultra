@@ -99,16 +99,14 @@ public class EtUltraBlocks {
 
     public static final DeferredBlock<Block> SALT_CRYSTAL_BLOCK = BLOCKS.register(
             "salt_crystal_block",
-            () -> new Block(deepslateProperties()
+            () -> new Block(crystalProperties()
                     .mapColor(MapColor.SNOW)
-                    .sound(SoundType.AMETHYST)
             ));
 
     public static final DeferredBlock<Block> POLISHED_SALT_CRYSTAL_BLOCK = BLOCKS.register(
             "polished_salt_crystal_block",
-            () -> new Block(deepslateProperties()
+            () -> new Block(crystalProperties()
                     .mapColor(MapColor.SNOW)
-                    .sound(SoundType.AMETHYST)
             ));
 
     public static final DeferredBlock<Block> SALT_BLOCK = BLOCKS.register(
@@ -208,6 +206,13 @@ public class EtUltraBlocks {
         return BlockBehaviour.Properties.of()
                 .sound(SoundType.DEEPSLATE)
                 .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(3, 6);
+    }
+    private static BlockBehaviour.Properties crystalProperties() {
+        return BlockBehaviour.Properties.of()
+                .sound(SoundType.AMETHYST)
+                .instrument(NoteBlockInstrument.CHIME)
                 .requiresCorrectToolForDrops()
                 .strength(3, 6);
     }
