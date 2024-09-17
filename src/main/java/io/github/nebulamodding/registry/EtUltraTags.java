@@ -23,7 +23,7 @@ public class EtUltraTags {
     }
 
     public static ResourceLocation createRawItemsLocation(String name) {
-        return  ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, "raw/" + name);
+        return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, "raw/" + name);
     }
 
     public static TagKey<Block> createToolTag(String name) {

@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Set;
@@ -19,22 +20,25 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 public class EtUltraLootTables extends LootTableProvider {
-    public EtUltraLootTables(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
-        super(pOutput, Set.of(), List.of(new SubProviderEntry(EtUltraBlockLootTables::new, LootContextParamSets.BLOCK)), pRegistries);
+    public EtUltraLootTables(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, Set.of(), List.of(new SubProviderEntry(EtUltraBlockLootTables::new, LootContextParamSets.BLOCK)), registries);
     }
 
-
     @Override
-    protected void validate(WritableRegistry<LootTable> writableregistry, ValidationContext validationcontext, ProblemReporter.Collector problemreporter$collector) {
+    protected void validate(
+            WritableRegistry<LootTable> writableRegistry,
+            @NotNull ValidationContext validationContext,
+            ProblemReporter.@NotNull Collector problemReporterCollector
+    ) {
         var modLootTablesId = BuiltInLootTables.all()
                 .stream()
                 .filter(id -> id.registry().getNamespace().equals(EtUltra.MOD_ID))
                 .collect(Collectors.toSet());
 
-        for (var id : Sets.difference(modLootTablesId, writableregistry.keySet())) {
-            validationcontext.reportProblem("Missing built-in table: " + id);
+        for (var id : Sets.difference(modLootTablesId, writableRegistry.keySet())) {
+            validationContext.reportProblem("Missing built-in table: " + id);
         }
 
-        writableregistry.forEach((lootTable -> lootTable.validate(validationcontext)));
+        writableRegistry.forEach((lootTable -> lootTable.validate(validationContext)));
     }
 }

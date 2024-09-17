@@ -21,16 +21,21 @@ public class EtUltraDatagen {
             PackOutput output = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-            generator.addProvider(true, new EtUltraLangProvider(output));
-            generator.addProvider(true, new EtUltraItemModelProvider(output, existingFileHelper));
-            generator.addProvider(true, new EtUltraBlockStateProvider(output, existingFileHelper));
-            EtUltraBlockTagProvider modBlockTagsProvider = new EtUltraBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
-            generator.addProvider(true, modBlockTagsProvider);
-            generator.addProvider(true, new EtUltraItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
-            generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
-            //generator.addProvider(true, new EtUltraWorldGenProvider(output, event.getLookupProvider()));
-            generator.addProvider(true, new EtUltraRecipes(generator, event.getLookupProvider()));
-            //generator.addProvider(true, new EtUltraMobLootTables(output, event.getLookupProvider()));
+            if (event.includeClient()) {
+                generator.addProvider(true, new EtUltraLangProvider(output));
+                generator.addProvider(true, new EtUltraItemModelProvider(output, existingFileHelper));
+                generator.addProvider(true, new EtUltraBlockStateProvider(output, existingFileHelper));
+            }
+
+            if (event.includeServer()) {
+                EtUltraBlockTagProvider modBlockTagsProvider = new EtUltraBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
+                generator.addProvider(true, modBlockTagsProvider);
+                generator.addProvider(true, new EtUltraItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
+                generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
+                generator.addProvider(true, new EtUltraRecipes(generator, event.getLookupProvider()));
+                //generator.addProvider(true, new EtUltraWorldGenProvider(output, event.getLookupProvider()));
+                //generator.addProvider(true, new EtUltraMobLootTables(output, event.getLookupProvider()));
+            }
         } catch (RuntimeException e) {
                 EtUltra.LOGGER.error("Failed to gather data", e);
         }

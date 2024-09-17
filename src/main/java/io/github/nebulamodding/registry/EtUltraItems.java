@@ -1,7 +1,5 @@
 package io.github.nebulamodding.registry;
 
-// Items Go Here
-
 import io.github.nebulamodding.EtUltra;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
@@ -17,7 +15,6 @@ public class EtUltraItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);
 
     // Tool Tiers
-
     public static final Tier DESH_TIER = new SimpleTier(
             // The tag that determines what blocks this tool cannot break. See below for more information.
             Tags.Blocks.NEEDS_WOOD_TOOL,
@@ -34,42 +31,6 @@ public class EtUltraItems {
             () -> Ingredient.of(Tags.Items.INGOTS_COPPER)
     );
 
-
-    // Block Items
-    // Moon
-    public static final Supplier<BlockItem> COBBLED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.COBBLED_MOON_DEEPSLATE);
-    public static final Supplier<BlockItem> CHISELED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_MOON_DEEPSLATE);
-    public static final Supplier<BlockItem> POLISHED_MOON_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_MOON_DEEPSLATE);
-    public static final Supplier<BlockItem> MOON_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MOON_DEEPSLATE_BRICKS);
-    public static final Supplier<BlockItem> CRACKED_MOON_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS);
-    public static final Supplier<BlockItem> MOON_DEEPSLATE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MOON_DEEPSLATE_TILES);
-    // Mars
-    public static final Supplier<BlockItem> MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE);
-    public static final Supplier<BlockItem> COBBLED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.COBBLED_MARS_DEEPSLATE);
-    public static final Supplier<BlockItem> CHISELED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_MARS_DEEPSLATE);
-    public static final Supplier<BlockItem> POLISHED_MARS_DEEPSLATE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_MARS_DEEPSLATE);
-    public static final Supplier<BlockItem> MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_BRICKS);
-    public static final Supplier<BlockItem> CRACKED_MARS_DEEPSLATE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS);
-    public static final Supplier<BlockItem> MARS_DEEPSLATE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.MARS_DEEPSLATE_TILES);
-    // Salt
-    public static final Supplier<BlockItem> SALT_CRYSTAL_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_CRYSTAL_BLOCK);
-    public static final Supplier<BlockItem> POLISHED_SALT_CRYSTAL_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_SALT_CRYSTAL_BLOCK);
-    public static final Supplier<BlockItem> SALT_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_BLOCK);
-    public static final Supplier<BlockItem> SALT_DUST_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_DUST_BLOCK);
-    public static final Supplier<BlockItem> CHISELED_SALT = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_SALT);
-    public static final Supplier<BlockItem> POLISHED_SALT = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_SALT);
-    public static final Supplier<BlockItem> SALT_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_BRICKS);
-    public static final Supplier<BlockItem> CRACKED_SALT_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_SALT_BRICKS);
-    public static final Supplier<BlockItem> SALT_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.SALT_TILES);
-    // Graphite
-    public static final Supplier<BlockItem> GRAPHITE_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_BLOCK);
-    public static final Supplier<BlockItem> GRAPHITE_DUST_BLOCK = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_DUST_BLOCK);
-    public static final Supplier<BlockItem> CHISELED_GRAPHITE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CHISELED_GRAPHITE);
-    public static final Supplier<BlockItem> POLISHED_GRAPHITE = ITEMS.registerSimpleBlockItem(EtUltraBlocks.POLISHED_GRAPHITE);
-    public static final Supplier<BlockItem> GRAPHITE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_BRICKS);
-    public static final Supplier<BlockItem> CRACKED_GRAPHITE_BRICKS = ITEMS.registerSimpleBlockItem(EtUltraBlocks.CRACKED_GRAPHITE_BRICKS);
-    public static final Supplier<BlockItem> GRAPHITE_TILES = ITEMS.registerSimpleBlockItem(EtUltraBlocks.GRAPHITE_TILES);
-
     // Items
     public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.register("dense_pencil", () -> new Item(new Item.Properties()
@@ -79,7 +40,6 @@ public class EtUltraItems {
     public static final DeferredItem<Item> DIAMOND_SHARD = ITEMS.register("diamond_shard", () -> new Item(new Item.Properties()));
 
     // Metals
-
     public static final DeferredItem<Item> RAW_ETRIUM = ITEMS.register("raw_etrium", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties()));
@@ -89,64 +49,36 @@ public class EtUltraItems {
     public static final DeferredItem<Item> OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties()));
 
     // Tools
-    public static final Supplier<ShovelItem> DESH_SHOVEL = ITEMS.register("desh_shovel", () -> new ShovelItem(
-            DESH_TIER,
-            new Item.Properties().attributes(
-                    ShovelItem.createAttributes(
-                            DESH_TIER,
-                            // Attack Damage
-                            1,
-                            // Attack Speed
-                            -3
-                    )
-            )
-    ));
-    public static final Supplier<PickaxeItem> DESH_PICKAXE = ITEMS.register("desh_pickaxe", () -> new PickaxeItem(
-            DESH_TIER,
-            new Item.Properties().attributes(
-                    PickaxeItem.createAttributes(
-                            DESH_TIER,
-                            // Attack Damage
-                            1.5f,
-                            // Attack Speed
-                            -2.8f
-                    )
-            )
-    ));
-    public static final Supplier<AxeItem> DESH_AXE = ITEMS.register("desh_axe", () -> new AxeItem(
-            DESH_TIER,
-            new Item.Properties().attributes(
-                    AxeItem.createAttributes(
-                            DESH_TIER,
-                            // Attack Damage
-                            6,
-                            // Attack Speed
-                            -3.1f
-                    )
-            )
-    ));
-    public static final Supplier<HoeItem> DESH_HOE = ITEMS.register("desh_hoe", () -> new HoeItem(
-            DESH_TIER,
-            new Item.Properties().attributes(
-                    HoeItem.createAttributes(
-                            DESH_TIER,
-                            // Attack Damage
-                            -2,
-                            // Attack Speed
-                            -1
-                    )
-            )
-    ));
-    public static final Supplier<SwordItem> DESH_SWORD = ITEMS.register("desh_sword", () -> new SwordItem(
-            DESH_TIER,
-            new Item.Properties().attributes(
-                    SwordItem.createAttributes(
-                            DESH_TIER,
-                            // Attack Damage
-                            3,
-                            // Attack Speed
-                            -2.4f
-                    )
-            )
-    ));
+    public static final DeferredItem<ShovelItem> DESH_SHOVEL = registerShovelItem("desh_shovel", DESH_TIER, 1, -3);
+    public static final DeferredItem<PickaxeItem> DESH_PICKAXE = registerPickaxeItem("desh_pickaxe", DESH_TIER, 1.5f, -2.8f);
+    public static final DeferredItem<AxeItem> DESH_AXE = registerAxeItem("desh_axe", DESH_TIER, 6, -3.1f);
+    public static final DeferredItem<HoeItem> DESH_HOE = registerHoeItem("desh_hoe", DESH_TIER, -2, -1);
+    public static final DeferredItem<SwordItem> DESH_SWORD = registerSwordItem("desh_sword", DESH_TIER, 3, -2.4f);
+
+    // Helper methods
+    private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new ShovelItem(tier, new Item.Properties()
+                .attributes(ShovelItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
+    private static DeferredItem<PickaxeItem> registerPickaxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new PickaxeItem(tier, new Item.Properties()
+                .attributes(PickaxeItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
+    private static DeferredItem<AxeItem> registerAxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new AxeItem(tier, new Item.Properties()
+                .attributes(AxeItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
+    private static DeferredItem<HoeItem> registerHoeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new HoeItem(tier, new Item.Properties()
+                .attributes(HoeItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
+    private static DeferredItem<SwordItem> registerSwordItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new SwordItem(tier, new Item.Properties()
+                .attributes(SwordItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
 }
