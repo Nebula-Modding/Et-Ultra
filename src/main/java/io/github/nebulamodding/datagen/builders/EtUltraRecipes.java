@@ -8,6 +8,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,9 +23,9 @@ public class EtUltraRecipes extends RecipeProvider {
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput pRecipeOutput) {
-        new EtUltraCraftingProvider(generator, registries, pRecipeOutput).build();
-        new EtUltraFurnaceProvider(generator, registries, pRecipeOutput).build();
+    protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
+        new EtUltraCraftingProvider(generator, registries, recipeOutput).build();
+        new EtUltraFurnaceProvider(generator, registries, recipeOutput).build();
     }
 
     public ResourceLocation getModId(String path) {

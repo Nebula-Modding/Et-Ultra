@@ -10,13 +10,14 @@ import java.util.concurrent.CompletableFuture;
 public class EtUltraFurnaceProvider extends EtUltraRecipes {
     private final RecipeOutput recipeOutput;
 
-    public EtUltraFurnaceProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> pRegistries, RecipeOutput recipeOutput) {
-        super(generator, pRegistries);
+    public EtUltraFurnaceProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> registries, RecipeOutput recipeOutput) {
+        super(generator, registries);
         this.recipeOutput = recipeOutput;
     }
 
     public void build() {
         //Remind me to make a tutorial on this
+        // This is your friendly reminder to make a tutorial on this (-Emma)
 
 //        SimpleCookingRecipeBuilder.smelting(Ingredient.of(EtUltraTags.EtUltraItemTags.EXAMPLE_RAW_TAG), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM, 0.6f, 300)
 //                .unlockedBy("has_item", has(EtUltraTags.EtUltraItemTags.EXAMPLE_RAW_TAG))

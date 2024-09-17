@@ -10,9 +10,8 @@ import java.util.concurrent.CompletableFuture;
 public class EtUltraCraftingProvider extends EtUltraRecipes {
     private final RecipeOutput recipeOutput;
 
-
-    public EtUltraCraftingProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> pRegistries, RecipeOutput recipeOutput) {
-        super(generator, pRegistries);
+    public EtUltraCraftingProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> registries, RecipeOutput recipeOutput) {
+        super(generator, registries);
         this.recipeOutput = recipeOutput;
     }
 
