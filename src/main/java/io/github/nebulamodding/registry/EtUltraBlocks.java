@@ -1,6 +1,9 @@
 package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
+import martian.regolith.DeferredHolders;
+import martian.regolith.RegolithBlockUtil;
+import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -18,59 +21,76 @@ public class EtUltraBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Moon
-    public static final DeferredBlock<Block>
-            COBBLED_MOON_DEEPSLATE = register("cobbled_moon_deepslate", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            CHISELED_MOON_DEEPSLATE = register("chiseled_moon_deepslate", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            POLISHED_MOON_DEEPSLATE = register("polished_moon_deepslate", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            MOON_DEEPSLATE_BRICKS = register("moon_deepslate_bricks", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            CRACKED_MOON_DEEPSLATE_BRICKS = register("cracked_moon_deepslate_bricks", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            MOON_DEEPSLATE_TILES = register("moon_deepslate_tiles", deepslateProperties().mapColor(MapColor.DEEPSLATE)),
-            MOON_DEEPSLATE_PILLAR = register("moon_deepslate_pillar", deepslateProperties().mapColor(MapColor.DEEPSLATE))
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.DEEPSLATE),
+            "cobbled_moon_deepslate",
+            "chiseled_moon_deepslate",
+            "polished_moon_deepslate",
+            "moon_deepslate_bricks",
+            "cracked_moon_deepslate_bricks",
+            "moon_deepslate_tiles",
+            "moon_deepslate_pillar"
+    );
 
     // Mars
-    public static final DeferredBlock<Block>
-            MARS_DEEPSLATE = register("mars_deepslate", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            COBBLED_MARS_DEEPSLATE = register("cobbled_mars_deepslate", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            CHISELED_MARS_DEEPSLATE = register("chiseled_mars_deepslate", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            POLISHED_MARS_DEEPSLATE = register("polished_mars_deepslate", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            MARS_DEEPSLATE_BRICKS = register("mars_deepslate_bricks", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            CRACKED_MARS_DEEPSLATE_BRICKS = register("cracked_mars_deepslate_bricks", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            MARS_DEEPSLATE_TILES = register("mars_deepslate_tiles", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)),
-            MARS_DEEPSLATE_PILLAR = register("mars_deepslate_pillar", deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE))
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MARS_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE),
+            "mars_deepslate",
+            "cobbled_mars_deepslate",
+            "chiseled_mars_deepslate",
+            "polished_mars_deepslate",
+            "mars_deepslate_bricks",
+            "cracked_mars_deepslate_bricks",
+            "mars_deepslate_tiles",
+            "mars_deepslate_pillar"
+    );
 
     // Salt
-    public static final DeferredBlock<Block>
-            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", crystalProperties().mapColor(MapColor.SNOW)),
-            POLISHED_SALT_CRYSTAL_BLOCK = register("polished_salt_crystal_block", crystalProperties().mapColor(MapColor.SNOW)),
-            SALT_BLOCK = register("salt_block", compressedDustProperties().mapColor(MapColor.SNOW)),
-            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
-                    new ColorRGBA(0xdfcddd),
-                    dustBlockProperties().mapColor(MapColor.SNOW)
-            )),
-            CHISELED_SALT = register("chiseled_salt", compressedDustProperties().mapColor(MapColor.SNOW)),
-            POLISHED_SALT = register("polished_salt", compressedDustProperties().mapColor(MapColor.SNOW)),
-            SALT_BRICKS = register("salt_bricks", compressedDustProperties().mapColor(MapColor.SNOW)),
-            CRACKED_SALT_BRICKS = register("cracked_salt_bricks", compressedDustProperties().mapColor(MapColor.SNOW)),
-            SALT_TILES = register("salt_tiles", compressedDustProperties().mapColor(MapColor.SNOW)),
-            SALT_PILLAR = register("salt_pillar", compressedDustProperties().mapColor(MapColor.SNOW))
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_COMPRESSED_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            compressedDustProperties().mapColor(MapColor.SNOW),
+            "salt_block",
+            "chiseled_salt",
+            "polished_salt",
+            "salt_bricks",
+            "cracked_salt_bricks",
+            "salt_tiles",
+            "salt_pillar"
+    );
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            crystalProperties().mapColor(MapColor.SNOW),
+            "salt_crystal_block",
+            "polished_salt_crystal_block"
+    );
+    public static final DeferredBlock<Block> SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
+            new ColorRGBA(0xdfcddd),
+            dustBlockProperties().mapColor(MapColor.SNOW)
+    ));
 
     // Graphite
-    public static final DeferredBlock<Block>
-            GRAPHITE_BLOCK = register("graphite_block", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
-                    new ColorRGBA(0x2d261b),
-                    dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-            )),
-            CHISELED_GRAPHITE = register("chiseled_graphite", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            POLISHED_GRAPHITE = register("polished_graphite", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            GRAPHITE_BRICKS = register("graphite_bricks", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            CRACKED_GRAPHITE_BRICKS = register("cracked_graphite_bricks", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            GRAPHITE_TILES = register("graphite_tiles", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)),
-            GRAPHITE_PILLAR = register("graphite_pillar", deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK))
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK),
+            "graphite_block",
+            "chiseled_graphite",
+            "polished_graphite",
+            "graphite_bricks",
+            "cracked_graphite_bricks",
+            "graphite_tiles",
+            "graphite_pillar"
+    );
+    public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
+            new ColorRGBA(0x2d261b),
+            dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    ));
 
     // Metal Blocks
 
@@ -78,22 +98,31 @@ public class EtUltraBlocks {
     // Blocks go here
 
     // Steel
-    public static final DeferredBlock<Block>
-            MARKED_STEEL_PILLAR = register("marked_steel_pillar", steelProperties())
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            steelProperties(),
+            "marked_steel_pillar"
+    );
 
     // Etrium
     // Blocks go here
 
     // Desh
-    public static final DeferredBlock<Block>
-            MARKED_DESH_PILLAR = register("marked_desh_pillar", deshProperties())
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            deshProperties(),
+            "marked_desh_pillar"
+    );
 
     // Ostrum
-    public static final DeferredBlock<Block>
-            MARKED_OSTRUM_PILLAR = register("marked_ostrum_pillar", ostrumProperties())
-    ;
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            ostrumProperties(),
+            "marked_ostrum_pillar"
+    );
 
     // Aerolyte
     // Blocks go here

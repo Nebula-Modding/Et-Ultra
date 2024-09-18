@@ -34,43 +34,43 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
          */
 
         tag(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS)
-                .add(EtUltraBlocks.MARS_DEEPSLATE.get());
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 // Moon
-                .add(EtUltraBlocks.COBBLED_MOON_DEEPSLATE.get())
-                .add(EtUltraBlocks.CHISELED_MOON_DEEPSLATE.get())
-                .add(EtUltraBlocks.POLISHED_MOON_DEEPSLATE.get())
-                .add(EtUltraBlocks.MOON_DEEPSLATE_BRICKS.get())
-                .add(EtUltraBlocks.CRACKED_MOON_DEEPSLATE_BRICKS.get())
-                .add(EtUltraBlocks.MOON_DEEPSLATE_TILES.get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("cobbled_moon_deepslate").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("chiseled_moon_deepslate").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("polished_moon_deepslate").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("moon_deepslate_bricks").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("cracked_moon_deepslate_bricks").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("moon_deepslate_tiles").get())
 
                 // Mars
-                .add(EtUltraBlocks.MARS_DEEPSLATE.get())
-                .add(EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get())
-                .add(EtUltraBlocks.CHISELED_MARS_DEEPSLATE.get())
-                .add(EtUltraBlocks.POLISHED_MARS_DEEPSLATE.get())
-                .add(EtUltraBlocks.MARS_DEEPSLATE_BRICKS.get())
-                .add(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS.get())
-                .add(EtUltraBlocks.MARS_DEEPSLATE_TILES.get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("cobbled_mars_deepslate").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("chiseled_mars_deepslate").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("polished_mars_deepslate").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate_bricks").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("cracked_mars_deepslate_bricks").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate_tiles").get())
 
                 // Salt
-                .add(EtUltraBlocks.SALT_CRYSTAL_BLOCK.get())
-                .add(EtUltraBlocks.POLISHED_SALT_CRYSTAL_BLOCK.get())
-                .add(EtUltraBlocks.SALT_BLOCK.get())
-                .add(EtUltraBlocks.CHISELED_SALT.get())
-                .add(EtUltraBlocks.POLISHED_SALT.get())
-                .add(EtUltraBlocks.SALT_BRICKS.get())
-                .add(EtUltraBlocks.CRACKED_SALT_BRICKS.get())
-                .add(EtUltraBlocks.SALT_TILES.get())
+                .add(EtUltraBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block").get())
+                .add(EtUltraBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("chiseled_salt").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("polished_salt").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_bricks").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("cracked_salt_bricks").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_tiles").get())
 
                 // Graphite
-                .add(EtUltraBlocks.GRAPHITE_BLOCK.get())
-                .add(EtUltraBlocks.CHISELED_GRAPHITE.get())
-                .add(EtUltraBlocks.POLISHED_GRAPHITE.get())
-                .add(EtUltraBlocks.GRAPHITE_BRICKS.get())
-                .add(EtUltraBlocks.CRACKED_GRAPHITE_BRICKS.get())
-                .add(EtUltraBlocks.GRAPHITE_TILES.get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_block").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("chiseled_graphite").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("polished_graphite").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_bricks").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("cracked_graphite_bricks").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_tiles").get())
 
         // Note To Self: Move this semicolon whenever I finish adding tags
         ;

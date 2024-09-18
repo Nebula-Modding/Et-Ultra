@@ -14,6 +14,10 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    maven {
+        name = "Regolith Maven"
+        url = "https://codeberg.org/EmmaTheMartian/regolith/raw/branch/main/repo/"
+    }
     mavenLocal()
 }
 
@@ -62,8 +66,12 @@ configurations {
     runtimeClasspath.extendsFrom(localRuntime)
 }
 
+jarJar.enable()
+
 dependencies {
     implementation("net.neoforged:neoforge:${neo_version}")
+
+    jarJar(implementation("martian:regolith-neoforge:1.0-beta"))
 }
 
 tasks.withType(ProcessResources).configureEach {

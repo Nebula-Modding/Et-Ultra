@@ -1,8 +1,10 @@
 package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
+import martian.regolith.DeferredHolders;
+import martian.regolith.RegolithItemUtil;
+import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
@@ -32,26 +34,25 @@ public class EtUltraItems {
             () -> Ingredient.of(Tags.Items.INGOTS_COPPER)
     );
 
+    // Simple items
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            // Misc
+            "pencil",
+            // Gems
+            "diamond_shard",
+            // Metals
+            "raw_etrium",
+            "raw_obdurium",
+            "obdurium_nugget",
+            "obdurium_ingot",
+            "obdurium_plate",
+            "obdurium_rod"
+    );
+
     // Items
-    public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.register("dense_pencil", () -> new Item(new Item.Properties()
-            .stacksTo(16)
-    ));
-
-    public static final DeferredItem<Item> DIAMOND_SHARD = ITEMS.register("diamond_shard", () -> new Item(new Item.Properties()));
-
-    // Metals
-    public static final DeferredItem<Item> RAW_ETRIUM = ITEMS.register("raw_etrium", () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item>
-            RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties())),
-            OBDURIUM_NUGGET = ITEMS.register("obdurium_nugget", () -> new Item(new Item.Properties().rarity(Rarity.EPIC))),
-            OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
-            OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new Item(new Item.Properties().rarity(Rarity.EPIC))),
-            OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)))
-            ;
-
-    public static final DeferredItem<Item> IMPURE_STEEL = ITEMS.register("impure_steel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
 
     // Tools
     public static final DeferredItem<ShovelItem> DESH_SHOVEL = registerShovelItem("desh_shovel", DESH_TIER, 1, -3);

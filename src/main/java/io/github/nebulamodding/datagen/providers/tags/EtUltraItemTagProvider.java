@@ -25,12 +25,10 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
 
         // Item Tags
-
         tag(EtUltraTags.EtUltraItemTags.TEST_ITEMS)
-                .add(EtUltraBlocks.MARS_DEEPSLATE.get().asItem());
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get().asItem());
 
         // Tool Tags
-
         tag(ItemTags.SHOVELS)
                 .add(EtUltraItems.DESH_SHOVEL.get());
 

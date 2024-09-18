@@ -24,7 +24,7 @@ public class EtUltraCreativeTab {
                     .forEach(block -> output.accept(block.get()));
         });
 
-        builder.icon(() -> new ItemStack(EtUltraBlocks.MARS_DEEPSLATE.get()));
+        builder.icon(() -> new ItemStack(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get()));
         builder.title(Component.translatable(ETULTRA_TAB_TITLE));
 
         return builder.build();
