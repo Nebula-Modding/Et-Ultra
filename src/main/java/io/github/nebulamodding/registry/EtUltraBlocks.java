@@ -50,6 +50,17 @@ public class EtUltraBlocks {
     );
 
     // Salt
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            crystalProperties().mapColor(MapColor.SNOW),
+            "salt_crystal_block",
+            "polished_salt_crystal_block"
+    );
+    public static final DeferredBlock<Block> SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
+            new ColorRGBA(0xdfcddd),
+            dustBlockProperties().mapColor(MapColor.SNOW)
+    ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_COMPRESSED_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
@@ -62,19 +73,12 @@ public class EtUltraBlocks {
             "salt_tiles",
             "salt_pillar"
     );
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
-            crystalProperties().mapColor(MapColor.SNOW),
-            "salt_crystal_block",
-            "polished_salt_crystal_block"
-    );
-    public static final DeferredBlock<Block> SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
-            new ColorRGBA(0xdfcddd),
-            dustBlockProperties().mapColor(MapColor.SNOW)
-    ));
 
     // Graphite
+    public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
+            new ColorRGBA(0x2d261b),
+            dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
@@ -87,10 +91,6 @@ public class EtUltraBlocks {
             "graphite_tiles",
             "graphite_pillar"
     );
-    public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
-            new ColorRGBA(0x2d261b),
-            dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-    ));
 
     // Metal Blocks
 

@@ -38,12 +38,14 @@ public class EtUltraItems {
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
-            // Misc
-            "pencil",
             // Gems
             "diamond_shard",
             // Metals
-            "raw_etrium",
+            "raw_etrium"
+    );
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties().rarity(Rarity.EPIC),
             "raw_obdurium",
             "obdurium_nugget",
             "obdurium_ingot",
@@ -52,6 +54,7 @@ public class EtUltraItems {
     );
 
     // Items
+    public static final DeferredItem<Item> PENCIL = ITEMS.registerSimpleItem("pencil", new Item.Properties());
     public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
 
     // Tools

@@ -20,22 +20,6 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        /*
-        To add tags, it's pretty easy. For example:
-
-        tag(EtUltraTags.EtUltraBlockTags.EXAMPLE_BLOCK_TAG)
-                .add(EtUltraBlocks.EXAMPLE_BLOCK.get());
-
-        And if you want to add other tags to the tag?
-
-                .addTag(EtUltraTags.EtUltraBlockTags.EXAMPLE_BLOCK_TAG);
-
-                Please separate every tag with one line of whitespace, thank you!
-         */
-
-        tag(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS)
-                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get());
-
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 // Moon
                 .add(EtUltraBlocks.MOON_BLOCKS.get("cobbled_moon_deepslate").get())
@@ -71,12 +55,11 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_bricks").get())
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("cracked_graphite_bricks").get())
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_tiles").get())
-
-        // Note To Self: Move this semicolon whenever I finish adding tags
         ;
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(EtUltraBlocks.SALT_DUST_BLOCK.get())
-                .add(EtUltraBlocks.GRAPHITE_DUST_BLOCK.get());
+                .add(EtUltraBlocks.GRAPHITE_DUST_BLOCK.get())
+        ;
     }
 }
