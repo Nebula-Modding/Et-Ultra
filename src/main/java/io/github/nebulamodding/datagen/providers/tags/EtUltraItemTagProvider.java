@@ -7,6 +7,7 @@ import io.github.nebulamodding.registry.EtUltraTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -23,13 +24,26 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         // Copy block tags onto the item
         copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
 
-        /*
-        Adding Item Tags:
-
-        tag(EtUltraTags.EtUltraItemTags.EXAMPLE_ITEMS).add(EtUltraItems.EXAMPLE_BLOCK.get());
-         */
+        // Item Tags
 
         tag(EtUltraTags.EtUltraItemTags.TEST_ITEMS)
                 .add(EtUltraBlocks.MARS_DEEPSLATE.get().asItem());
+
+        // Tool Tags
+
+        tag(ItemTags.SHOVELS)
+                .add(EtUltraItems.DESH_SHOVEL.get());
+
+        tag(ItemTags.PICKAXES)
+                .add(EtUltraItems.DESH_PICKAXE.get());
+
+        tag(ItemTags.AXES)
+                .add(EtUltraItems.DESH_AXE.get());
+
+        tag(ItemTags.HOES)
+                .add(EtUltraItems.DESH_HOE.get());
+
+        tag(ItemTags.SWORDS)
+                .add(EtUltraItems.DESH_SWORD.get());
     }
 }

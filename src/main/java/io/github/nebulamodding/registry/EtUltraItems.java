@@ -2,6 +2,7 @@ package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
@@ -26,7 +27,7 @@ public class EtUltraItems {
             // Stone uses 1, iron uses 2, corresponding to 5 and 6 attack damage for swords, respectively; our sword does 5.5 damage now.
             2,
             // Enchantability
-            22,
+            20,
             // Determines the repair ingredient of the tier. Use a supplier for lazy initializing.
             () -> Ingredient.of(Tags.Items.INGOTS_COPPER)
     );
@@ -42,11 +43,15 @@ public class EtUltraItems {
     // Metals
     public static final DeferredItem<Item> RAW_ETRIUM = ITEMS.register("raw_etrium", () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> OBDURIUM_NUGGET = ITEMS.register("obdurium_nugget", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>
+            RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties())),
+            OBDURIUM_NUGGET = ITEMS.register("obdurium_nugget", () -> new Item(new Item.Properties().rarity(Rarity.EPIC))),
+            OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
+            OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new Item(new Item.Properties().rarity(Rarity.EPIC))),
+            OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)))
+            ;
+
+    public static final DeferredItem<Item> IMPURE_STEEL = ITEMS.register("impure_steel", () -> new Item(new Item.Properties()));
 
     // Tools
     public static final DeferredItem<ShovelItem> DESH_SHOVEL = registerShovelItem("desh_shovel", DESH_TIER, 1, -3);

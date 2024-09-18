@@ -54,6 +54,16 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.CRACKED_MARS_DEEPSLATE_BRICKS.get())
                 .add(EtUltraBlocks.MARS_DEEPSLATE_TILES.get())
 
+                // Salt
+                .add(EtUltraBlocks.SALT_CRYSTAL_BLOCK.get())
+                .add(EtUltraBlocks.POLISHED_SALT_CRYSTAL_BLOCK.get())
+                .add(EtUltraBlocks.SALT_BLOCK.get())
+                .add(EtUltraBlocks.CHISELED_SALT.get())
+                .add(EtUltraBlocks.POLISHED_SALT.get())
+                .add(EtUltraBlocks.SALT_BRICKS.get())
+                .add(EtUltraBlocks.CRACKED_SALT_BRICKS.get())
+                .add(EtUltraBlocks.SALT_TILES.get())
+
                 // Graphite
                 .add(EtUltraBlocks.GRAPHITE_BLOCK.get())
                 .add(EtUltraBlocks.CHISELED_GRAPHITE.get())
@@ -62,11 +72,11 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.CRACKED_GRAPHITE_BRICKS.get())
                 .add(EtUltraBlocks.GRAPHITE_TILES.get())
 
-
         // Note To Self: Move this semicolon whenever I finish adding tags
         ;
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(EtUltraBlocks.SALT_DUST_BLOCK.get())
                 .add(EtUltraBlocks.GRAPHITE_DUST_BLOCK.get());
     }
 }
