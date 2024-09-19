@@ -21,7 +21,6 @@ public class EtUltraBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<Block>> excludedBlocks = new ArrayList<>();
-        excludedBlocks.add(EtUltraBlocks.PLANET_BLOCKS.get("ganymede_block").get());
         // Automatically provide models to blocks and block items
         EtUltraBlocks.BLOCKS.getEntries()
                 .stream()
