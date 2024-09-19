@@ -168,7 +168,15 @@ public class EtUltraBlocks {
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
             obduriumProperties(),
-            "obdurium_block"
+            "obdurium_factory_block",
+            //"encased_obdurium_block",
+            "obdurium_plateblock",
+            "obdurium_panel",
+            "obdurium_block",
+            "obdurium_plating",
+            "obdurium_pillar",
+            //"glowing_obdurium_pillar",
+            "marked_obdurium_pillar"
     );
 
     // Common properties

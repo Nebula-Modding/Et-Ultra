@@ -34,13 +34,6 @@ public class EtUltraItems {
             () -> Ingredient.of(Tags.Items.INGOTS_COPPER)
     );
 
-    // Simple items
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            // Gems
-            "diamond_shard"
-    );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> ETRIUM_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties().rarity(Rarity.RARE),
@@ -50,10 +43,19 @@ public class EtUltraItems {
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties().rarity(Rarity.EPIC),
             "raw_obdurium",
-            "obdurium_nugget",
-            "obdurium_ingot",
-            "obdurium_plate",
-            "obdurium_rod"
+            "obdurium_nugget"
+    );
+
+    public static final DeferredItem<Item> OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
+            OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
+            OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC)));
+
+    // Simple items
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            // Gems
+            "diamond_shard"
     );
 
     // Items

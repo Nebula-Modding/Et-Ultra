@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-18T19:58:31.5475597	Loot Tables
+// 1.21.1	2024-09-18T22:05:40.3124987	Loot Tables
 1a2e72fdec4907ab85bdfc29ace94c652314bac2 data/et_ultra/loot_table/blocks/aerolyte_block.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
@@ -19,6 +19,7 @@ c7844a0748c28dc740f31d0eb4f0649b7a305160 data/et_ultra/loot_table/blocks/graphit
 8101003450b62fe2c8844d1daf922a9966586d97 data/et_ultra/loot_table/blocks/graphite_pillar.json
 3ff1e242d393a880040b03e73a96f2fbd4edbd38 data/et_ultra/loot_table/blocks/graphite_tiles.json
 9842cb079d0b5329c8b4af941a6ecd982aa5d191 data/et_ultra/loot_table/blocks/marked_desh_pillar.json
+df6f54982a77c0f0194ec99bc443ba919d7e12e3 data/et_ultra/loot_table/blocks/marked_obdurium_pillar.json
 81d6194f21365dbbaef67dd33fa3809431fd709d data/et_ultra/loot_table/blocks/marked_ostrum_pillar.json
 03ca3f47e222ca889066a9fec83c74d2d07abfad data/et_ultra/loot_table/blocks/marked_steel_pillar.json
 ddcbec7d3fc814605e0e6ffc3b9968e158d140d2 data/et_ultra/loot_table/blocks/mars_deepslate.json
@@ -33,6 +34,11 @@ f8f9b8f0b9ebf4fe8c0a11836c3eda4431d7da3c data/et_ultra/loot_table/blocks/moon_de
 911f6e8c6ea47d2c5662ce6ce1dfb196554a7c8a data/et_ultra/loot_table/blocks/moon_deepslate_pillar.json
 c3c410680aca2a88524e02263284f885fbf4dbe4 data/et_ultra/loot_table/blocks/moon_deepslate_tiles.json
 297bc4250c092524dfcbf40c1c379597d33da692 data/et_ultra/loot_table/blocks/obdurium_block.json
+9c34605d49a1b29791668ab31eb37ff6c5601252 data/et_ultra/loot_table/blocks/obdurium_factory_block.json
+aad75be1d7000b85824255a4f1e80be30ac2e230 data/et_ultra/loot_table/blocks/obdurium_panel.json
+aeed2e9829b4f0d3c2c48ff599c663c6ff0ef9c7 data/et_ultra/loot_table/blocks/obdurium_pillar.json
+69e38f2666ca5915cb7dea5ada7713dd7f0fd6ad data/et_ultra/loot_table/blocks/obdurium_plateblock.json
+1de9649b0eed7fc52e6862802e57b026cf98d5e4 data/et_ultra/loot_table/blocks/obdurium_plating.json
 2976aa9752315001162d65c3f8390caa2e0e117b data/et_ultra/loot_table/blocks/polished_graphite.json
 d45af6145fc277a01819bdb1e6000fc6abeccf62 data/et_ultra/loot_table/blocks/polished_mars_deepslate.json
 c24e803e53dc511b4ceb2aea78d4f285aa5a864f data/et_ultra/loot_table/blocks/polished_mercury_deepslate.json
