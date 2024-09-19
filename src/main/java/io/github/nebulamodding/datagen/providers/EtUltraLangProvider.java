@@ -20,20 +20,10 @@ public class EtUltraLangProvider extends LanguageProvider {
         super(output, EtUltra.MOD_ID, "en_us");
     }
 
-    private static final Set<RegistryAccess.RegistryEntry<Block>> BLOCK_NAME_OVERRIDES = Set.of(
-            // Block name overrides here
-    );
-
-    private static final Set<RegistryAccess.RegistryEntry<Item>> ITEM_NAME_OVERRIDES = Set.of(
-            // Item name overrides here
-            //EtUltraBlocks.GRAPHITE_BLOCK
-    );
-
     @Override
     protected void addTranslations() {
         // Automatically provide translations
         EtUltraBlocks.BLOCKS.getEntries()
-                .stream().filter(b -> !(BLOCK_NAME_OVERRIDES.contains(b)))
                 .forEach(entry -> addBlock(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
@@ -42,7 +32,6 @@ public class EtUltraLangProvider extends LanguageProvider {
 
         EtUltraItems.ITEMS.getEntries()
                 .stream().filter(i -> !(i.get() instanceof BlockItem))
-                .filter(i -> !(ITEM_NAME_OVERRIDES.contains(i)))
                 .forEach(entry -> addItem(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
