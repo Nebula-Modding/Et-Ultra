@@ -49,6 +49,37 @@ public class EtUltraBlocks {
             "mars_deepslate_pillar"
     );
 
+    // Venus
+    //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> VENUS_BLOCKS = RegolithBlockUtil.registerBlocks(
+    //        RegolithNeoForge.wrapBlocks(BLOCKS),
+    //        RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+    //        deepslateProperties().mapColor(MapColor.COLOR_ORANGE),
+    //        "venus_deepslate",
+    //        "cobbled_venus_deepslate",
+    //        "chiseled_venus_deepslate",
+    //        "polished_venus_deepslate",
+    //        "venus_deepslate_bricks",
+    //        "cracked_venus_deepslate_bricks",
+    //        "venus_deepslate_tiles",
+    //        "venus_deepslate_pillar"
+    //);
+
+    // Mercury
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.COLOR_PURPLE),
+            "mercury_deepslate",
+            "cobbled_mercury_deepslate",
+            "chiseled_mercury_deepslate",
+            "polished_mercury_deepslate",
+            "mercury_deepslate_bricks",
+            "cracked_mercury_deepslate_bricks",
+            "mercury_deepslate_tiles",
+            "mercury_deepslate_pillar"
+    );
+
+
     // Salt
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -125,12 +156,23 @@ public class EtUltraBlocks {
     );
 
     // Aerolyte
-    // Blocks go here
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            aerolyteProperties(),
+            "aerolyte_block"
+    );
 
     // Obdurium
-    // Obdurium blocks go here
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            obduriumProperties(),
+            "obdurium_block"
+    );
 
     // Common properties
+
     private static BlockBehaviour.Properties deepslateProperties() {
         return BlockBehaviour.Properties.of()
                 .sound(SoundType.DEEPSLATE)
@@ -190,13 +232,21 @@ public class EtUltraBlocks {
                 .strength(5, 16)
                 .sound(SoundType.COPPER);
     }
+    private static BlockBehaviour.Properties aerolyteProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.COLOR_YELLOW)
+                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
+                .strength(5, 9)
+                .sound(SoundType.COPPER);
+    }
     private static BlockBehaviour.Properties obduriumProperties() {
         return BlockBehaviour.Properties.of()
                 .mapColor(MapColor.COLOR_PURPLE)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
                 .strength(8, 6000)
-                .sound(SoundType.COPPER);
+                .sound(SoundType.NETHERITE_BLOCK);
     }
 
     // Misc helpers

@@ -39,8 +39,11 @@ public class EtUltraItems {
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
             // Gems
-            "diamond_shard",
-            // Metals
+            "diamond_shard"
+    );
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> ETRIUM_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties().rarity(Rarity.RARE),
             "raw_etrium"
     );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(

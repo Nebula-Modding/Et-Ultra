@@ -31,31 +31,12 @@ public class EtUltraTags {
     }
 
     public static class EtUltraItemTags {
-        /*
-        Item Tags for ITEMS
-
-        How do I add one? Fill in the blanks:
-
-        public static final TagKey<Item> EXAMPLE_ITEMS = ItemTags.create(createGenericItemsLocation("example_items"));
-         */
-
-        public static final TagKey<Item> TEST_ITEMS = ItemTags.create(createGenericItemsLocation("test_items"));
-
-
-
-        /*
-        Item Tags for BLOCKS
-
-        How do I add one? Fill in the blanks:
-
-        public static final TagKey<Item> EXAMPLE_BLOCKS = ItemTags.create(createBlockLocation("example_blocks"));
-         */
-
-        public static final TagKey<Item> TEST_BLOCKS = ItemTags.create(createBlockLocation("test_blocks"));
+        //public static final TagKey<Item> TEST_ITEMS = ItemTags.create(createGenericItemsLocation("test_items"));
+        //public static final TagKey<Item> TEST_BLOCKS = ItemTags.create(createBlockLocation("test_blocks"));
     }
 
     public static class EtUltraBlockTags {
-        public static final TagKey<Block> TEST_BLOCKS =
-                BlockTags.create(createBlockLocation("test_blocks"));
+        //public static final TagKey<Block> TEST_BLOCKS =
+        //        BlockTags.create(createBlockLocation("test_blocks"));
     }
 }

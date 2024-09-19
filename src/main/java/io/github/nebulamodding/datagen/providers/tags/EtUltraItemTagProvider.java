@@ -22,26 +22,31 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // Copy block tags onto the item
-        copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
+        //copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
 
         // Item Tags
-        tag(EtUltraTags.EtUltraItemTags.TEST_ITEMS)
-                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get().asItem());
+        //tag(EtUltraTags.EtUltraItemTags.TEST_ITEMS)
+        //        .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get().asItem());
 
         // Tool Tags
         tag(ItemTags.SHOVELS)
-                .add(EtUltraItems.DESH_SHOVEL.get());
+                .add(EtUltraItems.DESH_SHOVEL.get())
+        ;
 
         tag(ItemTags.PICKAXES)
-                .add(EtUltraItems.DESH_PICKAXE.get());
+                .add(EtUltraItems.DESH_PICKAXE.get())
+        ;
 
         tag(ItemTags.AXES)
-                .add(EtUltraItems.DESH_AXE.get());
+                .add(EtUltraItems.DESH_AXE.get())
+        ;
 
         tag(ItemTags.HOES)
-                .add(EtUltraItems.DESH_HOE.get());
+                .add(EtUltraItems.DESH_HOE.get())
+        ;
 
         tag(ItemTags.SWORDS)
-                .add(EtUltraItems.DESH_SWORD.get());
+                .add(EtUltraItems.DESH_SWORD.get())
+        ;
     }
 }

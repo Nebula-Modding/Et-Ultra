@@ -28,6 +28,7 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.MOON_BLOCKS.get("moon_deepslate_bricks").get())
                 .add(EtUltraBlocks.MOON_BLOCKS.get("cracked_moon_deepslate_bricks").get())
                 .add(EtUltraBlocks.MOON_BLOCKS.get("moon_deepslate_tiles").get())
+                .add(EtUltraBlocks.MOON_BLOCKS.get("moon_deepslate_pillar").get())
 
                 // Mars
                 .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get())
@@ -37,6 +38,27 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate_bricks").get())
                 .add(EtUltraBlocks.MARS_BLOCKS.get("cracked_mars_deepslate_bricks").get())
                 .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate_tiles").get())
+                .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate_pillar").get())
+
+                // Venus
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("venus_deepslate").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("cobbled_venus_deepslate").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("chiseled_venus_deepslate").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("polished_venus_deepslate").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("venus_deepslate_bricks").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("cracked_venus_deepslate_bricks").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("venus_deepslate_tiles").get())
+                //.add(EtUltraBlocks.VENUS_BLOCKS.get("venus_deepslate_pillar").get())
+
+                // Mercury
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("mercury_deepslate").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("cobbled_mercury_deepslate").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("chiseled_mercury_deepslate").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("polished_mercury_deepslate").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("cracked_mercury_deepslate_bricks").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles").get())
+                .add(EtUltraBlocks.MERCURY_BLOCKS.get("mercury_deepslate_pillar").get())
 
                 // Salt
                 .add(EtUltraBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block").get())
@@ -47,6 +69,7 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_bricks").get())
                 .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("cracked_salt_bricks").get())
                 .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_tiles").get())
+                .add(EtUltraBlocks.SALT_COMPRESSED_BLOCKS.get("salt_pillar").get())
 
                 // Graphite
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_block").get())
@@ -55,6 +78,7 @@ public class EtUltraBlockTagProvider extends BlockTagsProvider {
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_bricks").get())
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("cracked_graphite_bricks").get())
                 .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_tiles").get())
+                .add(EtUltraBlocks.GRAPHITE_BLOCKS.get("graphite_pillar").get())
         ;
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
