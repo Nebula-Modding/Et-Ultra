@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "et_ultra:item/ostrum_pickaxe"
+  }
+}

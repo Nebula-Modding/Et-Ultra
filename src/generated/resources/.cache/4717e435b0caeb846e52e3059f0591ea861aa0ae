@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-18T16:28:19.5365153	Item Models: et_ultra
+// 1.21.1	2024-09-20T18:45:58.7269447	Item Models: et_ultra
 9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
 ef8bd11627ffa0bc7c5a832f64156aa4203a4699 assets/et_ultra/models/item/desh_axe.json
 268abf4f166a7bea90c4f88de3760b088da12113 assets/et_ultra/models/item/desh_hoe.json
@@ -10,6 +10,11 @@ d1dd0010b7320b05345278504805979c68924961 assets/et_ultra/models/item/desh_sword.
 130fd52365dcea3839babb0e33755466556230ce assets/et_ultra/models/item/obdurium_nugget.json
 a4a49e5289d0a612af0a3eaa0f14f25ab3096551 assets/et_ultra/models/item/obdurium_plate.json
 f8785c4b944d6f42c32b72e34408fd9889164fe1 assets/et_ultra/models/item/obdurium_rod.json
+ff1cb3dced6b8dd85260c0198f7e61d2704c3070 assets/et_ultra/models/item/ostrum_axe.json
+45b3827a644be45e064cdd87f204707b6970a5f6 assets/et_ultra/models/item/ostrum_hoe.json
+59002a1b7d809149b30a09c6541706834788b387 assets/et_ultra/models/item/ostrum_pickaxe.json
+23bdd2c57e40dc830240e9f70cc71388a774d3f3 assets/et_ultra/models/item/ostrum_shovel.json
+c5a8926446d167a79fb95393957295f4a6eb63b3 assets/et_ultra/models/item/ostrum_sword.json
 17e9a6d28b6574e74e6e510b4ca5ee5cf4a2d172 assets/et_ultra/models/item/pencil.json
 ba478e72db47eb64499f4e4c8c2f181f78d44e3d assets/et_ultra/models/item/raw_etrium.json
 7f79cb2f4d252ffcdacd11bd1e94837d5a920a5b assets/et_ultra/models/item/raw_obdurium.json
