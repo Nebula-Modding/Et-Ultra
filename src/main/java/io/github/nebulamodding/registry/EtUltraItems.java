@@ -17,11 +17,6 @@ import java.util.function.Supplier;
 public class EtUltraItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);
 
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> ETRIUM_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties().rarity(Rarity.RARE),
-            "raw_etrium"
-    );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties().rarity(Rarity.EPIC),
@@ -38,7 +33,10 @@ public class EtUltraItems {
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
             // Gems
-            "diamond_shard"
+            "diamond_shard",
+            // Metals
+            "raw_etrium",
+            "impure_steel"
     );
 
     // Items
@@ -54,9 +52,9 @@ public class EtUltraItems {
 
     public static final DeferredItem<ShovelItem> OSTRUM_SHOVEL = registerShovelItem("ostrum_shovel", EtUltraTiers.OSTRUM, 1, -3);
     public static final DeferredItem<PickaxeItem> OSTRUM_PICKAXE = registerPickaxeItem("ostrum_pickaxe", EtUltraTiers.OSTRUM, 1.5f, -2.8f);
-    public static final DeferredItem<AxeItem> OSTRUM_AXE = registerAxeItem("ostrum_axe", EtUltraTiers.OSTRUM, 6, -3.1f);
+    public static final DeferredItem<AxeItem> OSTRUM_AXE = registerAxeItem("ostrum_axe", EtUltraTiers.OSTRUM, 6, -3.5f);
     public static final DeferredItem<HoeItem> OSTRUM_HOE = registerHoeItem("ostrum_hoe", EtUltraTiers.OSTRUM, -2, -1);
-    public static final DeferredItem<SwordItem> OSTRUM_SWORD = registerSwordItem("ostrum_sword", EtUltraTiers.OSTRUM, 3, -2.4f);
+    public static final DeferredItem<SwordItem> OSTRUM_SWORD = registerSwordItem("ostrum_sword", EtUltraTiers.OSTRUM, 3, -2.8f);
 
     // Helper methods
     private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {

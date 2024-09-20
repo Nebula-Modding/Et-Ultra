@@ -31,22 +31,27 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         // Tool Tags
         tag(ItemTags.SHOVELS)
                 .add(EtUltraItems.DESH_SHOVEL.get())
+                .add(EtUltraItems.OSTRUM_AXE.get())
         ;
 
         tag(ItemTags.PICKAXES)
                 .add(EtUltraItems.DESH_PICKAXE.get())
+                .add(EtUltraItems.OSTRUM_PICKAXE.get())
         ;
 
         tag(ItemTags.AXES)
                 .add(EtUltraItems.DESH_AXE.get())
+                .add(EtUltraItems.OSTRUM_AXE.get())
         ;
 
         tag(ItemTags.HOES)
                 .add(EtUltraItems.DESH_HOE.get())
+                .add(EtUltraItems.OSTRUM_HOE.get())
         ;
 
         tag(ItemTags.SWORDS)
                 .add(EtUltraItems.DESH_SWORD.get())
+                .add(EtUltraItems.OSTRUM_SWORD.get())
         ;
     }
 }
