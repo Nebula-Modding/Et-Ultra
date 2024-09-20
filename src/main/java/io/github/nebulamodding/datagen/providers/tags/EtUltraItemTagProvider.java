@@ -31,7 +31,7 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         // Tool Tags
         tag(ItemTags.SHOVELS)
                 .add(EtUltraItems.DESH_SHOVEL.get())
-                .add(EtUltraItems.OSTRUM_AXE.get())
+                .add(EtUltraItems.OSTRUM_SHOVEL.get())
         ;
 
         tag(ItemTags.PICKAXES)
