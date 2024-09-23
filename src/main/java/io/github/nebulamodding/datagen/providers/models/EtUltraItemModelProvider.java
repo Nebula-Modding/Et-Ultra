@@ -13,6 +13,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
+import javax.crypto.Mac;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -25,8 +26,7 @@ public class EtUltraItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
-
-//        excludedItems.add(EtUltraItems.DESH_AXE);
+        excludedItems.add(EtUltraItems.OBDURIUM_HAMMER);
 
         // Automatically provide models to items
         EtUltraItems.ITEMS.getEntries()

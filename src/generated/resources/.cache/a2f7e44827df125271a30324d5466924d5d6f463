@@ -1,6 +1,9 @@
-// 1.21.1	2024-09-18T19:58:31.5495608	Tags for minecraft:item mod id et_ultra
-b51263ef6954936802910f7133ba00cbb8c8b30a data/minecraft/tags/item/axes.json
-baed162fe7f0357c773b5cdea7119eb300d6c43b data/minecraft/tags/item/hoes.json
-171c661b52e84ce7e24cdb6d450a23eb04763b94 data/minecraft/tags/item/pickaxes.json
-7460dc7bf36c2ba5e7fd8cc6cf729d279007fd90 data/minecraft/tags/item/shovels.json
-1f9c5e2311ebcbabb31db55dccf5b350b2938289 data/minecraft/tags/item/swords.json
+// 1.21.1	2024-09-21T15:09:20.3005149	Tags for minecraft:item mod id et_ultra
+8508932555971d225ee221864602cc6b0d486e4e data/c/tags/item/ingots.json
+8508932555971d225ee221864602cc6b0d486e4e data/et_ultra/tags/item/ingots/obdurium.json
+d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/et_ultra/tags/item/nuggets/obdurium.json
+25a325a8c4a6a130d7c7679ed325d39dd3a9d052 data/minecraft/tags/item/axes.json
+0bc2547b685e86eedbd1bedb95e40f96592328ab data/minecraft/tags/item/hoes.json
+7707b043579e0db9b94ef46013b831f223492008 data/minecraft/tags/item/pickaxes.json
+535454ce0ddda688eb5572b4a534755f0f5d7865 data/minecraft/tags/item/shovels.json
+80b92f3976d6ae9838be4f44d475d25631b8c9c0 data/minecraft/tags/item/swords.json

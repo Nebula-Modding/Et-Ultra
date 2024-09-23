@@ -5,6 +5,7 @@ import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
@@ -44,17 +45,19 @@ public class EtUltraItems {
     public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
 
     // Tools
-    public static final DeferredItem<ShovelItem> DESH_SHOVEL = registerShovelItem("desh_shovel", EtUltraTiers.DESH, 1, -3);
-    public static final DeferredItem<PickaxeItem> DESH_PICKAXE = registerPickaxeItem("desh_pickaxe", EtUltraTiers.DESH, 1.5f, -2.8f);
-    public static final DeferredItem<AxeItem> DESH_AXE = registerAxeItem("desh_axe", EtUltraTiers.DESH, 6, -3.1f);
-    public static final DeferredItem<HoeItem> DESH_HOE = registerHoeItem("desh_hoe", EtUltraTiers.DESH, -2, -1);
-    public static final DeferredItem<SwordItem> DESH_SWORD = registerSwordItem("desh_sword", EtUltraTiers.DESH, 3, -2.4f);
+    public static final DeferredItem<ShovelItem> DESH_SHOVEL = registerShovelItem("desh_shovel", EtUltraTiers.DESH, 1.0F, -3.0F);
+    public static final DeferredItem<PickaxeItem> DESH_PICKAXE = registerPickaxeItem("desh_pickaxe", EtUltraTiers.DESH, 1.5F, -2.8F);
+    public static final DeferredItem<AxeItem> DESH_AXE = registerAxeItem("desh_axe", EtUltraTiers.DESH, 6.0F, -3.1F);
+    public static final DeferredItem<HoeItem> DESH_HOE = registerHoeItem("desh_hoe", EtUltraTiers.DESH, -2.0F, -1.0F);
+    public static final DeferredItem<SwordItem> DESH_SWORD = registerSwordItem("desh_sword", EtUltraTiers.DESH, 3.0F, -2.4F);
 
-    public static final DeferredItem<ShovelItem> OSTRUM_SHOVEL = registerShovelItem("ostrum_shovel", EtUltraTiers.OSTRUM, 1, -3);
-    public static final DeferredItem<PickaxeItem> OSTRUM_PICKAXE = registerPickaxeItem("ostrum_pickaxe", EtUltraTiers.OSTRUM, 1.5f, -2.8f);
-    public static final DeferredItem<AxeItem> OSTRUM_AXE = registerAxeItem("ostrum_axe", EtUltraTiers.OSTRUM, 6, -3.5f);
-    public static final DeferredItem<HoeItem> OSTRUM_HOE = registerHoeItem("ostrum_hoe", EtUltraTiers.OSTRUM, -2, -1);
-    public static final DeferredItem<SwordItem> OSTRUM_SWORD = registerSwordItem("ostrum_sword", EtUltraTiers.OSTRUM, 3, -2.8f);
+    public static final Supplier<ShovelItem> OSTRUM_SHOVEL = ITEMS.register("ostrum_shovel", () -> new ShovelItem(EtUltraTiers.OSTRUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(EtUltraTiers.OSTRUM, 1.0F, -3.0F))));
+    public static final Supplier<PickaxeItem> OSTRUM_PICKAXE = ITEMS.register("ostrum_pickaxe", () -> new PickaxeItem(EtUltraTiers.OSTRUM, new Item.Properties().fireResistant().attributes(PickaxeItem.createAttributes(EtUltraTiers.OSTRUM, 1.5F, -2.8F))));
+    public static final Supplier<AxeItem> OSTRUM_AXE = ITEMS.register("ostrum_axe", () -> new AxeItem(EtUltraTiers.OSTRUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(EtUltraTiers.OSTRUM, 6.0F, -3.4F))));
+    public static final Supplier<HoeItem> OSTRUM_HOE = ITEMS.register("ostrum_hoe", () -> new HoeItem(EtUltraTiers.OSTRUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(EtUltraTiers.OSTRUM, -2.0F, -1.0F))));
+    public static final Supplier<SwordItem> OSTRUM_SWORD = ITEMS.register("ostrum_sword", () -> new SwordItem(EtUltraTiers.OSTRUM, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(EtUltraTiers.OSTRUM, 3.0F, -2.8F))));
+
+    public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EtUltraTiers.OBDURIUM, 3.0F, -3.2F))));
 
     // Helper methods
     private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {

@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -25,8 +26,21 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         //copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
 
         // Item Tags
-        //tag(EtUltraTags.EtUltraItemTags.TEST_ITEMS)
-        //        .add(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get().asItem());
+
+        // Obdurium
+        tag(EtUltraTags.EtUltraItemTags.NUGGETS_OBDURIUM)
+                .add(EtUltraItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
+        ;
+
+        tag(EtUltraTags.EtUltraItemTags.INGOTS_OBDURIUM)
+                .add(EtUltraItems.OBDURIUM_INGOT.get())
+        ;
+
+        // General Minecraft Stuff
+        // Metal Stuffs
+        tag(Tags.Items.INGOTS)
+                .add(EtUltraItems.OBDURIUM_INGOT.get())
+        ;
 
         // Tool Tags
         tag(ItemTags.SHOVELS)

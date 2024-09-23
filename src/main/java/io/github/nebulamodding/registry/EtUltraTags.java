@@ -31,12 +31,19 @@ public class EtUltraTags {
     }
 
     public static class EtUltraItemTags {
-        //public static final TagKey<Item> TEST_ITEMS = ItemTags.create(createGenericItemsLocation("test_items"));
+                // Item Tags
+                public static final TagKey<Item>
+                        NUGGETS_OBDURIUM = ItemTags.create(createGenericItemsLocation("nuggets/obdurium")),
+                        INGOTS_OBDURIUM = ItemTags.create(createGenericItemsLocation("ingots/obdurium"))
+                ;
+
+
+        // Block Item Tags
+
         //public static final TagKey<Item> TEST_BLOCKS = ItemTags.create(createBlockLocation("test_blocks"));
     }
 
     public static class EtUltraBlockTags {
-        //public static final TagKey<Block> TEST_BLOCKS =
-        //        BlockTags.create(createBlockLocation("test_blocks"));
+        //public static final TagKey<Block> TEST_BLOCKS = BlockTags.create(createBlockLocation("test_blocks"));
     }
 }
