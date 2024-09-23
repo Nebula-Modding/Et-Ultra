@@ -1,36 +1,31 @@
 package io.github.nebulamodding.datagen.providers;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EtUltraBlocks;
-import io.github.nebulamodding.registry.EtUltraItems;
-import io.github.nebulamodding.registry.EtUltraCreativeTab;
-import net.minecraft.core.RegistryAccess;
+import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.EUCreativeTab;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import org.codehaus.plexus.util.StringUtils;
 
-import java.util.Set;
+public class EULangProvider extends LanguageProvider {
 
-public class EtUltraLangProvider extends LanguageProvider {
-
-    public EtUltraLangProvider(PackOutput output) {
+    public EULangProvider(PackOutput output) {
         super(output, EtUltra.MOD_ID, "en_us");
     }
 
     @Override
     protected void addTranslations() {
         // Automatically provide translations
-        EtUltraBlocks.BLOCKS.getEntries()
+        EUBlocks.BLOCKS.getEntries()
                 .forEach(entry -> addBlock(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
                                 .getPath()
                                 .replace("_", " "))));
 
-        EtUltraItems.ITEMS.getEntries()
+        EUItems.ITEMS.getEntries()
                 .stream().filter(i -> !(i.get() instanceof BlockItem))
                 .forEach(entry -> addItem(entry,
                         StringUtils.capitaliseAllWords(entry
@@ -48,6 +43,6 @@ public class EtUltraLangProvider extends LanguageProvider {
         // Items go here
 
         // Other Stuff
-        add(EtUltraCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");
+        add(EUCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");
     }
 }

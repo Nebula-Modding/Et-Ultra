@@ -1,7 +1,7 @@
 package io.github.nebulamodding.datagen.providers.models;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EtUltraBlocks;
+import io.github.nebulamodding.registry.EUBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -12,8 +12,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EtUltraBlockStateProvider extends BlockStateProvider {
-    public EtUltraBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+public class EUBlockStateProvider extends BlockStateProvider {
+    public EUBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, EtUltra.MOD_ID, existingFileHelper);
     }
 
@@ -22,7 +22,7 @@ public class EtUltraBlockStateProvider extends BlockStateProvider {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<Block>> excludedBlocks = new ArrayList<>();
         // Automatically provide models to blocks and block items
-        EtUltraBlocks.BLOCKS.getEntries()
+        EUBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> {

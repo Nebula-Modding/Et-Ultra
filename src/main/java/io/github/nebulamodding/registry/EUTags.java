@@ -3,13 +3,12 @@ package io.github.nebulamodding.registry;
 import io.github.nebulamodding.EtUltra;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-public class EtUltraTags {
+public class EUTags {
     public static ResourceLocation createOreLocation(String name) {
         return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID,  "ores/" + name);
     }

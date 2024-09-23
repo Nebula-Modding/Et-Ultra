@@ -1,6 +1,6 @@
 package io.github.nebulamodding.datagen.providers.loot;
 
-import io.github.nebulamodding.registry.EtUltraBlocks;
+import io.github.nebulamodding.registry.EUBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class EtUltraBlockLootTables extends BlockLootSubProvider {
-    public EtUltraBlockLootTables(HolderLookup.Provider provider) {
+public class EUBlockLootTables extends BlockLootSubProvider {
+    public EUBlockLootTables(HolderLookup.Provider provider) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), provider);
     }
 
@@ -26,7 +26,7 @@ public class EtUltraBlockLootTables extends BlockLootSubProvider {
 
 //        excludedBlocks.add(EtUltraBlocks.MARS_DEEPSLATE);
 
-        EtUltraBlocks.BLOCKS.getEntries()
+        EUBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
@@ -44,7 +44,7 @@ public class EtUltraBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
-        return EtUltraBlocks.BLOCKS.getEntries()
+        return EUBlocks.BLOCKS.getEntries()
                 .stream()
                 .map(DeferredHolder::get)
                 .collect(Collectors.toSet());

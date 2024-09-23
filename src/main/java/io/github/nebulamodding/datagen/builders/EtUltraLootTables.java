@@ -2,7 +2,7 @@ package io.github.nebulamodding.datagen.builders;
 
 import com.google.common.collect.Sets;
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.datagen.providers.loot.EtUltraBlockLootTables;
+import io.github.nebulamodding.datagen.providers.loot.EUBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.WritableRegistry;
 import net.minecraft.data.PackOutput;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 public class EtUltraLootTables extends LootTableProvider {
     public EtUltraLootTables(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, Set.of(), List.of(new SubProviderEntry(EtUltraBlockLootTables::new, LootContextParamSets.BLOCK)), registries);
+        super(output, Set.of(), List.of(new SubProviderEntry(EUBlockLootTables::new, LootContextParamSets.BLOCK)), registries);
     }
 
     @Override

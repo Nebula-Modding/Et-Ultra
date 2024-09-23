@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class EtUltraCreativeTab {
+public class EUCreativeTab {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EtUltra.MOD_ID);
 
     public static String ETULTRA_TAB_TITLE = "itemGroup.et_ultra.main";
@@ -17,14 +17,14 @@ public class EtUltraCreativeTab {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();
 
         builder.displayItems((itemDisplay, output) -> {
-            EtUltraItems.ITEMS.getEntries()
+            EUItems.ITEMS.getEntries()
                     .forEach(item -> output.accept(item.get()));
 
-            EtUltraBlocks.BLOCKS.getEntries()
+            EUBlocks.BLOCKS.getEntries()
                     .forEach(block -> output.accept(block.get()));
         });
 
-        builder.icon(() -> new ItemStack(EtUltraBlocks.MARS_BLOCKS.get("mars_deepslate").get()));
+        builder.icon(() -> new ItemStack(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get()));
         builder.title(Component.translatable(ETULTRA_TAB_TITLE));
 
         return builder.build();

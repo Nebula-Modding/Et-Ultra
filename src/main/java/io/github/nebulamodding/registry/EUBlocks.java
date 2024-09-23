@@ -17,13 +17,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class EtUltraBlocks {
+public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Moon
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             deepslateProperties().mapColor(MapColor.DEEPSLATE),
             "cobbled_moon_deepslate",
             "chiseled_moon_deepslate",
@@ -37,7 +37,7 @@ public class EtUltraBlocks {
     // Mars
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MARS_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE),
             "mars_deepslate",
             "cobbled_mars_deepslate",
@@ -67,7 +67,7 @@ public class EtUltraBlocks {
     // Mercury
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             deepslateProperties().mapColor(MapColor.COLOR_PURPLE),
             "mercury_deepslate",
             "cobbled_mercury_deepslate",
@@ -83,7 +83,7 @@ public class EtUltraBlocks {
     // Salt
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             crystalProperties().mapColor(MapColor.SNOW),
             "salt_crystal_block",
             "polished_salt_crystal_block"
@@ -94,7 +94,7 @@ public class EtUltraBlocks {
     ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_COMPRESSED_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             compressedDustProperties().mapColor(MapColor.SNOW),
             "salt_block",
             "chiseled_salt",
@@ -112,7 +112,7 @@ public class EtUltraBlocks {
     ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK),
             "graphite_block",
             "chiseled_graphite",
@@ -131,7 +131,7 @@ public class EtUltraBlocks {
     // Steel
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             steelProperties(),
             "marked_steel_pillar"
     );
@@ -142,7 +142,7 @@ public class EtUltraBlocks {
     // Desh
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             deshProperties(),
             "marked_desh_pillar"
     );
@@ -150,7 +150,7 @@ public class EtUltraBlocks {
     // Ostrum
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             ostrumProperties(),
             "marked_ostrum_pillar"
     );
@@ -158,7 +158,7 @@ public class EtUltraBlocks {
     // Aerolyte
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             aerolyteProperties(),
             "aerolyte_block"
     );
@@ -166,7 +166,7 @@ public class EtUltraBlocks {
     // Obdurium
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
             obduriumProperties(),
             "obdurium_factory_block",
             //"encased_obdurium_block",
@@ -268,7 +268,7 @@ public class EtUltraBlocks {
     // Misc helpers
     private static <T extends Block> DeferredBlock<T> register(String id, Supplier<T> block) {
         var registeredBlock = BLOCKS.register(id, block);
-        EtUltraItems.ITEMS.registerSimpleBlockItem(registeredBlock);
+        EUItems.ITEMS.registerSimpleBlockItem(registeredBlock);
         return registeredBlock;
     }
     // Shorthand for registering simple blocks

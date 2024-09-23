@@ -1,9 +1,9 @@
 package io.github.nebulamodding;
 
-import io.github.nebulamodding.registry.EtUltraCreativeTab;
-import io.github.nebulamodding.registry.EtUltraBlocks;
-import io.github.nebulamodding.registry.EtUltraDatagen;
-import io.github.nebulamodding.registry.EtUltraItems;
+import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.EUCreativeTab;
+import io.github.nebulamodding.registry.EUDatagen;
+import io.github.nebulamodding.registry.EUItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,11 +28,11 @@ public class EtUltra {
     }
 
     public EtUltra(IEventBus modBus) {
-        EtUltraBlocks.BLOCKS.register(modBus);
-        EtUltraItems.ITEMS.register(modBus);
-        EtUltraCreativeTab.CREATIVE_MODE_TABS.register(modBus);
+        EUBlocks.BLOCKS.register(modBus);
+        EUItems.ITEMS.register(modBus);
+        EUCreativeTab.CREATIVE_MODE_TABS.register(modBus);
 
-        modBus.addListener(EtUltraDatagen::gatherData);
+        modBus.addListener(EUDatagen::gatherData);
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

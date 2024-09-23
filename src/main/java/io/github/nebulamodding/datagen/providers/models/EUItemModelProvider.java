@@ -1,35 +1,29 @@
 package io.github.nebulamodding.datagen.providers.models;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EtUltraBlocks;
-import io.github.nebulamodding.registry.EtUltraItems;
-import net.minecraft.core.RegistryAccess;
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
 
-import javax.crypto.Mac;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
-public class EtUltraItemModelProvider extends ItemModelProvider {
-    public EtUltraItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+public class EUItemModelProvider extends ItemModelProvider {
+    public EUItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, EtUltra.MOD_ID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
-        excludedItems.add(EtUltraItems.OBDURIUM_HAMMER);
+        excludedItems.add(EUItems.OBDURIUM_HAMMER);
 
         // Automatically provide models to items
-        EtUltraItems.ITEMS.getEntries()
+        EUItems.ITEMS.getEntries()
                 .stream()
                 .filter(i -> !(i.get() instanceof BlockItem) && !excludedItems.contains(i))
                 .forEach(entry -> {

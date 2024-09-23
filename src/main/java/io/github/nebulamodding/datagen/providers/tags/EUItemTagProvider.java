@@ -1,9 +1,8 @@
 package io.github.nebulamodding.datagen.providers.tags;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EtUltraBlocks;
-import io.github.nebulamodding.registry.EtUltraItems;
-import io.github.nebulamodding.registry.EtUltraTags;
+import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.EUTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -15,8 +14,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EtUltraItemTagProvider extends ItemTagsProvider {
-    public EtUltraItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider provider, ExistingFileHelper existingFileHelper) {
+public class EUItemTagProvider extends ItemTagsProvider {
+    public EUItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider provider, ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, provider.contentsGetter(), EtUltra.MOD_ID, existingFileHelper);
     }
 
@@ -28,44 +27,44 @@ public class EtUltraItemTagProvider extends ItemTagsProvider {
         // Item Tags
 
         // Obdurium
-        tag(EtUltraTags.EtUltraItemTags.NUGGETS_OBDURIUM)
-                .add(EtUltraItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
+        tag(EUTags.EtUltraItemTags.NUGGETS_OBDURIUM)
+                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
         ;
 
-        tag(EtUltraTags.EtUltraItemTags.INGOTS_OBDURIUM)
-                .add(EtUltraItems.OBDURIUM_INGOT.get())
+        tag(EUTags.EtUltraItemTags.INGOTS_OBDURIUM)
+                .add(EUItems.OBDURIUM_INGOT.get())
         ;
 
         // General Minecraft Stuff
         // Metal Stuffs
         tag(Tags.Items.INGOTS)
-                .add(EtUltraItems.OBDURIUM_INGOT.get())
+                .add(EUItems.OBDURIUM_INGOT.get())
         ;
 
         // Tool Tags
         tag(ItemTags.SHOVELS)
-                .add(EtUltraItems.DESH_SHOVEL.get())
-                .add(EtUltraItems.OSTRUM_SHOVEL.get())
+                .add(EUItems.DESH_SHOVEL.get())
+                .add(EUItems.OSTRUM_SHOVEL.get())
         ;
 
         tag(ItemTags.PICKAXES)
-                .add(EtUltraItems.DESH_PICKAXE.get())
-                .add(EtUltraItems.OSTRUM_PICKAXE.get())
+                .add(EUItems.DESH_PICKAXE.get())
+                .add(EUItems.OSTRUM_PICKAXE.get())
         ;
 
         tag(ItemTags.AXES)
-                .add(EtUltraItems.DESH_AXE.get())
-                .add(EtUltraItems.OSTRUM_AXE.get())
+                .add(EUItems.DESH_AXE.get())
+                .add(EUItems.OSTRUM_AXE.get())
         ;
 
         tag(ItemTags.HOES)
-                .add(EtUltraItems.DESH_HOE.get())
-                .add(EtUltraItems.OSTRUM_HOE.get())
+                .add(EUItems.DESH_HOE.get())
+                .add(EUItems.OSTRUM_HOE.get())
         ;
 
         tag(ItemTags.SWORDS)
-                .add(EtUltraItems.DESH_SWORD.get())
-                .add(EtUltraItems.OSTRUM_SWORD.get())
+                .add(EUItems.DESH_SWORD.get())
+                .add(EUItems.OSTRUM_SWORD.get())
         ;
     }
 }

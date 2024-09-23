@@ -15,17 +15,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class EtUltraItemModifiers extends LootModifier {
+public class EUItemModifiers extends LootModifier {
 
-    public static Supplier<MapCodec<EtUltraItemModifiers>> CODEC_SUPPLIER = Suppliers.memoize(() -> RecordCodecBuilder
-            .mapCodec(instance -> EtUltraItemModifiers.codecStart(instance)
+    public static Supplier<MapCodec<EUItemModifiers>> CODEC_SUPPLIER = Suppliers.memoize(() -> RecordCodecBuilder
+            .mapCodec(instance -> EUItemModifiers.codecStart(instance)
                     .and(BuiltInRegistries.ITEM.byNameCodec().fieldOf("item")
                             .forGetter(addItemModifierInstance -> addItemModifierInstance.item))
-                    .apply(instance, EtUltraItemModifiers::new)));
+                    .apply(instance, EUItemModifiers::new)));
 
     private final Item item;
 
-    public EtUltraItemModifiers(LootItemCondition[] conditionsIn, Item item) {
+    public EUItemModifiers(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
