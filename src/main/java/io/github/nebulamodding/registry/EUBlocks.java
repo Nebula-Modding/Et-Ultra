@@ -123,6 +123,15 @@ public class EUBlocks {
             "graphite_pillar"
     );
 
+    // Ores
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK),
+            "glacio_obdurium_ore",
+            "etrium_ore"
+    );
+
     // Metal Blocks
 
     // Iron
