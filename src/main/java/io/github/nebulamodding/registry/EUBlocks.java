@@ -127,7 +127,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK),
+            stoneProperties(),
             "glacio_obdurium_ore",
             "etrium_ore"
     );
@@ -197,7 +197,9 @@ public class EUBlocks {
     //);
 
     // Common properties
-
+    private static BlockBehaviour.Properties stoneProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
+    }
     private static BlockBehaviour.Properties deepslateProperties() {
         return BlockBehaviour.Properties.of()
                 .sound(SoundType.DEEPSLATE)
