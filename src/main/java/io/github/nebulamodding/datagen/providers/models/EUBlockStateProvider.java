@@ -3,7 +3,6 @@ package io.github.nebulamodding.datagen.providers.models;
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.registry.EUBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
-import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
