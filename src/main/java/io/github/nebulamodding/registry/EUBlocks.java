@@ -188,13 +188,14 @@ public class EUBlocks {
             "marked_obdurium_pillar"
     );
 
-    // Planet Blocks (Joke)
-    //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PLANET_BLOCKS = RegolithBlockUtil.registerBlocks(
-    //        RegolithNeoForge.wrapBlocks(BLOCKS),
-    //        RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
-    //        deepslateProperties().mapColor(MapColor.COLOR_GRAY),
-    //        "ganymede_block"
-    //);
+    //Planet Blocks (Joke)
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PLANET_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties(),
+            "ganymede_block",
+            "moon_block"
+    );
 
     // Common properties
     private static BlockBehaviour.Properties stoneProperties() {

@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-23T22:35:52.4170324	Loot Tables
+// 1.21.1	2024-09-23T23:07:24.0755124	Loot Tables
 1a2e72fdec4907ab85bdfc29ace94c652314bac2 data/et_ultra/loot_table/blocks/aerolyte_block.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
@@ -14,6 +14,7 @@ da281310d765a3fbba231994aa935207cb1aa018 data/et_ultra/loot_table/blocks/cobbled
 c83c0f085b3f3265bfc714634394dbe12174b158 data/et_ultra/loot_table/blocks/cracked_moon_deepslate_bricks.json
 26e99c7a5031ff9a6c7e7935b3e68d47bd0b7777 data/et_ultra/loot_table/blocks/cracked_salt_bricks.json
 3e9da2cda5a4d6546b4e2fa0a85f7e0129b5c7dc data/et_ultra/loot_table/blocks/etrium_ore.json
+5f8bae23b71594c0315484e686536e020d7f05e2 data/et_ultra/loot_table/blocks/ganymede_block.json
 71b711acf2ba2ce94a4d5fc463439e6bb57a2747 data/et_ultra/loot_table/blocks/glacio_obdurium_ore.json
 e63f45998dcd6b41c732c105bcfcc5cd7e9fa0ea data/et_ultra/loot_table/blocks/graphite_block.json
 f6ae01dd3a1b651b8d055e15c65c7b9d9d83f344 data/et_ultra/loot_table/blocks/graphite_bricks.json
@@ -32,6 +33,7 @@ c16b1153e5662f8834a2439e8796eda78fdcd298 data/et_ultra/loot_table/blocks/mars_de
 fca5a5544762a0812bbfec8000b4f99f0fca966b data/et_ultra/loot_table/blocks/mercury_deepslate_bricks.json
 971c7a1fc6c4b71b09e1ce4ceab56d30b24b8340 data/et_ultra/loot_table/blocks/mercury_deepslate_pillar.json
 b4fcae90d88e01069e9402ac0ee9bf1650bd28e8 data/et_ultra/loot_table/blocks/mercury_deepslate_tiles.json
+58135cf9b502f90bd06c120488ecb16e9a994972 data/et_ultra/loot_table/blocks/moon_block.json
 f8f9b8f0b9ebf4fe8c0a11836c3eda4431d7da3c data/et_ultra/loot_table/blocks/moon_deepslate_bricks.json
 911f6e8c6ea47d2c5662ce6ce1dfb196554a7c8a data/et_ultra/loot_table/blocks/moon_deepslate_pillar.json
 c3c410680aca2a88524e02263284f885fbf4dbe4 data/et_ultra/loot_table/blocks/moon_deepslate_tiles.json
