@@ -46,11 +46,11 @@ public class EUItems {
     public static final DeferredItem<HoeItem> DESH_HOE = registerHoeItem("desh_hoe", EUTiers.DESH, -2.0F, -1.0F);
     public static final DeferredItem<SwordItem> DESH_SWORD = registerSwordItem("desh_sword", EUTiers.DESH, 3.0F, -2.4F);
 
-    public static final Supplier<ShovelItem> OSTRUM_SHOVEL = ITEMS.register("ostrum_shovel", () -> new ShovelItem(EUTiers.OSTRUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(EUTiers.OSTRUM, 1.0F, -3.0F))));
-    public static final Supplier<PickaxeItem> OSTRUM_PICKAXE = ITEMS.register("ostrum_pickaxe", () -> new PickaxeItem(EUTiers.OSTRUM, new Item.Properties().fireResistant().attributes(PickaxeItem.createAttributes(EUTiers.OSTRUM, 1.5F, -2.8F))));
-    public static final Supplier<AxeItem> OSTRUM_AXE = ITEMS.register("ostrum_axe", () -> new AxeItem(EUTiers.OSTRUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(EUTiers.OSTRUM, 6.0F, -3.4F))));
-    public static final Supplier<HoeItem> OSTRUM_HOE = ITEMS.register("ostrum_hoe", () -> new HoeItem(EUTiers.OSTRUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(EUTiers.OSTRUM, -2.0F, -1.0F))));
-    public static final Supplier<SwordItem> OSTRUM_SWORD = ITEMS.register("ostrum_sword", () -> new SwordItem(EUTiers.OSTRUM, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(EUTiers.OSTRUM, 3.0F, -2.8F))));
+    public static final Supplier<ShovelItem> THERMALYTE_SHOVEL = ITEMS.register("thermalyte_shovel", () -> new ShovelItem(EUTiers.THERMALYTE, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(EUTiers.THERMALYTE, 1.0F, -3.0F))));
+    public static final Supplier<PickaxeItem> THERMALYTE_PICKAXE = ITEMS.register("thermalyte_pickaxe", () -> new PickaxeItem(EUTiers.THERMALYTE, new Item.Properties().fireResistant().attributes(PickaxeItem.createAttributes(EUTiers.THERMALYTE, 1.5F, -2.8F))));
+    public static final Supplier<AxeItem> THERMALYTE_AXE = ITEMS.register("thermalyte_axe", () -> new AxeItem(EUTiers.THERMALYTE, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(EUTiers.THERMALYTE, 6.0F, -3.4F))));
+    public static final Supplier<HoeItem> THERMALYTE_HOE = ITEMS.register("thermalyte_hoe", () -> new HoeItem(EUTiers.THERMALYTE, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(EUTiers.THERMALYTE, -2.0F, -1.0F))));
+    public static final Supplier<SwordItem> THERMALYTE_SWORD = ITEMS.register("thermalyte_sword", () -> new SwordItem(EUTiers.THERMALYTE, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(EUTiers.THERMALYTE, 3.0F, -2.8F))));
 
     public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EUTiers.OBDURIUM, 3.0F, -3.2F))));
 

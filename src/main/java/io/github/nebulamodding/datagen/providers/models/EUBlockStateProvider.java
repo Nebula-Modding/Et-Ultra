@@ -3,6 +3,7 @@ package io.github.nebulamodding.datagen.providers.models;
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.registry.EUBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -26,7 +27,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         // To exclude a block, just add it to the list using #add
-        final List<DeferredBlock<Block>> excludedBlocks = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
+        excludedBlocks.add(EUBlocks.PLANET_BLOCKS.get("ganymede_block"));
+        excludedBlocks.add(EUBlocks.PLANET_BLOCKS.get("moon_block"));
         // Automatically provide models to blocks and block items
         for (var entry : EUBlocks.BLOCKS.getEntries()
                 .stream()
@@ -54,6 +57,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
 
     // Both of these are from BlockStateProvider
     // Please someone tell me why these are not protected or public...
+    // I don't knowwwwwwwww :sob:
     private ResourceLocation key(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block);
     }

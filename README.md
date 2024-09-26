@@ -22,14 +22,9 @@ How many celestial bodies does this mod add? 19 of them so far.
 For a list of changes and additions that definitely aren't spaced out like this to make this mod seem better than it actually is:
 
 ## Solar System
-- Changed Mercury
-- Changed Venus
-- Changed Earth (optional datapack)
-- Changed The Moon
-- Changed Mars
 
 Planned (and textured):
-
+- Earth Alternative Generation (Optional datapack)
 - Ceres
 - Jupiter
 - Ganymede
@@ -48,8 +43,6 @@ Planned (and textured):
 - Eris
 
 ## Proxima Centauri
-
-- Slightly edited Glacio (Will be removed from Ad Astra, so I don't want to put too much effort in)
 
 Planned:
 
