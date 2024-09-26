@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/chiseled_moon_deepslate_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/chiseled_moon_deepslate"
+    },
+    "type=top": {
+      "model": "et_ultra:block/chiseled_moon_deepslate_slab_top"
+    }
+  }
+}

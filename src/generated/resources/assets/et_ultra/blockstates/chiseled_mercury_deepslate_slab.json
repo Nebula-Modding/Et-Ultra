@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/chiseled_mercury_deepslate_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/chiseled_mercury_deepslate"
+    },
+    "type=top": {
+      "model": "et_ultra:block/chiseled_mercury_deepslate_slab_top"
+    }
+  }
+}

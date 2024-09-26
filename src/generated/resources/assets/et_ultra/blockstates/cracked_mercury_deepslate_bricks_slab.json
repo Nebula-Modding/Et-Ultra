@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/cracked_mercury_deepslate_bricks_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/cracked_mercury_deepslate_bricks"
+    },
+    "type=top": {
+      "model": "et_ultra:block/cracked_mercury_deepslate_bricks_slab_top"
+    }
+  }
+}
