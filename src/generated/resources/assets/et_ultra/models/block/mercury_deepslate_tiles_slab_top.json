@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "et_ultra:block/mercury_deepslate_tiles",
+    "side": "et_ultra:block/mercury_deepslate_tiles",
+    "top": "et_ultra:block/mercury_deepslate_tiles"
+  }
+}

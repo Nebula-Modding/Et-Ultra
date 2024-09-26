@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "et_ultra:block/chiseled_salt",
+    "side": "et_ultra:block/chiseled_salt",
+    "top": "et_ultra:block/chiseled_salt"
+  }
+}

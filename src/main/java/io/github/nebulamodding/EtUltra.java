@@ -4,6 +4,7 @@ import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUCreativeTab;
 import io.github.nebulamodding.registry.EUDatagen;
 import io.github.nebulamodding.registry.EUItems;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

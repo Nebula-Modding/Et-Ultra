@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/obdurium_plateblock_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/obdurium_plateblock"
+    },
+    "type=top": {
+      "model": "et_ultra:block/obdurium_plateblock_slab_top"
+    }
+  }
+}

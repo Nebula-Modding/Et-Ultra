@@ -3,12 +3,10 @@ package io.github.nebulamodding.registry;
 import io.github.nebulamodding.EtUltra;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithBlockUtil;
+import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.util.ColorRGBA;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ColoredFallingBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -21,33 +19,59 @@ public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Moon
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.DEEPSLATE),
-            "cobbled_moon_deepslate",
-            "chiseled_moon_deepslate",
-            "polished_moon_deepslate",
-            "moon_deepslate_bricks",
-            "cracked_moon_deepslate_bricks",
-            "moon_deepslate_tiles",
-            "moon_deepslate_pillar"
-    );
+            deepslateProperties().mapColor(MapColor.DEEPSLATE)
+    )
+            .register(
+                    "cobbled_moon_deepslate",
+                    "chiseled_moon_deepslate",
+                    "polished_moon_deepslate",
+                    "moon_deepslate_bricks",
+                    "cracked_moon_deepslate_bricks",
+                    "moon_deepslate_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "cobbled_moon_deepslate_slab",
+                    "chiseled_moon_deepslate_slab",
+                    "polished_moon_deepslate_slab",
+                    "moon_deepslate_bricks_slab",
+                    "cracked_moon_deepslate_bricks_slab",
+                    "moon_deepslate_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("moon_deepslate_pillar")
+            .done();
 
     // Mars
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MARS_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MARS_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE),
-            "mars_deepslate",
-            "cobbled_mars_deepslate",
-            "chiseled_mars_deepslate",
-            "polished_mars_deepslate",
-            "mars_deepslate_bricks",
-            "cracked_mars_deepslate_bricks",
-            "mars_deepslate_tiles",
-            "mars_deepslate_pillar"
-    );
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)
+    )
+            .register(
+                    "mars_deepslate",
+                    "cobbled_mars_deepslate",
+                    "chiseled_mars_deepslate",
+                    "polished_mars_deepslate",
+                    "mars_deepslate_bricks",
+                    "cracked_mars_deepslate_bricks",
+                    "mars_deepslate_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "mars_deepslate_slab",
+                    "cobbled_mars_deepslate_slab",
+                    "chiseled_mars_deepslate_slab",
+                    "polished_mars_deepslate_slab",
+                    "mars_deepslate_bricks_slab",
+                    "cracked_mars_deepslate_bricks_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("mars_deepslate_pillar")
+            .done();
 
     // Venus
     //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> VENUS_BLOCKS = RegolithBlockUtil.registerBlocks(
@@ -65,19 +89,33 @@ public class EUBlocks {
     //);
 
     // Mercury
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_PURPLE),
-            "mercury_deepslate",
-            "cobbled_mercury_deepslate",
-            "chiseled_mercury_deepslate",
-            "polished_mercury_deepslate",
-            "mercury_deepslate_bricks",
-            "cracked_mercury_deepslate_bricks",
-            "mercury_deepslate_tiles",
-            "mercury_deepslate_pillar"
-    );
+            deepslateProperties().mapColor(MapColor.COLOR_PURPLE)
+    )
+            .register(
+                    "mercury_deepslate",
+                    "cobbled_mercury_deepslate",
+                    "chiseled_mercury_deepslate",
+                    "polished_mercury_deepslate",
+                    "mercury_deepslate_bricks",
+                    "cracked_mercury_deepslate_bricks",
+                    "mercury_deepslate_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "mercury_deepslate_slab",
+                    "cobbled_mercury_deepslate_slab",
+                    "chiseled_mercury_deepslate_slab",
+                    "polished_mercury_deepslate_slab",
+                    "mercury_deepslate_bricks_slab",
+                    "cracked_mercury_deepslate_bricks_slab",
+                    "mercury_deepslate_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("mercury_deepslate_pillar")
+            .done();
 
 
     // Salt
@@ -92,36 +130,62 @@ public class EUBlocks {
             new ColorRGBA(0xdfcddd),
             dustBlockProperties().mapColor(MapColor.SNOW)
     ));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_COMPRESSED_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_COMPRESSED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            compressedDustProperties().mapColor(MapColor.SNOW),
-            "salt_block",
-            "chiseled_salt",
-            "polished_salt",
-            "salt_bricks",
-            "cracked_salt_bricks",
-            "salt_tiles",
-            "salt_pillar"
-    );
+            compressedDustProperties().mapColor(MapColor.SNOW)
+    )
+            .register(
+                    "salt_block",
+                    "chiseled_salt",
+                    "polished_salt",
+                    "salt_bricks",
+                    "cracked_salt_bricks",
+                    "salt_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "salt_block_slab",
+                    "chiseled_salt_slab",
+                    "polished_salt_slab",
+                    "salt_bricks_slab",
+                    "cracked_salt_bricks_slab",
+                    "salt_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("salt_pillar")
+            .done();
 
     // Graphite
     public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
             new ColorRGBA(0x2d261b),
             dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
     ));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK),
-            "graphite_block",
-            "chiseled_graphite",
-            "polished_graphite",
-            "graphite_bricks",
-            "cracked_graphite_bricks",
-            "graphite_tiles",
-            "graphite_pillar"
-    );
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    )
+            .register(
+                    "graphite_block",
+                    "chiseled_graphite",
+                    "polished_graphite",
+                    "graphite_bricks",
+                    "cracked_graphite_bricks",
+                    "graphite_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "graphite_block_slab",
+                    "chiseled_graphite_slab",
+                    "polished_graphite_slab",
+                    "graphite_bricks_slab",
+                    "cracked_graphite_bricks_slab",
+                    "graphite_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("graphite_pillar")
+            .done();
 
     // Ores
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
@@ -138,55 +202,77 @@ public class EUBlocks {
     // Blocks go here
 
     // Steel
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            steelProperties(),
-            "marked_steel_pillar"
-    );
+            steelProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_steel_pillar")
+            .done();
 
     // Etrium
     // Blocks go here
 
     // Desh
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deshProperties(),
-            "marked_desh_pillar"
-    );
+            deshProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_desh_pillar")
+            .done();
 
     // Ostrum
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            ostrumProperties(),
-            "marked_ostrum_pillar"
-    );
+            ostrumProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_ostrum_pillar")
+            .done();
 
     // Aerolyte
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            aerolyteProperties(),
-            "aerolyte_block"
-    );
+            aerolyteProperties()
+    )
+            .register("aerolyte_block")
+            .done();
 
     // Obdurium
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = RegolithBlockUtil.registerBlocks(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            obduriumProperties(),
-            "obdurium_factory_block",
-            //"encased_obdurium_block",
-            "obdurium_plateblock",
-            "obdurium_panel",
-            "obdurium_block",
-            "obdurium_plating",
-            "obdurium_pillar",
-            //"glowing_obdurium_pillar",
-            "marked_obdurium_pillar"
-    );
+            obduriumProperties()
+    )
+            .register(
+                    "obdurium_factory_block",
+                    //"encased_obdurium_block",
+                    "obdurium_plateblock",
+                    "obdurium_panel",
+                    "obdurium_block",
+                    "obdurium_plating"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "obdurium_factory_block_slab",
+                    //"encased_obdurium_block_slab",
+                    "obdurium_plateblock_slab",
+                    "obdurium_panel_slab",
+                    "obdurium_block_slab",
+                    "obdurium_plating_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register(
+                    "obdurium_pillar",
+                    //"glowing_obdurium_pillar",
+                    "marked_obdurium_pillar"
+            )
+            .done();
 
     //Planet Blocks (Joke)
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PLANET_BLOCKS = RegolithBlockUtil.registerBlocks(

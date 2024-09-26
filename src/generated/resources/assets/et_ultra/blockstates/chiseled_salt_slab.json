@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/chiseled_salt_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/chiseled_salt"
+    },
+    "type=top": {
+      "model": "et_ultra:block/chiseled_salt_slab_top"
+    }
+  }
+}
