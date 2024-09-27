@@ -24,7 +24,7 @@ public class EULangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        // To exclude an item, just add it to the list using #add
+        // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
         langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block"));
@@ -37,6 +37,15 @@ public class EULangProvider extends LanguageProvider {
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block_slab"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_tiles_slab"));
+
+        // To exclude an item, just add it to the list using #add
+        final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
+        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_SHOVEL);
+        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_PICKAXE);
+        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_AXE);
+        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_HOE);
+        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_SWORD);
+
         // Automatically provide translations
         EUBlocks.BLOCKS.getEntries()
                 .stream()
@@ -48,7 +57,8 @@ public class EULangProvider extends LanguageProvider {
                                 .replace("_", " "))));
 
         EUItems.ITEMS.getEntries()
-                .stream().filter(i -> !(i.get() instanceof BlockItem))
+                .stream()
+                .filter(i -> !(i.get() instanceof BlockItem) && !langExcludedItems.contains(i))
                 .forEach(entry -> addItem(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
@@ -70,7 +80,11 @@ public class EULangProvider extends LanguageProvider {
         addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_tiles_slab"), "Graphite Tile Slab");
 
         // Items
-        // Items go here
+        addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Shovel");
+        addItem(EUItems.THERMALYTE_PICKAXE, "Thermalyte Pickaxe");
+        addItem(EUItems.THERMALYTE_AXE, "Thermalyte Axe");
+        addItem(EUItems.THERMALYTE_HOE, "Thermalyte Swoe");
+        addItem(EUItems.THERMALYTE_SWORD, "Thermalyte Greatsword");
 
         // Other Stuff
         add(EUCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");

@@ -95,9 +95,9 @@
   "item.et_ultra.raw_etrium": "Raw Etrium",
   "item.et_ultra.raw_obdurium": "Raw Obdurium",
   "item.et_ultra.thermalyte_axe": "Thermalyte Axe",
-  "item.et_ultra.thermalyte_hoe": "Thermalyte Hoe",
+  "item.et_ultra.thermalyte_hoe": "Thermalyte Swoe",
   "item.et_ultra.thermalyte_pickaxe": "Thermalyte Pickaxe",
   "item.et_ultra.thermalyte_shovel": "Thermalyte Shovel",
-  "item.et_ultra.thermalyte_sword": "Thermalyte Sword",
+  "item.et_ultra.thermalyte_sword": "Thermalyte Greatsword",
   "itemGroup.et_ultra.main": "Et Ultra"
 }
