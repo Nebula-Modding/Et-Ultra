@@ -35,10 +35,8 @@ public class EUBlocks {
             .setBlockFunction(SlabBlock::new)
             .register(
                     "cobbled_moon_deepslate_slab",
-                    "chiseled_moon_deepslate_slab",
                     "polished_moon_deepslate_slab",
                     "moon_deepslate_bricks_slab",
-                    "cracked_moon_deepslate_bricks_slab",
                     "moon_deepslate_tiles_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
@@ -64,29 +62,15 @@ public class EUBlocks {
             .register(
                     "mars_deepslate_slab",
                     "cobbled_mars_deepslate_slab",
-                    "chiseled_mars_deepslate_slab",
                     "polished_mars_deepslate_slab",
                     "mars_deepslate_bricks_slab",
-                    "cracked_mars_deepslate_bricks_slab"
+                    "mars_deepslate_tiles_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("mars_deepslate_pillar")
             .done();
 
     // Venus
-    //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> VENUS_BLOCKS = RegolithBlockUtil.registerBlocks(
-    //        RegolithNeoForge.wrapBlocks(BLOCKS),
-    //        RegolithNeoForge.wrapItems(EtUltraItems.ITEMS),
-    //        deepslateProperties().mapColor(MapColor.COLOR_ORANGE),
-    //        "venus_deepslate",
-    //        "cobbled_venus_deepslate",
-    //        "chiseled_venus_deepslate",
-    //        "polished_venus_deepslate",
-    //        "venus_deepslate_bricks",
-    //        "cracked_venus_deepslate_bricks",
-    //        "venus_deepslate_tiles",
-    //        "venus_deepslate_pillar"
-    //);
 
     // Mercury
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = new RegolithBlockBuilder<>(
@@ -107,10 +91,8 @@ public class EUBlocks {
             .register(
                     "mercury_deepslate_slab",
                     "cobbled_mercury_deepslate_slab",
-                    "chiseled_mercury_deepslate_slab",
                     "polished_mercury_deepslate_slab",
                     "mercury_deepslate_bricks_slab",
-                    "cracked_mercury_deepslate_bricks_slab",
                     "mercury_deepslate_tiles_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
@@ -146,10 +128,8 @@ public class EUBlocks {
             .setBlockFunction(SlabBlock::new)
             .register(
                     "salt_block_slab",
-                    "chiseled_salt_slab",
                     "polished_salt_slab",
                     "salt_bricks_slab",
-                    "cracked_salt_bricks_slab",
                     "salt_tiles_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
@@ -177,10 +157,8 @@ public class EUBlocks {
             .setBlockFunction(SlabBlock::new)
             .register(
                     "graphite_block_slab",
-                    "chiseled_graphite_slab",
                     "polished_graphite_slab",
                     "graphite_bricks_slab",
-                    "cracked_graphite_bricks_slab",
                     "graphite_tiles_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
@@ -259,11 +237,6 @@ public class EUBlocks {
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "obdurium_factory_block_slab",
-                    //"encased_obdurium_block_slab",
-                    "obdurium_plateblock_slab",
-                    "obdurium_panel_slab",
-                    "obdurium_block_slab",
                     "obdurium_plating_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/cracked_moon_deepslate_bricks",
-    "side": "et_ultra:block/cracked_moon_deepslate_bricks",
-    "top": "et_ultra:block/cracked_moon_deepslate_bricks"
-  }
-}
