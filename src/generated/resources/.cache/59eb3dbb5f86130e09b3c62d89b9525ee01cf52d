@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-26T18:30:07.9575173	Loot Tables
+// 1.21.1	2024-09-26T22:34:47.2204576	Loot Tables
 1a2e72fdec4907ab85bdfc29ace94c652314bac2 data/et_ultra/loot_table/blocks/aerolyte_block.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
@@ -52,14 +52,10 @@ f8f9b8f0b9ebf4fe8c0a11836c3eda4431d7da3c data/et_ultra/loot_table/blocks/moon_de
 c3c410680aca2a88524e02263284f885fbf4dbe4 data/et_ultra/loot_table/blocks/moon_deepslate_tiles.json
 879c7a4eee73715a3b2e7a7382e3cdc46d7b5d70 data/et_ultra/loot_table/blocks/moon_deepslate_tiles_slab.json
 297bc4250c092524dfcbf40c1c379597d33da692 data/et_ultra/loot_table/blocks/obdurium_block.json
-a5de82c311c8aeac5bcc2d4d1794b8da42f41151 data/et_ultra/loot_table/blocks/obdurium_block_slab.json
 9c34605d49a1b29791668ab31eb37ff6c5601252 data/et_ultra/loot_table/blocks/obdurium_factory_block.json
-bd975582e68ce00148d53645d5244f4a92feb28e data/et_ultra/loot_table/blocks/obdurium_factory_block_slab.json
 aad75be1d7000b85824255a4f1e80be30ac2e230 data/et_ultra/loot_table/blocks/obdurium_panel.json
-fcfd9c802d119f94e2e1265ddad5d615af7e1d52 data/et_ultra/loot_table/blocks/obdurium_panel_slab.json
 aeed2e9829b4f0d3c2c48ff599c663c6ff0ef9c7 data/et_ultra/loot_table/blocks/obdurium_pillar.json
 69e38f2666ca5915cb7dea5ada7713dd7f0fd6ad data/et_ultra/loot_table/blocks/obdurium_plateblock.json
-6f04aeee3ae703da32b48240490b9127298de98f data/et_ultra/loot_table/blocks/obdurium_plateblock_slab.json
 1de9649b0eed7fc52e6862802e57b026cf98d5e4 data/et_ultra/loot_table/blocks/obdurium_plating.json
 7a17ca0ca0938078f0db23775eadd873e89c2d5d data/et_ultra/loot_table/blocks/obdurium_plating_slab.json
 2976aa9752315001162d65c3f8390caa2e0e117b data/et_ultra/loot_table/blocks/polished_graphite.json

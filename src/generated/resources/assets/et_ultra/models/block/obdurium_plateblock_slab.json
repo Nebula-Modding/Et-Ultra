@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/obdurium_plateblock",
-    "side": "et_ultra:block/obdurium_plateblock",
-    "top": "et_ultra:block/obdurium_plateblock"
-  }
-}
