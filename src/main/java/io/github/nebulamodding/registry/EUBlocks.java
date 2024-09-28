@@ -229,7 +229,7 @@ public class EUBlocks {
     )
             .register(
                     "obdurium_factory_block",
-                    //"encased_obdurium_block",
+                    "encased_obdurium_block",
                     "obdurium_plateblock",
                     "obdurium_panel",
                     "obdurium_block",
@@ -242,7 +242,7 @@ public class EUBlocks {
             .setBlockFunction(RotatedPillarBlock::new)
             .register(
                     "obdurium_pillar",
-                    //"glowing_obdurium_pillar",
+                    "glowing_obdurium_pillar",
                     "marked_obdurium_pillar"
             )
             .done();
