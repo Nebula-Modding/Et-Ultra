@@ -40,8 +40,11 @@ public class EULangProvider extends LanguageProvider {
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block_slab"));
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_tiles_slab"));
+        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"));
+        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("polished_graphite_crystal"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
+        langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("polished_graphite"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block_slab"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_BLOCKS.get("graphite_tiles_slab"));
@@ -91,7 +94,10 @@ public class EULangProvider extends LanguageProvider {
         addBlock(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_bricks_slab"), "Salt Brick Slab");
         addBlock(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_tiles_slab"), "Salt Tile Slab");
 
-        addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block"), "Block of Graphite");
+        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"), "Block of Graphite");
+        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("polished_graphite_crystal"), "Polished Graphite");
+        addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block"), "Packed Graphite");
+        addBlock(EUBlocks.GRAPHITE_BLOCKS.get("polished_graphite"), "Polished Packed Graphite");
         addBlock(EUBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
         addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_block_slab"), "Graphite Slab");
         addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_bricks_slab"), "Graphite Brick Slab");
