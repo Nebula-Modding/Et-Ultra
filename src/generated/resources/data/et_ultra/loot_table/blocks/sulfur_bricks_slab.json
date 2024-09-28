@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "et_ultra:polished_graphite_crystal"
+          "name": "et_ultra:sulfur_bricks_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "et_ultra:blocks/polished_graphite_crystal"
+  "random_sequence": "et_ultra:blocks/sulfur_bricks_slab"
 }
