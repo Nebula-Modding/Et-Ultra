@@ -27,8 +27,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
-        excludedBlocks.add(EUBlocks.PLANET_BLOCKS.get("ganymede_block"));
-        excludedBlocks.add(EUBlocks.PLANET_BLOCKS.get("moon_block"));
+        //excludedBlocks.add(EUBlocks.PLANET_BLOCKS.get("ganymede_block"));
         // Automatically provide models to blocks and block items
         for (var entry : EUBlocks.BLOCKS.getEntries()
                 .stream()

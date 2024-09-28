@@ -213,13 +213,13 @@ public class EUBlocks {
             .done();
 
     // Aerolyte
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            aerolyteProperties()
-    )
-            .register("aerolyte_block")
-            .done();
+    //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = new RegolithBlockBuilder<>(
+    //        RegolithNeoForge.wrapBlocks(BLOCKS),
+    //        RegolithNeoForge.wrapItems(EUItems.ITEMS),
+    //        aerolyteProperties()
+    //)
+    //        .register("aerolyte_block")
+    //        .done();
 
     // Obdurium
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = new RegolithBlockBuilder<>(
@@ -246,15 +246,6 @@ public class EUBlocks {
                     "marked_obdurium_pillar"
             )
             .done();
-
-    //Planet Blocks (Joke)
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PLANET_BLOCKS = RegolithBlockUtil.registerBlocks(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties(),
-            "ganymede_block",
-            "moon_block"
-    );
 
     // Common properties
     private static BlockBehaviour.Properties stoneProperties() {
