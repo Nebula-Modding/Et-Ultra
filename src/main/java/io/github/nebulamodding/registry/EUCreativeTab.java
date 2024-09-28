@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -24,7 +25,7 @@ public class EUCreativeTab {
                     .forEach(block -> output.accept(block.get()));
         });
 
-        builder.icon(() -> new ItemStack(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get()));
+        builder.icon(() -> new ItemStack((ItemLike) EUItems.OBDURIUM_HAMMER));
         builder.title(Component.translatable(ETULTRA_TAB_TITLE));
 
         return builder.build();
