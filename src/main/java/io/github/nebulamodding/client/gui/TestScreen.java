@@ -27,10 +27,10 @@ public class TestScreen extends Screen {
         });
 
         Button.Builder dimSwap = new Button.Builder(Component.literal("Nether"), button ->{
-            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @a in minecraft:the_nether run tp @a 0 60 0");
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @s in minecraft:the_nether run tp @a ~ ~ ~");
         });
         Button.Builder dimSwapOverWorld = new Button.Builder(Component.literal("Overworld"), button -> {
-            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @a in minecraft:overworld run tp @a 0 90 0");
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @s in minecraft:overworld run tp @a ~ ~ ~");
         });
         dimSwapOverWorld.bounds(170, 10, 50, 20);
         this.addRenderableWidget(dimSwapOverWorld.build());
