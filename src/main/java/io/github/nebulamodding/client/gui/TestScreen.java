@@ -4,6 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.portal.DimensionTransition;
 
 public class TestScreen extends Screen {
     public TestScreen() {
@@ -25,6 +26,16 @@ public class TestScreen extends Screen {
             Minecraft.getInstance().player.connection.sendCommand("summon slime ~ ~ ~ {Glowing:1b,CustomName:'\"Goo Man\"',attributes:[{id:\"minecraft:generic.scale\",base:16}]}");
         });
 
+        Button.Builder dimSwap = new Button.Builder(Component.literal("Nether"), button ->{
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @a in minecraft:the_nether run tp @a 0 60 0");
+        });
+        Button.Builder dimSwapOverWorld = new Button.Builder(Component.literal("Overworld"), button -> {
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @a in minecraft:overworld run tp @a 0 90 0");
+        });
+        dimSwapOverWorld.bounds(170, 10, 50, 20);
+        this.addRenderableWidget(dimSwapOverWorld.build());
+        dimSwap.bounds(110,10,50,20);
+        this.addRenderableWidget(dimSwap.build());
         gooButton.bounds(60,10,50,20);
         this.addRenderableWidget(gooButton.build());
 
