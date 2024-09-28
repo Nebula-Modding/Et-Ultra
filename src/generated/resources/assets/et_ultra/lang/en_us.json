@@ -19,10 +19,11 @@
   "block.et_ultra.etrium_ore": "Etrium Ore",
   "block.et_ultra.glacio_obdurium_ore": "Glacio Obdurium Ore",
   "block.et_ultra.glowing_obdurium_pillar": "Glowing Obdurium Pillar",
-  "block.et_ultra.graphite_block": "Block of Graphite",
+  "block.et_ultra.graphite_block": "Packed Graphite",
   "block.et_ultra.graphite_block_slab": "Graphite Slab",
   "block.et_ultra.graphite_bricks": "Graphite Bricks",
   "block.et_ultra.graphite_bricks_slab": "Graphite Brick Slab",
+  "block.et_ultra.graphite_crystal_block": "Block of Graphite",
   "block.et_ultra.graphite_dust_block": "Block of Graphite Dust",
   "block.et_ultra.graphite_pillar": "Graphite Pillar",
   "block.et_ultra.graphite_tiles": "Graphite Tiles",
@@ -57,7 +58,8 @@
   "block.et_ultra.obdurium_plateblock": "Obdurium Plateblock",
   "block.et_ultra.obdurium_plating": "Obdurium Plating",
   "block.et_ultra.obdurium_plating_slab": "Obdurium Plating Slab",
-  "block.et_ultra.polished_graphite": "Polished Graphite",
+  "block.et_ultra.polished_graphite": "Polished Packed Graphite",
+  "block.et_ultra.polished_graphite_crystal": "Polished Graphite",
   "block.et_ultra.polished_graphite_slab": "Polished Graphite Slab",
   "block.et_ultra.polished_mars_deepslate": "Polished Mars Deepslate",
   "block.et_ultra.polished_mars_deepslate_slab": "Polished Mars Deepslate Slab",
@@ -99,5 +101,5 @@
   "item.et_ultra.thermalyte_shovel": "Thermalyte Spade",
   "item.et_ultra.thermalyte_sword": "Thermalyte Greatsword",
   "itemGroup.et_ultra.main": "Et Ultra",
-  "net.minecraft.client.KeyMapping@61f2600a": "Test Screen Key"
+  "net.minecraft.client.KeyMapping@38f2e385": "Test Screen Key"
 }

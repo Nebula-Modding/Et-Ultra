@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T20:42:41.0702076	Loot Tables
+// 1.21.1	2024-09-27T22:12:30.0873368	Loot Tables
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
 f755c2cbc0909c8751200605f4d1d3d6e2136fb9 data/et_ultra/loot_table/blocks/chiseled_mercury_deepslate.json
@@ -23,6 +23,7 @@ e63f45998dcd6b41c732c105bcfcc5cd7e9fa0ea data/et_ultra/loot_table/blocks/graphit
 8d3fa711bdad73c220266f38c2b815792f6cbb70 data/et_ultra/loot_table/blocks/graphite_block_slab.json
 f6ae01dd3a1b651b8d055e15c65c7b9d9d83f344 data/et_ultra/loot_table/blocks/graphite_bricks.json
 b8f4351f4ba962af76a37728577c29dd1a567a77 data/et_ultra/loot_table/blocks/graphite_bricks_slab.json
+cac0687079bc07511af47a0f3105360d3bc64ccd data/et_ultra/loot_table/blocks/graphite_crystal_block.json
 c7844a0748c28dc740f31d0eb4f0649b7a305160 data/et_ultra/loot_table/blocks/graphite_dust_block.json
 8101003450b62fe2c8844d1daf922a9966586d97 data/et_ultra/loot_table/blocks/graphite_pillar.json
 3ff1e242d393a880040b03e73a96f2fbd4edbd38 data/et_ultra/loot_table/blocks/graphite_tiles.json
@@ -58,6 +59,7 @@ aeed2e9829b4f0d3c2c48ff599c663c6ff0ef9c7 data/et_ultra/loot_table/blocks/obduriu
 1de9649b0eed7fc52e6862802e57b026cf98d5e4 data/et_ultra/loot_table/blocks/obdurium_plating.json
 7a17ca0ca0938078f0db23775eadd873e89c2d5d data/et_ultra/loot_table/blocks/obdurium_plating_slab.json
 2976aa9752315001162d65c3f8390caa2e0e117b data/et_ultra/loot_table/blocks/polished_graphite.json
+ef05daf72a0deb5903a58982a737473b095653f6 data/et_ultra/loot_table/blocks/polished_graphite_crystal.json
 96cbee5e3ceb1ddc355ba2b01f7c7251e6b66928 data/et_ultra/loot_table/blocks/polished_graphite_slab.json
 d45af6145fc277a01819bdb1e6000fc6abeccf62 data/et_ultra/loot_table/blocks/polished_mars_deepslate.json
 d747b613f3749ae6f3e8da682c546ab763936bbb data/et_ultra/loot_table/blocks/polished_mars_deepslate_slab.json

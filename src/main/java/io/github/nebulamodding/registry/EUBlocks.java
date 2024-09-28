@@ -137,6 +137,16 @@ public class EUBlocks {
             .done();
 
     // Graphite
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_CRYSTAL_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    )
+            .register(
+                    "graphite_crystal_block",
+                    "polished_graphite_crystal"
+            )
+            .done();
     public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
             new ColorRGBA(0x2d261b),
             dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
