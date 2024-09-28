@@ -96,7 +96,8 @@
   "item.et_ultra.thermalyte_axe": "Thermalyte Axe",
   "item.et_ultra.thermalyte_hoe": "Thermalyte Swoe",
   "item.et_ultra.thermalyte_pickaxe": "Thermalyte Pickaxe",
-  "item.et_ultra.thermalyte_shovel": "Thermalyte Shovel",
+  "item.et_ultra.thermalyte_shovel": "Thermalyte Spade",
   "item.et_ultra.thermalyte_sword": "Thermalyte Greatsword",
-  "itemGroup.et_ultra.main": "Et Ultra"
+  "itemGroup.et_ultra.main": "Et Ultra",
+  "net.minecraft.client.KeyMapping@61f2600a": "Test Screen Key"
 }

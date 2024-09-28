@@ -1,6 +1,7 @@
 package io.github.nebulamodding.datagen.providers;
 
 import io.github.nebulamodding.EtUltra;
+import io.github.nebulamodding.client.EUEventHandler;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUItems;
 import io.github.nebulamodding.registry.EUCreativeTab;
@@ -97,7 +98,7 @@ public class EULangProvider extends LanguageProvider {
         addBlock(EUBlocks.GRAPHITE_BLOCKS.get("graphite_tiles_slab"), "Graphite Tile Slab");
 
         // Items
-        addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Shovel");
+        addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Spade");
         addItem(EUItems.THERMALYTE_PICKAXE, "Thermalyte Pickaxe");
         addItem(EUItems.THERMALYTE_AXE, "Thermalyte Axe");
         addItem(EUItems.THERMALYTE_HOE, "Thermalyte Swoe");
@@ -105,5 +106,6 @@ public class EULangProvider extends LanguageProvider {
 
         // Other Stuff
         add(EUCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");
+        add(String.valueOf(EUEventHandler.TestScreenKey), "Test Screen Key");
     }
 }
