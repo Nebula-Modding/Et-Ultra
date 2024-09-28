@@ -1,10 +1,12 @@
 package io.github.nebulamodding;
 
+import io.github.nebulamodding.client.EtUltraEventHandler;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUCreativeTab;
 import io.github.nebulamodding.registry.EUDatagen;
 import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,7 +35,10 @@ public class EtUltra {
         EUItems.ITEMS.register(modBus);
         EUCreativeTab.CREATIVE_MODE_TABS.register(modBus);
 
+
         modBus.addListener(EUDatagen::gatherData);
+        NeoForge.EVENT_BUS.register(EtUltraEventHandler.class);
+
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
