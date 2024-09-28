@@ -26,7 +26,14 @@ public class EULangProvider extends LanguageProvider {
     protected void addTranslations() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
+        langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tiles_slab"));
+        langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tiles_slab"));
+        langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"));
         langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"));
+        langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block"));
         langExcludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block_slab"));
@@ -66,7 +73,17 @@ public class EULangProvider extends LanguageProvider {
                                 .replace("_", " "))));
 
         //Blocks
-        addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"), "Block of Salt Crystals");
+        addBlock(EUBlocks.MOON_BLOCKS.get("moon_deepslate_bricks_slab"), "Moon Deepslate Brick Slab");
+        addBlock(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tiles_slab"), "Moon Deepslate Tile Slab");
+
+        addBlock(EUBlocks.MARS_BLOCKS.get("mars_deepslate_bricks_slab"), "Mars Deepslate Brick Slab");
+        addBlock(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tiles_slab"), "Mars Deepslate Tile Slab");
+
+        addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"), "Mercury Deepslate Brick Slab");
+        addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"), "Mercury Deepslate Tile Slab");
+
+        addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"), "Block of Salt Crystal");
+        addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"), "Polished Salt Crystal");
         addBlock(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block"), "Block of Salt");
         addBlock(EUBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");
         addBlock(EUBlocks.SALT_COMPRESSED_BLOCKS.get("salt_block_slab"), "Salt Slab");

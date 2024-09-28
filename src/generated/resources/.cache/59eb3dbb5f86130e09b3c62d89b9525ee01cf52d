@@ -1,5 +1,4 @@
-// 1.21.1	2024-09-26T22:34:47.2204576	Loot Tables
-1a2e72fdec4907ab85bdfc29ace94c652314bac2 data/et_ultra/loot_table/blocks/aerolyte_block.json
+// 1.21.1	2024-09-27T20:28:47.3283649	Loot Tables
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
 f755c2cbc0909c8751200605f4d1d3d6e2136fb9 data/et_ultra/loot_table/blocks/chiseled_mercury_deepslate.json
@@ -17,7 +16,6 @@ f950f3402dbe03efeb15e50152cef118301eeba8 data/et_ultra/loot_table/blocks/cobbled
 c83c0f085b3f3265bfc714634394dbe12174b158 data/et_ultra/loot_table/blocks/cracked_moon_deepslate_bricks.json
 26e99c7a5031ff9a6c7e7935b3e68d47bd0b7777 data/et_ultra/loot_table/blocks/cracked_salt_bricks.json
 3e9da2cda5a4d6546b4e2fa0a85f7e0129b5c7dc data/et_ultra/loot_table/blocks/etrium_ore.json
-5f8bae23b71594c0315484e686536e020d7f05e2 data/et_ultra/loot_table/blocks/ganymede_block.json
 71b711acf2ba2ce94a4d5fc463439e6bb57a2747 data/et_ultra/loot_table/blocks/glacio_obdurium_ore.json
 e63f45998dcd6b41c732c105bcfcc5cd7e9fa0ea data/et_ultra/loot_table/blocks/graphite_block.json
 8d3fa711bdad73c220266f38c2b815792f6cbb70 data/et_ultra/loot_table/blocks/graphite_block_slab.json
@@ -45,7 +43,6 @@ e7849a956268fb1bff8544175854b15a9de42051 data/et_ultra/loot_table/blocks/mercury
 c512ce0b263d405bdde26d11951a92c8bbbd25e7 data/et_ultra/loot_table/blocks/mercury_deepslate_slab.json
 b4fcae90d88e01069e9402ac0ee9bf1650bd28e8 data/et_ultra/loot_table/blocks/mercury_deepslate_tiles.json
 1402dd4903baffd1b833bdaf50a5f95630f57e94 data/et_ultra/loot_table/blocks/mercury_deepslate_tiles_slab.json
-58135cf9b502f90bd06c120488ecb16e9a994972 data/et_ultra/loot_table/blocks/moon_block.json
 f8f9b8f0b9ebf4fe8c0a11836c3eda4431d7da3c data/et_ultra/loot_table/blocks/moon_deepslate_bricks.json
 836e753ac62a7d0290f00bc84c9a122d3474bafc data/et_ultra/loot_table/blocks/moon_deepslate_bricks_slab.json
 911f6e8c6ea47d2c5662ce6ce1dfb196554a7c8a data/et_ultra/loot_table/blocks/moon_deepslate_pillar.json
