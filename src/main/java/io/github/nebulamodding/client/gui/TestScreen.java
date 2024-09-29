@@ -1,9 +1,12 @@
 package io.github.nebulamodding.client.gui;
 
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.portal.DimensionTransition;
 
 public class TestScreen extends Screen {
@@ -32,7 +35,13 @@ public class TestScreen extends Screen {
         Button.Builder dimSwapOverWorld = new Button.Builder(Component.literal("Overworld"), button -> {
             Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @s in minecraft:overworld run tp @a ~ ~ ~");
         });
-        dimSwapOverWorld.bounds(170, 10, 50, 20);
+        Button.Builder getItems_Obdurium = new Button.Builder(Component.literal("Obdurium"), button ->{
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("give @s et_ultra:obdurium_hammer");
+        });
+
+        getItems_Obdurium.bounds(210,10,50,20);
+        this.addRenderableWidget(getItems_Obdurium.build());
+        dimSwapOverWorld.bounds(160, 10, 50, 20);
         this.addRenderableWidget(dimSwapOverWorld.build());
         dimSwap.bounds(110,10,50,20);
         this.addRenderableWidget(dimSwap.build());
