@@ -5,6 +5,7 @@ import io.github.nebulamodding.client.EUEventHandler;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUItems;
 import io.github.nebulamodding.registry.EUCreativeTab;
+import io.github.nebulamodding.registry.EUTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -126,6 +127,17 @@ public class EULangProvider extends LanguageProvider {
         addItem(EUItems.THERMALYTE_AXE, "Thermalyte Broadaxe");
         addItem(EUItems.THERMALYTE_HOE, "Thermalyte Swoe");
         addItem(EUItems.THERMALYTE_SWORD, "Thermalyte Greatsword");
+
+        // Block Tags
+        add(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+
+        // Block Item Tags
+        add(EUTags.EUItemTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+
+        // Item Tags
+        add(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM, "Obdurium Raw Materials");
+        add(EUTags.EUItemTags.NUGGETS_OBDURIUM, "Obdurium Nuggets");
+        add(EUTags.EUItemTags.INGOTS_OBDURIUM, "Obdurium Ingots");
 
         // Other Stuff
         add(EUCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");

@@ -6,6 +6,7 @@ import io.github.nebulamodding.registry.EUTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -21,50 +22,71 @@ public class EUItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        // Copy block tags onto the item
-        //copy(EtUltraTags.EtUltraBlockTags.TEST_BLOCKS, EtUltraTags.EtUltraItemTags.TEST_BLOCKS);
+        // Copy Et Ultra Block Tags
+        copy(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, EUTags.EUItemTags.STORAGE_BLOCKS_OBDURIUM);
+        // Copy Neoforge Block Tags
+        copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
+        // Copy Minecraft Block Tags
+        //copy(BlockTags.TAGHERE, BlockTags.TAGHERE);
 
-        // Item Tags
-
-        // Obdurium
-        tag(EUTags.EtUltraItemTags.NUGGETS_OBDURIUM)
+        // Et Ultra Tags
+        tag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
+                .add(EUItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
+        ;
+        tag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
         ;
-
-        tag(EUTags.EtUltraItemTags.INGOTS_OBDURIUM)
+        tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
                 .add(EUItems.OBDURIUM_INGOT.get())
         ;
-
-        // General Minecraft Stuff
-        // Metal Stuffs
+        // Neoforge Tags
+        tag(Tags.Items.RAW_MATERIALS)
+                .addTag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
+        ;
         tag(Tags.Items.INGOTS)
-                .add(EUItems.OBDURIUM_INGOT.get())
+                .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
+        ;
+        tag(Tags.Items.NUGGETS)
+                .addTag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
+        ;
+        tag(Tags.Items.MELEE_WEAPON_TOOLS)
+                .addTag(ItemTags.AXES)
+                .addTag(ItemTags.SWORDS)
+        ;
+        tag(Tags.Items.MINING_TOOL_TOOLS)
+                .addTag(ItemTags.PICKAXES)
         ;
 
-        // Tool Tags
+        // Minecraft Tags
+        tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
+        ;
+        tag(ItemTags.TRIM_MATERIALS)
+                .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
+        ;
         tag(ItemTags.SHOVELS)
                 .add(EUItems.DESH_SHOVEL.get())
                 .add(EUItems.THERMALYTE_SHOVEL.get())
         ;
-
         tag(ItemTags.PICKAXES)
                 .add(EUItems.DESH_PICKAXE.get())
                 .add(EUItems.THERMALYTE_PICKAXE.get())
         ;
-
         tag(ItemTags.AXES)
                 .add(EUItems.DESH_AXE.get())
                 .add(EUItems.THERMALYTE_AXE.get())
         ;
-
         tag(ItemTags.HOES)
                 .add(EUItems.DESH_HOE.get())
                 .add(EUItems.THERMALYTE_HOE.get())
         ;
-
         tag(ItemTags.SWORDS)
                 .add(EUItems.DESH_SWORD.get())
                 .add(EUItems.THERMALYTE_SWORD.get())
+                .add(EUItems.THERMALYTE_HOE.get())
+        ;
+        tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
+                .addTag(ItemTags.PICKAXES)
         ;
     }
 }

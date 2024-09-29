@@ -19,8 +19,8 @@ public class EUFurnaceProvider extends EURecipes {
         //Remind me to make a tutorial on this
         // This is your friendly reminder to make a tutorial on this (-Emma)
 
-//        SimpleCookingRecipeBuilder.smelting(Ingredient.of(EtUltraTags.EtUltraItemTags.EXAMPLE_RAW_TAG), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM, 0.6f, 300)
-//                .unlockedBy("has_item", has(EtUltraTags.EtUltraItemTags.EXAMPLE_RAW_TAG))
+//        SimpleCookingRecipeBuilder.smelting(Ingredient.of(EtUltraTags.EUItemTags.EXAMPLE_RAW_TAG), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM, 0.6f, 300)
+//                .unlockedBy("has_item", has(EtUltraTags.EUItemTags.EXAMPLE_RAW_TAG))
 //                .save(this.recipeOutput, getModId("example_item_smelting"));
 //
 //        SimpleCookingRecipeBuilder.blasting(Ingredient.of(TagsInit.ItemTagsInit.EXAMPLE_RAW_TAG), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM, 0.6f, 100)

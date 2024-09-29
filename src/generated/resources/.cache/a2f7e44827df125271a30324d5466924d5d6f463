@@ -1,9 +1,18 @@
-// 1.21.1	2024-09-25T18:24:45.530929	Tags for minecraft:item mod id et_ultra
-8508932555971d225ee221864602cc6b0d486e4e data/c/tags/item/ingots.json
+// 1.21.1	2024-09-28T20:08:12.3473307	Tags for minecraft:item mod id et_ultra
+b40a05499ec9ad971f9f64f0c16976afea01cb23 data/c/tags/item/ingots.json
+269889b7094a1741b815ba26e60e413b9491ca21 data/c/tags/item/nuggets.json
+f5fc4eb037350d4a05d8f517eaefc27ca604e48b data/c/tags/item/raw_materials.json
+63fd04f577f61675d0d51a0566d2cbcf97cbf85b data/c/tags/item/tools/melee_weapon.json
+bdb4053d28def340c591bb6cd77b677cfe510db6 data/c/tags/item/tools/mining_tool.json
 8508932555971d225ee221864602cc6b0d486e4e data/et_ultra/tags/item/ingots/obdurium.json
 d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/et_ultra/tags/item/nuggets/obdurium.json
+c3f1565b34e1d7165c6ac0f69262ea663f5c4e6b data/et_ultra/tags/item/raw_material/obdurium.json
+825103f5dd04c3ab80127f55d3c88042d2fcc61c data/et_ultra/tags/item/storage_blocks/obdurium.json
 6aa58377da34facee797edde0c1215ed9eacc4df data/minecraft/tags/item/axes.json
+b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/beacon_payment_items.json
+bdb4053d28def340c591bb6cd77b677cfe510db6 data/minecraft/tags/item/cluster_max_harvestables.json
 c97ba24ae146c68f5d639841ab8eb3ba5bcb73a3 data/minecraft/tags/item/hoes.json
 25f6df5189550dab43b83517c70fda1d0f9e3315 data/minecraft/tags/item/pickaxes.json
 48e6b27742d4f6bd6ddf8336b8f8432a09e3ec11 data/minecraft/tags/item/shovels.json
-6c5b514b25a7efe6a1e6428567208a0202abd2ae data/minecraft/tags/item/swords.json
+a7c09ec1e54cec64fc1f806a04d2a28485bca7b5 data/minecraft/tags/item/swords.json
+b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/trim_materials.json
