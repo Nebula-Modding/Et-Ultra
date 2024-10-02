@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T19:09:59.2707225	Loot Tables
+// 1.21.1	2024-10-02T00:24:26.6084297	Loot Tables
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
 a9842e93bcfb5414c046c331c53108fe05a1a293 data/et_ultra/loot_table/blocks/chiseled_mars_deepslate.json
 f755c2cbc0909c8751200605f4d1d3d6e2136fb9 data/et_ultra/loot_table/blocks/chiseled_mercury_deepslate.json
@@ -34,7 +34,7 @@ c7844a0748c28dc740f31d0eb4f0649b7a305160 data/et_ultra/loot_table/blocks/graphit
 df6f54982a77c0f0194ec99bc443ba919d7e12e3 data/et_ultra/loot_table/blocks/marked_obdurium_pillar.json
 81d6194f21365dbbaef67dd33fa3809431fd709d data/et_ultra/loot_table/blocks/marked_ostrum_pillar.json
 03ca3f47e222ca889066a9fec83c74d2d07abfad data/et_ultra/loot_table/blocks/marked_steel_pillar.json
-ddcbec7d3fc814605e0e6ffc3b9968e158d140d2 data/et_ultra/loot_table/blocks/mars_deepslate.json
+735161e9f7c6a011321e2f7060349afe8fe18c49 data/et_ultra/loot_table/blocks/mars_deepslate.json
 b73e4592eb1d2ce427f5bade4b290befb867d68e data/et_ultra/loot_table/blocks/mars_deepslate_bricks.json
 9aa5aff19061d552fdced1f7277e2d199632b223 data/et_ultra/loot_table/blocks/mars_deepslate_bricks_slab.json
 c16b1153e5662f8834a2439e8796eda78fdcd298 data/et_ultra/loot_table/blocks/mars_deepslate_pillar.json

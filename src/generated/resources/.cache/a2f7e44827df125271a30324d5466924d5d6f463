@@ -1,7 +1,8 @@
-// 1.21.1	2024-09-28T20:08:12.3473307	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2024-10-02T00:24:26.6124296	Tags for minecraft:item mod id et_ultra
 b40a05499ec9ad971f9f64f0c16976afea01cb23 data/c/tags/item/ingots.json
 269889b7094a1741b815ba26e60e413b9491ca21 data/c/tags/item/nuggets.json
 f5fc4eb037350d4a05d8f517eaefc27ca604e48b data/c/tags/item/raw_materials.json
+19c7b1e003b45155568600a90a5d9d016697fc55 data/c/tags/item/storage_blocks.json
 63fd04f577f61675d0d51a0566d2cbcf97cbf85b data/c/tags/item/tools/melee_weapon.json
 bdb4053d28def340c591bb6cd77b677cfe510db6 data/c/tags/item/tools/mining_tool.json
 8508932555971d225ee221864602cc6b0d486e4e data/et_ultra/tags/item/ingots/obdurium.json

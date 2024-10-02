@@ -24,22 +24,14 @@ public class EUBlockLootTables extends BlockLootSubProvider {
         // then add a custom block drop after the loop
         final List<DeferredHolder<Block, ? extends Block>> excludedBlocks = new ArrayList<>();
 
-//        excludedBlocks.add(EtUltraBlocks.MARS_DEEPSLATE);
+        excludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate"));
 
         EUBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
 
-        // I am assuming that this code here is for future reference, so I will not
-        // remove it (for now)
-        // (also "I" is Emma, in case you don't want to find the git blame)
-
-        //add(EtUltraBlocks.EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
-        //add(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), createOreDrop(EtUltraBlocks.DEEPSLATE_EXAMPLE_ORE.get(), EtUltraItems.RAW_EXAMPLE.get()));
-        //add(EtUltraBlocks.MARS_DEEPSLATE.get(), b -> createSingleItemTableWithSilkTouch(b, EtUltraBlocks.COBBLED_MARS_DEEPSLATE.get()));
-        //add(EtUltraBlocks.LAUNCH_PAD.get(), b ->
-        //        createSinglePropConditionTable(b, LaunchPadBlock.PART, LaunchPadPartProperty.CENTER));
+        add(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.MARS_BLOCKS.get("cobbled_mars_deepslate").get()));
     }
 
     @Override
