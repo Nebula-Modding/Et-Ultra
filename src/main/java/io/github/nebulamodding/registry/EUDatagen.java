@@ -33,7 +33,7 @@ public class EUDatagen {
                 generator.addProvider(true, new EUItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
                 generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
                 generator.addProvider(true, new EURecipes(generator, event.getLookupProvider()));
-                //generator.addProvider(true, new EUWorldGen(output, event.getLookupProvider()));
+                //generator.addProvider(true, new EUWorldGeneration(output, event.getLookupProvider()));
                 //generator.addProvider(true, new EUMobLootTables(output, event.getLookupProvider()));
             }
         } catch (RuntimeException e) {
