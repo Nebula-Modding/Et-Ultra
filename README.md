@@ -1,4 +1,5 @@
-[We have a discord](https://discord.gg/wWp86BWaZs)
+Working on fixing the issues with the readme
+
 
 <div align="center">
 <a href="https://www.modrinth.com/mod/ad-astra"><img alt="Requires Ad Astra" height="56" src="https://svgshare.com/i/19cv.svg"></a>
