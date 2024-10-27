@@ -3,7 +3,7 @@ package io.github.nebulamodding;
 import io.github.nebulamodding.client.EUEventHandler;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUCreativeTab;
-import io.github.nebulamodding.registry.EUDatagen;
+import io.github.nebulamodding.registry.EUDataGeneration;
 import io.github.nebulamodding.registry.EUItems;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
@@ -35,7 +35,7 @@ public class EtUltra {
         EUCreativeTab.CREATIVE_MODE_TABS.register(modBus);
 
 
-        modBus.addListener(EUDatagen::gatherData);
+        modBus.addListener(EUDataGeneration::gatherData);
         NeoForge.EVENT_BUS.register(EUEventHandler.class);
 
     }
