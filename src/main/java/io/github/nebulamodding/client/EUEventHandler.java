@@ -23,8 +23,11 @@ public class EUEventHandler {
     @SubscribeEvent
 
     public static void onKeyInput(InputEvent.Key Event) {
-        if (TestScreenKey.isDown()) {
-            Minecraft.getInstance().setScreen(new TestScreen());
+        if (TestScreenKey.isDown())  {
+            if(EUconfigReader.devToolsEnabled == true) {
+
+                Minecraft.getInstance().setScreen(new TestScreen());
+            }
         } else if (BonkKey.isDown()) {
             Minecraft.getInstance().player.addItem(new ItemStack((ItemLike) EUItems.OBDURIUM_HAMMER));
             
