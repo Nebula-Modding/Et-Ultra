@@ -111,16 +111,14 @@ public class EUBlocks {
                     "chiseled_frigus_stone",
                     "polished_frigus_stone",
                     "frigus_stone_bricks",
-                    "cracked_frigus_stone_bricks",
-                    "frigus_stone_tiles"
+                    "cracked_frigus_stone_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
                     "frigus_stone_slab",
                     "frigus_cobblestone_slab",
                     "polished_frigus_stone_slab",
-                    "frigus_stone_bricks_slab",
-                    "frigus_stone_tiles_slab"
+                    "frigus_stone_bricks_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("frigus_stone_pillar")
