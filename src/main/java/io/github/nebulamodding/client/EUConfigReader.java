@@ -1,7 +1,5 @@
 package io.github.nebulamodding.client;
 
-import io.github.nebulamodding.EtUltra;
-
 
 // THIS FILE IS DEMONIC!!! DO NOT TOUCH
 
@@ -9,7 +7,7 @@ import java.io.File;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class EUconfigReader {
+public class EUConfigReader {
     // I May Do This Later
 
     public static boolean devToolsEnabled = true;

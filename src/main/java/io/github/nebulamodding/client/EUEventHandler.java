@@ -4,7 +4,6 @@ import io.github.nebulamodding.client.gui.TestScreen;
 import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -24,7 +23,7 @@ public class EUEventHandler {
 
     public static void onKeyInput(InputEvent.Key Event) {
         if (TestScreenKey.isDown())  {
-            if(EUconfigReader.devToolsEnabled == true) {
+            if(EUConfigReader.devToolsEnabled == true) {
 
                 Minecraft.getInstance().setScreen(new TestScreen());
             }
