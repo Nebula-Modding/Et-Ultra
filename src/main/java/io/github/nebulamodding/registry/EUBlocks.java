@@ -99,6 +99,32 @@ public class EUBlocks {
             .register("mercury_deepslate_pillar")
             .done();
 
+    // Frigus
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+    )
+            .register(
+                    "frigus_stone",
+                    "frigus_cobblestone",
+                    "chiseled_frigus_stone",
+                    "polished_frigus_stone",
+                    "frigus_stone_bricks",
+                    "cracked_frigus_stone_bricks",
+                    "frigus_stone_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "frigus_stone_slab",
+                    "frigus_cobblestone_slab",
+                    "polished_frigus_stone_slab",
+                    "frigus_stone_bricks_slab",
+                    "frigus_stone_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_stone_pillar")
+            .done();
 
     // Salt
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
@@ -210,14 +236,28 @@ public class EUBlocks {
             .setBlockFunction(RotatedPillarBlock::new)
             .register("graphite_pillar")
             .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MISCELLANEOUS_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    )
+            .register(
+                    "erdragh_block"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "erdragh_block_slab"
+            )
+            .done();
 
     // Ores
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
             stoneProperties(),
+            "etrium_ore",
             "glacio_obdurium_ore",
-            "etrium_ore"
+            "frigus_obdurium_ore"
     );
 
     // Metal Blocks
