@@ -282,6 +282,12 @@ public class EUBlocks {
             "glacio_obdurium_ore",
             "frigus_obdurium_ore"
     );
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DEEPSLATE_ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties(),
+            "frigus_deepslate_obdurium_ore"
+    );
 
     // Metal Blocks
 
