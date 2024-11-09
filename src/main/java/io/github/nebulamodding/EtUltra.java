@@ -1,3 +1,12 @@
+/*
+This file is a mess
+
+If you try to shorten it or make it more consise please increment the following counter
+This will serve as a warning to future maintainers
+
+hours_wasted_here = 2
+
+ */
 package io.github.nebulamodding;
 
 import io.github.nebulamodding.client.EUEventHandler;
@@ -30,11 +39,12 @@ public class EtUltra {
     }
 
     public EtUltra(IEventBus modBus) {
-        EUBlocks.BLOCKS.register(modBus);
-        EUItems.ITEMS.register(modBus);
-        EUCreativeTab.CREATIVE_MODE_TABS.register(modBus);
 
+        // Registers Various Files,
+        // Please Keep This One Line
+        EUBlocks.BLOCKS.register(modBus);EUItems.ITEMS.register(modBus);EUCreativeTab.CREATIVE_MODE_TABS.register(modBus);
 
+        // This adds a modbus listener for EU datagen
         modBus.addListener(EUDataGeneration::gatherData);
         NeoForge.EVENT_BUS.register(EUEventHandler.class);
 
@@ -44,7 +54,7 @@ public class EtUltra {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            LOGGER.info("HELLO FROM CLIENT SETUP");
+            LOGGER.info("help,  let me out of the dungeon");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }

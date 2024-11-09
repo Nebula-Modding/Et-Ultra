@@ -38,6 +38,9 @@ public class TestScreen extends Screen {
         Button.Builder getItems_Obdurium = new Button.Builder(Component.literal("Obdurium"), button ->{
             Minecraft.getInstance().player.connection.sendUnsignedCommand("give @s et_ultra:obdurium_hammer");
         });
+        Button.Builder dimSwap_TheEnd = new Button.Builder(Component.literal("The End"), button -> {
+            Minecraft.getInstance().player.connection.sendUnsignedCommand("execute as @s in minecraft:the_end run tp @a ~ ~ ~");
+        });
 
         getItems_Obdurium.bounds(210,10,50,20);
         this.addRenderableWidget(getItems_Obdurium.build());
@@ -47,6 +50,8 @@ public class TestScreen extends Screen {
         this.addRenderableWidget(dimSwap.build());
         gooButton.bounds(60,10,50,20);
         this.addRenderableWidget(gooButton.build());
+        dimSwap_TheEnd.bounds(270,10,50,50);
+        this.addRenderableWidget(dimSwap_TheEnd.build());
 
 
     }
