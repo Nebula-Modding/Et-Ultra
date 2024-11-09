@@ -128,7 +128,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+            deepslateProperties().mapColor(MapColor.COLOR_BLUE)
     )
             .register(
                     "frigus_deepslate",
