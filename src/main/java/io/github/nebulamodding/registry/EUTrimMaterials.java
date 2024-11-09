@@ -22,6 +22,7 @@ import java.util.Map;
 public class EUTrimMaterials {
 
     // I AM NOT TOUCHING THIS EVER AGAIN
+    // WHY NOT
 
 
     //public static final ResourceKey<TrimMaterial> OBDURIUM = registryKey("obdurium");

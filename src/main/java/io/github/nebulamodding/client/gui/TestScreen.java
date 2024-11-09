@@ -11,7 +11,7 @@ import net.minecraft.world.level.portal.DimensionTransition;
 
 public class TestScreen extends Screen {
     public TestScreen() {
-        super(Component.literal("Et Ultra Test Screen"));
+        super(Component.literal("DEV MENU"));
     }
 
     @Override
