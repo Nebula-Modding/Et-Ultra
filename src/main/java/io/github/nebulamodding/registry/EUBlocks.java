@@ -125,6 +125,31 @@ public class EUBlocks {
             .setBlockFunction(RotatedPillarBlock::new)
             .register("frigus_stone_pillar")
             .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+    )
+            .register(
+                    "frigus_deepslate",
+                    "cobbled_frigus_deepslate",
+                    "chiseled_frigus_deepslate",
+                    "polished_frigus_deepslate",
+                    "frigus_deepslate_bricks",
+                    "cracked_frigus_deepslate_bricks",
+                    "frigus_deepslate_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "frigus_deepslate_slab",
+                    "cobbled_frigus_deepslate_slab",
+                    "polished_frigus_deepslate_slab",
+                    "frigus_deepslate_bricks_slab",
+                    "frigus_deepslate_tiles_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_deepslate_pillar")
+            .done();
 
     // Salt
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(

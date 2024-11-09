@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/frigus_deepslate_tiles_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/frigus_deepslate_tiles"
+    },
+    "type=top": {
+      "model": "et_ultra:block/frigus_deepslate_tiles_slab_top"
+    }
+  }
+}
