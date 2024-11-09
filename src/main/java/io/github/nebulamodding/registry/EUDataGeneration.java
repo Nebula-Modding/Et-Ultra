@@ -1,7 +1,7 @@
 package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.datagen.builders.EtUltraLootTables;
+import io.github.nebulamodding.datagen.builders.EULootTables;
 import io.github.nebulamodding.datagen.providers.EULangProvider;
 import io.github.nebulamodding.datagen.providers.models.EUBlockStateProvider;
 import io.github.nebulamodding.datagen.providers.models.EUItemModelProvider;
@@ -31,7 +31,7 @@ public class EUDataGeneration {
                 EUBlockTagProvider modBlockTagsProvider = new EUBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
                 generator.addProvider(true, modBlockTagsProvider);
                 generator.addProvider(true, new EUItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
-                generator.addProvider(true, new EtUltraLootTables(output, event.getLookupProvider()));
+                generator.addProvider(true, new EULootTables(output, event.getLookupProvider()));
                 generator.addProvider(true, new EURecipes(generator, event.getLookupProvider()));
                 //generator.addProvider(true, new EUWorldGeneration(output, event.getLookupProvider()));
                 //generator.addProvider(true, new EUMobLootTables(output, event.getLookupProvider()));

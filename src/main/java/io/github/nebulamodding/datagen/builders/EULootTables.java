@@ -19,8 +19,8 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-public class EtUltraLootTables extends LootTableProvider {
-    public EtUltraLootTables(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+public class EULootTables extends LootTableProvider {
+    public EULootTables(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, Set.of(), List.of(new SubProviderEntry(EUBlockLootTables::new, LootContextParamSets.BLOCK)), registries);
     }
 

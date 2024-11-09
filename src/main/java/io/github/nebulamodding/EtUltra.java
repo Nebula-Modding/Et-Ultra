@@ -10,6 +10,7 @@ hours_wasted_here = 2
 package io.github.nebulamodding;
 
 import io.github.nebulamodding.client.EUEventHandler;
+import io.github.nebulamodding.datagen.builders.EULootTables;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUCreativeTab;
 import io.github.nebulamodding.registry.EUDataGeneration;
