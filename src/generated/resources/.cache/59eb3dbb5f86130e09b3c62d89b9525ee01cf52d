@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-09T12:49:43.8645494	Loot Tables
+// 1.21.1	2024-11-09T13:16:58.2039003	Loot Tables
 ed709e742cbaba516895a259102587cbf8724ef3 data/et_ultra/loot_table/blocks/chiseled_frigus_deepslate.json
 c34e2000c53f6c27dbbe5f17c3dcab75d4d1e6aa data/et_ultra/loot_table/blocks/chiseled_frigus_stone.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
@@ -84,6 +84,8 @@ aeed2e9829b4f0d3c2c48ff599c663c6ff0ef9c7 data/et_ultra/loot_table/blocks/obduriu
 69e38f2666ca5915cb7dea5ada7713dd7f0fd6ad data/et_ultra/loot_table/blocks/obdurium_plateblock.json
 1de9649b0eed7fc52e6862802e57b026cf98d5e4 data/et_ultra/loot_table/blocks/obdurium_plating.json
 7a17ca0ca0938078f0db23775eadd873e89c2d5d data/et_ultra/loot_table/blocks/obdurium_plating_slab.json
+008cdc201fe0c657e72be4fe4619ab25cde23e1b data/et_ultra/loot_table/blocks/permafrost.json
+ce1c3a3e26240218885f25c1bf18f38de152ade7 data/et_ultra/loot_table/blocks/permafrost_slab.json
 87fc601ffe3c7e9e0096ccf9e358372cf6b298a3 data/et_ultra/loot_table/blocks/polished_frigus_deepslate.json
 05be0e185796114529dfefeef2620d6d41c768b9 data/et_ultra/loot_table/blocks/polished_frigus_deepslate_slab.json
 c8f11806649c205baf43c8c191095c03512f6ae6 data/et_ultra/loot_table/blocks/polished_frigus_stone.json

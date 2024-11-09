@@ -99,6 +99,23 @@ public class EUBlocks {
             .register("mercury_deepslate_pillar")
             .done();
 
+    // Permafrost
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.COLOR_LIGHT_GRAY)
+    )
+            .register(
+                    "permafrost"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "permafrost_slab"
+            )
+            //.setBlockFunction(RotatedPillarBlock::new)
+            //.register("frigus_deepslate_pillar")
+            .done();
+
     // Frigus
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
