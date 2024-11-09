@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-08T21:10:41.2162748	Loot Tables
+// 1.21.1	2024-11-09T12:16:08.5376798	Loot Tables
 ed709e742cbaba516895a259102587cbf8724ef3 data/et_ultra/loot_table/blocks/chiseled_frigus_deepslate.json
 c34e2000c53f6c27dbbe5f17c3dcab75d4d1e6aa data/et_ultra/loot_table/blocks/chiseled_frigus_stone.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
@@ -42,8 +42,6 @@ a89ceaf80cb5154ffd876884b59eba19e694dbd2 data/et_ultra/loot_table/blocks/frigus_
 6236de28c8f9f2aa2af7581a0f5b8def5f5787ce data/et_ultra/loot_table/blocks/frigus_stone_bricks_slab.json
 5fa9c584f63ed2b64f9db7810dd2e8cf6a45fc72 data/et_ultra/loot_table/blocks/frigus_stone_pillar.json
 47175228e29502b1b1c98bee1f9a25af8518c9b2 data/et_ultra/loot_table/blocks/frigus_stone_slab.json
-b85e93a77e630d7e6cf4d2576fc1f0268f64dfa7 data/et_ultra/loot_table/blocks/frigus_stone_tiles.json
-1787862a7768d54e9782d22d1681e22ec070d455 data/et_ultra/loot_table/blocks/frigus_stone_tiles_slab.json
 71b711acf2ba2ce94a4d5fc463439e6bb57a2747 data/et_ultra/loot_table/blocks/glacio_obdurium_ore.json
 6c1dd9d64f160113d437ffb0b829d12aa7255105 data/et_ultra/loot_table/blocks/glowing_obdurium_pillar.json
 e63f45998dcd6b41c732c105bcfcc5cd7e9fa0ea data/et_ultra/loot_table/blocks/graphite_block.json

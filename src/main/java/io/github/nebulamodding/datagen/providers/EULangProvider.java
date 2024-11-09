@@ -30,10 +30,17 @@ public class EULangProvider extends LanguageProvider {
         final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
         langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tiles_slab"));
+
         langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tiles_slab"));
+
         langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"));
+
+        langExcludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles_slab"));
+
         langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
@@ -95,6 +102,10 @@ public class EULangProvider extends LanguageProvider {
 
         addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"), "Mercury Deepslate Brick Slab");
         addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"), "Mercury Deepslate Tile Slab");
+
+        addBlock(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"), "Frigus Stone Brick Slab");
+        addBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"), "Frigus Deepslate Brick Slab");
+        addBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles_slab"), "Frigus Deepslate Tile Slab");
 
         addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"), "Block of Salt Crystal");
         addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"), "Polished Salt Crystal");
