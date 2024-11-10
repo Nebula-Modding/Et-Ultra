@@ -1,7 +1,7 @@
 package io.github.nebulamodding.datagen.providers.models;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.items.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;

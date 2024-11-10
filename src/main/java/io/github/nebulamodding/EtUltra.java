@@ -10,11 +10,10 @@ hours_wasted_here = 2
 package io.github.nebulamodding;
 
 import io.github.nebulamodding.client.EUEventHandler;
-import io.github.nebulamodding.datagen.builders.EULootTables;
-import io.github.nebulamodding.registry.EUBlocks;
-import io.github.nebulamodding.registry.EUCreativeTab;
-import io.github.nebulamodding.registry.EUDataGeneration;
-import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.blocks.EUBlocks;
+import io.github.nebulamodding.registry.registers.EUCreativeTab;
+import io.github.nebulamodding.registry.registers.EUDataGeneration;
+import io.github.nebulamodding.registry.items.EUItems;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 

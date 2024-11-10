@@ -1,4 +1,4 @@
-package io.github.nebulamodding.registry;
+package io.github.nebulamodding.registry.registers;
 
 
 import net.minecraft.world.item.Tier;

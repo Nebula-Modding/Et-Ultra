@@ -1,6 +1,6 @@
 package io.github.nebulamodding.datagen.providers.loot;
 
-import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.blocks.EUBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;

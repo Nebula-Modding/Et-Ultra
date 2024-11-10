@@ -1,7 +1,7 @@
 package io.github.nebulamodding.datagen.providers.models;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.blocks.EUBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -12,7 +12,6 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,12 +1,11 @@
 package io.github.nebulamodding.datagen.providers.tags;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.EUItems;
-import io.github.nebulamodding.registry.EUTags;
+import io.github.nebulamodding.registry.items.EUItems;
+import io.github.nebulamodding.registry.registers.EUTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;

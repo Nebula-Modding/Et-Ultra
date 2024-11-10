@@ -1,4 +1,4 @@
-package io.github.nebulamodding.registry;
+package io.github.nebulamodding.registry.registers;
 
 import io.github.nebulamodding.EtUltra;
 import net.minecraft.core.registries.BuiltInRegistries;

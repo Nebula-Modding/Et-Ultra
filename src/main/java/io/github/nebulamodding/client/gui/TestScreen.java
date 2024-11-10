@@ -1,13 +1,9 @@
 package io.github.nebulamodding.client.gui;
 
-import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.portal.DimensionTransition;
 
 public class TestScreen extends Screen {
     public TestScreen() {

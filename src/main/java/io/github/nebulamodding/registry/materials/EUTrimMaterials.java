@@ -1,23 +1,4 @@
-package io.github.nebulamodding.registry;
-
-import io.github.nebulamodding.EtUltra;
-import net.minecraft.Util;
-import net.minecraft.core.Holder;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.Style;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.armortrim.ArmorTrim;
-import net.minecraft.world.item.armortrim.TrimMaterial;
-import net.neoforged.neoforge.registries.DeferredItem;
-
-import java.util.Map;
+package io.github.nebulamodding.registry.materials;
 
 public class EUTrimMaterials {
 

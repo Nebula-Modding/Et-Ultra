@@ -1,6 +1,7 @@
-package io.github.nebulamodding.registry;
+package io.github.nebulamodding.registry.items;
 
 import io.github.nebulamodding.EtUltra;
+import io.github.nebulamodding.registry.registers.EUTiers;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;

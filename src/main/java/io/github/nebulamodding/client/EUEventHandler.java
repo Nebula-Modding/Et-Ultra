@@ -1,7 +1,7 @@
 package io.github.nebulamodding.client;
 
 import io.github.nebulamodding.client.gui.TestScreen;
-import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.items.EUItems;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +14,7 @@ public class EUEventHandler {
     // DON'T QUESTION THIS PLEASE, I HAVE NO IDEA IF THIS WILL WORK, ALSO THIS IS FOR TESTING PURPOSES ONLY
     // This may be a bad idea
     // What Could Go Wrong
+    // god it just gets worse
 
 
 
@@ -23,11 +24,12 @@ public class EUEventHandler {
 
     public static void onKeyInput(InputEvent.Key Event) {
         if (TestScreenKey.isDown())  {
-            if(EUConfigReader.devToolsEnabled == true) {
+            
+            Minecraft.getInstance().setScreen(new TestScreen());
 
-                Minecraft.getInstance().setScreen(new TestScreen());
-            }
-        } else if (BonkKey.isDown()) {
+        }
+
+        else if (BonkKey.isDown()) {
             Minecraft.getInstance().player.addItem(new ItemStack((ItemLike) EUItems.OBDURIUM_HAMMER));
             
         }
