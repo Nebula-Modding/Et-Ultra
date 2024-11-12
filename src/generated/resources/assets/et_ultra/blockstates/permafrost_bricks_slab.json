@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/permafrost_bricks_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/permafrost_bricks"
+    },
+    "type=top": {
+      "model": "et_ultra:block/permafrost_bricks_slab_top"
+    }
+  }
+}
