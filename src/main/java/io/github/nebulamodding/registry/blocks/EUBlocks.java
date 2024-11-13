@@ -100,21 +100,55 @@ public class EUBlocks {
             .register("mercury_deepslate_pillar")
             .done();
 
+    // Water Ice
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties()
+    )
+            .register(
+                    "water_ice"
+                    //"cracked_water_ice",
+                    //"water_ice_bricks",
+                    //"cracked_water_ice_bricks",
+                    //"water_ice_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "water_ice_slab"
+                    //"cracked_water_ice_slab",
+                    //"water_ice_bricks_slab",
+                    //"water_ice_tiles_slab"
+            )
+            //.setBlockFunction(RotatedPillarBlock::new)
+            //.register("water_ice_pillar")
+            .done();
+
     // Permafrost
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_LIGHT_GRAY)
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
     )
             .register(
-                    "permafrost"
+                    "permafrost",
+                    "cracked_permafrost",
+                    "chiseled_permafrost",
+                    "polished_permafrost",
+                    "permafrost_bricks",
+                    "cracked_permafrost_bricks",
+                    "permafrost_tiles"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "permafrost_slab"
+                    "permafrost_slab",
+                    "cracked_permafrost_slab",
+                    "polished_permafrost_slab",
+                    "permafrost_bricks_slab",
+                    "permafrost_tiles_slab"
             )
-            //.setBlockFunction(RotatedPillarBlock::new)
-            //.register("frigus_deepslate_pillar")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("permafrost_pillar")
             .done();
 
     // Frigus
@@ -280,7 +314,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MISCELLANEOUS_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK).lightLevel(state -> 15)
     )
             .register(
                     "erdragh_block"
@@ -303,7 +337,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DEEPSLATE_ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties(),
+            deepslateProperties(),
             "frigus_deepslate_obdurium_ore"
     );
 
@@ -381,6 +415,14 @@ public class EUBlocks {
             .done();
 
     // Common properties
+    private static BlockBehaviour.Properties iceProperties() {
+        return BlockBehaviour.Properties.of()
+                .sound(SoundType.GLASS)
+                .mapColor(MapColor.SNOW)
+                .instrument(NoteBlockInstrument.CHIME)
+                .requiresCorrectToolForDrops()
+                .strength(1.5f, 1.5f);
+    }
     private static BlockBehaviour.Properties stoneProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
     }
