@@ -37,6 +37,9 @@ public class EULangProvider extends LanguageProvider {
         langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"));
 
+        langExcludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks_slab"));
+        langExcludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles_slab"));
+
         langExcludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles_slab"));
@@ -102,6 +105,9 @@ public class EULangProvider extends LanguageProvider {
 
         addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"), "Mercury Deepslate Brick Slab");
         addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"), "Mercury Deepslate Tile Slab");
+
+        addBlock(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks_slab"), "Permafrost Brick Slab");
+        addBlock(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles_slab"), "Permafrost Tile Slab");
 
         addBlock(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"), "Frigus Stone Brick Slab");
         addBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"), "Frigus Deepslate Brick Slab");
