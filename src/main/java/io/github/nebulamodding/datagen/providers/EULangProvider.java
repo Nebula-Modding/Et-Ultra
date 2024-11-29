@@ -69,6 +69,9 @@ public class EULangProvider extends LanguageProvider {
         langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_bricks_slab"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles_slab"));
 
+        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"));
+        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block_slab"));
+
         // To exclude an item, just add it to the list using #add
         final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
         langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_SHOVEL);
@@ -137,6 +140,9 @@ public class EULangProvider extends LanguageProvider {
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block_slab"), "Graphite Slab");
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_bricks_slab"), "Graphite Brick Slab");
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles_slab"), "Graphite Tile Slab");
+
+        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"), "Block of Erdragh");
+        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block_slab"), "Slab of Erdragh");
 
         // Items
         addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Spade");
