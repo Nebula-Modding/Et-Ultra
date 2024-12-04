@@ -110,15 +110,13 @@ public class EUBlocks {
                     "water_ice",
                     "cracked_water_ice",
                     "water_ice_bricks",
-                    "cracked_water_ice_bricks",
-                    "water_ice_tiles"
+                    "cracked_water_ice_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
                     "water_ice_slab",
                     "cracked_water_ice_slab",
-                    "water_ice_brick_slab",
-                    "water_ice_tile_slab"
+                    "water_ice_brick_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("water_ice_pillar")
