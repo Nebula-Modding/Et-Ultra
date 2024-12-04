@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-03T19:13:32.1171376	Loot Tables
+// 1.21.1	2024-12-03T19:36:57.9995843	Loot Tables
 ed709e742cbaba516895a259102587cbf8724ef3 data/et_ultra/loot_table/blocks/chiseled_frigus_deepslate.json
 c34e2000c53f6c27dbbe5f17c3dcab75d4d1e6aa data/et_ultra/loot_table/blocks/chiseled_frigus_stone.json
 fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chiseled_graphite.json
@@ -150,5 +150,3 @@ d73fbf664a9049c3fe6545ff41eaeca3535bb305 data/et_ultra/loot_table/blocks/water_i
 5b328e3ce1fba0f1c2bd2de68e999f8a72c34c24 data/et_ultra/loot_table/blocks/water_ice_brick_slab.json
 ac64299213e7485a425d545400e9b958c99ff3a7 data/et_ultra/loot_table/blocks/water_ice_pillar.json
 0b5b3a65ae4d2c2252dd5949e94d7376ff06f544 data/et_ultra/loot_table/blocks/water_ice_slab.json
-d4ff979c6da6c3e57a9bbee314b3a0c329d0af6e data/et_ultra/loot_table/blocks/water_ice_tiles.json
-fcacd958cbeaf92ea88ae4ffe23610bcc1b9a13d data/et_ultra/loot_table/blocks/water_ice_tile_slab.json

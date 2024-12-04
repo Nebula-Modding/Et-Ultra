@@ -492,7 +492,8 @@ public class EUBlocks {
                 .mapColor(MapColor.SNOW)
                 .instrument(NoteBlockInstrument.CHIME)
                 .requiresCorrectToolForDrops()
-                .strength(1.5f, 1.5f);
+                .strength(1.5f, 1.5f)
+                .friction(0.75F);
     }
     private static BlockBehaviour.Properties stoneProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
