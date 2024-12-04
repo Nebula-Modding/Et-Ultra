@@ -8,6 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -26,6 +28,45 @@ public class EUBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
+
+        excludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_slab"));
+        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_brick_slab"));
+        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_slab"));
+        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_brick_slab"));
+        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_brick_slab"));
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab"));
+
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_slab"));
+        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_brick_slab"));
+        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_block"));
+        excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_slab"));
+
+        excludedBlocks.add(EUBlocks.ROTTEN_FLESH_BLOCKS.get("rotten_flesh_slab"));
+
+        excludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"));
 
         // Automatically provide models to blocks and block items
         for (var entry : EUBlocks.BLOCKS.getEntries()

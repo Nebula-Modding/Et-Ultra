@@ -28,49 +28,23 @@ public class EULangProvider extends LanguageProvider {
     protected void addTranslations() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
-        langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tiles_slab"));
-
-        langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tiles_slab"));
-
-        langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"));
-
-        langExcludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles_slab"));
-
-        langExcludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles_slab"));
-
         langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"));
-        langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"));
-        langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block_slab"));
-        langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_tiles_slab"));
 
         langExcludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("sulfur_crystal_block"));
-        langExcludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("polished_sulfur_crystal_block"));
         langExcludedBlocks.add(EUBlocks.SULFUR_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"));
-        langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block_slab"));
-        langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_tiles_slab"));
 
         langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"));
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("polished_graphite_crystal_block"));
         langExcludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"));
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("polished_graphite"));
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block_slab"));
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_bricks_slab"));
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles_slab"));
+
+        langExcludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_block"));
+        langExcludedBlocks.add(EUBlocks.ROTTEN_FLESH_BLOCKS.get("rotten_flesh_block"));
 
         langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"));
-        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block_slab"));
+        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"));
 
         // To exclude an item, just add it to the list using #add
         final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
@@ -100,49 +74,23 @@ public class EULangProvider extends LanguageProvider {
                                 .replace("_", " "))));
 
         //Blocks
-        addBlock(EUBlocks.MOON_BLOCKS.get("moon_deepslate_bricks_slab"), "Moon Deepslate Brick Slab");
-        addBlock(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tiles_slab"), "Moon Deepslate Tile Slab");
-
-        addBlock(EUBlocks.MARS_BLOCKS.get("mars_deepslate_bricks_slab"), "Mars Deepslate Brick Slab");
-        addBlock(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tiles_slab"), "Mars Deepslate Tile Slab");
-
-        addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_bricks_slab"), "Mercury Deepslate Brick Slab");
-        addBlock(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tiles_slab"), "Mercury Deepslate Tile Slab");
-
-        addBlock(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks_slab"), "Permafrost Brick Slab");
-        addBlock(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles_slab"), "Permafrost Tile Slab");
-
-        addBlock(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks_slab"), "Frigus Stone Brick Slab");
-        addBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks_slab"), "Frigus Deepslate Brick Slab");
-        addBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles_slab"), "Frigus Deepslate Tile Slab");
-
         addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"), "Block of Salt Crystal");
-        addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block"), "Polished Salt Crystal");
         addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"), "Block of Salt");
         addBlock(EUBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");
-        addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block_slab"), "Salt Slab");
-        addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_bricks_slab"), "Salt Brick Slab");
-        addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_tiles_slab"), "Salt Tile Slab");
 
         addBlock(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("sulfur_crystal_block"), "Block of Sulfur Crystal");
-        addBlock(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("polished_sulfur_crystal_block"), "Polished Sulfur Crystal");
         addBlock(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"), "Block of Sulfur");
         addBlock(EUBlocks.SULFUR_DUST_BLOCK, "Block of Sulfur Dust");
-        addBlock(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block_slab"), "Sulfur Slab");
-        addBlock(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_bricks_slab"), "Sulfur Brick Slab");
-        addBlock(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_tiles_slab"), "Sulfur Tile Slab");
 
-        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"), "Block of Graphite");
-        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("polished_graphite_crystal_block"), "Polished Graphite");
-        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"), "Packed Graphite");
-        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("polished_graphite"), "Polished Packed Graphite");
+        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"), "Block of Graphite Crystal");
+        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"), "Block of Graphite");
         addBlock(EUBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
-        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block_slab"), "Graphite Slab");
-        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_bricks_slab"), "Graphite Brick Slab");
-        addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles_slab"), "Graphite Tile Slab");
 
         addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"), "Block of Erdragh");
-        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block_slab"), "Slab of Erdragh");
+        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"), "Slab of Erdragh");
+
+        addBlock(EUBlocks.FLESH_BLOCKS.get("flesh_block"), "Block of Flesh");
+        addBlock(EUBlocks.ROTTEN_FLESH_BLOCKS.get("rotten_flesh_block"), "Block of Rotten Flesh");
 
         // Items
         addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Spade");

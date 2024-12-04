@@ -37,8 +37,8 @@ public class EUBlocks {
             .register(
                     "cobbled_moon_deepslate_slab",
                     "polished_moon_deepslate_slab",
-                    "moon_deepslate_bricks_slab",
-                    "moon_deepslate_tiles_slab"
+                    "moon_deepslate_brick_slab",
+                    "moon_deepslate_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("moon_deepslate_pillar")
@@ -64,8 +64,8 @@ public class EUBlocks {
                     "mars_deepslate_slab",
                     "cobbled_mars_deepslate_slab",
                     "polished_mars_deepslate_slab",
-                    "mars_deepslate_bricks_slab",
-                    "mars_deepslate_tiles_slab"
+                    "mars_deepslate_brick_slab",
+                    "mars_deepslate_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("mars_deepslate_pillar")
@@ -93,8 +93,8 @@ public class EUBlocks {
                     "mercury_deepslate_slab",
                     "cobbled_mercury_deepslate_slab",
                     "polished_mercury_deepslate_slab",
-                    "mercury_deepslate_bricks_slab",
-                    "mercury_deepslate_tiles_slab"
+                    "mercury_deepslate_brick_slab",
+                    "mercury_deepslate_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("mercury_deepslate_pillar")
@@ -117,8 +117,8 @@ public class EUBlocks {
             .register(
                     "water_ice_slab",
                     "cracked_water_ice_slab",
-                    "water_ice_bricks_slab",
-                    "water_ice_tiles_slab"
+                    "water_ice_brick_slab",
+                    "water_ice_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("water_ice_pillar")
@@ -139,8 +139,8 @@ public class EUBlocks {
             .register(
                     "tholin_semi_saturated_water_ice_slab"
                     //"cracked_tholin_semi_saturated_water_ice_slab",
-                    //"tholin_semi_saturated_water_ice_bricks_slab",
-                    //"tholin_semi_saturated_water_ice_tiles_slab"
+                    //"tholin_semi_saturated_water_ice_brick_slab",
+                    //"tholin_semi_saturated_water_ice_tile_slab"
             )
             //.setBlockFunction(RotatedPillarBlock::new)
             //.register("tholin_semi_saturated_water_ice_pillar")
@@ -161,8 +161,8 @@ public class EUBlocks {
             .register(
                     "tholin_saturated_water_ice_slab"
                     //"cracked_tholin_saturated_water_ice_slab",
-                    //"tholin_saturated_water_ice_bricks_slab",
-                    //"tholin_saturated_water_ice_tiles_slab"
+                    //"tholin_saturated_water_ice_brick_slab",
+                    //"tholin_saturated_water_ice_tile_slab"
             )
             //.setBlockFunction(RotatedPillarBlock::new)
             //.register("tholin_saturated_water_ice_pillar")
@@ -188,8 +188,8 @@ public class EUBlocks {
                     "permafrost_slab",
                     "cracked_permafrost_slab",
                     "polished_permafrost_slab",
-                    "permafrost_bricks_slab",
-                    "permafrost_tiles_slab"
+                    "permafrost_brick_slab",
+                    "permafrost_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("permafrost_pillar")
@@ -214,7 +214,7 @@ public class EUBlocks {
                     "frigus_stone_slab",
                     "frigus_cobblestone_slab",
                     "polished_frigus_stone_slab",
-                    "frigus_stone_bricks_slab"
+                    "frigus_stone_brick_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("frigus_stone_pillar")
@@ -238,8 +238,8 @@ public class EUBlocks {
                     "frigus_deepslate_slab",
                     "cobbled_frigus_deepslate_slab",
                     "polished_frigus_deepslate_slab",
-                    "frigus_deepslate_bricks_slab",
-                    "frigus_deepslate_tiles_slab"
+                    "frigus_deepslate_brick_slab",
+                    "frigus_deepslate_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("frigus_deepslate_pillar")
@@ -272,10 +272,10 @@ public class EUBlocks {
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "salt_block_slab",
+                    "salt_slab",
                     "polished_salt_slab",
-                    "salt_bricks_slab",
-                    "salt_tiles_slab"
+                    "salt_brick_slab",
+                    "salt_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("salt_pillar")
@@ -308,10 +308,10 @@ public class EUBlocks {
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "sulfur_block_slab",
+                    "sulfur_slab",
                     "polished_sulfur_slab",
-                    "sulfur_bricks_slab",
-                    "sulfur_tiles_slab"
+                    "sulfur_brick_slab",
+                    "sulfur_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("sulfur_pillar")
@@ -347,14 +347,43 @@ public class EUBlocks {
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "graphite_block_slab",
+                    "graphite_slab",
                     "polished_graphite_slab",
-                    "graphite_bricks_slab",
-                    "graphite_tiles_slab"
+                    "graphite_brick_slab",
+                    "graphite_tile_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("graphite_pillar")
             .done();
+
+    // Flesh
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FLESH_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.4F, 0.4F)
+    )
+            .register(
+                    "flesh_block"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "flesh_slab"
+            )
+            .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ROTTEN_FLESH_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.3F, 0.3F)
+    )
+            .register(
+                    "rotten_flesh_block"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "rotten_flesh_slab"
+            )
+            .done();
+
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MISCELLANEOUS_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -365,7 +394,7 @@ public class EUBlocks {
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "erdragh_block_slab"
+                    "erdragh_slab"
             )
             .done();
 

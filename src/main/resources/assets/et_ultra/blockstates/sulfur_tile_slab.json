@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/sulfur_tile_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/sulfur_tiles"
+    },
+    "type=top": {
+      "model": "et_ultra:block/sulfur_tile_slab_top"
+    }
+  }
+}

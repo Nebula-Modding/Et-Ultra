@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/water_ice_tile_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/water_ice_tiles"
+    },
+    "type=top": {
+      "model": "et_ultra:block/water_ice_tile_slab_top"
+    }
+  }
+}
