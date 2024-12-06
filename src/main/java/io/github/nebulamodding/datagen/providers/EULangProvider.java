@@ -48,11 +48,6 @@ public class EULangProvider extends LanguageProvider {
 
         // To exclude an item, just add it to the list using #add
         final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
-        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_SHOVEL);
-        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_PICKAXE);
-        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_AXE);
-        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_HOE);
-        langExcludedItems.add((DeferredItem<? extends Item>) EUItems.THERMALYTE_SWORD);
 
         // Automatically provide translations
         EUBlocks.BLOCKS.getEntries()
@@ -93,11 +88,6 @@ public class EULangProvider extends LanguageProvider {
         addBlock(EUBlocks.ROTTEN_FLESH_BLOCKS.get("rotten_flesh_block"), "Block of Rotten Flesh");
 
         // Items
-        addItem(EUItems.THERMALYTE_SHOVEL, "Thermalyte Spade");
-        addItem(EUItems.THERMALYTE_PICKAXE, "Thermalyte Pickaxe");
-        addItem(EUItems.THERMALYTE_AXE, "Thermalyte Broadaxe");
-        addItem(EUItems.THERMALYTE_HOE, "Thermalyte Swoe");
-        addItem(EUItems.THERMALYTE_SWORD, "Thermalyte Greatsword");
 
         // Block Tags
         add(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");

@@ -63,27 +63,6 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.TRIM_MATERIALS)
                 .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
         ;
-        tag(ItemTags.SHOVELS)
-                .add(EUItems.DESH_SHOVEL.get())
-                .add(EUItems.THERMALYTE_SHOVEL.get())
-        ;
-        tag(ItemTags.PICKAXES)
-                .add(EUItems.DESH_PICKAXE.get())
-                .add(EUItems.THERMALYTE_PICKAXE.get())
-        ;
-        tag(ItemTags.AXES)
-                .add(EUItems.DESH_AXE.get())
-                .add(EUItems.THERMALYTE_AXE.get())
-        ;
-        tag(ItemTags.HOES)
-                .add(EUItems.DESH_HOE.get())
-                .add(EUItems.THERMALYTE_HOE.get())
-        ;
-        tag(ItemTags.SWORDS)
-                .add(EUItems.DESH_SWORD.get())
-                .add(EUItems.THERMALYTE_SWORD.get())
-                .add(EUItems.THERMALYTE_HOE.get())
-        ;
         tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
                 .addTag(ItemTags.PICKAXES)
         ;
