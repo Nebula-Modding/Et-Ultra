@@ -104,7 +104,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties()
+            iceProperties().mapColor(MapColor.SNOW)
     )
             .register(
                     "water_ice",
@@ -127,21 +127,19 @@ public class EUBlocks {
             iceProperties().mapColor(MapColor.COLOR_ORANGE)
     )
             .register(
-                    "tholin_semi_saturated_water_ice"
-                    //"cracked_tholin_semi_saturated_water_ice",
-                    //"tholin_semi_saturated_water_ice_bricks",
-                    //"cracked_tholin_semi_saturated_water_ice_bricks",
-                    //"tholin_semi_saturated_water_ice_tiles"
+                    "tholin_semi_saturated_water_ice",
+                    "cracked_tholin_semi_saturated_water_ice",
+                    "tholin_semi_saturated_water_ice_bricks",
+                    "cracked_tholin_semi_saturated_water_ice_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "tholin_semi_saturated_water_ice_slab"
-                    //"cracked_tholin_semi_saturated_water_ice_slab",
-                    //"tholin_semi_saturated_water_ice_brick_slab",
-                    //"tholin_semi_saturated_water_ice_tile_slab"
+                    "tholin_semi_saturated_water_ice_slab",
+                    "cracked_tholin_semi_saturated_water_ice_slab",
+                    "tholin_semi_saturated_water_ice_brick_slab"
             )
-            //.setBlockFunction(RotatedPillarBlock::new)
-            //.register("tholin_semi_saturated_water_ice_pillar")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_semi_saturated_water_ice_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_SATURATED_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -149,21 +147,19 @@ public class EUBlocks {
             iceProperties().mapColor(MapColor.COLOR_RED)
     )
             .register(
-                    "tholin_saturated_water_ice"
-                    //"cracked_tholin_saturated_water_ice",
-                    //"tholin_saturated_water_ice_bricks",
-                    //"cracked_tholin_saturated_water_ice_bricks",
-                    //"tholin_saturated_water_ice_tiles"
+                    "tholin_saturated_water_ice",
+                    "cracked_tholin_saturated_water_ice",
+                    "tholin_saturated_water_ice_bricks",
+                    "cracked_tholin_saturated_water_ice_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "tholin_saturated_water_ice_slab"
-                    //"cracked_tholin_saturated_water_ice_slab",
-                    //"tholin_saturated_water_ice_brick_slab",
-                    //"tholin_saturated_water_ice_tile_slab"
+                    "tholin_saturated_water_ice_slab",
+                    "cracked_tholin_saturated_water_ice_slab",
+                    "tholin_saturated_water_ice_brick_slab"
             )
-            //.setBlockFunction(RotatedPillarBlock::new)
-            //.register("tholin_saturated_water_ice_pillar")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_saturated_water_ice_pillar")
             .done();
 
     // Permafrost
