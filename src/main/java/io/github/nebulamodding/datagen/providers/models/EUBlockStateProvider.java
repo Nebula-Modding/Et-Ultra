@@ -34,7 +34,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
 
         excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_slab"));
         excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_brick_slab"));
-        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_tile_slab"));
 
         excludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_brick_slab"));
         excludedBlocks.add(EUBlocks.MOON_BLOCKS.get("moon_deepslate_tile_slab"));
@@ -45,6 +44,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.THOLIN_SEMI_SATURATED_WATER_ICE_BLOCKS.get("tholin_semi_saturated_water_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.THOLIN_SATURATED_WATER_ICE_BLOCKS.get("tholin_saturated_water_ice_brick_slab"));
+
+        excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_brick_slab"));
+
+        excludedBlocks.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_brick_slab"));
 
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_slab"));
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_brick_slab"));

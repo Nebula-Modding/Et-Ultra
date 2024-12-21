@@ -162,6 +162,50 @@ public class EUBlocks {
             .register("tholin_saturated_water_ice_pillar")
             .done();
 
+    // Sulfur Dioxide Ice
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_YELLOW)
+    )
+            .register(
+                    "sulfur_dioxide_ice",
+                    "cracked_sulfur_dioxide_ice",
+                    "sulfur_dioxide_ice_bricks",
+                    "cracked_sulfur_dioxide_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "sulfur_dioxide_ice_slab",
+                    "cracked_sulfur_dioxide_ice_slab",
+                    "sulfur_dioxide_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("sulfur_dioxide_ice_pillar")
+            .done();
+
+    // Ammonia Ice
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AMMONIA_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_YELLOW)
+    )
+            .register(
+                    "ammonia_ice",
+                    "cracked_ammonia_ice",
+                    "ammonia_ice_bricks",
+                    "cracked_ammonia_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "ammonia_ice_slab",
+                    "cracked_ammonia_ice_slab",
+                    "ammonia_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("ammonia_ice_pillar")
+            .done();
+
     // Permafrost
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -297,15 +341,13 @@ public class EUBlocks {
                     "chiseled_sulfur",
                     "polished_sulfur",
                     "sulfur_bricks",
-                    "cracked_sulfur_bricks",
-                    "sulfur_tiles"
+                    "cracked_sulfur_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
                     "sulfur_slab",
                     "polished_sulfur_slab",
-                    "sulfur_brick_slab",
-                    "sulfur_tile_slab"
+                    "sulfur_brick_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("sulfur_pillar")

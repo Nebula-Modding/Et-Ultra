@@ -86,7 +86,6 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("polished_sulfur").get())
                 .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_bricks").get())
                 .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("cracked_sulfur_bricks").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_tiles").get())
                 .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_pillar").get())
                 // Graphite
                 .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block").get())
