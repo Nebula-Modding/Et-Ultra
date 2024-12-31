@@ -162,6 +162,68 @@ public class EUBlocks {
             .register("tholin_rich_water_ice_pillar")
             .done();
 
+    // Nitrogen Ice
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.SNOW)
+    )
+            .register(
+                    "nitrogen_ice",
+                    "cracked_nitrogen_ice",
+                    "nitrogen_ice_bricks",
+                    "cracked_nitrogen_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "nitrogen_ice_slab",
+                    "cracked_nitrogen_ice_slab",
+                    "nitrogen_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("nitrogen_ice_pillar")
+            .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_ORANGE)
+    )
+            .register(
+                    "tholin_poor_nitrogen_ice",
+                    "cracked_tholin_poor_nitrogen_ice",
+                    "tholin_poor_nitrogen_ice_bricks",
+                    "cracked_tholin_poor_nitrogen_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "tholin_poor_nitrogen_ice_slab",
+                    "cracked_tholin_poor_nitrogen_ice_slab",
+                    "tholin_poor_nitrogen_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_poor_nitrogen_ice_pillar")
+            .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_RED)
+    )
+            .register(
+                    "tholin_rich_nitrogen_ice",
+                    "cracked_tholin_rich_nitrogen_ice",
+                    "tholin_rich_nitrogen_ice_bricks",
+                    "cracked_tholin_rich_nitrogen_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "tholin_rich_nitrogen_ice_slab",
+                    "cracked_tholin_rich_nitrogen_ice_slab",
+                    "tholin_rich_nitrogen_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_rich_nitrogen_ice_pillar")
+            .done();
+
     // Sulfur Dioxide Ice
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
