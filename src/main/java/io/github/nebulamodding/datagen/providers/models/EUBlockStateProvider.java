@@ -42,8 +42,8 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate_tile_slab"));
 
         excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_SEMI_SATURATED_WATER_ICE_BLOCKS.get("tholin_semi_saturated_water_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_SATURATED_WATER_ICE_BLOCKS.get("tholin_saturated_water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_brick_slab"));
 
         excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_brick_slab"));
 

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "et_ultra:block/cracked_tholin_semi_saturated_water_ice"
-  }
-}

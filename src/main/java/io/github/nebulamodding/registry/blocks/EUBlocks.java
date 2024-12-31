@@ -141,25 +141,25 @@ public class EUBlocks {
             .setBlockFunction(RotatedPillarBlock::new)
             .register("tholin_poor_water_ice_pillar")
             .done();
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_SATURATED_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
             iceProperties().mapColor(MapColor.COLOR_RED)
     )
             .register(
-                    "tholin_saturated_water_ice",
-                    "cracked_tholin_saturated_water_ice",
-                    "tholin_saturated_water_ice_bricks",
-                    "cracked_tholin_saturated_water_ice_bricks"
+                    "tholin_rich_water_ice",
+                    "cracked_tholin_rich_water_ice",
+                    "tholin_rich_water_ice_bricks",
+                    "cracked_tholin_rich_water_ice_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "tholin_saturated_water_ice_slab",
-                    "cracked_tholin_saturated_water_ice_slab",
-                    "tholin_saturated_water_ice_brick_slab"
+                    "tholin_rich_water_ice_slab",
+                    "cracked_tholin_rich_water_ice_slab",
+                    "tholin_rich_water_ice_brick_slab"
             )
             .setBlockFunction(RotatedPillarBlock::new)
-            .register("tholin_saturated_water_ice_pillar")
+            .register("tholin_rich_water_ice_pillar")
             .done();
 
     // Sulfur Dioxide Ice

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "et_ultra:block/cracked_tholin_rich_water_ice",
+    "side": "et_ultra:block/cracked_tholin_rich_water_ice",
+    "top": "et_ultra:block/cracked_tholin_rich_water_ice"
+  }
+}
