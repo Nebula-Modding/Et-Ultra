@@ -162,6 +162,28 @@ public class EUBlocks {
             .register("tholin_rich_water_ice_pillar")
             .done();
 
+    // Carbon Dioxide Ice
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_YELLOW)
+    )
+            .register(
+                    "carbon_dioxide_ice",
+                    "cracked_carbon_dioxide_ice",
+                    "carbon_dioxide_ice_bricks",
+                    "cracked_carbon_dioxide_ice_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "carbon_dioxide_ice_slab",
+                    "cracked_carbon_dioxide_ice_slab",
+                    "carbon_dioxide_ice_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("carbon_dioxide_ice_pillar")
+            .done();
+
     // Nitrogen Ice
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),

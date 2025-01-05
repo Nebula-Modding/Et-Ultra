@@ -49,7 +49,13 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_brick_slab"));
 
+        //excludedBlocks.add(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_brick_slab"));
+        //excludedBlocks.add(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_brick_slab"));
+        //excludedBlocks.add(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_brick_slab"));
+
         excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_brick_slab"));
+
+        excludedBlocks.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_brick_slab"));
 
         excludedBlocks.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_brick_slab"));
 

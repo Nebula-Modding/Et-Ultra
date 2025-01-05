@@ -34,7 +34,7 @@ public class EUItems {
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
             // Gems
-            "diamond_shard",
+            //"diamond_shard",
             // Metals
             "raw_etrium",
             "impure_steel"
