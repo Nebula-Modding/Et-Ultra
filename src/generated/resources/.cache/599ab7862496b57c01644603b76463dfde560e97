@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-04T20:33:09.7703254	Block States: et_ultra
+// 1.21.1	2025-01-04T22:50:41.4776196	Block States: et_ultra
 cae549d044b9769f506c60ba2c742a369a8c1c61 assets/et_ultra/blockstates/ammonia_ice.json
 46fd2a18efe02ee181c0ab57fc7dba287e159344 assets/et_ultra/blockstates/ammonia_ice_bricks.json
 56f1dd797953e4dd19cb8c55f0f4f9ce75d04484 assets/et_ultra/blockstates/ammonia_ice_pillar.json
@@ -65,6 +65,7 @@ be6fa45aca415f753c4dfc07ba9b7ee932fb9490 assets/et_ultra/blockstates/cracked_tho
 7a61c5a14352aa208e5112b719e2592ce5e49516 assets/et_ultra/blockstates/encased_obdurium_block.json
 ae5068a31f858b4421faf0461adc40ee39d08017 assets/et_ultra/blockstates/erdragh_block.json
 7063df6cbdccc1adc9cd726dd328c0c0ad4af105 assets/et_ultra/blockstates/etrium_ore.json
+699652ecfbd652d6a53700f2249d050c84434d28 assets/et_ultra/blockstates/flesh_bricks.json
 dfb8bafcdf87e22134aaa2bc4299f519835fc421 assets/et_ultra/blockstates/frigus_cobblestone.json
 a3211f07ed10892e6ea0fa058ebeb890d5335db8 assets/et_ultra/blockstates/frigus_cobblestone_slab.json
 4007f8162635239bade34262c13407806fe1b896 assets/et_ultra/blockstates/frigus_deepslate.json
@@ -260,6 +261,7 @@ cf0537fb3f4ceec88490425098fa0090eacdc10f assets/et_ultra/models/block/cracked_wa
 ddff4aa8c7b20a62e681131708f21f38c595adc5 assets/et_ultra/models/block/encased_obdurium_block.json
 8d183e766b57e6680723f7cb6df06e3731d62724 assets/et_ultra/models/block/erdragh_block.json
 ce16021169fa6ce77a8630b4b647347aa2189120 assets/et_ultra/models/block/etrium_ore.json
+6e6ac4094b72588c4fc38836c006788e9940ff59 assets/et_ultra/models/block/flesh_bricks.json
 d5bf6dbbff7e3d1d8fb601965130a07f377ef0c9 assets/et_ultra/models/block/frigus_cobblestone.json
 fbc5e3eb9c494378198a6c3b89dd498288fa6554 assets/et_ultra/models/block/frigus_cobblestone_slab.json
 dd9e8c144d9b953a990cde62dce526dbee9bad96 assets/et_ultra/models/block/frigus_cobblestone_slab_top.json
@@ -482,6 +484,7 @@ e38e7eaf2f371fe8f476c9f54a988715df1c4ced assets/et_ultra/models/item/cracked_wat
 c90aea686535c7003ad63f920eb87a7e50a6d30e assets/et_ultra/models/item/encased_obdurium_block.json
 7dc4d9ecbf0948b336ab6c49e0a584910e831f6a assets/et_ultra/models/item/erdragh_block.json
 c9aae12f744530a697281e6b609b4280dfeb1fef assets/et_ultra/models/item/etrium_ore.json
+905eae733a4456f806fcea3ef7221220fe54a857 assets/et_ultra/models/item/flesh_bricks.json
 37a59178d668b1856d7f614298f274bb3a5f98f5 assets/et_ultra/models/item/frigus_cobblestone.json
 8240b417a0b50e3a177c60377fb5e8d97d9d692b assets/et_ultra/models/item/frigus_cobblestone_slab.json
 3c305fb4ae1f9eb7f418a2822ab4d55dd0bea8ea assets/et_ultra/models/item/frigus_deepslate.json

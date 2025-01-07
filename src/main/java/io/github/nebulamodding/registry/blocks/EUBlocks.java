@@ -483,11 +483,13 @@ public class EUBlocks {
             BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.4F, 0.4F)
     )
             .register(
-                    "flesh_block"
+                    "flesh_block",
+                    "flesh_bricks"
             )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "flesh_slab"
+                    "flesh_slab",
+                    "flesh_brick_slab"
             )
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ROTTEN_FLESH_BLOCKS = new RegolithBlockBuilder<>(

@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-04T20:33:09.7798757	Loot Tables
+// 1.21.1	2025-01-04T22:50:41.4892573	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -69,6 +69,8 @@ fd1da5eeaf6b49f0b8f8c0d2080f502fd8247d1b data/et_ultra/loot_table/blocks/cracked
 a429c774dd5e0b4bd425128b04a26040fbd3f3e0 data/et_ultra/loot_table/blocks/erdragh_slab.json
 3e9da2cda5a4d6546b4e2fa0a85f7e0129b5c7dc data/et_ultra/loot_table/blocks/etrium_ore.json
 2a590e36ed826790f6d69d25bd14cb21bd6a8ae3 data/et_ultra/loot_table/blocks/flesh_block.json
+d8bc88791b4120f981081f7004bc3ca6c6e8a802 data/et_ultra/loot_table/blocks/flesh_bricks.json
+917ddc40c409f689fbea9ca7702eac68b0a78f94 data/et_ultra/loot_table/blocks/flesh_brick_slab.json
 b2f9246c6bab6cb48ccbd822aa4638059ae57e44 data/et_ultra/loot_table/blocks/flesh_slab.json
 f4e51dec42f78de5e2147856396b7dc9934b7240 data/et_ultra/loot_table/blocks/frigus_cobblestone.json
 8ea5d1fdc842aa506d0c597e5baabb8bc36b7d25 data/et_ultra/loot_table/blocks/frigus_cobblestone_slab.json
