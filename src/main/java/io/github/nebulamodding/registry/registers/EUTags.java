@@ -32,6 +32,8 @@ public class EUTags {
     public static class EUBlockTags {
         // Block Tags
         public static final TagKey<Block>
+                ORE_BEARING_GROUND_FRIGUS_STONE = BlockTags.create(createGenericItemsLocation("ore_bearing_ground/frigus_stone")),
+                ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = BlockTags.create(createGenericItemsLocation("ore_bearing_ground/frigus_deepslate")),
                 STORAGE_BLOCKS_OBDURIUM = BlockTags.create(createGenericItemsLocation("storage_blocks/obdurium"))
         ;
     }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-04T22:50:41.4776196	Block States: et_ultra
+// 1.21.1	2025-01-10T22:49:06.6532701	Block States: et_ultra
 cae549d044b9769f506c60ba2c742a369a8c1c61 assets/et_ultra/blockstates/ammonia_ice.json
 46fd2a18efe02ee181c0ab57fc7dba287e159344 assets/et_ultra/blockstates/ammonia_ice_bricks.json
 56f1dd797953e4dd19cb8c55f0f4f9ce75d04484 assets/et_ultra/blockstates/ammonia_ice_pillar.json
@@ -74,6 +74,7 @@ aac535506ebab0199a7807f892e886d9f5c0a55b assets/et_ultra/blockstates/frigus_deep
 50ee04f10ffbf86a22930e60db892a00f981d37d assets/et_ultra/blockstates/frigus_deepslate_pillar.json
 cd08105892a65a117aab23d51550a2f5d2a0201f assets/et_ultra/blockstates/frigus_deepslate_slab.json
 bcb537f16735cac82e14a8969fb2cefa89d56a29 assets/et_ultra/blockstates/frigus_deepslate_tiles.json
+2fe201c96dc1618ad37d89b65a569df36d61e719 assets/et_ultra/blockstates/frigus_dirt.json
 cdc79981fee2e7fd7be6c4ca144d91af6d805852 assets/et_ultra/blockstates/frigus_obdurium_ore.json
 242e50511775d0545bea6778d5f8c4e6211a6998 assets/et_ultra/blockstates/frigus_stone.json
 ccc9450d988538b05418e158699456b8eea6ab59 assets/et_ultra/blockstates/frigus_stone_bricks.json
@@ -273,6 +274,7 @@ e8803d3527da6364cab6dc29b9cacdcff61ea148 assets/et_ultra/models/block/frigus_dee
 933a536621e78c1f27fa744625c93eaa5df94183 assets/et_ultra/models/block/frigus_deepslate_slab.json
 ab2b075124df9bf85ab2bdf597cc799f8f2350d7 assets/et_ultra/models/block/frigus_deepslate_slab_top.json
 a52b3903abde4fa890e5b00177ec84f299a28f57 assets/et_ultra/models/block/frigus_deepslate_tiles.json
+2253bdf8c77779c1ec176fe87ade98aa61da195a assets/et_ultra/models/block/frigus_dirt.json
 9c40a56baad146507b48c7505e296ac0be08ab1b assets/et_ultra/models/block/frigus_obdurium_ore.json
 8a34bf2e3b33d00b05f4ca0446d652a83d26ce93 assets/et_ultra/models/block/frigus_stone.json
 dad51b9b240148dc6134038bddff5883d6bed8c8 assets/et_ultra/models/block/frigus_stone_bricks.json
@@ -493,6 +495,7 @@ c9aae12f744530a697281e6b609b4280dfeb1fef assets/et_ultra/models/item/etrium_ore.
 722b62f5a60fa1e592d68e622b9b1980150a1240 assets/et_ultra/models/item/frigus_deepslate_pillar.json
 d54e4bbe1734a187a30cd66c030936e4d6ea6018 assets/et_ultra/models/item/frigus_deepslate_slab.json
 e8edf81b0541f33cd48363839353a1d5813a3953 assets/et_ultra/models/item/frigus_deepslate_tiles.json
+7a32279fb1364c99c9cea91a838ecbc89fbbcd80 assets/et_ultra/models/item/frigus_dirt.json
 c54cda0fc2705ae265c1a0731b786195f875d1f3 assets/et_ultra/models/item/frigus_obdurium_ore.json
 6b6417699d4c91615e1f8a4a1e032f4c2f6fe737 assets/et_ultra/models/item/frigus_stone.json
 026142a849eec93b4f0416e2fda7b29f32a630dd assets/et_ultra/models/item/frigus_stone_bricks.json

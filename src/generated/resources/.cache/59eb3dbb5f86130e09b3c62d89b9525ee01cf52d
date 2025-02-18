@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-04T22:50:41.4892573	Loot Tables
+// 1.21.1	2025-01-11T14:07:51.0384772	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -82,6 +82,8 @@ dc14810cc32ee08ef0ed75bd12c08aa488446cdf data/et_ultra/loot_table/blocks/frigus_
 b251632758e92db53fa5909f91e28addf712f475 data/et_ultra/loot_table/blocks/frigus_deepslate_slab.json
 1e8f9be5dec3c1a15de9cf16657f6c250a48492b data/et_ultra/loot_table/blocks/frigus_deepslate_tiles.json
 153f2078448b8d1cb2585523e8e07a1adaa4214f data/et_ultra/loot_table/blocks/frigus_deepslate_tile_slab.json
+1f497021db20fbd35a874ab51447b9351a6974e5 data/et_ultra/loot_table/blocks/frigus_dirt.json
+6fc564f1e79f0aa6eb376515c7a338d062d6e748 data/et_ultra/loot_table/blocks/frigus_grass_block.json
 34e51381f84149eb349e987572d55ffc4c024916 data/et_ultra/loot_table/blocks/frigus_obdurium_ore.json
 7317b20478ca1b042c628ce05c5f9123e90d1f91 data/et_ultra/loot_table/blocks/frigus_stone.json
 a89ceaf80cb5154ffd876884b59eba19e694dbd2 data/et_ultra/loot_table/blocks/frigus_stone_bricks.json

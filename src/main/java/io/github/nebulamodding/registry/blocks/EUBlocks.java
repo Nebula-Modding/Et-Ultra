@@ -19,6 +19,97 @@ import java.util.function.Supplier;
 public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
+    // Frigus
+    public static final DeferredBlock<Block> FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new Block(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+    )
+            .register(
+                    "frigus_stone",
+                    "frigus_cobblestone",
+                    "chiseled_frigus_stone",
+                    "polished_frigus_stone",
+                    "frigus_stone_bricks",
+                    "cracked_frigus_stone_bricks"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "frigus_stone_slab",
+                    "frigus_cobblestone_slab",
+                    "polished_frigus_stone_slab",
+                    "frigus_stone_brick_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_stone_pillar")
+            .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.COLOR_BLUE)
+    )
+            .register(
+                    "frigus_deepslate",
+                    "cobbled_frigus_deepslate",
+                    "chiseled_frigus_deepslate",
+                    "polished_frigus_deepslate",
+                    "frigus_deepslate_bricks",
+                    "cracked_frigus_deepslate_bricks",
+                    "frigus_deepslate_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "frigus_deepslate_slab",
+                    "cobbled_frigus_deepslate_slab",
+                    "polished_frigus_deepslate_slab",
+                    "frigus_deepslate_brick_slab",
+                    "frigus_deepslate_tile_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_deepslate_pillar")
+            .done();
+
+    // Permafrost
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+    )
+            .register(
+                    "permafrost",
+                    "cracked_permafrost",
+                    "chiseled_permafrost",
+                    "polished_permafrost",
+                    "permafrost_bricks",
+                    "cracked_permafrost_bricks",
+                    "permafrost_tiles"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "permafrost_slab",
+                    "cracked_permafrost_slab",
+                    "polished_permafrost_slab",
+                    "permafrost_brick_slab",
+                    "permafrost_tile_slab"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("permafrost_pillar")
+            .done();
+
+
+
+
+
+
+
+
+
+
+
+
     // Moon
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -290,83 +381,6 @@ public class EUBlocks {
             .register("ammonia_ice_pillar")
             .done();
 
-    // Permafrost
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
-    )
-            .register(
-                    "permafrost",
-                    "cracked_permafrost",
-                    "chiseled_permafrost",
-                    "polished_permafrost",
-                    "permafrost_bricks",
-                    "cracked_permafrost_bricks",
-                    "permafrost_tiles"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "permafrost_slab",
-                    "cracked_permafrost_slab",
-                    "polished_permafrost_slab",
-                    "permafrost_brick_slab",
-                    "permafrost_tile_slab"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("permafrost_pillar")
-            .done();
-
-    // Frigus
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
-    )
-            .register(
-                    "frigus_stone",
-                    "frigus_cobblestone",
-                    "chiseled_frigus_stone",
-                    "polished_frigus_stone",
-                    "frigus_stone_bricks",
-                    "cracked_frigus_stone_bricks"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "frigus_stone_slab",
-                    "frigus_cobblestone_slab",
-                    "polished_frigus_stone_slab",
-                    "frigus_stone_brick_slab"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("frigus_stone_pillar")
-            .done();
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_BLUE)
-    )
-            .register(
-                    "frigus_deepslate",
-                    "cobbled_frigus_deepslate",
-                    "chiseled_frigus_deepslate",
-                    "polished_frigus_deepslate",
-                    "frigus_deepslate_bricks",
-                    "cracked_frigus_deepslate_bricks",
-                    "frigus_deepslate_tiles"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "frigus_deepslate_slab",
-                    "cobbled_frigus_deepslate_slab",
-                    "polished_frigus_deepslate_slab",
-                    "frigus_deepslate_brick_slab",
-                    "frigus_deepslate_tile_slab"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("frigus_deepslate_pillar")
-            .done();
-
     // Salt
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -609,6 +623,13 @@ public class EUBlocks {
             )
             .done();
 
+
+
+
+
+
+
+
     // Common properties
     private static BlockBehaviour.Properties iceProperties() {
         return BlockBehaviour.Properties.of()
@@ -618,6 +639,12 @@ public class EUBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(1.5f, 1.5f)
                 .friction(0.75F);
+    }
+    private static BlockBehaviour.Properties grassProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK);
+    }
+    private static BlockBehaviour.Properties dirtProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT);
     }
     private static BlockBehaviour.Properties stoneProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
@@ -648,7 +675,6 @@ public class EUBlocks {
     }
 
     // Metal Properties
-
     private static BlockBehaviour.Properties steelProperties() {
         return BlockBehaviour.Properties.of()
                 .mapColor(MapColor.COLOR_GRAY)

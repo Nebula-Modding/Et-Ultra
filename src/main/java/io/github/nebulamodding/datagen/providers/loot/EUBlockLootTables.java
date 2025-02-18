@@ -24,6 +24,7 @@ public class EUBlockLootTables extends BlockLootSubProvider {
         // then add a custom block drop after the loop
         final List<DeferredHolder<Block, ? extends Block>> excludedBlocks = new ArrayList<>();
 
+        excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.MARS_BLOCKS.get("mars_deepslate"));
 
         EUBlocks.BLOCKS.getEntries()
@@ -31,6 +32,7 @@ public class EUBlockLootTables extends BlockLootSubProvider {
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
 
+        add(EUBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.MARS_BLOCKS.get("cobbled_mars_deepslate").get()));
     }
 

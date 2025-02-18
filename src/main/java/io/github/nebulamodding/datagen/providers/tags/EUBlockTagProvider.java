@@ -96,11 +96,19 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles").get())
                 .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_pillar").get())
         ;
-
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(EUBlocks.FRIGUS_DIRT.get())
                 .add(EUBlocks.SALT_DUST_BLOCK.get())
                 .add(EUBlocks.SULFUR_DUST_BLOCK.get())
                 .add(EUBlocks.GRAPHITE_DUST_BLOCK.get())
+        ;
+        tag(BlockTags.ANIMALS_SPAWNABLE_ON)
+                .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
+        ;
+        tag(BlockTags.DIRT)
+                .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(EUBlocks.FRIGUS_DIRT.get())
         ;
     }
 }

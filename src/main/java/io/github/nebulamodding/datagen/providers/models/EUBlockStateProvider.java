@@ -28,6 +28,20 @@ public class EUBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
+        excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
+
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_brick_slab"));
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tile_slab"));
+
+
+
+
+
+        // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
         excludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_brick_slab"));
         excludedBlocks.add(EUBlocks.MERCURY_BLOCKS.get("mercury_deepslate_tile_slab"));
@@ -63,14 +77,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_brick_slab"));
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_tile_slab"));
 
-        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_brick_slab"));
-        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tile_slab"));
-
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab"));
-
-        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab"));
-        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tile_slab"));
-
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_slab"));
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_brick_slab"));
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tile_slab"));
@@ -82,6 +88,12 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.ROTTEN_FLESH_BLOCKS.get("rotten_flesh_slab"));
 
         excludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"));
+
+
+        //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+
+
 
         // Automatically provide models to blocks and block items
         for (var entry : EUBlocks.BLOCKS.getEntries()

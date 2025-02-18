@@ -1,12 +1,14 @@
 package io.github.nebulamodding.datagen.providers.tags;
 
 import io.github.nebulamodding.EtUltra;
+import io.github.nebulamodding.registry.blocks.EUBlocks;
 import io.github.nebulamodding.registry.items.EUItems;
 import io.github.nebulamodding.registry.registers.EUTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -42,6 +44,9 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.RAW_MATERIALS)
                 .addTag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
         ;
+        tag(Tags.Items.RAW_MATERIALS)
+                .addTag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
+        ;
         tag(Tags.Items.INGOTS)
                 .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
         ;
@@ -57,6 +62,10 @@ public class EUItemTagProvider extends ItemTagsProvider {
         ;
 
         // Minecraft Tags
+        tag(ItemTags.DIRT)
+                .add(EUBlocks.FRIGUS_GRASS_BLOCK.get().asItem())
+                .add(EUBlocks.FRIGUS_DIRT.get().asItem())
+        ;
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
         ;

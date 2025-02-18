@@ -1,5 +1,7 @@
-// 1.21.1	2024-12-21T15:07:03.2028201	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-01-11T14:07:51.0449925	Tags for minecraft:block mod id et_ultra
 19c7b1e003b45155568600a90a5d9d016697fc55 data/c/tags/block/storage_blocks.json
 825103f5dd04c3ab80127f55d3c88042d2fcc61c data/et_ultra/tags/block/storage_blocks/obdurium.json
+2dd60477f73d0331fadee7c8eb4569d8b6cfdd80 data/minecraft/tags/block/animals_spawnable_on.json
+93fe87b7df115cb8be5fa73c056869c06520e551 data/minecraft/tags/block/dirt.json
 b12671d64e27eaf7702682e66d91e5278610ffb0 data/minecraft/tags/block/mineable/pickaxe.json
-1682529b75882eae59e65b484f8d0a0bd48da9a9 data/minecraft/tags/block/mineable/shovel.json
+9a4b3c2b71ca8c58022f2edf24634e67db9126a3 data/minecraft/tags/block/mineable/shovel.json

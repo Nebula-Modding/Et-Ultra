@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-06T18:56:33.0915617	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-01-11T14:07:51.0454978	Tags for minecraft:item mod id et_ultra
 b40a05499ec9ad971f9f64f0c16976afea01cb23 data/c/tags/item/ingots.json
 269889b7094a1741b815ba26e60e413b9491ca21 data/c/tags/item/nuggets.json
 f5fc4eb037350d4a05d8f517eaefc27ca604e48b data/c/tags/item/raw_materials.json
@@ -11,4 +11,5 @@ c3f1565b34e1d7165c6ac0f69262ea663f5c4e6b data/et_ultra/tags/item/raw_material/ob
 825103f5dd04c3ab80127f55d3c88042d2fcc61c data/et_ultra/tags/item/storage_blocks/obdurium.json
 b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/beacon_payment_items.json
 bdb4053d28def340c591bb6cd77b677cfe510db6 data/minecraft/tags/item/cluster_max_harvestables.json
+93fe87b7df115cb8be5fa73c056869c06520e551 data/minecraft/tags/item/dirt.json
 b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/trim_materials.json
