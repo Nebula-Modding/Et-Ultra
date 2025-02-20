@@ -1,6 +1,6 @@
-// 1.21.1	2025-01-11T14:07:51.0449925	Tags for minecraft:block mod id et_ultra
-19c7b1e003b45155568600a90a5d9d016697fc55 data/c/tags/block/storage_blocks.json
-825103f5dd04c3ab80127f55d3c88042d2fcc61c data/et_ultra/tags/block/storage_blocks/obdurium.json
+// 1.21.1	2025-02-19T21:54:56.6402562	Tags for minecraft:block mod id et_ultra
+6b5ad9143c2cb8ea41c489bb34a19b9687caa482 data/c/tags/block/storage_blocks.json
+825103f5dd04c3ab80127f55d3c88042d2fcc61c data/c/tags/block/storage_blocks/obdurium.json
 2dd60477f73d0331fadee7c8eb4569d8b6cfdd80 data/minecraft/tags/block/animals_spawnable_on.json
 93fe87b7df115cb8be5fa73c056869c06520e551 data/minecraft/tags/block/dirt.json
 b12671d64e27eaf7702682e66d91e5278610ffb0 data/minecraft/tags/block/mineable/pickaxe.json

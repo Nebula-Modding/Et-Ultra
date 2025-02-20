@@ -1,15 +1,15 @@
-// 1.21.1	2025-01-11T14:07:51.0454978	Tags for minecraft:item mod id et_ultra
-b40a05499ec9ad971f9f64f0c16976afea01cb23 data/c/tags/item/ingots.json
-269889b7094a1741b815ba26e60e413b9491ca21 data/c/tags/item/nuggets.json
-f5fc4eb037350d4a05d8f517eaefc27ca604e48b data/c/tags/item/raw_materials.json
-19c7b1e003b45155568600a90a5d9d016697fc55 data/c/tags/item/storage_blocks.json
+// 1.21.1	2025-02-19T21:54:56.6402562	Tags for minecraft:item mod id et_ultra
+9b869ec074f174f4fd85c59a0c2627207a9236a3 data/c/tags/item/ingots.json
+8508932555971d225ee221864602cc6b0d486e4e data/c/tags/item/ingots/obdurium.json
+470a0adf456972656c240e4ee2807c5656ca8f3c data/c/tags/item/nuggets.json
+d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/c/tags/item/nuggets/obdurium.json
+c5d24257fd3e91b4e8e9619074cdd16a57db4673 data/c/tags/item/raw_materials.json
+c3f1565b34e1d7165c6ac0f69262ea663f5c4e6b data/c/tags/item/raw_material/obdurium.json
+6b5ad9143c2cb8ea41c489bb34a19b9687caa482 data/c/tags/item/storage_blocks.json
+825103f5dd04c3ab80127f55d3c88042d2fcc61c data/c/tags/item/storage_blocks/obdurium.json
 63fd04f577f61675d0d51a0566d2cbcf97cbf85b data/c/tags/item/tools/melee_weapon.json
 bdb4053d28def340c591bb6cd77b677cfe510db6 data/c/tags/item/tools/mining_tool.json
-8508932555971d225ee221864602cc6b0d486e4e data/et_ultra/tags/item/ingots/obdurium.json
-d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/et_ultra/tags/item/nuggets/obdurium.json
-c3f1565b34e1d7165c6ac0f69262ea663f5c4e6b data/et_ultra/tags/item/raw_material/obdurium.json
-825103f5dd04c3ab80127f55d3c88042d2fcc61c data/et_ultra/tags/item/storage_blocks/obdurium.json
-b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/beacon_payment_items.json
+9b869ec074f174f4fd85c59a0c2627207a9236a3 data/minecraft/tags/item/beacon_payment_items.json
 bdb4053d28def340c591bb6cd77b677cfe510db6 data/minecraft/tags/item/cluster_max_harvestables.json
 93fe87b7df115cb8be5fa73c056869c06520e551 data/minecraft/tags/item/dirt.json
-b40a05499ec9ad971f9f64f0c16976afea01cb23 data/minecraft/tags/item/trim_materials.json
+9b869ec074f174f4fd85c59a0c2627207a9236a3 data/minecraft/tags/item/trim_materials.json

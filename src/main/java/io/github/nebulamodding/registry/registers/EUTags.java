@@ -10,20 +10,17 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class EUTags {
-    public static ResourceLocation createOreLocation(String name) {
-        return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID,  "ores/" + name);
+    public static TagKey<Block> commonBlockTag(String name) {
+        return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
     }
-
-    public static ResourceLocation createBlockLocation(String name) {
-        return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name);
+    public static TagKey<Item> commonItemTag(String name) {
+        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
     }
-
-    public static ResourceLocation createGenericItemsLocation(String name) {
-        return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name);
+    public static TagKey<Block> blockTag(String name) {
+        return BlockTags.create(ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
     }
-
-    public static ResourceLocation createRawItemsLocation(String name) {
-        return ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, "raw/" + name);
+    public static TagKey<Item> itemTag(String name) {
+        return ItemTags.create(ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
     }
 
     public static TagKey<Block> createToolTag(String name) {
@@ -32,23 +29,23 @@ public class EUTags {
     public static class EUBlockTags {
         // Block Tags
         public static final TagKey<Block>
-                ORE_BEARING_GROUND_FRIGUS_STONE = BlockTags.create(createGenericItemsLocation("ore_bearing_ground/frigus_stone")),
-                ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = BlockTags.create(createGenericItemsLocation("ore_bearing_ground/frigus_deepslate")),
-                STORAGE_BLOCKS_OBDURIUM = BlockTags.create(createGenericItemsLocation("storage_blocks/obdurium"))
+                ORE_BEARING_GROUND_FRIGUS_STONE = commonBlockTag("ore_bearing_ground/frigus_stone"),
+                ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonBlockTag("ore_bearing_ground/frigus_deepslate"),
+                STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium")
         ;
     }
 
     public static class EUItemTags {
         // Block Item Tags
         public static final TagKey<Item>
-                STORAGE_BLOCKS_OBDURIUM = ItemTags.create(createGenericItemsLocation("storage_blocks/obdurium"))
+                STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium")
         ;
 
         // Item Tags
         public static final TagKey<Item>
-                RAW_MATERIALS_OBDURIUM = ItemTags.create(createGenericItemsLocation("raw_material/obdurium")),
-                NUGGETS_OBDURIUM = ItemTags.create(createGenericItemsLocation("nuggets/obdurium")),
-                INGOTS_OBDURIUM = ItemTags.create(createGenericItemsLocation("ingots/obdurium"))
+                RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),
+                NUGGETS_OBDURIUM = commonItemTag("nuggets/obdurium"),
+                INGOTS_OBDURIUM = commonItemTag("ingots/obdurium")
         ;
     }
 }

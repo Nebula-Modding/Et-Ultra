@@ -225,10 +225,10 @@
   "item.et_ultra.raw_etrium": "Raw Etrium",
   "item.et_ultra.raw_obdurium": "Raw Obdurium",
   "itemGroup.et_ultra.main": "Et Ultra",
-  "net.minecraft.client.KeyMapping@74b5a79b": "Test Screen Key",
-  "tag.block.et_ultra.storage_blocks.obdurium": "Obdurium Storage Blocks",
-  "tag.item.et_ultra.ingots.obdurium": "Obdurium Ingots",
-  "tag.item.et_ultra.nuggets.obdurium": "Obdurium Nuggets",
-  "tag.item.et_ultra.raw_material.obdurium": "Obdurium Raw Materials",
-  "tag.item.et_ultra.storage_blocks.obdurium": "Obdurium Storage Blocks"
+  "net.minecraft.client.KeyMapping@1839a424": "Test Screen Key",
+  "tag.block.c.storage_blocks.obdurium": "Obdurium Storage Blocks",
+  "tag.item.c.ingots.obdurium": "Obdurium Ingots",
+  "tag.item.c.nuggets.obdurium": "Obdurium Nuggets",
+  "tag.item.c.raw_material.obdurium": "Obdurium Raw Materials",
+  "tag.item.c.storage_blocks.obdurium": "Obdurium Storage Blocks"
 }
