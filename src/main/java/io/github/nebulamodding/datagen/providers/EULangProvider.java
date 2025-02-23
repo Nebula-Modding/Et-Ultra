@@ -90,14 +90,32 @@ public class EULangProvider extends LanguageProvider {
         // Items
 
         // Block Tags
-        add(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+        add(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE, "Frigus Stone Cobblestones");
+        add(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE, "Frigus Deepslate Cobblestones");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
+        add(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_STONE, "Frigus Stone Ores In Ground");
+        add(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ores In Ground");
+        add(EUTags.EUBlockTags.ORES_OBDURIUM, "Obdurium Ores");
+        add(EUTags.EUBlockTags.ORES_MALUNITE, "Malunite Ores");
+        add(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+        add(EUTags.EUBlockTags.STORAGE_BLOCKS_MALUNITE, "Malunite Storage Blocks");
+        add(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, "Raw Obdurium Storage Blocks");
+        add(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE, "Raw Malunite Storage Blocks");
 
         // Block Item Tags
+        add(EUTags.EUItemTags.COBBLESTONES_FRIGUS_STONE, "Frigus Stone Cobblestones");
+        add(EUTags.EUItemTags.COBBLESTONES_FRIGUS_DEEPSLATE, "Frigus Deepslate Cobblestones");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
+        add(EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_STONE, "Frigus Stone Ores In Ground");
+        add(EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ores In Ground");
+        add(EUTags.EUItemTags.ORES_OBDURIUM, "Obdurium Ores");
+        add(EUTags.EUItemTags.ORES_MALUNITE, "Malunite Ores");
         add(EUTags.EUItemTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+        add(EUTags.EUItemTags.STORAGE_BLOCKS_MALUNITE, "Malunite Storage Blocks");
+        add(EUTags.EUItemTags.STORAGE_BLOCKS_RAW_OBDURIUM, "Raw Obdurium Storage Blocks");
+        add(EUTags.EUItemTags.STORAGE_BLOCKS_RAW_MALUNITE, "Raw Malunite Storage Blocks");
 
         // Item Tags
         add(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM, "Obdurium Raw Materials");

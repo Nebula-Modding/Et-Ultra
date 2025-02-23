@@ -22,27 +22,61 @@ public class EUTags {
     public static TagKey<Item> itemTag(String name) {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
     }
-
-    public static TagKey<Block> createToolTag(String name) {
+    public static TagKey<Block> toolTag(String name) {
         return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
     }
     public static class EUBlockTags {
-        // Block Tags
+        // Blocks
         public static final TagKey<Block>
+                // Cobblestones
+                COBBLESTONES_FRIGUS_STONE = commonBlockTag("cobblestones/frigus_stone"),
+                COBBLESTONES_FRIGUS_DEEPSLATE = commonBlockTag("cobblestones/frigus_deepslate"),
+
+                // Ore Bearing Ground
                 ORE_BEARING_GROUND_FRIGUS_STONE = commonBlockTag("ore_bearing_ground/frigus_stone"),
                 ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonBlockTag("ore_bearing_ground/frigus_deepslate"),
-                STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium")
+
+                // Ores In Ground
+                ORES_IN_GROUND_FRIGUS_STONE = commonBlockTag("ores_in_ground/frigus_stone"),
+                ORES_IN_GROUND_FRIGUS_DEEPSLATE = commonBlockTag("ores_in_ground/frigus_deepslate"),
+
+                // Ore Blocks
+                ORES_OBDURIUM = commonBlockTag("ores/obdurium"),
+                ORES_MALUNITE = commonBlockTag("ores/malunite"),
+
+                // Storage Blocks
+                STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium"),
+                STORAGE_BLOCKS_MALUNITE = commonBlockTag("storage_blocks/malunite"),
+                STORAGE_BLOCKS_RAW_OBDURIUM = commonBlockTag("storage_blocks/raw_obdurium"),
+                STORAGE_BLOCKS_RAW_MALUNITE = commonBlockTag("storage_blocks/raw_malunite")
         ;
     }
     public static class EUItemTags {
-        // Block Item Tags
+        // Block Items
         public static final TagKey<Item>
+                // Cobblestones
+                COBBLESTONES_FRIGUS_STONE = commonItemTag("cobblestones/frigus_stone"),
+                COBBLESTONES_FRIGUS_DEEPSLATE = commonItemTag("cobblestones/frigus_deepslate"),
+
+                // Ore Bearing Ground
                 ORE_BEARING_GROUND_FRIGUS_STONE = commonItemTag("ore_bearing_ground/frigus_stone"),
                 ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonItemTag("ore_bearing_ground/frigus_deepslate"),
-                STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium")
-        ;
 
-        // Item Tags
+                // Ores In Ground
+                ORES_IN_GROUND_FRIGUS_STONE = commonItemTag("ores_in_ground/frigus_stone"),
+                ORES_IN_GROUND_FRIGUS_DEEPSLATE = commonItemTag("ores_in_ground/frigus_deepslate"),
+
+                // Ore Blocks
+                ORES_OBDURIUM = commonItemTag("ores/obdurium"),
+                ORES_MALUNITE = commonItemTag("ores/malunite"),
+
+                // Storage Blocks
+                STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium"),
+                STORAGE_BLOCKS_MALUNITE = commonItemTag("storage_blocks/malunite"),
+                STORAGE_BLOCKS_RAW_OBDURIUM = commonItemTag("storage_blocks/raw_obdurium"),
+                STORAGE_BLOCKS_RAW_MALUNITE = commonItemTag("storage_blocks/raw_malunite")
+        ;
+        // Items
         public static final TagKey<Item>
                 RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),
                 NUGGETS_OBDURIUM = commonItemTag("nuggets/obdurium"),
