@@ -80,8 +80,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_slab"));
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_brick_slab"));
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tile_slab"));
-
-        excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_block"));
+        
         excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_slab"));
         excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_brick_slab"));
 

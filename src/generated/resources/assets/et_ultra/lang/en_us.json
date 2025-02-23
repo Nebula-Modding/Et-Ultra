@@ -225,10 +225,14 @@
   "item.et_ultra.raw_etrium": "Raw Etrium",
   "item.et_ultra.raw_obdurium": "Raw Obdurium",
   "itemGroup.et_ultra.main": "Et Ultra",
-  "net.minecraft.client.KeyMapping@1839a424": "Test Screen Key",
+  "net.minecraft.client.KeyMapping@37675fc7": "Test Screen Key",
+  "tag.block.c.ore_bearing_ground.frigus_deepslate": "Frigus Deepslate Ore Bearing Ground",
+  "tag.block.c.ore_bearing_ground.frigus_stone": "Frigus Stone Ore Bearing Ground",
   "tag.block.c.storage_blocks.obdurium": "Obdurium Storage Blocks",
   "tag.item.c.ingots.obdurium": "Obdurium Ingots",
   "tag.item.c.nuggets.obdurium": "Obdurium Nuggets",
+  "tag.item.c.ore_bearing_ground.frigus_deepslate": "Frigus Deepslate Ore Bearing Ground",
+  "tag.item.c.ore_bearing_ground.frigus_stone": "Frigus Stone Ore Bearing Ground",
   "tag.item.c.raw_material.obdurium": "Obdurium Raw Materials",
   "tag.item.c.storage_blocks.obdurium": "Obdurium Storage Blocks"
 }

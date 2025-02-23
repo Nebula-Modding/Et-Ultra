@@ -30,7 +30,13 @@ public class EUItemTagProvider extends ItemTagsProvider {
         // Copy Minecraft Block Tags
         //copy(BlockTags.TAGHERE, BlockTags.TAGHERE);
 
-        // Et Ultra Tags
+        // Et Ultra Common Tags
+        tag(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_STONE)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").asItem())
+        ;
+        tag(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE)
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").asItem())
+        ;
         tag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
         ;
@@ -40,7 +46,11 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
                 .add(EUItems.OBDURIUM_INGOT.get())
         ;
-        // Neoforge Tags
+        // Common Tags
+        tag(Tags.Items.STONES)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").asItem())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").asItem())
+        ;
         tag(Tags.Items.RAW_MATERIALS)
                 .addTag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
         ;

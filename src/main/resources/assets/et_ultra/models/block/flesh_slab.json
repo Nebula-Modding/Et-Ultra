@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab",
   "textures": {
     "bottom": "et_ultra:block/flesh_block",
-    "side": "et_ultra:block/flesh_block_side",
+    "side": "et_ultra:block/flesh_block",
     "top": "et_ultra:block/flesh_block"
   }
 }

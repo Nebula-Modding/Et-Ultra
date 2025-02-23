@@ -91,8 +91,12 @@ public class EULangProvider extends LanguageProvider {
 
         // Block Tags
         add(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
+        add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
+        add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
 
         // Block Item Tags
+        add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
+        add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
         add(EUTags.EUItemTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
 
         // Item Tags

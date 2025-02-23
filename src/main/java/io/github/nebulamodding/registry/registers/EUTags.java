@@ -34,10 +34,11 @@ public class EUTags {
                 STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium")
         ;
     }
-
     public static class EUItemTags {
         // Block Item Tags
         public static final TagKey<Item>
+                ORE_BEARING_GROUND_FRIGUS_STONE = commonItemTag("ore_bearing_ground/frigus_stone"),
+                ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonItemTag("ore_bearing_ground/frigus_deepslate"),
                 STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium")
         ;
 
