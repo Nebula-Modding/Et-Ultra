@@ -20,8 +20,12 @@ public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     // Frigus
-    public static final DeferredBlock<Block> FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new Block(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new GrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final DeferredBlock<Block> FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+    public static final DeferredBlock<Block> FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+    public static final DeferredBlock<Block> FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+    public static final DeferredBlock<Block> FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS).mapColor(MapColor.TERRACOTTA_CYAN)));
 
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -97,6 +101,28 @@ public class EUBlocks {
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("permafrost_pillar")
+            .done();
+
+    // Ores
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_ORE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+    )
+            .register(
+                    "frigus_coal_ore",
+                    "frigus_iron_ore",
+                    "frigus_copper_ore",
+                    "frigus_gold_ore"
+            )
+            .setBlockFunction(RedStoneOreBlock::new)
+            .register("frigus_redstone_ore")
+            .setBlockFunction(Block::new)
+            .register(
+                    "frigus_emerald_ore",
+                    "frigus_lapis_ore",
+                    "frigus_diamond_ore"
+            )
             .done();
 
 
@@ -496,8 +522,12 @@ public class EUBlocks {
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
             BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.4F, 0.4F)
     )
+            .setBlockFunction(MudBlock::new)
             .register(
-                    "flesh_block",
+                    "flesh_block"
+            )
+            .setBlockFunction(Block::new)
+            .register(
                     "flesh_bricks"
             )
             .setBlockFunction(SlabBlock::new)

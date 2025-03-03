@@ -29,6 +29,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         // To exclude a block, just add it to the list using #add
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
+        excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
+        excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
+        excludedBlocks.add(EUBlocks.FRIGUS_SHORT_GRASS);
 
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab"));
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab"));

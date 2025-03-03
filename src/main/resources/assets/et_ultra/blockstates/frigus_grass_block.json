@@ -1,7 +1,12 @@
 {
   "variants": {
-    "": {
-      "model": "et_ultra:block/frigus_grass_block"
+    "snowy=false": [
+      {
+        "model": "et_ultra:block/frigus_grass_block"
+      }
+    ],
+    "snowy=true": {
+      "model": "et_ultra:block/frigus_grass_block_snow"
     }
   }
 }
