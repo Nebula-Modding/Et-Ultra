@@ -1,4 +1,4 @@
-gpluginManagement {
+pluginManagement {
     repositories {
         mavenLocal()
         gradlePluginPortal()
