@@ -104,10 +104,10 @@ public class EUBlocks {
             .done();
 
     // Ores
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_ORE_BLOCKS = new RegolithBlockBuilder<>(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_ORE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
+            stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
     )
             .register(
                     "frigus_coal_ore",
@@ -124,7 +124,26 @@ public class EUBlocks {
                     "frigus_diamond_ore"
             )
             .done();
-
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_ORE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateOreProperties().mapColor(MapColor.COLOR_BLUE)
+    )
+            .register(
+                    "frigus_deepslate_coal_ore",
+                    "frigus_deepslate_iron_ore",
+                    "frigus_deepslate_copper_ore",
+                    "frigus_deepslate_gold_ore"
+            )
+            .setBlockFunction(RedStoneOreBlock::new)
+            .register("frigus_deepslate_redstone_ore")
+            .setBlockFunction(Block::new)
+            .register(
+                    "frigus_deepslate_emerald_ore",
+                    "frigus_deepslate_lapis_ore",
+                    "frigus_deepslate_diamond_ore"
+            )
+            .done();
 
 
 
@@ -680,11 +699,13 @@ public class EUBlocks {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
     }
     private static BlockBehaviour.Properties deepslateProperties() {
-        return BlockBehaviour.Properties.of()
-                .sound(SoundType.DEEPSLATE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .strength(3, 6);
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE);
+    }
+    private static BlockBehaviour.Properties stoneOreProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE);
+    }
+    private static BlockBehaviour.Properties deepslateOreProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE);
     }
     private static BlockBehaviour.Properties crystalProperties() {
         return BlockBehaviour.Properties.of()
