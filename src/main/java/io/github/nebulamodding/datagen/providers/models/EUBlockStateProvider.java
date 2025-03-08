@@ -33,6 +33,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
         excludedBlocks.add(EUBlocks.FRIGUS_SHORT_GRASS);
 
+        excludedBlocks.add(EUBlocks.VIVIAN);
+        excludedBlocks.add(EUBlocks.WICKUL);
+        excludedBlocks.add(EUBlocks.ICEFLOWER);
+
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab"));
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab"));
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tile_slab"));

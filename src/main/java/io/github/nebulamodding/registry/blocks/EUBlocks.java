@@ -7,10 +7,12 @@ import martian.regolith.RegolithBlockUtil;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.util.ColorRGBA;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -25,8 +27,40 @@ public class EUBlocks {
     public static final DeferredBlock<Block> FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final DeferredBlock<Block> FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
     public static final DeferredBlock<Block> FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
-    public static final DeferredBlock<Block> FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS).mapColor(MapColor.TERRACOTTA_CYAN)));
-
+    public static final DeferredBlock<Block> FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+    public static final DeferredBlock<Block> VIVIAN = register("vivian", () -> new FlowerBlock(
+            MobEffects.INVISIBILITY,
+            3.5F,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)
+    ));
+    public static final DeferredBlock<Block> WICKUL = register("wickul", () -> new FlowerBlock(
+            MobEffects.MOVEMENT_SPEED,
+            3.5F,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)
+    ));
+    public static final DeferredBlock<Block> ICEFLOWER = register("iceflower", () -> new FlowerBlock(
+            MobEffects.MOVEMENT_SLOWDOWN,
+            5.0F,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)
+    ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -688,6 +722,9 @@ public class EUBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(1.5f, 1.5f)
                 .friction(0.75F);
+    }
+    private static BlockBehaviour.Properties shortGrassProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS);
     }
     private static BlockBehaviour.Properties grassProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK);
