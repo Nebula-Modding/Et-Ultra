@@ -25,14 +25,65 @@ public class EUBlockTagProvider extends BlockTagsProvider {
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .add(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_block").get())
         ;
+        tag(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_STONE)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_coal_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_iron_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_copper_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_gold_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_lapis_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_diamond_ore").get())
+        ;
+        tag(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE)
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_coal_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_iron_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_copper_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_gold_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_lapis_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_diamond_ore").get())
+        ;
 
-        // Neoforge Tags
+        // Common Tags
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
         ;
-
+        tag(Tags.Blocks.ORE_RATES_DENSE)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_copper_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_lapis_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_copper_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_lapis_ore").get())
+        ;
+        tag(Tags.Blocks.ORE_RATES_SINGULAR)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_coal_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_iron_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_gold_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_diamond_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_coal_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_iron_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_gold_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_diamond_ore").get())
+        ;
+        tag(Tags.Blocks.STONES)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
+        ;
+        tag(Tags.Blocks.COBBLESTONES)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
+        ;
 
         // Minecraft Tags
+        // This tag prevents blocks from interfering with enchantment tables
+        tag(BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
+                .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
+        ;
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(EUBlocks.FRIGUS_DIRT_PATH.get())
@@ -54,7 +105,6 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_emerald_ore").get())
                 .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_lapis_ore").get())
                 .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_diamond_ore").get())
-
                 .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_coal_ore").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_iron_ore").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_copper_ore").get())
@@ -75,7 +125,6 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone_slab").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("polished_frigus_stone_slab").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_slab").get())
-
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("chiseled_frigus_deepslate").get())
@@ -88,46 +137,46 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate_slab").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate_slab").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_slab").get())
-
-                // Salt
-                .add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block").get())
-                .add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("polished_salt_crystal_block").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("chiseled_salt").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("polished_salt").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_bricks").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("cracked_salt_bricks").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_tiles").get())
-                .add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_pillar").get())
-                // Sulfur
-                .add(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("sulfur_crystal_block").get())
-                .add(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("polished_sulfur_crystal_block").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("chiseled_sulfur").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("polished_sulfur").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_bricks").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("cracked_sulfur_bricks").get())
-                .add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_pillar").get())
-                // Graphite
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("chiseled_graphite").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("polished_graphite").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_bricks").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("cracked_graphite_bricks").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_tiles").get())
-                .add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_pillar").get())
         ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
         ;
         tag(BlockTags.MINEABLE_WITH_HOE)
         ;
-        // This tag stops certain blocks from interfering with the enchantment table
-        tag(BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
-                .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
-        ;
         tag(BlockTags.SWORD_EFFICIENT)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
+        ;
+        tag(BlockTags.COAL_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_coal_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_coal_ore").get())
+        ;
+        tag(BlockTags.IRON_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_iron_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_iron_ore").get())
+        ;
+        tag(BlockTags.COPPER_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_copper_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_copper_ore").get())
+        ;
+        tag(BlockTags.GOLD_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_gold_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_gold_ore").get())
+        ;
+        tag(BlockTags.REDSTONE_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_redstone_ore").get())
+        ;
+        tag(BlockTags.EMERALD_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_emerald_ore").get())
+        ;
+        tag(BlockTags.LAPIS_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_lapis_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_lapis_ore").get())
+        ;
+        tag(BlockTags.DIAMOND_ORES)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_diamond_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_diamond_ore").get())
         ;
         tag(BlockTags.REPLACEABLE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
@@ -143,13 +192,23 @@ public class EUBlockTagProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
         ;
-        tag(Tags.Blocks.STONES)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_copper_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_iron_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_lapis_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_copper_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_iron_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_lapis_ore").get())
         ;
-        tag(Tags.Blocks.COBBLESTONES)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_gold_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_STONE_ORE_BLOCKS.get("frigus_diamond_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_gold_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_redstone_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_emerald_ore").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_ORE_BLOCKS.get("frigus_deepslate_diamond_ore").get())
         ;
     }
 }
