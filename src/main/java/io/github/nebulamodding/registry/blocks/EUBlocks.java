@@ -7,6 +7,8 @@ import martian.regolith.RegolithBlockUtil;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.util.ColorRGBA;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,9 +26,9 @@ public class EUBlocks {
     // Frigus
     public static final DeferredBlock<Block> FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new GrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final DeferredBlock<Block> FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
-    public static final DeferredBlock<Block> FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final DeferredBlock<Block> FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
-    public static final DeferredBlock<Block> FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+    public static final DeferredBlock<Block> FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
     public static final DeferredBlock<Block> FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
     public static final DeferredBlock<Block> VIVIAN = register("vivian", () -> new FlowerBlock(
             MobEffects.INVISIBILITY,
@@ -74,6 +76,8 @@ public class EUBlocks {
                     "frigus_stone_bricks",
                     "cracked_frigus_stone_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_stone_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "frigus_stone_slab",
@@ -81,8 +85,6 @@ public class EUBlocks {
                     "polished_frigus_stone_slab",
                     "frigus_stone_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("frigus_stone_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -98,6 +100,8 @@ public class EUBlocks {
                     "cracked_frigus_deepslate_bricks",
                     "frigus_deepslate_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("frigus_deepslate_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "frigus_deepslate_slab",
@@ -106,8 +110,6 @@ public class EUBlocks {
                     "frigus_deepslate_brick_slab",
                     "frigus_deepslate_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("frigus_deepslate_pillar")
             .done();
 
     // Permafrost
@@ -125,6 +127,8 @@ public class EUBlocks {
                     "cracked_permafrost_bricks",
                     "permafrost_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("permafrost_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "permafrost_slab",
@@ -133,51 +137,26 @@ public class EUBlocks {
                     "permafrost_brick_slab",
                     "permafrost_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("permafrost_pillar")
             .done();
 
     // Ores
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_ORE_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)
-    )
-            .register(
-                    "frigus_coal_ore",
-                    "frigus_iron_ore",
-                    "frigus_copper_ore",
-                    "frigus_gold_ore"
-            )
-            .setBlockFunction(RedStoneOreBlock::new)
-            .register("frigus_redstone_ore")
-            .setBlockFunction(Block::new)
-            .register(
-                    "frigus_emerald_ore",
-                    "frigus_lapis_ore",
-                    "frigus_diamond_ore"
-            )
-            .done();
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_ORE_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateOreProperties().mapColor(MapColor.COLOR_BLUE)
-    )
-            .register(
-                    "frigus_deepslate_coal_ore",
-                    "frigus_deepslate_iron_ore",
-                    "frigus_deepslate_copper_ore",
-                    "frigus_deepslate_gold_ore"
-            )
-            .setBlockFunction(RedStoneOreBlock::new)
-            .register("frigus_deepslate_redstone_ore")
-            .setBlockFunction(Block::new)
-            .register(
-                    "frigus_deepslate_emerald_ore",
-                    "frigus_deepslate_lapis_ore",
-                    "frigus_deepslate_diamond_ore"
-            )
-            .done();
+    public static final DeferredBlock<Block> FRIGUS_COAL_ORE = register("frigus_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_IRON_ORE = register("frigus_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_COPPER_ORE = register("frigus_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_GOLD_ORE = register("frigus_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_REDSTONE_ORE = register("frigus_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_REDSTONE_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_EMERALD_ORE = register("frigus_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_LAPIS_ORE = register("frigus_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DIAMOND_ORE = register("frigus_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_COAL_ORE = register("frigus_deepslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_IRON_ORE = register("frigus_deepslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_COPPER_ORE = register("frigus_deepslate_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_GOLD_ORE = register("frigus_deepslate_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_REDSTONE_ORE = register("frigus_deepslate_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_REDSTONE_ORE).mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_EMERALD_ORE = register("frigus_deepslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_LAPIS_ORE = register("frigus_deepslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
+    public static final DeferredBlock<Block> FRIGUS_DEEPSLATE_DIAMOND_ORE = register("frigus_deepslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_BLUE)));
 
 
 
@@ -203,6 +182,8 @@ public class EUBlocks {
                     "cracked_moon_deepslate_bricks",
                     "moon_deepslate_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("moon_deepslate_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "cobbled_moon_deepslate_slab",
@@ -210,8 +191,6 @@ public class EUBlocks {
                     "moon_deepslate_brick_slab",
                     "moon_deepslate_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("moon_deepslate_pillar")
             .done();
 
     // Mars
@@ -229,6 +208,8 @@ public class EUBlocks {
                     "cracked_mars_deepslate_bricks",
                     "mars_deepslate_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("mars_deepslate_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "mars_deepslate_slab",
@@ -237,8 +218,6 @@ public class EUBlocks {
                     "mars_deepslate_brick_slab",
                     "mars_deepslate_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("mars_deepslate_pillar")
             .done();
 
     // Venus
@@ -258,6 +237,8 @@ public class EUBlocks {
                     "cracked_mercury_deepslate_bricks",
                     "mercury_deepslate_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("mercury_deepslate_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "mercury_deepslate_slab",
@@ -266,8 +247,6 @@ public class EUBlocks {
                     "mercury_deepslate_brick_slab",
                     "mercury_deepslate_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("mercury_deepslate_pillar")
             .done();
 
     // Water Ice
@@ -282,14 +261,14 @@ public class EUBlocks {
                     "water_ice_bricks",
                     "cracked_water_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("water_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "water_ice_slab",
                     "cracked_water_ice_slab",
                     "water_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("water_ice_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -302,14 +281,14 @@ public class EUBlocks {
                     "tholin_poor_water_ice_bricks",
                     "cracked_tholin_poor_water_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_poor_water_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_poor_water_ice_slab",
                     "cracked_tholin_poor_water_ice_slab",
                     "tholin_poor_water_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("tholin_poor_water_ice_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -322,14 +301,14 @@ public class EUBlocks {
                     "tholin_rich_water_ice_bricks",
                     "cracked_tholin_rich_water_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_rich_water_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_rich_water_ice_slab",
                     "cracked_tholin_rich_water_ice_slab",
                     "tholin_rich_water_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("tholin_rich_water_ice_pillar")
             .done();
 
     // Carbon Dioxide Ice
@@ -344,14 +323,14 @@ public class EUBlocks {
                     "carbon_dioxide_ice_bricks",
                     "cracked_carbon_dioxide_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("carbon_dioxide_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "carbon_dioxide_ice_slab",
                     "cracked_carbon_dioxide_ice_slab",
                     "carbon_dioxide_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("carbon_dioxide_ice_pillar")
             .done();
 
     // Nitrogen Ice
@@ -366,14 +345,14 @@ public class EUBlocks {
                     "nitrogen_ice_bricks",
                     "cracked_nitrogen_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("nitrogen_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "nitrogen_ice_slab",
                     "cracked_nitrogen_ice_slab",
                     "nitrogen_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("nitrogen_ice_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -386,14 +365,14 @@ public class EUBlocks {
                     "tholin_poor_nitrogen_ice_bricks",
                     "cracked_tholin_poor_nitrogen_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_poor_nitrogen_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_poor_nitrogen_ice_slab",
                     "cracked_tholin_poor_nitrogen_ice_slab",
                     "tholin_poor_nitrogen_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("tholin_poor_nitrogen_ice_pillar")
             .done();
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -406,14 +385,14 @@ public class EUBlocks {
                     "tholin_rich_nitrogen_ice_bricks",
                     "cracked_tholin_rich_nitrogen_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_rich_nitrogen_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_rich_nitrogen_ice_slab",
                     "cracked_tholin_rich_nitrogen_ice_slab",
                     "tholin_rich_nitrogen_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("tholin_rich_nitrogen_ice_pillar")
             .done();
 
     // Sulfur Dioxide Ice
@@ -428,14 +407,14 @@ public class EUBlocks {
                     "sulfur_dioxide_ice_bricks",
                     "cracked_sulfur_dioxide_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("sulfur_dioxide_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "sulfur_dioxide_ice_slab",
                     "cracked_sulfur_dioxide_ice_slab",
                     "sulfur_dioxide_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("sulfur_dioxide_ice_pillar")
             .done();
 
     // Ammonia Ice
@@ -450,14 +429,14 @@ public class EUBlocks {
                     "ammonia_ice_bricks",
                     "cracked_ammonia_ice_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("ammonia_ice_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "ammonia_ice_slab",
                     "cracked_ammonia_ice_slab",
                     "ammonia_ice_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("ammonia_ice_pillar")
             .done();
 
     // Salt
@@ -470,7 +449,7 @@ public class EUBlocks {
     );
     public static final DeferredBlock<Block> SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
             new ColorRGBA(0xdfcddd),
-            dustBlockProperties().mapColor(MapColor.SNOW)
+            dustProperties().mapColor(MapColor.SNOW)
     ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -485,6 +464,8 @@ public class EUBlocks {
                     "cracked_salt_bricks",
                     "salt_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("salt_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "salt_slab",
@@ -492,8 +473,6 @@ public class EUBlocks {
                     "salt_brick_slab",
                     "salt_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("salt_pillar")
             .done();
 
     // Salt
@@ -506,7 +485,7 @@ public class EUBlocks {
     );
     public static final DeferredBlock<Block> SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(
             new ColorRGBA(0xdfcddd),
-            dustBlockProperties().mapColor(MapColor.COLOR_YELLOW)
+            dustProperties().mapColor(MapColor.COLOR_YELLOW)
     ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -520,14 +499,14 @@ public class EUBlocks {
                     "sulfur_bricks",
                     "cracked_sulfur_bricks"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("sulfur_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "sulfur_slab",
                     "polished_sulfur_slab",
                     "sulfur_brick_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("sulfur_pillar")
             .done();
 
     // Graphite
@@ -543,7 +522,7 @@ public class EUBlocks {
             .done();
     public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
             new ColorRGBA(0x2d261b),
-            dustBlockProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+            dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)
     ));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -558,6 +537,8 @@ public class EUBlocks {
                     "cracked_graphite_bricks",
                     "graphite_tiles"
             )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("graphite_pillar")
             .setBlockFunction(SlabBlock::new)
             .register(
                     "graphite_slab",
@@ -565,8 +546,6 @@ public class EUBlocks {
                     "graphite_brick_slab",
                     "graphite_tile_slab"
             )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("graphite_pillar")
             .done();
 
     // Flesh
@@ -732,6 +711,12 @@ public class EUBlocks {
     private static BlockBehaviour.Properties dirtProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT);
     }
+    private static BlockBehaviour.Properties pathProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH);
+    }
+    private static BlockBehaviour.Properties farmlandProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.FARMLAND);
+    }
     private static BlockBehaviour.Properties stoneProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
     }
@@ -758,7 +743,7 @@ public class EUBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(2, 2);
     }
-    private static BlockBehaviour.Properties dustBlockProperties() {
+    private static BlockBehaviour.Properties dustProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.SAND);
     }
 

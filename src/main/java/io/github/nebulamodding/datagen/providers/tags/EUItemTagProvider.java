@@ -46,6 +46,12 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
                 .add(EUItems.OBDURIUM_INGOT.get())
         ;
+        tag(EUTags.EUItemTags.COBBLESTONES_FRIGUS_STONE)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+        ;
+        tag(EUTags.EUItemTags.COBBLESTONES_FRIGUS_DEEPSLATE)
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
+        ;
         // Common Tags
         tag(Tags.Items.STONES)
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").asItem())
@@ -63,12 +69,9 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.NUGGETS)
                 .addTag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
         ;
-        tag(Tags.Items.MELEE_WEAPON_TOOLS)
-                .addTag(ItemTags.AXES)
-                .addTag(ItemTags.SWORDS)
-        ;
-        tag(Tags.Items.MINING_TOOL_TOOLS)
-                .addTag(ItemTags.PICKAXES)
+        tag(Tags.Items.COBBLESTONES)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
         ;
 
         // Minecraft Tags
@@ -82,8 +85,18 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.TRIM_MATERIALS)
                 .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
         ;
-        tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
-                .addTag(ItemTags.PICKAXES)
+        tag(ItemTags.SMALL_FLOWERS)
+                .add(EUBlocks.VIVIAN.asItem())
+                .add(EUBlocks.WICKUL.asItem())
+                .add(EUBlocks.ICEFLOWER.asItem())
+        ;
+        tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
+        ;
+        tag(ItemTags.STONE_TOOL_MATERIALS)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
         ;
     }
 }

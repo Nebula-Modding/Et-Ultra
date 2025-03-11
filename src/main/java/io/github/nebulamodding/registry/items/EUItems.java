@@ -46,6 +46,8 @@ public class EUItems {
 
     public static final DeferredItem<Item> OBDURIUM_HAMMER_HANDLE = ITEMS.registerSimpleItem("obdurium_hammer_handle", new Item.Properties().stacksTo(1));
 
+    public static final DeferredItem<Item> CICOSPROUT_SEEDS = ITEMS.registerSimpleItem("cicosprout_seeds", new Item.Properties());
+
     // Tools
     public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EUTiers.OBDURIUM, 3.0F, -3.2F))));
 

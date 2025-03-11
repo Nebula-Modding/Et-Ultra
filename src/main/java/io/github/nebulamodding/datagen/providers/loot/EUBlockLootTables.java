@@ -4,6 +4,7 @@ import io.github.nebulamodding.registry.blocks.EUBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import org.jetbrains.annotations.NotNull;
@@ -39,7 +40,6 @@ public class EUBlockLootTables extends BlockLootSubProvider {
         add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get()));
         add(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.MARS_BLOCKS.get("cobbled_mars_deepslate").get()));
     }
-
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
         return EUBlocks.BLOCKS.getEntries()
