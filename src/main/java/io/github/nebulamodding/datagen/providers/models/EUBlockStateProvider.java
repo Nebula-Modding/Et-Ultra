@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -118,6 +119,14 @@ public class EUBlockStateProvider extends BlockStateProvider {
                         models().slabTop(name(slabBlock) + "_top", textureId, textureId, textureId),
                         new ModelFile.UncheckedModelFile(textureId)
                 );
+            } else if (entry.get() instanceof StairBlock stairBlock) {
+                ResourceLocation textureId = entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_stairs", ""));
+                stairsBlock(
+                        stairBlock,
+                        models().stairs(name(stairBlock), textureId, textureId, textureId),
+                        models().stairsInner(name(stairBlock) + "_inner", textureId, textureId, textureId),
+                        models().stairsOuter(name(stairBlock) + "_outer", textureId, textureId, textureId)
+                );
             } else {
                 cubeAll(entry.get());
                 simpleBlock(entry.get());
@@ -125,7 +134,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
             simpleBlockItem(entry.get(), model);
         }
     }
-
     // Both of these are from BlockStateProvider
     // Please someone tell me why these are not protected or public...
     // I don't knowwwwwwwww :sob:
