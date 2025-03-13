@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "et_ultra:block/salt_tiles",
-    "side": "et_ultra:block/salt_tiles",
-    "top": "et_ultra:block/salt_tiles"
-  }
-}

@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -27,7 +28,7 @@ public class EUBlocks {
     public static final DeferredBlock<Block>
             FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new GrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -40,8 +41,7 @@ public class EUBlocks {
                             .instabreak()
                             .sound(SoundType.GRASS)
                             .offsetType(BlockBehaviour.OffsetType.XZ)
-                            .pushReaction(PushReaction.DESTROY)
-            )),
+                            .pushReaction(PushReaction.DESTROY))),
             WICKUL = register("wickul", () -> new FlowerBlock(
                     MobEffects.MOVEMENT_SPEED,
                     3.5F,
@@ -87,6 +87,11 @@ public class EUBlocks {
                     "frigus_stone_brick_slab"
             )
             .done();
+    public static final DeferredBlock<Block>
+            FRIGUS_STONE_STAIRS = register("frigus_stone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
+            FRIGUS_COBBLESTONE_STAIRS = register("frigus_cobblestone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
+            POLISHED_FRIGUS_STONE_STAIRS = register("polished_frigus_stone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
+            FRIGUS_STONE_BRICK_STAIRS = register("frigus_stone_brick_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -112,6 +117,12 @@ public class EUBlocks {
                     "frigus_deepslate_tile_slab"
             )
             .done();
+    public static final DeferredBlock<Block>
+            FRIGUS_DEEPSLATE_STAIRS = register("frigus_deepslate_stairs", () -> new StairBlock(FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get()))),
+            COBBLED_FRIGUS_DEEPSLATE_STAIRS = register("cobbled_frigus_deepslate_stairs", () -> new StairBlock(FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get()))),
+            POLISHED_FRIGUS_DEEPSLATE_STAIRS = register("polished_frigus_deepslate_stairs", () -> new StairBlock(FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate").get()))),
+            FRIGUS_DEEPSLATE_BRICK_STAIRS = register("frigus_deepslate_brick_stairs", () -> new StairBlock(FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks").get()))),
+            FRIGUS_DEEPSLATE_TILE_STAIRS = register("frigus_deepslate_tile_stairs", () -> new StairBlock(FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles").get())));
 
     // Permafrost
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
@@ -121,7 +132,6 @@ public class EUBlocks {
     )
             .register(
                     "permafrost",
-                    "cracked_permafrost",
                     "chiseled_permafrost",
                     "polished_permafrost",
                     "permafrost_bricks",
@@ -463,8 +473,7 @@ public class EUBlocks {
                     "chiseled_salt",
                     "polished_salt",
                     "salt_bricks",
-                    "cracked_salt_bricks",
-                    "salt_tiles"
+                    "cracked_salt_bricks"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("salt_pillar")
@@ -472,8 +481,7 @@ public class EUBlocks {
             .register(
                     "salt_slab",
                     "polished_salt_slab",
-                    "salt_brick_slab",
-                    "salt_tile_slab"
+                    "salt_brick_slab"
             )
             .done();
 
@@ -536,8 +544,7 @@ public class EUBlocks {
                     "chiseled_graphite",
                     "polished_graphite",
                     "graphite_bricks",
-                    "cracked_graphite_bricks",
-                    "graphite_tiles"
+                    "cracked_graphite_bricks"
             )
             .setBlockFunction(RotatedPillarBlock::new)
             .register("graphite_pillar")
@@ -545,11 +552,9 @@ public class EUBlocks {
             .register(
                     "graphite_slab",
                     "polished_graphite_slab",
-                    "graphite_brick_slab",
-                    "graphite_tile_slab"
+                    "graphite_brick_slab"
             )
             .done();
-
     // Flesh
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FLESH_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -798,16 +803,11 @@ public class EUBlocks {
                 .strength(8, 6000)
                 .sound(SoundType.NETHERITE_BLOCK);
     }
-
     // Misc helpers
     private static <T extends Block> DeferredBlock<T> register(String id, Supplier<T> block) {
         var registeredBlock = BLOCKS.register(id, block);
         EUItems.ITEMS.registerSimpleBlockItem(registeredBlock);
         return registeredBlock;
-    }
-    // Shorthand for registering simple blocks
-    private static DeferredBlock<Block> register(String id, BlockBehaviour.Properties properties) {
-        return register(id, () -> new Block(properties));
     }
 }
 
