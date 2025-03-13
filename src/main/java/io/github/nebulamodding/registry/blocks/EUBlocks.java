@@ -143,7 +143,6 @@ public class EUBlocks {
             .setBlockFunction(SlabBlock::new)
             .register(
                     "permafrost_slab",
-                    "cracked_permafrost_slab",
                     "polished_permafrost_slab",
                     "permafrost_brick_slab",
                     "permafrost_tile_slab"
