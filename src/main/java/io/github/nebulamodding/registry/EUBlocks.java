@@ -1,7 +1,6 @@
-package io.github.nebulamodding.registry.blocks;
+package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.items.EUItems;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithBlockUtil;
 import martian.regolith.builder.RegolithBlockBuilder;
@@ -13,7 +12,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -31,7 +29,7 @@ public class EUBlocks {
             FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_FARMLAND = register("frigus_farmland", () -> new FarmBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             VIVIAN = register("vivian", () -> new FlowerBlock(
                     MobEffects.INVISIBILITY,
                     3.5F,

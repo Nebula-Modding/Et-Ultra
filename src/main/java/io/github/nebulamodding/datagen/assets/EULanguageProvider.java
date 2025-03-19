@@ -2,10 +2,10 @@ package io.github.nebulamodding.datagen.assets;
 
 import io.github.nebulamodding.EtUltra;
 import io.github.nebulamodding.client.EUEventHandler;
-import io.github.nebulamodding.registry.blocks.EUBlocks;
-import io.github.nebulamodding.registry.items.EUItems;
-import io.github.nebulamodding.registry.registers.EUCreativeTab;
-import io.github.nebulamodding.registry.registers.EUTags;
+import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.EUItems;
+import io.github.nebulamodding.registry.EUCreativeTab;
+import io.github.nebulamodding.registry.EUTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

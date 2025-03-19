@@ -1,8 +1,6 @@
-package io.github.nebulamodding.registry.items;
+package io.github.nebulamodding.registry;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.blocks.EUBlocks;
-import io.github.nebulamodding.registry.registers.EUTiers;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;
@@ -10,8 +8,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public class EUItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);

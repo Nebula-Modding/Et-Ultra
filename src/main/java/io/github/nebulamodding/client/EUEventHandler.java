@@ -1,7 +1,7 @@
 package io.github.nebulamodding.client;
 
 import io.github.nebulamodding.client.gui.TestScreen;
-import io.github.nebulamodding.registry.items.EUItems;
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;

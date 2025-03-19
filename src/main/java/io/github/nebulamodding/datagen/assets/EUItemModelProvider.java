@@ -1,7 +1,7 @@
 package io.github.nebulamodding.datagen.assets;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.items.EUItems;
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -20,7 +20,7 @@ public class EUItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a model automatically provided
-        excludedItems.add(EUItems.OBDURIUM_HAMMER);
+        //excludedItems.add(EUItems.EXAMPLE_ITEM);
 
         /*
         Automated Item Models

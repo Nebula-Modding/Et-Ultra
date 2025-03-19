@@ -1,7 +1,7 @@
 package io.github.nebulamodding.datagen.assets;
 
 import io.github.nebulamodding.EtUltra;
-import io.github.nebulamodding.registry.blocks.EUBlocks;
+import io.github.nebulamodding.registry.EUBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

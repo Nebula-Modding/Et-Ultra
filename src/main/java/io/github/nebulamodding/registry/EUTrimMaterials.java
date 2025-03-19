@@ -1,4 +1,4 @@
-package io.github.nebulamodding.registry.materials;
+package io.github.nebulamodding.registry;
 
 public class EUTrimMaterials {
 

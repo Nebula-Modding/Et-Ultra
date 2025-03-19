@@ -1,6 +1,6 @@
 package io.github.nebulamodding.datagen.data.loot;
 
-import io.github.nebulamodding.registry.registers.EUEntities;
+import io.github.nebulamodding.registry.EUEntities;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.EntityLootSubProvider;
 import net.minecraft.world.entity.EntityType;
