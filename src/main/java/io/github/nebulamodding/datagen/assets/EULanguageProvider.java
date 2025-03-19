@@ -26,15 +26,15 @@ public class EULanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
         // Blocks excluded from having a translation automatically provided
-        langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"));
+        langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCK);
         langExcludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"));
 
-        langExcludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("sulfur_crystal_block"));
+        langExcludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCK);
         langExcludedBlocks.add(EUBlocks.SULFUR_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"));
 
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"));
+        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCK);
         langExcludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"));
 
@@ -52,15 +52,15 @@ public class EULanguageProvider extends LanguageProvider {
          */
 
         //Blocks
-        addBlock(EUBlocks.SALT_CRYSTAL_BLOCKS.get("salt_crystal_block"), "Block of Salt Crystal");
+        addBlock(EUBlocks.SALT_CRYSTAL_BLOCK, "Block of Salt Crystal");
         addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"), "Block of Salt");
         addBlock(EUBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");
 
-        addBlock(EUBlocks.SULFUR_CRYSTAL_BLOCKS.get("sulfur_crystal_block"), "Block of Sulfur Crystal");
+        addBlock(EUBlocks.SULFUR_CRYSTAL_BLOCK, "Block of Sulfur Crystal");
         addBlock(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"), "Block of Sulfur");
         addBlock(EUBlocks.SULFUR_DUST_BLOCK, "Block of Sulfur Dust");
 
-        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCKS.get("graphite_crystal_block"), "Block of Graphite Crystal");
+        addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCK, "Block of Graphite Crystal");
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"), "Block of Graphite");
         addBlock(EUBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
 

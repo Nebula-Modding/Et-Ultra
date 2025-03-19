@@ -27,7 +27,6 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         add(EUBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get()));
         add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get()));
-        add(EUBlocks.MARS_BLOCKS.get("mars_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.MARS_BLOCKS.get("cobbled_mars_deepslate").get()));
 
         // Automated Loot Tables
         EUBlocks.BLOCKS.getEntries().forEach(entry -> dropSelf(entry.get()));

@@ -469,17 +469,9 @@ public class EUBlocks {
             .done();
 
     // Salt
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            crystalProperties().mapColor(MapColor.SNOW),
-            "salt_crystal_block",
-            "polished_salt_crystal_block"
-    );
-    public static final DeferredBlock<Block> SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(
-            new ColorRGBA(0xdfcddd),
-            dustProperties().mapColor(MapColor.SNOW)
-    ));
+    public static final DeferredBlock<Block>
+            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.SNOW))),
+            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.SNOW)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -503,17 +495,9 @@ public class EUBlocks {
             .done();
 
     // Salt
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_CRYSTAL_BLOCKS = RegolithBlockUtil.registerBlocks(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            crystalProperties().mapColor(MapColor.COLOR_YELLOW),
-            "sulfur_crystal_block",
-            "polished_sulfur_crystal_block"
-    );
-    public static final DeferredBlock<Block> SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(
-            new ColorRGBA(0xdfcddd),
-            dustProperties().mapColor(MapColor.COLOR_YELLOW)
-    ));
+    public static final DeferredBlock<Block>
+            SULFUR_CRYSTAL_BLOCK = register("sulfur_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
+            SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -537,20 +521,9 @@ public class EUBlocks {
             .done();
 
     // Graphite
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_CRYSTAL_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-    )
-            .register(
-                    "graphite_crystal_block",
-                    "polished_graphite_crystal_block"
-            )
-            .done();
-    public static final DeferredBlock<Block> GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(
-            new ColorRGBA(0x2d261b),
-            dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-    ));
+    public static final DeferredBlock<Block>
+            GRAPHITE_CRYSTAL_BLOCK = register("graphite_crystal_block", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK))),
+            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0x2d261b), dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_PACKED_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
