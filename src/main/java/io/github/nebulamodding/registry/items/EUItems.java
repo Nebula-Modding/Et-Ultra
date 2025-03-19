@@ -24,6 +24,7 @@ public class EUItems {
     );
 
     public static final DeferredItem<Item>
+            CICOSPROUT_SEEDS = ITEMS.registerSimpleItem("cicosprout_seeds", new Item.Properties()),
             OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
             OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
             OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
@@ -39,10 +40,6 @@ public class EUItems {
     // Items
     public static final DeferredItem<Item> PENCIL = ITEMS.registerSimpleItem("pencil", new Item.Properties());
     public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
-
-    public static final DeferredItem<Item> OBDURIUM_HAMMER_HANDLE = ITEMS.registerSimpleItem("obdurium_hammer_handle", new Item.Properties().stacksTo(1));
-
-    public static final DeferredItem<Item> CICOSPROUT_SEEDS = ITEMS.registerSimpleItem("cicosprout_seeds", new Item.Properties());
 
     // Tools
     public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EUTiers.OBDURIUM, 3.0F, -3.2F))));

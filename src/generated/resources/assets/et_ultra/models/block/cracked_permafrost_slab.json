@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/cracked_permafrost",
-    "side": "et_ultra:block/cracked_permafrost",
-    "top": "et_ultra:block/cracked_permafrost"
-  }
-}
