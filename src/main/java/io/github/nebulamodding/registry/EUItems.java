@@ -12,25 +12,22 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class EUItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);
 
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties().rarity(Rarity.EPIC),
-            "raw_obdurium",
-            "obdurium_nugget"
-    );
-
     public static final DeferredItem<Item>
-            CICOSPROUT_SEEDS = ITEMS.registerSimpleItem("cicosprout_seeds", new Item.Properties()),
-            OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
-            OBDURIUM_PLATE = ITEMS.register("obdurium_plate", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
-            OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC))),
             FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food((new FoodProperties.Builder()).nutrition(5).saturationModifier(0.5f).build())));
-
-    // Simple items
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
+            "cicosprout_seeds",
             "impure_steel"
+    );
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            "raw_obdurium",
+            "obdurium_nugget",
+            "obdurium_ingot",
+            "obdurium_plate",
+            "obdurium_rod"
     );
 
     // Items

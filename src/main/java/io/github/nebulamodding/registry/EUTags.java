@@ -78,9 +78,13 @@ public class EUTags {
         ;
         // Items
         public static final TagKey<Item>
+                PLATES = commonItemTag("plates"),
+
                 RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),
                 NUGGETS_OBDURIUM = commonItemTag("nuggets/obdurium"),
-                INGOTS_OBDURIUM = commonItemTag("ingots/obdurium")
+                INGOTS_OBDURIUM = commonItemTag("ingots/obdurium"),
+                PLATES_OBDURIUM = commonItemTag("plates/obdurium"),
+                RODS_OBDURIUM = commonItemTag("rods/obdurium")
         ;
     }
 }

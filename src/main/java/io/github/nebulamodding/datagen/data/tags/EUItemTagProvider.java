@@ -74,14 +74,26 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.NUGGETS)
                 .addTag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
         ;
+        tag(EUTags.EUItemTags.PLATES)
+                .addTag(EUTags.EUItemTags.PLATES_OBDURIUM)
+        ;
+        tag(Tags.Items.RODS)
+                .addTag(EUTags.EUItemTags.RODS_OBDURIUM)
+        ;
         tag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
         ;
         tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
-                .add(EUItems.OBDURIUM_INGOT.get())
+                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_ingot").get())
         ;
         tag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
+        ;
+        tag(EUTags.EUItemTags.PLATES_OBDURIUM)
+                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_plate").get())
+        ;
+        tag(EUTags.EUItemTags.RODS_OBDURIUM)
+                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_rod").get())
         ;
 
         /*

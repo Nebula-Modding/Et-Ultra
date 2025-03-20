@@ -12,7 +12,7 @@ package io.github.nebulamodding;
 import io.github.nebulamodding.client.EUEventHandler;
 import io.github.nebulamodding.registry.EUBlocks;
 import io.github.nebulamodding.registry.EUCreativeTab;
-import io.github.nebulamodding.registry.EUDataGeneration;
+import io.github.nebulamodding.datagen.EUDataGeneration;
 import io.github.nebulamodding.registry.EUItems;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
