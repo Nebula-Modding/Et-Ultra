@@ -20,6 +20,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.neoforged.neoforge.common.CommonHooks;
 import net.neoforged.neoforge.common.FarmlandWaterManager;
 import net.neoforged.neoforge.common.util.TriState;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +34,7 @@ public class FrigusFarmlandBlock extends FarmBlock {
         return !this.defaultBlockState().canSurvive(context.getLevel(), context.getClickedPos()) ? EUBlocks.FRIGUS_DIRT.get().defaultBlockState() : super.getStateForPlacement(context);
     }
     @Override
-    public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos soilPosition, Direction facing, BlockState plant) {
+    public @NotNull TriState canSustainPlant(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos soilPosition, @NotNull Direction facing, BlockState plant) {
         Block plantBlock = plant.getBlock();
         return plantBlock instanceof CropBlock || plantBlock instanceof StemBlock ? TriState.TRUE : super.canSustainPlant(state, level, soilPosition, facing, plant);
     }
@@ -54,13 +55,13 @@ public class FrigusFarmlandBlock extends FarmBlock {
         return level.getBlockState(pos.above()).is(BlockTags.MAINTAINS_FARMLAND);
     }
     @Override
-    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    public void tick(BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         if (!state.canSurvive(level, pos)) {
             turnToFrigusDirt(null, state, level, pos);
         }
     }
     @Override
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    public void randomTick(BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         int moistness = state.getValue(MOISTURE);
         if (!isNearWater(level, pos) && !level.isRainingAt(pos.above())) {
             if (moistness > 0) {
@@ -73,7 +74,7 @@ public class FrigusFarmlandBlock extends FarmBlock {
         }
     }
     @Override
-    public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDamage) {
+    public void fallOn(Level level, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull Entity entity, float fallDamage) {
         if (!level.isClientSide() && CommonHooks.onFarmlandTrample(level, pos, EUBlocks.FRIGUS_DIRT.get().defaultBlockState(), fallDamage, entity)) {
             turnToFrigusDirt(entity, state, level, pos);
         }
