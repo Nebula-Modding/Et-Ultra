@@ -51,7 +51,7 @@ public class EULanguageProvider extends LanguageProvider {
         Manual Translations
          */
 
-        //Blocks
+        // Blocks
         addBlock(EUBlocks.SALT_CRYSTAL_BLOCK, "Block of Salt Crystal");
         addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"), "Block of Salt");
         addBlock(EUBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");

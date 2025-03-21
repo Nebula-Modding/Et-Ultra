@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-20T15:46:05.0042206	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-03-20T23:55:10.3521595	Tags for minecraft:item mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/item/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/item/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_stone.json
@@ -10,7 +10,7 @@ d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/c/tags/item/nuggets/obdurium.json
 948da42c344837df73ac795058be79f9a047156b data/c/tags/item/ores_in_ground/frigus_stone.json
 01c54dc0bb2e56af56c9dc7588a20dd43a9d8c2f data/c/tags/item/ore_bearing_ground/frigus_deepslate.json
 8082b27d89c02749a5e7aeaf4ea6fc82e8c774e1 data/c/tags/item/ore_bearing_ground/frigus_stone.json
-1a24fec894aee4271a414c78a6926dd07333f76b data/c/tags/item/ore_rates/singular.json
+99ef98cf80cd0426976a10deaf2caf43800eeff1 data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 08b88738364cd39a27fe19f580e98f3c2b2638c1 data/c/tags/item/plates.json
 4b270b5bcb0208242f0a39f35f59d3d7432ad85c data/c/tags/item/plates/obdurium.json
