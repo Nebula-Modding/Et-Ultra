@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "et_ultra:glacio_obdurium_ore"
+          "name": "et_ultra:frigus_deepslate_malunite_ore"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "et_ultra:blocks/glacio_obdurium_ore"
+  "random_sequence": "et_ultra:blocks/frigus_deepslate_malunite_ore"
 }

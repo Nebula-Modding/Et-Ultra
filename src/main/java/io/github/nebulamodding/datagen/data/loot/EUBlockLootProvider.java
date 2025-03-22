@@ -1,12 +1,16 @@
 package io.github.nebulamodding.datagen.data.loot;
 
 import io.github.nebulamodding.registry.EUBlocks;
+import io.github.nebulamodding.registry.EUItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -35,6 +39,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_EMERALD_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_LAPIS_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DIAMOND_ORE);
+        excludedBlocks.add(EUBlocks.FRIGUS_OBDURIUM_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE);
@@ -43,6 +48,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE);
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE);
 
         /*
         Manual Loot Tables
@@ -66,6 +72,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         add(EUBlocks.FRIGUS_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(EUBlocks.FRIGUS_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(EUBlocks.FRIGUS_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(EUBlocks.FRIGUS_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -74,6 +81,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
 
         /*
         Automated Loot Tables
@@ -84,6 +92,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
     }
+
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
         return EUBlocks.BLOCKS.getEntries()

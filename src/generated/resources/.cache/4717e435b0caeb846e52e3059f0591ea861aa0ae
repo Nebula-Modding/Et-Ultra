@@ -1,7 +1,17 @@
-// 1.21.1	2025-03-19T16:07:30.5408667	Item Models: et_ultra
+// 1.21.1	2025-03-21T19:34:48.4902582	Item Models: et_ultra
 2c130383b6269a346034b3a6465841c292b020e3 assets/et_ultra/models/item/cicosprout_seeds.json
+229acc2eca45069e505536c40ce09a8e88769111 assets/et_ultra/models/item/cobbled_frigus_deepslate_wall.json
 9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
 457b848aef24b2c6f0d0137e665d30ae02a2675c assets/et_ultra/models/item/flesh.json
+a3b20280766114fdac5fd4c9df355c006c479fc6 assets/et_ultra/models/item/frigus_cobblestone_wall.json
+55d4b764902981597767b9743efd1da704738742 assets/et_ultra/models/item/frigus_deepslate_brick_slab.json
+7122cf462d38ec76448bd01daab17c72b95599b9 assets/et_ultra/models/item/frigus_deepslate_brick_wall.json
+e5c2e3253651aeb8d022116a58914549541a85ef assets/et_ultra/models/item/frigus_deepslate_tile_slab.json
+00e7e4f24c9b4191554b05f05885d62e2d7abaf0 assets/et_ultra/models/item/frigus_deepslate_tile_wall.json
+5ea967a7637bce9735f7cd79e1fdbb79de50b750 assets/et_ultra/models/item/frigus_deepslate_wall.json
+402bb3f24e5dd349888efda7b35a04c169033dde assets/et_ultra/models/item/frigus_stone_brick_slab.json
+25633df99f68a705a6347e6f99b39d085ac205ac assets/et_ultra/models/item/frigus_stone_brick_wall.json
+76afe92744310e3b03437d6f87e9e98ba8785bbc assets/et_ultra/models/item/frigus_stone_wall.json
 52ab0bcbd8fcb2a6cf14a1462920d467f566a961 assets/et_ultra/models/item/impure_steel.json
 8c20062225c893194fc7987d78aabfeef19f25e5 assets/et_ultra/models/item/obdurium_hammer.json
 32003d6fc2cd5fea9ea433f67c7e7b844713d1fa assets/et_ultra/models/item/obdurium_ingot.json
@@ -9,4 +19,6 @@
 a4a49e5289d0a612af0a3eaa0f14f25ab3096551 assets/et_ultra/models/item/obdurium_plate.json
 f8785c4b944d6f42c32b72e34408fd9889164fe1 assets/et_ultra/models/item/obdurium_rod.json
 17e9a6d28b6574e74e6e510b4ca5ee5cf4a2d172 assets/et_ultra/models/item/pencil.json
+6db23053d0a71289d17879f7b5e03ac9050aa088 assets/et_ultra/models/item/polished_frigus_deepslate_wall.json
+d06755efd848d915f5ffe2273981b89464276e73 assets/et_ultra/models/item/polished_frigus_stone_wall.json
 7f79cb2f4d252ffcdacd11bd1e94837d5a920a5b assets/et_ultra/models/item/raw_obdurium.json

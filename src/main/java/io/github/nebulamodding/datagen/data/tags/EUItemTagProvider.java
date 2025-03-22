@@ -52,6 +52,8 @@ public class EUItemTagProvider extends ItemTagsProvider {
         copy(BlockTags.EMERALD_ORES, ItemTags.EMERALD_ORES);
         copy(BlockTags.LAPIS_ORES, ItemTags.LAPIS_ORES);
         copy(BlockTags.DIAMOND_ORES, ItemTags.DIAMOND_ORES);
+        copy(EUTags.EUBlockTags.ORES_OBDURIUM, EUTags.EUItemTags.ORES_OBDURIUM);
+        copy(EUTags.EUBlockTags.ORES_MALUNITE, EUTags.EUItemTags.ORES_MALUNITE);
         copy(Tags.Blocks.ORE_RATES_DENSE, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);

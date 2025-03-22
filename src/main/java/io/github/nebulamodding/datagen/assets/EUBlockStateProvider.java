@@ -36,12 +36,27 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
 
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_stone_brick_slab"));
-        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("frigus_deepslate_brick_slab"));
-        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("frigus_deepslate_tile_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
 
-        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_brick_slab"));
-        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tile_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
+
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"));
+
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
+        excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
+
         /*
         To be organized
          */
@@ -93,7 +108,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Automated Block Models
          */
 
-        // Everything below this point will get deleted and re-coded at some point - Dylan
         for (var entry : EUBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
@@ -118,20 +132,57 @@ public class EUBlockStateProvider extends BlockStateProvider {
                         models().stairsInner(name(stairBlock) + "_inner", textureId, textureId, textureId),
                         models().stairsOuter(name(stairBlock) + "_outer", textureId, textureId, textureId)
                 );
-            } else if (entry.get() instanceof WallBlock wallBlock) {
-                ResourceLocation textureId = entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_wall", ""));
-                wallBlock(
-                        wallBlock,
-                        models().wallPost(name(wallBlock) + "_post", textureId),
-                        models().wallSide(name(wallBlock) + "_side", textureId),
-                        models().wallSideTall(name(wallBlock) + "_side_tall", textureId)
-                );
             } else {
                 cubeAll(entry.get());
                 simpleBlock(entry.get());
             }
             simpleBlockItem(entry.get(), model);
         }
+
+        /*
+        Manual Block Models
+         */
+
+        //stairsBlock(EUBlocks.FRIGUS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_bricks")));
+        //stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        //stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+
+        slabBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        slabBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        slabBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+
+        wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone")));
+        wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone")));
+        wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("polished_frigus_stone")));
+        wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+
+        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate")));
+        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate")));
+        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate")));
+        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+    }
+    // This is broken for whatever reason
+    private void stairsBlock(DeferredBlock<Block> block, ResourceLocation texture) {
+        super.stairsBlock((StairBlock) block.get(), texture);
+    }
+    private void slabBlock(DeferredBlock<? extends Block> block, ResourceLocation doubleslab, ResourceLocation texture) {
+        super.slabBlock((SlabBlock) block.get(), doubleslab, texture);
+    }
+    private void fenceBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+        super.fenceBlock((FenceBlock) block.get(), texture);
+        models().fenceInventory(block.getId().getPath() + "_inventory", texture);
+    }
+    public void buttonBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+        super.buttonBlock((ButtonBlock) block.get(), texture);
+        models().buttonInventory(block.getId().getPath() + "_inventory", texture);
+    }
+    public void wallBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+        super.wallBlock((WallBlock) block.get(), texture);
+        models().wallInventory(block.getId().getPath() + "_inventory", texture);
+    }
+    private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
+        return modLoc("block/" + block.getId().getPath());
     }
     private ResourceLocation key(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block);

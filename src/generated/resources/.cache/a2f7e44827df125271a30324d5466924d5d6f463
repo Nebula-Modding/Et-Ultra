@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-20T23:55:10.3521595	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-03-21T22:46:13.0529236	Tags for minecraft:item mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/item/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/item/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_stone.json
@@ -6,11 +6,13 @@ f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_st
 8508932555971d225ee221864602cc6b0d486e4e data/c/tags/item/ingots/obdurium.json
 470a0adf456972656c240e4ee2807c5656ca8f3c data/c/tags/item/nuggets.json
 d7ceabee780b4fe83d6237dbfbca4e966e176e29 data/c/tags/item/nuggets/obdurium.json
-7b1f4ecba897d9fef99b481f57d27534084fd6f4 data/c/tags/item/ores_in_ground/frigus_deepslate.json
-948da42c344837df73ac795058be79f9a047156b data/c/tags/item/ores_in_ground/frigus_stone.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ores/malunite.json
+07d38bbe1aa33161a2e8549d5f78db5604b7276c data/c/tags/item/ores/obdurium.json
+c162fc7e904af684f853ca47dc07620e3ab00adc data/c/tags/item/ores_in_ground/frigus_deepslate.json
+cae145be14527db94442b4cf1f3a4afa8ddc4dc6 data/c/tags/item/ores_in_ground/frigus_stone.json
 01c54dc0bb2e56af56c9dc7588a20dd43a9d8c2f data/c/tags/item/ore_bearing_ground/frigus_deepslate.json
 8082b27d89c02749a5e7aeaf4ea6fc82e8c774e1 data/c/tags/item/ore_bearing_ground/frigus_stone.json
-99ef98cf80cd0426976a10deaf2caf43800eeff1 data/c/tags/item/ore_rates/singular.json
+62420138a49decdad6a9d56eefca6c5c8a9d5fda data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 08b88738364cd39a27fe19f580e98f3c2b2638c1 data/c/tags/item/plates.json
 4b270b5bcb0208242f0a39f35f59d3d7432ad85c data/c/tags/item/plates/obdurium.json
@@ -26,12 +28,12 @@ f19705f7435bebbf24207d199cd051493c949135 data/c/tags/item/rods/obdurium.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/storage_blocks/raw_obdurium.json
 9b869ec074f174f4fd85c59a0c2627207a9236a3 data/minecraft/tags/item/beacon_payment_items.json
 ceb0827e32518ae4f2163865139599ac16ed15cd data/minecraft/tags/item/coal_ores.json
-cb51ab915e647730adbf35433e4bdca4970abd77 data/minecraft/tags/item/copper_ores.json
+5c2bf9e0a1391e4ce5b035d966b5b00e0869281e data/minecraft/tags/item/copper_ores.json
 cb51ab915e647730adbf35433e4bdca4970abd77 data/minecraft/tags/item/diamond_ores.json
 9de21b0632045602e23ab58154737d4e2f330610 data/minecraft/tags/item/dirt.json
 d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/item/emerald_ores.json
 206214f8a9107938e668e9a673b625b1bdae8905 data/minecraft/tags/item/gold_ores.json
-cb51ab915e647730adbf35433e4bdca4970abd77 data/minecraft/tags/item/iron_ores.json
+66a6a2d44b17366ab3f225971a0ef9abadf78d0f data/minecraft/tags/item/iron_ores.json
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/item/lapis_ores.json
 4b817b59f27f066294ae7ae224d7cbec4d4af9af data/minecraft/tags/item/redstone_ores.json
 432f18cc1dd794e599d2f01299a1a52f65036427 data/minecraft/tags/item/slabs.json
@@ -41,6 +43,6 @@ cb51ab915e647730adbf35433e4bdca4970abd77 data/minecraft/tags/item/iron_ores.json
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/minecraft/tags/item/stone_tool_materials.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/tall_flowers.json
 9b869ec074f174f4fd85c59a0c2627207a9236a3 data/minecraft/tags/item/trim_materials.json
-38ca8464e1365721973e438bd0b5ca0516d04483 data/minecraft/tags/item/walls.json
+02b732318f64b5412b250c09fb52301fd71668bd data/minecraft/tags/item/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_slabs.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_stairs.json

@@ -5,10 +5,12 @@
     "et_ultra:frigus_gold_ore",
     "et_ultra:frigus_emerald_ore",
     "et_ultra:frigus_diamond_ore",
+    "et_ultra:frigus_obdurium_ore",
     "et_ultra:frigus_deepslate_coal_ore",
     "et_ultra:frigus_deepslate_iron_ore",
     "et_ultra:frigus_deepslate_gold_ore",
     "et_ultra:frigus_deepslate_emerald_ore",
-    "et_ultra:frigus_deepslate_diamond_ore"
+    "et_ultra:frigus_deepslate_diamond_ore",
+    "et_ultra:frigus_deepslate_obdurium_ore"
   ]
 }

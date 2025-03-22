@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "et_ultra:block/glacio_obdurium_ore"
+    "all": "et_ultra:block/frigus_deepslate_malunite_ore"
   }
 }

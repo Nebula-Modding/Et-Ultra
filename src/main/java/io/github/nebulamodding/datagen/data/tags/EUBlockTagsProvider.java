@@ -38,6 +38,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         frigusStoneOres.add(EUBlocks.FRIGUS_EMERALD_ORE);
         frigusStoneOres.add(EUBlocks.FRIGUS_LAPIS_ORE);
         frigusStoneOres.add(EUBlocks.FRIGUS_DIAMOND_ORE);
+        frigusStoneOres.add(EUBlocks.FRIGUS_OBDURIUM_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE);
@@ -46,6 +47,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE);
+        frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE);
         stoneStairs.add(EUBlocks.FRIGUS_STONE_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_COBBLESTONE_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_STONE_STAIRS);
@@ -55,24 +57,24 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_stone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_cobblestone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("polished_frigus_stone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_stone_brick_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("frigus_deepslate_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("cobbled_frigus_deepslate_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("polished_frigus_deepslate_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("frigus_deepslate_brick_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONT.get("frigus_deepslate_tile_slab"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_stone_wall"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("frigus_cobblestone_wall"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONT.get("polished_frigus_stone_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_brick_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_brick_wall"));
-        //stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tile_wall"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"));
 
         /*
         Tool Tags
@@ -132,10 +134,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_REDSTONE_ORE.get())
                 .add(EUBlocks.FRIGUS_EMERALD_ORE.get())
                 .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_GOLD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_REDSTONE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get())
         ;
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
         ;
@@ -177,12 +181,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE.get())
         ;
         tag(BlockTags.IRON_ORES)
-                .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_IRON_ORE.get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get())
         ;
         tag(BlockTags.COPPER_ORES)
-                .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_COPPER_ORE.get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE.get())
         ;
         tag(BlockTags.GOLD_ORES)
                 .add(EUBlocks.FRIGUS_GOLD_ORE.get())
@@ -204,6 +208,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
         ;
+        tag(EUTags.EUBlockTags.ORES_OBDURIUM)
+                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get())
+        ;
+        tag(EUTags.EUBlockTags.ORES_MALUNITE)
+        ;
         tag(Tags.Blocks.ORE_RATES_DENSE)
                 .add(EUBlocks.FRIGUS_COPPER_ORE.get())
                 .add(EUBlocks.FRIGUS_REDSTONE_ORE.get())
@@ -218,11 +228,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_GOLD_ORE.get())
                 .add(EUBlocks.FRIGUS_EMERALD_ORE.get())
                 .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_GOLD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get())
         ;
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
