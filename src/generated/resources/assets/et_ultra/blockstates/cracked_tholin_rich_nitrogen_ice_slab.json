@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/cracked_tholin_rich_nitrogen_ice_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/cracked_tholin_rich_nitrogen_ice"
+    },
+    "type=top": {
+      "model": "et_ultra:block/cracked_tholin_rich_nitrogen_ice_slab_top"
+    }
+  }
+}

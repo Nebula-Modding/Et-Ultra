@@ -617,15 +617,10 @@ public class EUBlocks {
             )
             .done();
 
-    // Ores
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ORE_BLOCKS = RegolithBlockUtil.registerBlocks(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties(),
-            "etrium_ore"
-    );
+    /*
+    Common Properties
+     */
 
-    // Common properties
     private static BlockBehaviour.Properties iceProperties() {
         return BlockBehaviour.Properties.of()
                 .sound(SoundType.GLASS)

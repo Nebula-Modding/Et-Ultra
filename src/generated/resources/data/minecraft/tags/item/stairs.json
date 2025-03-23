@@ -1,0 +1,17 @@
+{
+  "values": [
+    "et_ultra:frigus_stone_stairs",
+    "et_ultra:frigus_cobblestone_stairs",
+    "et_ultra:polished_frigus_stone_stairs",
+    "et_ultra:frigus_stone_brick_stairs",
+    "et_ultra:frigus_deepslate_stairs",
+    "et_ultra:cobbled_frigus_deepslate_stairs",
+    "et_ultra:polished_frigus_deepslate_stairs",
+    "et_ultra:frigus_deepslate_brick_stairs",
+    "et_ultra:frigus_deepslate_tile_stairs",
+    "et_ultra:permafrost_stairs",
+    "et_ultra:polished_permafrost_stairs",
+    "et_ultra:permafrost_brick_stairs",
+    "et_ultra:permafrost_tile_stairs"
+  ]
+}

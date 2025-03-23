@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "et_ultra:block/cracked_tholin_poor_water_ice"
+  }
+}

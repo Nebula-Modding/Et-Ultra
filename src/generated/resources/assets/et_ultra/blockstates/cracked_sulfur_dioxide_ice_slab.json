@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/cracked_sulfur_dioxide_ice_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/cracked_sulfur_dioxide_ice"
+    },
+    "type=top": {
+      "model": "et_ultra:block/cracked_sulfur_dioxide_ice_slab_top"
+    }
+  }
+}
