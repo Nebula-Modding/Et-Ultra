@@ -52,29 +52,41 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         stoneStairs.add(EUBlocks.FRIGUS_COBBLESTONE_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_STONE_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_slab"));
+        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
+        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.COBBLED_FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_slab"));
-        stoneSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
         stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_slab"));
         stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_slab"));
         stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_slab"));
         stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
         stoneSlabs.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
-        stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"));
+        stoneStairs.add(EUBlocks.PERMAFROST_STAIRS);
+        stoneStairs.add(EUBlocks.POLISHED_PERMAFROST_STAIRS);
+        stoneStairs.add(EUBlocks.PERMAFROST_BRICK_STAIRS);
+        stoneStairs.add(EUBlocks.PERMAFROST_TILE_STAIRS);
+        stoneSlabs.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_slab"));
+        stoneSlabs.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_slab"));
+        stoneSlabs.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
+        stoneSlabs.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
+        stoneWalls.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_wall"));
+        stoneWalls.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"));
+        stoneWalls.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
+        stoneWalls.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
 
         /*
         Tool Tags
@@ -112,6 +124,14 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cracked_frigus_deepslate_bricks").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_pillar").get())
+                // Permafrost
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("chiseled_permafrost").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("polished_permafrost").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("cracked_permafrost_bricks").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_pillar").get())
         ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())

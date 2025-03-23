@@ -40,9 +40,6 @@ public class EULanguageProvider extends LanguageProvider {
 
         langExcludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_block"));
 
-        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"));
-        langExcludedBlocks.add(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"));
-
         final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
         //langExcludedItems.add(EUItems.EXAMPLE_ITEM);
@@ -63,9 +60,6 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.GRAPHITE_CRYSTAL_BLOCK, "Block of Graphite Crystal");
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"), "Block of Graphite");
         addBlock(EUBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
-
-        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_block"), "Daddy Erdragh");
-        addBlock(EUBlocks.MISCELLANEOUS_BLOCKS.get("erdragh_slab"), "Baby Erdragh");
 
         addBlock(EUBlocks.FLESH_BLOCKS.get("flesh_block"), "Block of Flesh");
 

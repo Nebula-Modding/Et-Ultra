@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "et_ultra:block/salt_pillar_top",
-    "side": "et_ultra:block/salt_pillar"
-  }
-}

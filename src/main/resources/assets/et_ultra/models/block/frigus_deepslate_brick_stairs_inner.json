@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "et_ultra:block/frigus_deepslate_bricks",
-    "side": "et_ultra:block/frigus_deepslate_bricks",
-    "top": "et_ultra:block/frigus_deepslate_bricks"
-  }
-}

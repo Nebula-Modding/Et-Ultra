@@ -173,7 +173,11 @@ public class EUBlocks {
             .setBlockFunction(RotatedPillarBlock::new)
             .register("permafrost_pillar")
             .done();
-    // Stairs go here
+    public static final DeferredBlock<Block>
+            PERMAFROST_STAIRS = register("permafrost_stairs", () -> new StairBlock(PERMAFROST_BLOCKS.get("permafrost").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get()))),
+            POLISHED_PERMAFROST_STAIRS = register("polished_permafrost_stairs", () -> new StairBlock(PERMAFROST_BLOCKS.get("polished_permafrost").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.PERMAFROST_BLOCKS.get("polished_permafrost").get()))),
+            PERMAFROST_BRICK_STAIRS = register("permafrost_brick_stairs", () -> new StairBlock(PERMAFROST_BLOCKS.get("permafrost_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks").get()))),
+            PERMAFROST_TILE_STAIRS = register("permafrost_tile_stairs", () -> new StairBlock(PERMAFROST_BLOCKS.get("permafrost_tiles").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles").get())));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -185,6 +189,13 @@ public class EUBlocks {
                     "polished_permafrost_slab",
                     "permafrost_brick_slab",
                     "permafrost_tile_slab"
+            )
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "permafrost_wall",
+                    "polished_permafrost_wall",
+                    "permafrost_brick_wall",
+                    "permafrost_tile_wall"
             )
             .done();
 
@@ -410,89 +421,107 @@ public class EUBlocks {
             .done();
 
     /*
-    To be organized
+    Metal Blocks
      */
 
-    // Moon
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MOON_BLOCKS = new RegolithBlockBuilder<>(
+    public static final DeferredBlock<Block>
+            RAW_OBDURIUM_BLOCK = register("raw_obdurium_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_PURPLE))),
+            RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN)));
+
+    // Iron
+    // Blocks go here
+
+    // Steel
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.DEEPSLATE)
+            steelProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_steel_pillar")
+            .done();
+
+    // Etrium
+    // Blocks go here
+
+    // Desh
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deshProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_desh_pillar")
+            .done();
+
+    // Ostrum
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            ostrumProperties()
+    )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("marked_ostrum_pillar")
+            .done();
+
+    // Aerolyte
+    // Blocks go here
+
+    // Obdurium
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            obduriumProperties()
     )
             .register(
-                    "cobbled_moon_deepslate",
-                    "chiseled_moon_deepslate",
-                    "polished_moon_deepslate",
-                    "moon_deepslate_bricks",
-                    "cracked_moon_deepslate_bricks",
-                    "moon_deepslate_tiles"
+                    "obdurium_factory_block",
+                    "encased_obdurium_block",
+                    "obdurium_plateblock",
+                    "obdurium_panel",
+                    "obdurium_block",
+                    "obdurium_plating"
             )
             .setBlockFunction(RotatedPillarBlock::new)
-            .register("moon_deepslate_pillar")
+            .register(
+                    "obdurium_pillar",
+                    "glowing_obdurium_pillar",
+                    "marked_obdurium_pillar"
+            )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "cobbled_moon_deepslate_slab",
-                    "polished_moon_deepslate_slab",
-                    "moon_deepslate_brick_slab",
-                    "moon_deepslate_tile_slab"
+                    "obdurium_plating_slab"
             )
             .done();
 
-    // Mars
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MARS_BLOCKS = new RegolithBlockBuilder<>(
+    // Malunite
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MALUNITE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_ORANGE)
+            maluniteProperties()
     )
             .register(
-                    "mars_deepslate",
-                    "cobbled_mars_deepslate",
-                    "chiseled_mars_deepslate",
-                    "polished_mars_deepslate",
-                    "mars_deepslate_bricks",
-                    "cracked_mars_deepslate_bricks",
-                    "mars_deepslate_tiles"
+                    "malunite_factory_block",
+                    "encased_malunite_block",
+                    "malunite_plateblock",
+                    "malunite_panel",
+                    "malunite_block",
+                    "malunite_plating"
             )
             .setBlockFunction(RotatedPillarBlock::new)
-            .register("mars_deepslate_pillar")
+            .register(
+                    "malunite_pillar",
+                    "glowing_malunite_pillar",
+                    "marked_malunite_pillar"
+            )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "mars_deepslate_slab",
-                    "cobbled_mars_deepslate_slab",
-                    "polished_mars_deepslate_slab",
-                    "mars_deepslate_brick_slab",
-                    "mars_deepslate_tile_slab"
+                    "malunite_plating_slab"
             )
             .done();
 
-    // Venus
-
-    // Mercury
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MERCURY_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_PURPLE)
-    )
-            .register(
-                    "mercury_deepslate",
-                    "cobbled_mercury_deepslate",
-                    "chiseled_mercury_deepslate",
-                    "polished_mercury_deepslate",
-                    "mercury_deepslate_bricks",
-                    "cracked_mercury_deepslate_bricks",
-                    "mercury_deepslate_tiles"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("mercury_deepslate_pillar")
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "mercury_deepslate_slab",
-                    "cobbled_mercury_deepslate_slab",
-                    "polished_mercury_deepslate_slab",
-                    "mercury_deepslate_brick_slab",
-                    "mercury_deepslate_tile_slab"
-            )
-            .done();
+    /*
+    To be organized
+     */
 
     // Salt
     public static final DeferredBlock<Block>
@@ -571,6 +600,7 @@ public class EUBlocks {
                     "graphite_brick_slab"
             )
             .done();
+
     // Flesh
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FLESH_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
@@ -581,41 +611,9 @@ public class EUBlocks {
             .register(
                     "flesh_block"
             )
-            .setBlockFunction(Block::new)
-            .register(
-                    "flesh_bricks"
-            )
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "flesh_slab",
-                    "flesh_brick_slab"
-            )
-            .done();
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> ROTTEN_FLESH_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.3F, 0.3F)
-    )
-            .register(
-                    "rotten_flesh_block"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "rotten_flesh_slab"
-            )
-            .done();
-
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MISCELLANEOUS_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK).lightLevel(state -> 15)
-    )
-            .register(
-                    "erdragh_block"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "erdragh_slab"
+                    "flesh_slab"
             )
             .done();
 
@@ -626,86 +624,6 @@ public class EUBlocks {
             stoneProperties(),
             "etrium_ore"
     );
-
-    // Metal Blocks
-
-    // Iron
-    // Blocks go here
-
-    // Steel
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> STEEL_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            steelProperties()
-    )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("marked_steel_pillar")
-            .done();
-
-    // Etrium
-    // Blocks go here
-
-    // Desh
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> DESH_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deshProperties()
-    )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("marked_desh_pillar")
-            .done();
-
-    // Ostrum
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OSTRUM_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            ostrumProperties()
-    )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("marked_ostrum_pillar")
-            .done();
-
-    // Aerolyte
-    //public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AEROLYTE = new RegolithBlockBuilder<>(
-    //        RegolithNeoForge.wrapBlocks(BLOCKS),
-    //        RegolithNeoForge.wrapItems(EUItems.ITEMS),
-    //        aerolyteProperties()
-    //)
-    //        .register("aerolyte_block")
-    //        .done();
-
-    // Obdurium
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OBDURIUM_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            obduriumProperties()
-    )
-            .register(
-                    "obdurium_factory_block",
-                    "encased_obdurium_block",
-                    "obdurium_plateblock",
-                    "obdurium_panel",
-                    "obdurium_block",
-                    "obdurium_plating"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "obdurium_plating_slab"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register(
-                    "obdurium_pillar",
-                    "glowing_obdurium_pillar",
-                    "marked_obdurium_pillar"
-            )
-            .done();
-
-
-
-
-
-
-
 
     // Common properties
     private static BlockBehaviour.Properties iceProperties() {
@@ -768,6 +686,9 @@ public class EUBlocks {
     private static BlockBehaviour.Properties dustProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.SAND);
     }
+    private static BlockBehaviour.Properties rawBlockProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK);
+    }
 
     // Metal Properties
     private static BlockBehaviour.Properties steelProperties() {
@@ -817,6 +738,14 @@ public class EUBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(8, 6000)
                 .sound(SoundType.NETHERITE_BLOCK);
+    }
+    private static BlockBehaviour.Properties maluniteProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.COLOR_GREEN)
+                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
+                .strength(5, 9)
+                .sound(SoundType.COPPER);
     }
     // Misc helpers
     private static <T extends Block> DeferredBlock<T> register(String id, Supplier<T> block) {

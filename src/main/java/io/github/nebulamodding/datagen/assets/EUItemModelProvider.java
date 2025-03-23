@@ -33,25 +33,38 @@ public class EUItemModelProvider extends ItemModelProvider {
         /*
         Manual Item Models
          */
+
         itemModel(EUItems.OBDURIUM_HAMMER, HANDHELD);
 
         /*
         Manual Block Item Models
          */
 
+        blockModel(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
-
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), "inventory");
+
+        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
+        blockModel(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
+        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
+        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"), "inventory");
+
+        blockModel(EUBlocks.PERMAFROST_BRICK_STAIRS);
+        blockModel(EUBlocks.PERMAFROST_TILE_STAIRS);
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_wall"), "inventory");
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"), "inventory");
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), "inventory");
+        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), "inventory");
 
         /*
         Automated Item Models

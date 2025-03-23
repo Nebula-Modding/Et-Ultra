@@ -29,6 +29,15 @@ public class EUItems {
             "obdurium_plate",
             "obdurium_rod"
     );
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> MALUNITE_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            "raw_malunite",
+            "malunite_nugget",
+            "malunite_ingot",
+            "malunite_plate",
+            "malunite_rod"
+    );
 
     // Items
     public static final DeferredItem<Item> PENCIL = ITEMS.registerSimpleItem("pencil", new Item.Properties());

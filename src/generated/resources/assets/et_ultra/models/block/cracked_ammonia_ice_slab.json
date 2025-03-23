@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/cracked_ammonia_ice",
-    "side": "et_ultra:block/cracked_ammonia_ice",
-    "top": "et_ultra:block/cracked_ammonia_ice"
-  }
-}
