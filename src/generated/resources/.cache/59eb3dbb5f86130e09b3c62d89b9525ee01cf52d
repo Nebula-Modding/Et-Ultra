@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T22:41:56.7799887	Loot Tables
+// 1.21.1	2025-03-23T13:07:37.568125	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -104,7 +104,9 @@ a89ceaf80cb5154ffd876884b59eba19e694dbd2 data/et_ultra/loot_table/blocks/frigus_
 732966d65ec632b74d61a40a53113b138e0a649b data/et_ultra/loot_table/blocks/frigus_stone_brick_slab.json
 122edfbde91d0a3eb5fd0564097b2dbc2192c54c data/et_ultra/loot_table/blocks/frigus_stone_brick_stairs.json
 c4778b3cfddb6cf59fbd3d1394cf322ff079f201 data/et_ultra/loot_table/blocks/frigus_stone_brick_wall.json
+dfb00ab01289d6fc1d743c573b19a1ee39418eb4 data/et_ultra/loot_table/blocks/frigus_stone_button.json
 5fa9c584f63ed2b64f9db7810dd2e8cf6a45fc72 data/et_ultra/loot_table/blocks/frigus_stone_pillar.json
+7add15e9ca161497b739ac9628aa6b8f83e4517c data/et_ultra/loot_table/blocks/frigus_stone_pressure_plate.json
 47175228e29502b1b1c98bee1f9a25af8518c9b2 data/et_ultra/loot_table/blocks/frigus_stone_slab.json
 e155104e5970e66cf0fb625d40baaed2f6b92d34 data/et_ultra/loot_table/blocks/frigus_stone_stairs.json
 16e086ea84d13f5dfe851fb8ad43fbeb0e540368 data/et_ultra/loot_table/blocks/frigus_stone_wall.json
@@ -124,7 +126,10 @@ fe6da573844cb9e088467b0b153880bb0e16f675 data/et_ultra/loot_table/blocks/malunit
 9c3ecf1cb5fead63f66df6ba3290d209c2c66237 data/et_ultra/loot_table/blocks/malunite_pillar.json
 87da43354f1235dbb10137611a206b7dbd760e65 data/et_ultra/loot_table/blocks/malunite_plateblock.json
 a7569fed0a3b22267ee2122a2a2cf530cfaaf491 data/et_ultra/loot_table/blocks/malunite_plating.json
+dd38e96b948c40f59156117c84a7a52fe27ce149 data/et_ultra/loot_table/blocks/malunite_plating_button.json
+14d536e36fee3957ac7db73f254c94799bcf4e36 data/et_ultra/loot_table/blocks/malunite_plating_pressure_plate.json
 5dd2324a1c64625fa5d82b1bfa886c8cc0316828 data/et_ultra/loot_table/blocks/malunite_plating_slab.json
+1166d21b48e542e48611e9824b438437f95ba393 data/et_ultra/loot_table/blocks/malunite_plating_stairs.json
 9842cb079d0b5329c8b4af941a6ecd982aa5d191 data/et_ultra/loot_table/blocks/marked_desh_pillar.json
 303b07102ec6ec7569f52fdd034b9b1827c0e58c data/et_ultra/loot_table/blocks/marked_malunite_pillar.json
 df6f54982a77c0f0194ec99bc443ba919d7e12e3 data/et_ultra/loot_table/blocks/marked_obdurium_pillar.json

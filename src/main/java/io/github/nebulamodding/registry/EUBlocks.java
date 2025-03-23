@@ -12,6 +12,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -107,6 +108,9 @@ public class EUBlocks {
                     "frigus_stone_brick_wall"
             )
             .done();
+    public static final DeferredBlock<Block>
+            FRIGUS_STONE_PRESSURE_PLATE = register("frigus_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
+            FRIGUS_STONE_BUTTON = register("frigus_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -420,6 +424,100 @@ public class EUBlocks {
             )
             .done();
 
+    // Salt
+    public static final DeferredBlock<Block>
+            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.SNOW))),
+            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.SNOW)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            compressedDustProperties().mapColor(MapColor.SNOW)
+    )
+            .register(
+                    "salt_block",
+                    "chiseled_salt",
+                    "polished_salt",
+                    "salt_bricks",
+                    "cracked_salt_bricks"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("salt_pillar")
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "salt_slab",
+                    "polished_salt_slab",
+                    "salt_brick_slab"
+            )
+            .done();
+
+    // Sulfur
+    public static final DeferredBlock<Block>
+            SULFUR_CRYSTAL_BLOCK = register("sulfur_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
+            SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            compressedDustProperties().mapColor(MapColor.COLOR_YELLOW)
+    )
+            .register(
+                    "sulfur_block",
+                    "chiseled_sulfur",
+                    "polished_sulfur",
+                    "sulfur_bricks",
+                    "cracked_sulfur_bricks"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("sulfur_pillar")
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "sulfur_slab",
+                    "polished_sulfur_slab",
+                    "sulfur_brick_slab"
+            )
+            .done();
+
+    // Graphite
+    public static final DeferredBlock<Block>
+            GRAPHITE_CRYSTAL_BLOCK = register("graphite_crystal_block", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK))),
+            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0x2d261b), dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
+    )
+            .register(
+                    "graphite_block",
+                    "chiseled_graphite",
+                    "polished_graphite",
+                    "graphite_bricks",
+                    "cracked_graphite_bricks"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("graphite_pillar")
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "graphite_slab",
+                    "polished_graphite_slab",
+                    "graphite_brick_slab"
+            )
+            .done();
+
+    // Flesh
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FLESH_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.4F, 0.4F)
+    )
+            .setBlockFunction(MudBlock::new)
+            .register(
+                    "flesh_block"
+            )
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "flesh_slab"
+            )
+            .done();
+
     /*
     Metal Blocks
      */
@@ -513,109 +611,12 @@ public class EUBlocks {
                     "glowing_malunite_pillar",
                     "marked_malunite_pillar"
             )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "malunite_plating_slab"
-            )
             .done();
-
-    /*
-    To be organized
-     */
-
-    // Salt
     public static final DeferredBlock<Block>
-            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.SNOW))),
-            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.SNOW)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_PACKED_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            compressedDustProperties().mapColor(MapColor.SNOW)
-    )
-            .register(
-                    "salt_block",
-                    "chiseled_salt",
-                    "polished_salt",
-                    "salt_bricks",
-                    "cracked_salt_bricks"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("salt_pillar")
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "salt_slab",
-                    "polished_salt_slab",
-                    "salt_brick_slab"
-            )
-            .done();
-
-    // Salt
-    public static final DeferredBlock<Block>
-            SULFUR_CRYSTAL_BLOCK = register("sulfur_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
-            SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_PACKED_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            compressedDustProperties().mapColor(MapColor.COLOR_YELLOW)
-    )
-            .register(
-                    "sulfur_block",
-                    "chiseled_sulfur",
-                    "polished_sulfur",
-                    "sulfur_bricks",
-                    "cracked_sulfur_bricks"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("sulfur_pillar")
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "sulfur_slab",
-                    "polished_sulfur_slab",
-                    "sulfur_brick_slab"
-            )
-            .done();
-
-    // Graphite
-    public static final DeferredBlock<Block>
-            GRAPHITE_CRYSTAL_BLOCK = register("graphite_crystal_block", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK))),
-            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0x2d261b), dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_PACKED_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-    )
-            .register(
-                    "graphite_block",
-                    "chiseled_graphite",
-                    "polished_graphite",
-                    "graphite_bricks",
-                    "cracked_graphite_bricks"
-            )
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("graphite_pillar")
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "graphite_slab",
-                    "polished_graphite_slab",
-                    "graphite_brick_slab"
-            )
-            .done();
-
-    // Flesh
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FLESH_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.4F, 0.4F)
-    )
-            .setBlockFunction(MudBlock::new)
-            .register(
-                    "flesh_block"
-            )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "flesh_slab"
-            )
-            .done();
+            MALUNITE_PLATING_STAIRS = register("malunite_plating_stairs", () -> new StairBlock(MALUNITE_BLOCKS.get("malunite_plating").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get()))),
+            MALUNITE_PLATING_SLAB = register("malunite_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get()))),
+            MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get()))),
+            MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get())));
 
     /*
     Common Properties

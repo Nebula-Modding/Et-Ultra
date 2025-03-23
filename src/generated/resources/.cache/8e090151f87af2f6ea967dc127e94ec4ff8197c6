@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T23:00:42.126671	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-03-23T12:10:18.9381572	Tags for minecraft:block mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -35,7 +35,7 @@ d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/block/emerald_ores.
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/block/lapis_ores.json
 7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/mineable/hoe.json
-464dfba23ac37fb62bb1323946ac7f43c9b507c3 data/minecraft/tags/block/mineable/pickaxe.json
+28242594f9452ee6a8ec5e74bdb0a196865b0206 data/minecraft/tags/block/mineable/pickaxe.json
 f5e3270d0341c878173e4383fab05d5b32c38b7e data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 51eacac55167dcaa1be4fbac4f629308b9dba46b data/minecraft/tags/block/needs_iron_tool.json

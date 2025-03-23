@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/malunite_plating",
+    "side": "et_ultra:block/malunite_plating",
+    "top": "et_ultra:block/malunite_plating"
+  }
+}

@@ -11,6 +11,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -39,6 +40,8 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BUTTON);
 
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
@@ -88,6 +91,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
 
         excludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_slab"));
 
+        excludedBlocks.add(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.MALUNITE_PLATING_BUTTON);
+
         /*
         Automated Block Models
          */
@@ -133,6 +139,8 @@ public class EUBlockStateProvider extends BlockStateProvider {
         wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone")));
         wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("polished_frigus_stone")));
         wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        pressurePlateBlock(EUBlocks.FRIGUS_STONE_PRESSURE_PLATE, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone")));
+        buttonBlock(EUBlocks.FRIGUS_STONE_BUTTON, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone")));
         
         stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
         stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
@@ -153,6 +161,8 @@ public class EUBlockStateProvider extends BlockStateProvider {
         wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
         wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
 
+        pressurePlateBlock(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE, blockLoc(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating")));
+        buttonBlock(EUBlocks.MALUNITE_PLATING_BUTTON, blockLoc(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating")));
     }
     private void stairsBlock(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
@@ -163,6 +173,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
     private void fenceBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceBlock((FenceBlock) block.get(), texture);
         models().fenceInventory(block.getId().getPath() + "_inventory", texture);
+    }
+    private void pressurePlateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+        super.pressurePlateBlock((PressurePlateBlock) block.get(), texture);
     }
     public void buttonBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.buttonBlock((ButtonBlock) block.get(), texture);

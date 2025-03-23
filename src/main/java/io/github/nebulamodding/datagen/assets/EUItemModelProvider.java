@@ -46,6 +46,8 @@ public class EUItemModelProvider extends ItemModelProvider {
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"), "inventory");
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), "inventory");
+        blockModel(EUBlocks.FRIGUS_STONE_PRESSURE_PLATE);
+        blockModel(EUBlocks.FRIGUS_STONE_BUTTON, "inventory");
 
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         blockModel(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
@@ -65,6 +67,9 @@ public class EUItemModelProvider extends ItemModelProvider {
         blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"), "inventory");
         blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), "inventory");
         blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), "inventory");
+
+        blockModel(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE);
+        blockModel(EUBlocks.MALUNITE_PLATING_BUTTON, "inventory");
 
         /*
         Automated Item Models

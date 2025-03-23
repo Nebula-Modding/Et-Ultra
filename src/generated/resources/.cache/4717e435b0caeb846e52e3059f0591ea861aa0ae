@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T22:41:56.7824934	Item Models: et_ultra
+// 1.21.1	2025-03-23T13:07:37.5701248	Item Models: et_ultra
 2c130383b6269a346034b3a6465841c292b020e3 assets/et_ultra/models/item/cicosprout_seeds.json
 229acc2eca45069e505536c40ce09a8e88769111 assets/et_ultra/models/item/cobbled_frigus_deepslate_wall.json
 9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
@@ -14,11 +14,15 @@ e5c2e3253651aeb8d022116a58914549541a85ef assets/et_ultra/models/item/frigus_deep
 402bb3f24e5dd349888efda7b35a04c169033dde assets/et_ultra/models/item/frigus_stone_brick_slab.json
 36e57b9d5d41a2b78a2cf6ef586df5ede4f7976c assets/et_ultra/models/item/frigus_stone_brick_stairs.json
 25633df99f68a705a6347e6f99b39d085ac205ac assets/et_ultra/models/item/frigus_stone_brick_wall.json
+4f9c5886cb96782952241be35378d896689577d9 assets/et_ultra/models/item/frigus_stone_button.json
+ef1264f45f198ba2272008790c7fdb97baa7462a assets/et_ultra/models/item/frigus_stone_pressure_plate.json
 76afe92744310e3b03437d6f87e9e98ba8785bbc assets/et_ultra/models/item/frigus_stone_wall.json
 52ab0bcbd8fcb2a6cf14a1462920d467f566a961 assets/et_ultra/models/item/impure_steel.json
 7b8c0d4ac3e39b566ae01c4acaadce6ccfdf1075 assets/et_ultra/models/item/malunite_ingot.json
 1d585d58ff2cc5d58e7d01e5a5eb01b3e352e29e assets/et_ultra/models/item/malunite_nugget.json
 0cf35fd54250bd519b866292e0c4fbf87e994fa0 assets/et_ultra/models/item/malunite_plate.json
+d2323bfc2297e9bccad7dc65e33353eb6c265943 assets/et_ultra/models/item/malunite_plating_button.json
+6dbc38873e5e900eee8aab3c6ef42f138b599c60 assets/et_ultra/models/item/malunite_plating_pressure_plate.json
 921312c07a8064001d736080fb2ce2b0680310aa assets/et_ultra/models/item/malunite_rod.json
 8c20062225c893194fc7987d78aabfeef19f25e5 assets/et_ultra/models/item/obdurium_hammer.json
 32003d6fc2cd5fea9ea433f67c7e7b844713d1fa assets/et_ultra/models/item/obdurium_ingot.json
