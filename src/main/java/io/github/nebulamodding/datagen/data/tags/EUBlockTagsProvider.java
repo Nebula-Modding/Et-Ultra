@@ -30,6 +30,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> stoneStairs = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stoneSlabs = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stoneWalls = new ArrayList<>();
+        // Ores
         frigusStoneOres.add(EUBlocks.FRIGUS_COAL_ORE);
         frigusStoneOres.add(EUBlocks.FRIGUS_IRON_ORE);
         frigusStoneOres.add(EUBlocks.FRIGUS_COPPER_ORE);
@@ -48,6 +49,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE);
+        // Frigus Stone
         stoneStairs.add(EUBlocks.FRIGUS_STONE_STAIRS);
         stoneStairs.add(EUBlocks.FRIGUS_COBBLESTONE_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_STONE_STAIRS);
@@ -60,6 +62,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
+        // Frigus Deepslate
         stoneStairs.add(EUBlocks.FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.COBBLED_FRIGUS_DEEPSLATE_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_FRIGUS_DEEPSLATE_STAIRS);
@@ -75,6 +78,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"));
         stoneWalls.add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"));
+        // Permafrost
         stoneStairs.add(EUBlocks.PERMAFROST_STAIRS);
         stoneStairs.add(EUBlocks.POLISHED_PERMAFROST_STAIRS);
         stoneStairs.add(EUBlocks.PERMAFROST_BRICK_STAIRS);
@@ -108,15 +112,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         stoneStairs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         stoneSlabs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                // Frigus
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                // Frigus Stones
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("chiseled_frigus_stone").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("polished_frigus_stone").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("cracked_frigus_stone_bricks").get())
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_pillar").get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("chiseled_frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("polished_frigus_deepslate").get())
@@ -125,7 +127,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_pillar").get())
                 // Permafrost
-                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("chiseled_permafrost").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("polished_permafrost").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks").get())
@@ -274,6 +275,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(Tags.Blocks.STONES)
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())

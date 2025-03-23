@@ -1,11 +1,5 @@
 {
   "values": [
-    "et_ultra:frigus_copper_ore",
-    "et_ultra:frigus_redstone_ore",
-    "et_ultra:frigus_lapis_ore",
-    "et_ultra:frigus_deepslate_copper_ore",
-    "et_ultra:frigus_deepslate_redstone_ore",
-    "et_ultra:frigus_deepslate_lapis_ore",
     "et_ultra:frigus_coal_ore",
     "et_ultra:frigus_iron_ore",
     "et_ultra:frigus_gold_ore",
@@ -17,6 +11,12 @@
     "et_ultra:frigus_deepslate_gold_ore",
     "et_ultra:frigus_deepslate_emerald_ore",
     "et_ultra:frigus_deepslate_diamond_ore",
-    "et_ultra:frigus_deepslate_obdurium_ore"
+    "et_ultra:frigus_deepslate_obdurium_ore",
+    "et_ultra:frigus_copper_ore",
+    "et_ultra:frigus_redstone_ore",
+    "et_ultra:frigus_lapis_ore",
+    "et_ultra:frigus_deepslate_copper_ore",
+    "et_ultra:frigus_deepslate_redstone_ore",
+    "et_ultra:frigus_deepslate_lapis_ore"
   ]
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T22:41:56.7809877	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-03-22T23:00:42.126671	Tags for minecraft:block mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -11,7 +11,7 @@ cae145be14527db94442b4cf1f3a4afa8ddc4dc6 data/c/tags/block/ores_in_ground/frigus
 da14c41818ea431f728171435e22ea8a64d1ab11 data/c/tags/block/ore_rates/dense.json
 b79fc2382df4a4995b82857045f70bdbe4342416 data/c/tags/block/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_rates/sparse.json
-13c9967eb013611c9128c29585b1d71d94cb0ad2 data/c/tags/block/stones.json
+120b73770c4802d0aba1119a3dc3db123bda0b62 data/c/tags/block/stones.json
 6b5ad9143c2cb8ea41c489bb34a19b9687caa482 data/c/tags/block/storage_blocks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/storage_blocks/malunite.json
 825103f5dd04c3ab80127f55d3c88042d2fcc61c data/c/tags/block/storage_blocks/obdurium.json
