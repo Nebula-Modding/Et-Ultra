@@ -28,6 +28,10 @@ public class EUTags {
     public static class EUBlockTags {
         // Blocks
         public static final TagKey<Block>
+                /*
+                Common Tags
+                 */
+
                 // Cobblestones
                 COBBLESTONES_FRIGUS_STONE = commonBlockTag("cobblestones/frigus_stone"),
                 COBBLESTONES_FRIGUS_DEEPSLATE = commonBlockTag("cobblestones/frigus_deepslate"),
@@ -48,7 +52,24 @@ public class EUTags {
                 STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium"),
                 STORAGE_BLOCKS_MALUNITE = commonBlockTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonBlockTag("storage_blocks/raw_obdurium"),
-                STORAGE_BLOCKS_RAW_MALUNITE = commonBlockTag("storage_blocks/raw_malunite")
+                STORAGE_BLOCKS_RAW_MALUNITE = commonBlockTag("storage_blocks/raw_malunite"),
+
+                /*
+                Et Ultra Tags
+                 */
+
+                // Base Stones
+                BASE_STONE_FRIGUS = blockTag("base_stone_frigus"),
+
+                // Carver Replacables
+                FRIGUS_CARVER_REPLACEABLES = blockTag("frigus_carver_replaceables"),
+
+                // Ore Replacables
+                FRIGUS_STONE_ORE_REPLACEABLES = blockTag("frigus_stone_ore_replaceables"),
+                FRIGUS_DEEPSLATE_ORE_REPLACEABLES = blockTag("frigus_deepslate_ore_replaceables"),
+
+                // Convertable to Mud
+                CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud")
         ;
     }
     public static class EUItemTags {

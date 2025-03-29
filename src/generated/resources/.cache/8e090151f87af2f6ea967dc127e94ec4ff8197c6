@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-29T11:47:36.1502813	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-03-29T13:48:15.4957638	Tags for minecraft:block mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -17,6 +17,11 @@ bce24d5698654eb4eadae1a480d6d074c286f602 data/c/tags/block/storage_blocks.json
 825103f5dd04c3ab80127f55d3c88042d2fcc61c data/c/tags/block/storage_blocks/obdurium.json
 239455867476281aa4b15a0638cd621d6da62f50 data/c/tags/block/storage_blocks/raw_malunite.json
 1c5e30dd8b4b359529e2602e2b6e1b987a7c37fe data/c/tags/block/storage_blocks/raw_obdurium.json
+120b73770c4802d0aba1119a3dc3db123bda0b62 data/et_ultra/tags/block/base_stone_frigus.json
+22d58ed8ff686c2e8f7c5b0838d9f1139b90b093 data/et_ultra/tags/block/convertable_to_frigus_mud.json
+6dd7bb43578b25749bfb0eaa904b5da763a8f342 data/et_ultra/tags/block/frigus_carver_replaceables.json
+01c54dc0bb2e56af56c9dc7588a20dd43a9d8c2f data/et_ultra/tags/block/frigus_deepslate_ore_replaceables.json
+4aef96f41c349a491e37795e0931e497aea60b2b data/et_ultra/tags/block/frigus_stone_ore_replaceables.json
 2dd60477f73d0331fadee7c8eb4569d8b6cfdd80 data/minecraft/tags/block/animals_spawnable_on.json
 aaed3011da9b1ab493a5ad949621a1783e547b5d data/minecraft/tags/block/buttons.json
 ceb0827e32518ae4f2163865139599ac16ed15cd data/minecraft/tags/block/coal_ores.json

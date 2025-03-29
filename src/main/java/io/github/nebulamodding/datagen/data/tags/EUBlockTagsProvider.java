@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -325,6 +326,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
         ;
 
+        // Base Stone Tags
+        tag(EUTags.EUBlockTags.BASE_STONE_FRIGUS)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+        ;
+
         /*
         Storage Block Tags
          */
@@ -357,6 +365,10 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
         ;
+        tag(EUTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
+                .add(EUBlocks.FRIGUS_DIRT.get())
+                .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+        ;
         tag(BlockTags.ANIMALS_SPAWNABLE_ON)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
         ;
@@ -370,6 +382,35 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
                 .add(EUBlocks.FRIGUS_FARMLAND.get())
+        ;
+
+        /*
+        Carver Replaceable Tags
+         */
+
+        tag(EUTags.EUBlockTags.FRIGUS_CARVER_REPLACEABLES)
+                .addTag(EUTags.EUBlockTags.BASE_STONE_FRIGUS)
+                .addTag(BlockTags.DIRT)
+                .addTag(BlockTags.SAND)
+                .addTag(BlockTags.COPPER_ORES)
+                .addTag(BlockTags.IRON_ORES)
+                .addTag(BlockTags.SNOW)
+                .add(Blocks.PACKED_ICE)
+                .add(Blocks.RAW_COPPER_BLOCK)
+                .add(Blocks.RAW_IRON_BLOCK)
+                .add(Blocks.WATER)
+        ;
+
+        /*
+        Ore Replaceable Tags
+         */
+
+        tag(EUTags.EUBlockTags.FRIGUS_STONE_ORE_REPLACEABLES)
+                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+        ;
+        tag(EUTags.EUBlockTags.FRIGUS_DEEPSLATE_ORE_REPLACEABLES)
+                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
         ;
 
         /*
