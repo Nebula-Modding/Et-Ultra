@@ -39,6 +39,10 @@ public class EUItemTagProvider extends ItemTagsProvider {
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.WOODEN_SLABS, ItemTags.WOODEN_SLABS);
         copy(BlockTags.WALLS, ItemTags.WALLS);
+        copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
+        copy(BlockTags.BUTTONS, ItemTags.BUTTONS);
+        copy(BlockTags.STONE_BUTTONS, ItemTags.STONE_BUTTONS);
+        copy(BlockTags.WOODEN_BUTTONS, ItemTags.WOODEN_BUTTONS);
 
         /*
         Ore Tags

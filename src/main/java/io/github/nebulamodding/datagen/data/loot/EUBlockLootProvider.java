@@ -7,6 +7,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -54,8 +55,8 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         Manual Loot Tables
          */
 
-        add(EUBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
-        add(EUBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
+        add(EUBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
+        add(EUBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get()));
         add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get()));
