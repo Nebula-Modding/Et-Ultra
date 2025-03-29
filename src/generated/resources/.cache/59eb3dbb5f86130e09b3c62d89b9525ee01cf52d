@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-29T12:42:37.765238	Loot Tables
+// 1.21.1	2025-03-29T15:30:10.8731438	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -96,7 +96,13 @@ b9a6b529f4a3ab1559a01af76073b6e4b2a9aa9a data/et_ultra/loot_table/blocks/frigus_
 5e9546dd9616f30626eddb334097d6af71b1ff9c data/et_ultra/loot_table/blocks/frigus_iron_ore.json
 b37b60c81dbd48aa95a6799bee55dc53009640ad data/et_ultra/loot_table/blocks/frigus_lapis_ore.json
 7f1c2f04075435ffbe9617ab6898064de07e1864 data/et_ultra/loot_table/blocks/frigus_malunite_ore.json
+8d4fa10f44dc69265b8b9e18ce85a0d41712fe62 data/et_ultra/loot_table/blocks/frigus_mud.json
+38073f09b980e3909faa99e39845e884b8f0f3ae data/et_ultra/loot_table/blocks/frigus_mud_bricks.json
+3011cac6420b56c1b38cd58deb0610b36b844746 data/et_ultra/loot_table/blocks/frigus_mud_brick_slab.json
+ac8f1a60ee29564e1698273e94904c15d4c46b95 data/et_ultra/loot_table/blocks/frigus_mud_brick_stairs.json
+092ea9600f37238f927191d471fc70999a9ca4cd data/et_ultra/loot_table/blocks/frigus_mud_brick_wall.json
 1f43414177e863e154295e4ca7a7a0d45032845f data/et_ultra/loot_table/blocks/frigus_obdurium_ore.json
+2c46a8d153808d214d8aec07cb77e98ec328cf19 data/et_ultra/loot_table/blocks/frigus_packed_mud.json
 0f12fae180d301bcd556fd7e8cfdc2d830048cb5 data/et_ultra/loot_table/blocks/frigus_redstone_ore.json
 c9d9e4bab3fd1e783f61858f42e858cc563daa09 data/et_ultra/loot_table/blocks/frigus_short_grass.json
 72b770075b49277a8b16d05b053efc3b1dd4b067 data/et_ultra/loot_table/blocks/frigus_stone.json
@@ -135,6 +141,7 @@ dd38e96b948c40f59156117c84a7a52fe27ce149 data/et_ultra/loot_table/blocks/malunit
 df6f54982a77c0f0194ec99bc443ba919d7e12e3 data/et_ultra/loot_table/blocks/marked_obdurium_pillar.json
 81d6194f21365dbbaef67dd33fa3809431fd709d data/et_ultra/loot_table/blocks/marked_ostrum_pillar.json
 03ca3f47e222ca889066a9fec83c74d2d07abfad data/et_ultra/loot_table/blocks/marked_steel_pillar.json
+96b3ef56a89967fdba8f3da5b4ddf5bb72deafef data/et_ultra/loot_table/blocks/myura_sapling.json
 bed1b8ecb96fed7c01d655a3613135df2d79a6a1 data/et_ultra/loot_table/blocks/nitrogen_ice.json
 229879eae3e802a95328c59b8d77a4ad9c314fe3 data/et_ultra/loot_table/blocks/nitrogen_ice_bricks.json
 e8a7aa1592ee3c1b26a8b76c595ee7d1734de1bf data/et_ultra/loot_table/blocks/nitrogen_ice_brick_slab.json

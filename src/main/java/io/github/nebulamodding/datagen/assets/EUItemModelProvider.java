@@ -40,6 +40,10 @@ public class EUItemModelProvider extends ItemModelProvider {
         Manual Block Item Models
          */
 
+        blockModel(EUBlocks.FRIGUS_MUD_BRICK_STAIRS);
+        blockModel(EUBlocks.FRIGUS_MUD_BRICK_SLAB);
+        blockModel(EUBlocks.FRIGUS_MUD_BRICK_WALL, "inventory");
+
         blockModel(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
         blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"), "inventory");

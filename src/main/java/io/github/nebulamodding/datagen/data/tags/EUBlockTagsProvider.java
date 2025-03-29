@@ -56,6 +56,10 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_MALUNITE_ORE);
+        // Frigus Mud
+        pickaxeStairs.add(EUBlocks.FRIGUS_MUD_BRICK_STAIRS);
+        pickaxeSlabs.add(EUBlocks.FRIGUS_MUD_BRICK_SLAB);
+        pickaxeWalls.add(EUBlocks.FRIGUS_MUD_BRICK_WALL);
         // Frigus Stone
         pickaxeStairs.add(EUBlocks.FRIGUS_STONE_STAIRS);
         pickaxeStairs.add(EUBlocks.FRIGUS_COBBLESTONE_STAIRS);
@@ -111,6 +115,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
                 .add(EUBlocks.FRIGUS_FARMLAND.get())
+                .add(EUBlocks.FRIGUS_MUD.get())
 
                 .add(EUBlocks.SALT_DUST_BLOCK.get())
                 .add(EUBlocks.SULFUR_DUST_BLOCK.get())
@@ -149,6 +154,9 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 // Plating
                 .add(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
                 .add(EUBlocks.MALUNITE_PLATING_BUTTON.get())
+                // Miscellaneous
+                .add(EUBlocks.FRIGUS_PACKED_MUD.get())
+                .add(EUBlocks.FRIGUS_MUD_BRICKS.get())
         ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
@@ -364,6 +372,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(EUBlocks.FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+                .add(EUBlocks.FRIGUS_MUD.get())
         ;
         tag(EUTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
                 .add(EUBlocks.FRIGUS_DIRT.get())
@@ -382,6 +391,23 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
                 .add(EUBlocks.FRIGUS_FARMLAND.get())
+        ;
+
+        /*
+        Plant Tags
+         */
+
+        tag(BlockTags.SAPLINGS)
+                .add(EUBlocks.MYURA_SAPLING.get())
+        ;
+        tag(BlockTags.SMALL_FLOWERS)
+                .add(EUBlocks.VIVIAN.get())
+                .add(EUBlocks.WICKUL.get())
+                .add(EUBlocks.ICEFLOWER.get())
+        ;
+        tag(BlockTags.TALL_FLOWERS)
+        ;
+        tag(BlockTags.FLOWER_POTS)
         ;
 
         /*
@@ -426,15 +452,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
-        ;
-        tag(BlockTags.SMALL_FLOWERS)
-                .add(EUBlocks.VIVIAN.get())
-                .add(EUBlocks.WICKUL.get())
-                .add(EUBlocks.ICEFLOWER.get())
-        ;
-        tag(BlockTags.TALL_FLOWERS)
-        ;
-        tag(BlockTags.FLOWER_POTS)
         ;
     }
 }

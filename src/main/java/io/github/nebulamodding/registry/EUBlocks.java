@@ -11,6 +11,7 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -25,6 +26,22 @@ public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
 
     /*
+    Wood Blocks
+     */
+
+    public static final DeferredBlock<Block>
+                MYURA_SAPLING = register("myura_sapling", () -> new SaplingBlock(
+                    TreeGrower.SPRUCE,
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                            .noCollission()
+                            .randomTicks()
+                            .instabreak()
+                            .sound(SoundType.GRASS)
+                            .pushReaction(PushReaction.DESTROY)
+            ));
+
+    /*
     Frigus Blocks
      */
 
@@ -34,6 +51,12 @@ public class EUBlocks {
             FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_COARSE_DIRT = register("frigus_coarse_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_FARMLAND = register("frigus_farmland", () -> new FrigusFarmlandBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_MUD = register("frigus_mud", () -> new MudBlock(mudProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_PACKED_MUD = register("frigus_packed_mud", () -> new Block(packedMudProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_MUD_BRICKS = register("frigus_mud_bricks", () -> new Block(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_MUD_BRICK_STAIRS = register("frigus_mud_brick_stairs", () -> new StairBlock(FRIGUS_MUD_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_MUD_BRICKS.get()))),
+            FRIGUS_MUD_BRICK_SLAB = register("frigus_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_MUD_BRICK_WALL = register("frigus_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(shortGrassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             VIVIAN = register("vivian", () -> new FlowerBlock(
                     MobEffects.INVISIBILITY,
@@ -646,8 +669,17 @@ public class EUBlocks {
     private static BlockBehaviour.Properties farmlandProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.FARMLAND);
     }
+    private static BlockBehaviour.Properties mudProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.MUD);
+    }
     private static BlockBehaviour.Properties stoneProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE);
+    }
+    private static BlockBehaviour.Properties packedMudProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD);
+    }
+    private static BlockBehaviour.Properties mudBrickProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS);
     }
     private static BlockBehaviour.Properties deepslateProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE);

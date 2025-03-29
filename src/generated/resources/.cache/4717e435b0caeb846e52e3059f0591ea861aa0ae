@@ -1,5 +1,5 @@
-// 1.21.1	2025-03-23T13:07:37.5701248	Item Models: et_ultra
-2c130383b6269a346034b3a6465841c292b020e3 assets/et_ultra/models/item/cicosprout_seeds.json
+// 1.21.1	2025-03-29T15:37:29.7006527	Item Models: et_ultra
+7212823328eef8b268fbb5227b5f0afef7250579 assets/et_ultra/models/item/bruma_seeds.json
 229acc2eca45069e505536c40ce09a8e88769111 assets/et_ultra/models/item/cobbled_frigus_deepslate_wall.json
 9aba99e28390691ec952f794bf261a3c99bcbb96 assets/et_ultra/models/item/dense_pencil.json
 457b848aef24b2c6f0d0137e665d30ae02a2675c assets/et_ultra/models/item/flesh.json
@@ -11,6 +11,9 @@ e5c2e3253651aeb8d022116a58914549541a85ef assets/et_ultra/models/item/frigus_deep
 6ca0a75551a90c2387423dc4a2b6a1f3a3522205 assets/et_ultra/models/item/frigus_deepslate_tile_stairs.json
 00e7e4f24c9b4191554b05f05885d62e2d7abaf0 assets/et_ultra/models/item/frigus_deepslate_tile_wall.json
 5ea967a7637bce9735f7cd79e1fdbb79de50b750 assets/et_ultra/models/item/frigus_deepslate_wall.json
+ba36c2541628dcc49d1be70e7d4f8d72eb465975 assets/et_ultra/models/item/frigus_mud_brick_slab.json
+9b0a1fed32ac24c91168d4d70ff7160b14ba9bc2 assets/et_ultra/models/item/frigus_mud_brick_stairs.json
+252c9cf32892893971a3ea66928a575be97b737e assets/et_ultra/models/item/frigus_mud_brick_wall.json
 402bb3f24e5dd349888efda7b35a04c169033dde assets/et_ultra/models/item/frigus_stone_brick_slab.json
 36e57b9d5d41a2b78a2cf6ef586df5ede4f7976c assets/et_ultra/models/item/frigus_stone_brick_stairs.json
 25633df99f68a705a6347e6f99b39d085ac205ac assets/et_ultra/models/item/frigus_stone_brick_wall.json

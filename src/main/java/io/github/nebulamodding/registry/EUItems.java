@@ -17,7 +17,7 @@ public class EUItems {
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
-            "cicosprout_seeds",
+            "bruma_seeds",
             "impure_steel"
     );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(

@@ -20,6 +20,7 @@
     "et_ultra:frigus_deepslate_diamond_ore",
     "et_ultra:frigus_deepslate_obdurium_ore",
     "et_ultra:frigus_deepslate_malunite_ore",
+    "et_ultra:frigus_mud_brick_stairs",
     "et_ultra:frigus_stone_stairs",
     "et_ultra:frigus_cobblestone_stairs",
     "et_ultra:polished_frigus_stone_stairs",
@@ -33,6 +34,7 @@
     "et_ultra:polished_permafrost_stairs",
     "et_ultra:permafrost_brick_stairs",
     "et_ultra:permafrost_tile_stairs",
+    "et_ultra:frigus_mud_brick_slab",
     "et_ultra:frigus_stone_slab",
     "et_ultra:frigus_cobblestone_slab",
     "et_ultra:polished_frigus_stone_slab",
@@ -70,6 +72,8 @@
     "et_ultra:permafrost_tiles",
     "et_ultra:permafrost_pillar",
     "et_ultra:malunite_plating_pressure_plate",
-    "et_ultra:malunite_plating_button"
+    "et_ultra:malunite_plating_button",
+    "et_ultra:frigus_packed_mud",
+    "et_ultra:frigus_mud_bricks"
   ]
 }

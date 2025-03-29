@@ -27,8 +27,12 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
-        excludedBlocks.add(EUBlocks.FRIGUS_SHORT_GRASS);
 
+        excludedBlocks.add(EUBlocks.FRIGUS_MUD_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.FRIGUS_MUD_BRICK_SLAB);
+        excludedBlocks.add(EUBlocks.FRIGUS_MUD_BRICK_WALL);
+
+        excludedBlocks.add(EUBlocks.FRIGUS_SHORT_GRASS);
         excludedBlocks.add(EUBlocks.VIVIAN);
         excludedBlocks.add(EUBlocks.WICKUL);
         excludedBlocks.add(EUBlocks.ICEFLOWER);
@@ -133,6 +137,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Manual Block Models
          */
 
+        stairsBlock(EUBlocks.FRIGUS_MUD_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+        slabBlock(EUBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS), blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+        wallBlock(EUBlocks.FRIGUS_MUD_BRICK_WALL, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+
         stairsBlock(EUBlocks.FRIGUS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
         slabBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
         wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone")));
@@ -164,6 +172,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
         pressurePlateBlock(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE, blockLoc(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating")));
         buttonBlock(EUBlocks.MALUNITE_PLATING_BUTTON, blockLoc(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating")));
     }
+    // Helpers
     private void stairsBlock(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
     }

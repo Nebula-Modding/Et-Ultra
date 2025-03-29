@@ -130,11 +130,23 @@ public class EUItemTagProvider extends ItemTagsProvider {
         copy(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE, EUTags.EUItemTags.STORAGE_BLOCKS_RAW_MALUNITE);
 
         /*
+        Soil Tags
+         */
+
+        copy(BlockTags.DIRT, ItemTags.DIRT);
+
+        /*
+        Plant Tags
+         */
+
+        copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
+        copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
+        copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
+
+        /*
         Miscellaneous Tags
          */
 
-        copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
-        copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
-        copy(BlockTags.DIRT, ItemTags.DIRT);
+        // Miscellaneous tags go here
     }
 }
