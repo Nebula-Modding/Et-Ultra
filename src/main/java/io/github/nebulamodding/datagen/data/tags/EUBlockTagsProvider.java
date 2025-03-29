@@ -31,8 +31,8 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> pickaxeSlabs = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> pickaxeWalls = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stonePressurePlates = new ArrayList<>();
-        final List<DeferredBlock<? extends Block>> woodenPressurePlates = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stoneButtons = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> woodenPressurePlates = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> woodenButtons = new ArrayList<>();
         // Ores
         frigusStoneOres.add(EUBlocks.FRIGUS_COAL_ORE);
@@ -120,7 +120,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeStairs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         pickaxeSlabs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         stonePressurePlates.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        //stoneButtons.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 // Frigus Stones
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
@@ -332,7 +331,9 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
+                .addTag(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
                 .addTag(EUTags.EUBlockTags.STORAGE_BLOCKS_MALUNITE)
+                .addTag(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .add(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_block").get())
