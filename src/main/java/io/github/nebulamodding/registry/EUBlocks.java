@@ -32,6 +32,8 @@ public class EUBlocks {
     public static final DeferredBlock<Block>
                 MYURA_SAPLING = register("myura_sapling", () -> new SaplingBlock(
                     TreeGrower.SPRUCE,
+                    //Note to self: Make a common plants thing and put the flowers and saplings under it
+                    // Also name it mayura instead of myura
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.COLOR_LIGHT_BLUE)
                             .noCollission()
@@ -40,6 +42,8 @@ public class EUBlocks {
                             .sound(SoundType.GRASS)
                             .pushReaction(PushReaction.DESTROY)
             ));
+    //POTTED_MYURA_SAPLING = BLOCKS.register("potted_myura_sapling", () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, MYURA_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_SPRUCE_SAPLING)));
+
 
     /*
     Frigus Blocks

@@ -37,43 +37,15 @@ public class EUItemModelProvider extends ItemModelProvider {
         itemModel(EUItems.OBDURIUM_HAMMER, HANDHELD);
 
         /*
-        Manual Block Item Models
+        Manual Block Models
          */
 
-        blockModel(EUBlocks.FRIGUS_MUD_BRICK_STAIRS);
-        blockModel(EUBlocks.FRIGUS_MUD_BRICK_SLAB);
-        blockModel(EUBlocks.FRIGUS_MUD_BRICK_WALL, "inventory");
+        blockItemModel(EUBlocks.MYURA_SAPLING, EUBlocks.MYURA_SAPLING, GENERATED);
 
-        blockModel(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
-        blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
-        blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_STONE_PRESSURE_PLATE);
-        blockModel(EUBlocks.FRIGUS_STONE_BUTTON, "inventory");
-
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"));
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"));
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("cobbled_frigus_deepslate_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("polished_frigus_deepslate_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"), "inventory");
-        blockModel(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"), "inventory");
-
-        blockModel(EUBlocks.PERMAFROST_BRICK_STAIRS);
-        blockModel(EUBlocks.PERMAFROST_TILE_STAIRS);
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_wall"), "inventory");
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"), "inventory");
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), "inventory");
-        blockModel(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), "inventory");
-
-        blockModel(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE);
-        blockModel(EUBlocks.MALUNITE_PLATING_BUTTON, "inventory");
+        blockItemModel(EUBlocks.FRIGUS_SHORT_GRASS, EUBlocks.FRIGUS_SHORT_GRASS, GENERATED);
+        blockItemModel(EUBlocks.VIVIAN, EUBlocks.VIVIAN, GENERATED);
+        blockItemModel(EUBlocks.WICKUL, EUBlocks.WICKUL, GENERATED);
+        blockItemModel(EUBlocks.ICEFLOWER, EUBlocks.ICEFLOWER, GENERATED);
 
         /*
         Automated Item Models

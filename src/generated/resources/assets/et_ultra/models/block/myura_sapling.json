@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
   "textures": {
-    "all": "et_ultra:block/myura_sapling"
+    "cross": "et_ultra:block/myura_sapling"
   }
 }

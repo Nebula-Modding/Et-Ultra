@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-29T15:30:10.8731438	Loot Tables
+// 1.21.1	2025-03-29T23:46:03.5405045	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -185,6 +185,7 @@ abf1bb2dfc3c8e0f8085ede45138be86389301f2 data/et_ultra/loot_table/blocks/polishe
 4bcb843932078af1c0a9b4f9a3733c5314885be6 data/et_ultra/loot_table/blocks/polished_salt_slab.json
 762c8f24e69ad9c4cd1d961b9680ec08c194b29e data/et_ultra/loot_table/blocks/polished_sulfur.json
 cc02157a5e5731a245cf9ad9e30cebbab9d48b1e data/et_ultra/loot_table/blocks/polished_sulfur_slab.json
+28629d58d4828540a17e9ffb9c96b02bc3dd3ed8 data/et_ultra/loot_table/blocks/potted_myura_sapling.json
 9b85dd3a8cee1c06762a701ccacc068b86b84f77 data/et_ultra/loot_table/blocks/raw_malunite_block.json
 1f020dabffc6117c112f3b0a328c890c2960088e data/et_ultra/loot_table/blocks/raw_obdurium_block.json
 0e211810f98ac64656c164ba2a2c0846a459c2a8 data/et_ultra/loot_table/blocks/salt_block.json

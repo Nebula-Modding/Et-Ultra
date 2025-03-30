@@ -1,3 +1,6 @@
 {
-  "parent": "et_ultra:block/myura_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "et_ultra:block/myura_sapling"
+  }
 }
