@@ -162,6 +162,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
         ;
         tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(EUBlocks.MAYURA_LEAVES.get())
         ;
         tag(BlockTags.SWORD_EFFICIENT)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
@@ -394,11 +395,22 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
 
         /*
+        Tree Tags
+         */
+
+        tag(BlockTags.LEAVES)
+                .add(EUBlocks.MAYURA_LEAVES.get())
+        ;
+        tag(BlockTags.LOGS)
+                .add(EUBlocks.MAYURA_LOG.get())
+        ;
+
+        /*
         Plant Tags
          */
 
         tag(BlockTags.SAPLINGS)
-                .add(EUBlocks.MYURA_SAPLING.get())
+                .add(EUBlocks.MAYURA_SAPLING.get())
         ;
         tag(BlockTags.SMALL_FLOWERS)
                 .add(EUBlocks.VIVIAN.get())

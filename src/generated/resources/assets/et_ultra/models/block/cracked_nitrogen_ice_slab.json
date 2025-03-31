@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/cracked_nitrogen_ice",
-    "side": "et_ultra:block/cracked_nitrogen_ice",
-    "top": "et_ultra:block/cracked_nitrogen_ice"
-  }
-}

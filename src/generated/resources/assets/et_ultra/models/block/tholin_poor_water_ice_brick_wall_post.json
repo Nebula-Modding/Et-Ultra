@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "et_ultra:block/tholin_poor_water_ice_bricks"
+  }
+}

@@ -7,12 +7,10 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,8 +23,17 @@ public class EUBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having blockstates and models provided
-        excludedBlocks.add(EUBlocks.MYURA_SAPLING);
-        excludedBlocks.add(EUBlocks.POTTED_MYURA_SAPLING);
+        excludedBlocks.add(EUBlocks.MAYURA_WOOD);
+        excludedBlocks.add(EUBlocks.STRIPPED_MAYURA_WOOD);
+        excludedBlocks.add(EUBlocks.MAYURA_STAIRS);
+        excludedBlocks.add(EUBlocks.MAYURA_SLAB);
+        excludedBlocks.add(EUBlocks.MAYURA_FENCE);
+        excludedBlocks.add(EUBlocks.MAYURA_FENCE_GATE);
+        excludedBlocks.add(EUBlocks.MAYURA_DOOR);
+        excludedBlocks.add(EUBlocks.MAYURA_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.MAYURA_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.MAYURA_BUTTON);
+        excludedBlocks.add(EUBlocks.MAYURA_SAPLING);
 
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
@@ -64,19 +71,15 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
         excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
 
-        excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_brick_slab"));
-
-        excludedBlocks.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_brick_slab"));
-
-        excludedBlocks.add(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_brick_slab"));
-        excludedBlocks.add(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_brick_slab"));
-
-        excludedBlocks.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_brick_slab"));
-
-        excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.WATER_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"));
 
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_slab"));
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_brick_slab"));
@@ -140,13 +143,23 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Manual Block Models
          */
 
-        simpleBlock(EUBlocks.MYURA_SAPLING.get(), models().cross(EUBlocks.MYURA_SAPLING.getId().getPath(), blockLoc(EUBlocks.MYURA_SAPLING)).renderType("cutout"));
-        //simpleBlock(EUBlocks.POTTED_MYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MYURA_SAPLING)).renderType("cutout"));
+        axisBlock(EUBlocks.MAYURA_WOOD, blockLoc(EUBlocks.MAYURA_LOG), blockLoc(EUBlocks.MAYURA_LOG));
+        axisBlock(EUBlocks.STRIPPED_MAYURA_WOOD, blockLoc(EUBlocks.STRIPPED_MAYURA_LOG), blockLoc(EUBlocks.STRIPPED_MAYURA_LOG));
+        stairsBlock(EUBlocks.MAYURA_STAIRS, blockLoc(EUBlocks.MAYURA_PLANKS));
+        slabBlock(EUBlocks.MAYURA_SLAB, blockLoc(EUBlocks.MAYURA_PLANKS), blockLoc(EUBlocks.MAYURA_PLANKS));
+        fenceBlock(EUBlocks.MAYURA_FENCE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        fenceGateBlock(EUBlocks.MAYURA_FENCE_GATE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        doorBlockWithRenderType(EUBlocks.MAYURA_DOOR, blockLoc(EUBlocks.MAYURA_DOOR, "bottom"), blockLoc(EUBlocks.MAYURA_DOOR, "top"), "cutout");
+        trapDoorBlockWithRenderType(EUBlocks.MAYURA_TRAPDOOR, blockLoc(EUBlocks.MAYURA_TRAPDOOR), true, "cutout");
+        pressurePlateBlock(EUBlocks.MAYURA_PRESSURE_PLATE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        buttonBlock(EUBlocks.MAYURA_BUTTON, blockLoc(EUBlocks.MAYURA_PLANKS));
+        simpleBlock(EUBlocks.MAYURA_SAPLING.get(), models().cross(EUBlocks.MAYURA_SAPLING.getId().getPath(), blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
+        //simpleBlock(EUBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
 
-        simpleBlock(EUBlocks.FRIGUS_SHORT_GRASS, models().cross(EUBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(EUBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
-        simpleBlock(EUBlocks.VIVIAN, models().cross("vivian", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
-        simpleBlock(EUBlocks.WICKUL, models().cross("wickul", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
-        simpleBlock(EUBlocks.ICEFLOWER, models().cross("iceflower", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
+        simpleBlockWithoutItem(EUBlocks.FRIGUS_SHORT_GRASS, models().cross(EUBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(EUBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
+        simpleBlockWithoutItem(EUBlocks.VIVIAN, models().cross("vivian", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
+        simpleBlockWithoutItem(EUBlocks.WICKUL, models().cross("wickul", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
+        simpleBlockWithoutItem(EUBlocks.ICEFLOWER, models().cross("iceflower", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
 
         stairsBlock(EUBlocks.FRIGUS_MUD_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
         slabBlock(EUBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS), blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
@@ -169,14 +182,28 @@ public class EUBlockStateProvider extends BlockStateProvider {
         slabBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
         wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
         wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+
+        stairsBlock(EUBlocks.WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        slabBlock(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        wallBlock(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        stairsBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        slabBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        wallBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        stairsBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        slabBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        wallBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
     }
     // Helpers
     private void simpleBlock(DeferredBlock<? extends Block> block) {
         super.simpleBlock(block.get());
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    public void simpleBlock(DeferredBlock<? extends Block> block, ModelFile model) {
+    public void simpleBlockWithoutItem(DeferredBlock<? extends Block> block, ModelFile model) {
         super.simpleBlock(block.get(), model);
+    }
+    public void axisBlock(DeferredBlock<Block> block, ResourceLocation texture, ResourceLocation texture2) {
+        super.axisBlock((RotatedPillarBlock) block.get(), texture, texture2);
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
     private void stairsBlock(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
@@ -188,6 +215,11 @@ public class EUBlockStateProvider extends BlockStateProvider {
     }
     private void fenceBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceBlock((FenceBlock) block.get(), texture);
+        models().fenceInventory(block.getId().getPath() + "_inventory", texture);
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
+    }
+    private void fenceGateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+        super.fenceGateBlock((FenceGateBlock) block.get(), texture);
         models().fenceInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
@@ -205,8 +237,17 @@ public class EUBlockStateProvider extends BlockStateProvider {
         models().wallInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
+    public void doorBlockWithRenderType(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top, String renderType) {
+        super.doorBlockWithRenderType((DoorBlock) block.get(), bottom, top, renderType);
+    }
+    public void trapDoorBlockWithRenderType(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable, String renderType) {
+        super.trapdoorBlockWithRenderType((TrapDoorBlock) block.get(), texture, orientable, renderType);
+    }
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
+    }
+    public ResourceLocation blockLoc(DeferredBlock<? extends Block> block, String suffix) {
+        return modLoc("block/" + block.getId().getPath() + "_" + suffix);
     }
     private ResourceLocation key(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block);

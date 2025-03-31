@@ -40,7 +40,13 @@ public class EUItemModelProvider extends ItemModelProvider {
         Manual Block Models
          */
 
-        blockItemModel(EUBlocks.MYURA_SAPLING, EUBlocks.MYURA_SAPLING, GENERATED);
+        itemModel(EUBlocks.MAYURA_DOOR, GENERATED);
+        blockModel(EUBlocks.MAYURA_TRAPDOOR, "bottom");
+        blockItemModel(EUBlocks.MAYURA_SAPLING, EUBlocks.MAYURA_SAPLING, GENERATED);
+
+        blockModel(EUBlocks.FRIGUS_GRASS_BLOCK);
+        blockModel(EUBlocks.FRIGUS_DIRT_PATH);
+        blockModel(EUBlocks.FRIGUS_FARMLAND);
 
         blockItemModel(EUBlocks.FRIGUS_SHORT_GRASS, EUBlocks.FRIGUS_SHORT_GRASS, GENERATED);
         blockItemModel(EUBlocks.VIVIAN, EUBlocks.VIVIAN, GENERATED);

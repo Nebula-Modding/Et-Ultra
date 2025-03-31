@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "et_ultra:block/sulfur_block",
-    "side": "et_ultra:block/sulfur_block",
-    "top": "et_ultra:block/sulfur_block"
-  }
-}

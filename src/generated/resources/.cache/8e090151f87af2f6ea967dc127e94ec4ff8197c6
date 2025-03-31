@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-29T23:37:02.4045974	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-03-30T19:44:10.4124488	Tags for minecraft:block mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -39,8 +39,10 @@ d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/block/emerald_ores.
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/incorrect_for_wooden_tool.json
 66a6a2d44b17366ab3f225971a0ef9abadf78d0f data/minecraft/tags/block/iron_ores.json
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/block/lapis_ores.json
+20afa81cc5fb9d4b46497d3ba9877553e903134f data/minecraft/tags/block/leaves.json
+e3181784b84ba57c461a1662800a789fd71529fd data/minecraft/tags/block/logs.json
 7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/mineable/axe.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/mineable/hoe.json
+20afa81cc5fb9d4b46497d3ba9877553e903134f data/minecraft/tags/block/mineable/hoe.json
 342ea3337f12c95aa9a9e467c6d70412b8d65161 data/minecraft/tags/block/mineable/pickaxe.json
 70d95a0a93328a88ac7dbf5d50222de80ac4d737 data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
@@ -50,7 +52,7 @@ e41945bddf1acc732011b4d4c8cd174337596e2e data/minecraft/tags/block/pressure_plat
 4b817b59f27f066294ae7ae224d7cbec4d4af9af data/minecraft/tags/block/redstone_ores.json
 7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/replaceable.json
 7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/replaceable_by_trees.json
-44a8a371f15d681264273a4a36889612e068540e data/minecraft/tags/block/saplings.json
+551a71693e069514a18047b2cbb37beb3dfaa645 data/minecraft/tags/block/saplings.json
 d9db66224bf3ed78f67e1965dd8e36f059a95471 data/minecraft/tags/block/slabs.json
 52c10461985ef165a27beaadf45249367c681870 data/minecraft/tags/block/small_flowers.json
 9de21b0632045602e23ab58154737d4e2f330610 data/minecraft/tags/block/sniffer_diggable_block.json
