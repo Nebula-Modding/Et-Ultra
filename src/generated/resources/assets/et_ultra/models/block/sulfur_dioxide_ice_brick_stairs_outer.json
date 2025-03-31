@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/sulfur_dioxide_ice_bricks",
+    "side": "et_ultra:block/sulfur_dioxide_ice_bricks",
+    "top": "et_ultra:block/sulfur_dioxide_ice_bricks"
+  }
+}

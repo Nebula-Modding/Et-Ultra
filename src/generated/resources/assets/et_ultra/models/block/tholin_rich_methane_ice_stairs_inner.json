@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/tholin_rich_methane_ice",
+    "side": "et_ultra:block/tholin_rich_methane_ice",
+    "top": "et_ultra:block/tholin_rich_methane_ice"
+  }
+}

@@ -38,7 +38,7 @@ public class EULanguageProvider extends LanguageProvider {
         langExcludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
         langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"));
 
-        langExcludedBlocks.add(EUBlocks.FLESH_BLOCKS.get("flesh_block"));
+        langExcludedBlocks.add(EUBlocks.FLESH_BLOCK);
 
         final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
@@ -61,7 +61,7 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"), "Block of Graphite");
         addBlock(EUBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
 
-        addBlock(EUBlocks.FLESH_BLOCKS.get("flesh_block"), "Block of Flesh");
+        addBlock(EUBlocks.FLESH_BLOCK, "Block of Flesh");
 
         // Items
         //addItem(EUItems.EXAMPLE_ITEM, "Example Translation");

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "et_ultra:block/tholin_poor_methane_ice_bricks"
+  }
+}

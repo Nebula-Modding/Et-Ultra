@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-31T13:32:10.4619229	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-03-31T19:58:43.9737089	Tags for minecraft:item mod id et_ultra
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/c/tags/item/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/item/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_stone.json
@@ -12,7 +12,7 @@ f33cdeba8a5b945e52f2e46b4085c2f517382fce data/c/tags/item/ores_in_ground/frigus_
 c2e7770c1dedf44f4e266466ee151be7cb7e2c02 data/c/tags/item/ores_in_ground/frigus_stone.json
 01c54dc0bb2e56af56c9dc7588a20dd43a9d8c2f data/c/tags/item/ore_bearing_ground/frigus_deepslate.json
 8082b27d89c02749a5e7aeaf4ea6fc82e8c774e1 data/c/tags/item/ore_bearing_ground/frigus_stone.json
-61e5c2c714b83d5e7b8b69dafe126ec2d055d5a0 data/c/tags/item/ore_rates/singular.json
+5aed05f9e14ac368af2ad0548d23918a7789a5ad data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 08b88738364cd39a27fe19f580e98f3c2b2638c1 data/c/tags/item/plates.json
 4b270b5bcb0208242f0a39f35f59d3d7432ad85c data/c/tags/item/plates/obdurium.json
@@ -38,15 +38,15 @@ d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/item/emerald_ores.j
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/item/lapis_ores.json
 4b817b59f27f066294ae7ae224d7cbec4d4af9af data/minecraft/tags/item/redstone_ores.json
 551a71693e069514a18047b2cbb37beb3dfaa645 data/minecraft/tags/item/saplings.json
-d9db66224bf3ed78f67e1965dd8e36f059a95471 data/minecraft/tags/item/slabs.json
+7abff3db2282e01d3f846f2fc5e64c66ce73fe83 data/minecraft/tags/item/slabs.json
 52c10461985ef165a27beaadf45249367c681870 data/minecraft/tags/item/small_flowers.json
-d1d7a941b4360a8606ad05038568ea41200333cf data/minecraft/tags/item/stairs.json
+43976a470a83b762e98e2619802eea20447759dc data/minecraft/tags/item/stairs.json
 ac4a270e264a9e70f62a4b7645a4098e85ca979a data/minecraft/tags/item/stone_buttons.json
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/minecraft/tags/item/stone_crafting_materials.json
 0da09f174fa0e6e7df366c0c6d00bf42d025cdd1 data/minecraft/tags/item/stone_tool_materials.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/tall_flowers.json
 9b869ec074f174f4fd85c59a0c2627207a9236a3 data/minecraft/tags/item/trim_materials.json
-4120ca0e24e2f7a9447bc88365e6c85d24e7c23f data/minecraft/tags/item/walls.json
+d839bdb86cc86dbb2784194011da3beddb063936 data/minecraft/tags/item/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_buttons.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_pressure_plates.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_slabs.json
