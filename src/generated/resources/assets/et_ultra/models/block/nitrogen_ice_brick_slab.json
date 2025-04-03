@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/nitrogen_ice_bricks",
-    "side": "et_ultra:block/nitrogen_ice_bricks",
-    "top": "et_ultra:block/nitrogen_ice_bricks"
-  }
-}

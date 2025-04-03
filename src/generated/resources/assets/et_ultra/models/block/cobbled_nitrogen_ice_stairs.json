@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "et_ultra:block/cobbled_nitrogen_ice",
-    "side": "et_ultra:block/cobbled_nitrogen_ice",
-    "top": "et_ultra:block/cobbled_nitrogen_ice"
-  }
-}

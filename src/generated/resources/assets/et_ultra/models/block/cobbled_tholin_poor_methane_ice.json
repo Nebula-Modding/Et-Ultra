@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "et_ultra:block/cobbled_tholin_poor_methane_ice"
-  }
-}

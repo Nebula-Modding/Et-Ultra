@@ -1,7 +1,0 @@
-Hey Person Reading This
-
-
-
-Please Optimize Config, Ignore the warning. Just Do It
-
--- demon that lives in the git repository

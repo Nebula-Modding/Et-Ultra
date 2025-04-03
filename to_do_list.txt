@@ -1,0 +1,15 @@
+General To-Do:
+Change malunite in EUTiers
+Add a FrigusGrassBlock block type
+Add a FrigusDirtPathBlock block type
+Add a FrigusMudBlock block type
+Add Bruma
+Add Graphite Clusters
+Make flowers and saplings potable (Add exclusions for the automatic item to creative menu thingy)
+Make lower gravities give you a better step height so that jumping up blocks isn't annoying
+
+Ideas:
+Frigus Marshes
+Neuron trees, vines, etc. in a biome (Iris)
+
+Tags:

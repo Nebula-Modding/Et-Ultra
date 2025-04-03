@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "et_ultra:block/salt_crystal_block"
-  }
-}

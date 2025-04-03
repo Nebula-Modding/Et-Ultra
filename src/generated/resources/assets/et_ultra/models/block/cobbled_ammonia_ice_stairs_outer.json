@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "et_ultra:block/cobbled_ammonia_ice",
-    "side": "et_ultra:block/cobbled_ammonia_ice",
-    "top": "et_ultra:block/cobbled_ammonia_ice"
-  }
-}

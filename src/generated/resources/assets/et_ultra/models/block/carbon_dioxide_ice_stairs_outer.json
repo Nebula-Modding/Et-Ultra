@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "et_ultra:block/carbon_dioxide_ice",
-    "side": "et_ultra:block/carbon_dioxide_ice",
-    "top": "et_ultra:block/carbon_dioxide_ice"
-  }
-}

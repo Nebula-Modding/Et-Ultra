@@ -3,38 +3,38 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-    modId="${mod_id}"
-    version="${mod_version}"
-    displayName="${mod_name}"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
 
-    # A URL for the "homepage" for this mod, displayed in the mod UI
-    #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
 
-    # A file name (in the root of the mod JAR) containing a logo for display
-    #logoFile="examplemod.png"
+# A file name (in the root of the mod JAR) containing a logo for display
+#logoFile="examplemod.png"
 
-    # A text field displayed in the mod UI
-    #credits="" #optional
+# A text field displayed in the mod UI
+#credits="" #optional
 
-    authors="${mod_authors}"
-    description='''${mod_description}'''
+authors="${mod_authors}"
+description='''${mod_description}'''
 
 #[[mixins]]
-    #config="${mod_id}.mixins.json"
+#config="${mod_id}.mixins.json"
 
 #[[accessTransformers]]
-    #file="META-INF/accesstransformer.cfg"
+#file="META-INF/accesstransformer.cfg"
 
 [[dependencies.${mod_id}]]
-    modId="neoforge"
-    type="required"
-    versionRange="${neo_version_range}" #mandatory
-    ordering="NONE"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}" #mandatory
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.${mod_id}]]
-    modId="minecraft"
-    type="required"
-    versionRange="${minecraft_version_range}"
-    ordering="NONE"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/cobbled_tholin_poor_water_ice",
-    "side": "et_ultra:block/cobbled_tholin_poor_water_ice",
-    "top": "et_ultra:block/cobbled_tholin_poor_water_ice"
-  }
-}

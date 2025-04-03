@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "et_ultra:block/polished_permafrost",
-    "side": "et_ultra:block/polished_permafrost",
-    "top": "et_ultra:block/polished_permafrost"
-  }
-}

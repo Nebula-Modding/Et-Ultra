@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "et_ultra:block/polished_frigus_deepslate",
-    "side": "et_ultra:block/polished_frigus_deepslate",
-    "top": "et_ultra:block/polished_frigus_deepslate"
-  }
-}

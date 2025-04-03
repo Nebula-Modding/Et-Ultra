@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "et_ultra:block/frigus_dirt",
-    "particle": "et_ultra:block/frigus_dirt",
-    "side": "et_ultra:block/frigus_grass_block_side",
-    "top": "et_ultra:block/frigus_grass_block_top"
-  }
-}

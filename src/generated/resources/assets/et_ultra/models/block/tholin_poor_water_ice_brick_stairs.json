@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "et_ultra:block/tholin_poor_water_ice_bricks",
-    "side": "et_ultra:block/tholin_poor_water_ice_bricks",
-    "top": "et_ultra:block/tholin_poor_water_ice_bricks"
-  }
-}

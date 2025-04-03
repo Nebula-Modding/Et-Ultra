@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_wall_side",
-  "textures": {
-    "wall": "et_ultra:block/cobbled_tholin_poor_nitrogen_ice"
-  }
-}

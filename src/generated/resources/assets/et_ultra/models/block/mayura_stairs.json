@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "et_ultra:block/mayura_planks",
-    "side": "et_ultra:block/mayura_planks",
-    "top": "et_ultra:block/mayura_planks"
-  }
-}
