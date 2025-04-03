@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/frigus_deepslate_tiles",
+    "side": "et_ultra:block/frigus_deepslate_tiles",
+    "top": "et_ultra:block/frigus_deepslate_tiles"
+  }
+}

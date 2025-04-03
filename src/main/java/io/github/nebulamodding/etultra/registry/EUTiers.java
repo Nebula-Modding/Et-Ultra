@@ -6,6 +6,6 @@ import net.neoforged.neoforge.common.SimpleTier;
 
 public class EUTiers {
     public static final Tier
-            OBDURIUM = new SimpleTier(EUTags.EUBlockTags.NEEDS_OBDURIUM_TOOL, 10000, 6, 5, 15, () -> Ingredient.of(EUTags.EUItemTags.INGOTS_OBDURIUM)),
-            MALUNITE = new SimpleTier(EUTags.EUBlockTags.NEEDS_MALUNITE_TOOL, 10000, 6, 5, 22, () -> Ingredient.of(EUTags.EUItemTags.INGOTS_MALUNITE));
+            OBDURIUM = new SimpleTier(EUTags.EUBlockTags.NEEDS_OBDURIUM_TOOL, 9327, 6, 5, 15, () -> Ingredient.of(EUTags.EUItemTags.INGOTS_OBDURIUM)),
+            MALUNITE = new SimpleTier(EUTags.EUBlockTags.NEEDS_MALUNITE_TOOL, 713, 6, 5, 22, () -> Ingredient.of(EUTags.EUItemTags.INGOTS_MALUNITE));
 }

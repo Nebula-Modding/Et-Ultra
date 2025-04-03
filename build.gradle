@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.140'
+    id 'net.neoforged.gradle.userdev' version '7.0.184'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -14,6 +14,10 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    maven {
+        name = "Neoforged Maven"
+        url = 'https://maven.neoforged.net/releases'
+    }
     maven {
         name = "Regolith Maven"
         url = "https://codeberg.org/EmmaTheMartian/regolith/raw/branch/main/repo/"

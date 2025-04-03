@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "et_ultra:block/polished_frigus_stone",
+    "side": "et_ultra:block/polished_frigus_stone",
+    "top": "et_ultra:block/polished_frigus_stone"
+  }
+}

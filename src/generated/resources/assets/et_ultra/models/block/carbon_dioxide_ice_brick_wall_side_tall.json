@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "et_ultra:block/carbon_dioxide_ice_bricks"
+  }
+}

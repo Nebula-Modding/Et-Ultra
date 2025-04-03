@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "et_ultra:block/sulfur_pillar_top",
+    "side": "et_ultra:block/sulfur_pillar"
+  }
+}

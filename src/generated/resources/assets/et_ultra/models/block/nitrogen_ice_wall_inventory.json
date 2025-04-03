@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "et_ultra:block/nitrogen_ice"
+  }
+}

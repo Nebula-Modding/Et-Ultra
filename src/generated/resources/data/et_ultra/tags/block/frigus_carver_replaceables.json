@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#et_ultra:base_stone_frigus",
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "#minecraft:copper_ores",
+    "#minecraft:iron_ores",
+    "#minecraft:snow",
+    "minecraft:packed_ice",
+    "minecraft:raw_copper_block",
+    "minecraft:raw_iron_block",
+    "minecraft:water"
+  ]
+}

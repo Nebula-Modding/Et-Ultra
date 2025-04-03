@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "et_ultra:block/frigus_stone_pressure_plate"
+    },
+    "powered=true": {
+      "model": "et_ultra:block/frigus_stone_pressure_plate_down"
+    }
+  }
+}
