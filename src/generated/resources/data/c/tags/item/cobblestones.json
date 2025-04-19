@@ -1,6 +1,6 @@
 {
   "values": [
-    "et_ultra:frigus_cobblestone",
-    "et_ultra:cobbled_frigus_deepslate"
+    "#c:cobblestones/frigus_stone",
+    "#c:cobblestones/frigus_deepslate"
   ]
 }

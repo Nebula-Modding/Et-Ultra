@@ -22,12 +22,10 @@ public class EUTags {
     public static TagKey<Item> itemTag(String name) {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
     }
-    public static TagKey<Block> toolTag(String name) {
-        return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(EtUltra.MOD_ID, name));
-    }
     public static class EUBlockTags {
         // Blocks
         public static final TagKey<Block>
+
                 /*
                 Common Tags
                  */
@@ -103,6 +101,7 @@ public class EUTags {
         ;
         // Items
         public static final TagKey<Item>
+                // Adds a plates tag because neoforge doesn't have a common tag for it by default
                 PLATES = commonItemTag("plates"),
 
                 RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),

@@ -23,25 +23,25 @@ public class EULanguageProvider extends LanguageProvider {
     }
     @Override
     protected void addTranslations() {
-        final List<DeferredBlock<? extends Block>> langExcludedBlocks = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having a translation automatically provided
-        langExcludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCK);
-        langExcludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
-        langExcludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"));
+        excludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCK);
+        excludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
+        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"));
 
-        langExcludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCK);
-        langExcludedBlocks.add(EUBlocks.SULFUR_DUST_BLOCK);
-        langExcludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"));
+        excludedBlocks.add(EUBlocks.SULFUR_CRYSTAL_BLOCK);
+        excludedBlocks.add(EUBlocks.SULFUR_DUST_BLOCK);
+        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_block"));
 
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCK);
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
-        langExcludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"));
+        excludedBlocks.add(EUBlocks.GRAPHITE_CRYSTAL_BLOCK);
+        excludedBlocks.add(EUBlocks.GRAPHITE_DUST_BLOCK);
+        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_block"));
 
-        langExcludedBlocks.add(EUBlocks.FLESH_BLOCK);
+        excludedBlocks.add(EUBlocks.FLESH_BLOCK);
 
-        final List<DeferredItem<? extends Item>> langExcludedItems = new ArrayList<>();
+        final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
-        //langExcludedItems.add(EUItems.EXAMPLE_ITEM);
+        excludedItems.add(EUItems.COOKED_FLESH);
 
         /*
         Manual Translations
@@ -63,7 +63,7 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.FLESH_BLOCK, "Block of Flesh");
 
         // Items
-        //addItem(EUItems.EXAMPLE_ITEM, "Example Translation");
+        addItem(EUItems.COOKED_FLESH, "Jerky");
 
         /*
         Tag Translations
@@ -106,7 +106,7 @@ public class EULanguageProvider extends LanguageProvider {
         Miscellaneous Translations
          */
 
-        add(EUCreativeTab.ETULTRA_TAB_TITLE, "Et Ultra");
+        add(EUCreativeTab.CREATIVE_TAB_TITLE, "Et Ultra");
 
         /*
         Automated Translations
@@ -115,7 +115,7 @@ public class EULanguageProvider extends LanguageProvider {
         // Blocks
         EUBlocks.BLOCKS.getEntries()
                 .stream()
-                .filter(b -> !langExcludedBlocks.contains(b))
+                .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> addBlock(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
@@ -124,7 +124,7 @@ public class EULanguageProvider extends LanguageProvider {
         // Items
         EUItems.ITEMS.getEntries()
                 .stream()
-                .filter(i -> !(i.get() instanceof BlockItem) && !langExcludedItems.contains(i))
+                .filter(i -> !(i.get() instanceof BlockItem) && !excludedItems.contains(i))
                 .forEach(entry -> addItem(entry,
                         StringUtils.capitaliseAllWords(entry
                                 .getId()

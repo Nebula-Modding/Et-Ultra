@@ -126,6 +126,11 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_slab"));
         excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_brick_slab"));
 
+        excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
+        excludedBlocks.add(EUBlocks.POTTED_WICKUL);
+        excludedBlocks.add(EUBlocks.POTTED_ICEFLOWER);
+
         /*
         Automated Block Models
          */
@@ -177,6 +182,8 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Manual Block Models
          */
 
+
+
         axisBlock(EUBlocks.MAYURA_WOOD, blockLoc(EUBlocks.MAYURA_LOG), blockLoc(EUBlocks.MAYURA_LOG));
         axisBlock(EUBlocks.STRIPPED_MAYURA_WOOD, blockLoc(EUBlocks.STRIPPED_MAYURA_LOG), blockLoc(EUBlocks.STRIPPED_MAYURA_LOG));
         stairsBlock(EUBlocks.MAYURA_STAIRS, blockLoc(EUBlocks.MAYURA_PLANKS));
@@ -188,7 +195,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         pressurePlateBlock(EUBlocks.MAYURA_PRESSURE_PLATE, blockLoc(EUBlocks.MAYURA_PLANKS));
         buttonBlock(EUBlocks.MAYURA_BUTTON, blockLoc(EUBlocks.MAYURA_PLANKS));
         simpleBlock(EUBlocks.MAYURA_SAPLING.get(), models().cross(EUBlocks.MAYURA_SAPLING.getId().getPath(), blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
-        //simpleBlock(EUBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
 
         simpleBlockWithoutItem(EUBlocks.FRIGUS_SHORT_GRASS, models().cross(EUBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(EUBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
         simpleBlockWithoutItem(EUBlocks.VIVIAN, models().cross("vivian", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
@@ -262,6 +268,11 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.OXYGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
         slabBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
         wallBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
+
+        simpleBlock(EUBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
+        simpleBlock(EUBlocks.POTTED_VIVIAN.get(), models().withExistingParent(EUBlocks.POTTED_VIVIAN.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
+        simpleBlock(EUBlocks.POTTED_WICKUL.get(), models().withExistingParent(EUBlocks.POTTED_WICKUL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
+        simpleBlock(EUBlocks.POTTED_ICEFLOWER.get(), models().withExistingParent(EUBlocks.POTTED_ICEFLOWER.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
     }
     // Helpers
     private void simpleBlock(DeferredBlock<? extends Block> block) {

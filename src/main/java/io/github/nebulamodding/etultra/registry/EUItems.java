@@ -4,7 +4,6 @@ import io.github.nebulamodding.etultra.EtUltra;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -12,14 +11,20 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class EUItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);
 
+    //public static final DeferredItem<Item>
+    //        BRUMA = ITEMS.register("bruma", () -> new Item(new Item.Properties())),
+    //        BRUMA_LOAF = ITEMS.register("bruma_loaf", () -> new Item(new Item.Properties().food(EUFoods.BRUMA_LOAF)));
+    //public static final DeferredItem<Item>
+    //        AZURE_ROOT = ITEMS.register("azure_root", () -> new ItemNameBlockItem(EUBlocks.AZURE_ROOTS.get(), new Item.Properties().food(EUFoods.AZURE_ROOT)));
+
     public static final DeferredItem<Item>
-            FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food((new FoodProperties.Builder()).nutrition(5).saturationModifier(0.5f).build())));
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> SIMPLE_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "bruma_seeds",
-            "impure_steel"
-    );
+            FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(EUFoods.FLESH))),
+            COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(EUFoods.COOKED_FLESH)));
+
+    /*
+    Metal Items
+     */
+
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),

@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-03T12:15:29.9546046	Loot Tables
+// 1.21.1	2025-04-19T13:10:42.7542139	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -23,6 +23,7 @@ fe1fe5a11b9d14a76e70557aa827570b12507590 data/et_ultra/loot_table/blocks/chisele
 c6868aac093afd8af1109017b5aa1d29c283f757 data/et_ultra/loot_table/blocks/chiseled_permafrost.json
 f9f12e40e030fb4ea0ba7c03a40ba419d714d0f3 data/et_ultra/loot_table/blocks/chiseled_salt.json
 8af4a6bc2fdbd95d64446bd9d8e350644dce8a93 data/et_ultra/loot_table/blocks/chiseled_sulfur.json
+f43393ae2165ac9ae01dfae7d8adb18e79c5a4d6 data/et_ultra/loot_table/blocks/coarse_frigus_dirt.json
 c2a54031b61dcb8b3b98f4ab17f55104557d391e data/et_ultra/loot_table/blocks/cobbled_ammonia_ice.json
 fd877ebb0eab2dc1ab36eebb5044031ccb2242cd data/et_ultra/loot_table/blocks/cobbled_ammonia_ice_slab.json
 2fc6a3884940473d0982f533288a310324457ef4 data/et_ultra/loot_table/blocks/cobbled_ammonia_ice_stairs.json
@@ -102,7 +103,6 @@ ce334ce590d7f9e6a326a0a34ad032319a8c129f data/et_ultra/loot_table/blocks/cracked
 0c5e4a9f3c8046cfa6ec77ed606c35330a774780 data/et_ultra/loot_table/blocks/encased_obdurium_block.json
 2a590e36ed826790f6d69d25bd14cb21bd6a8ae3 data/et_ultra/loot_table/blocks/flesh_block.json
 94c9a01168b6a7f4eac948c3e2c72b8ccf40371e data/et_ultra/loot_table/blocks/frigus_coal_ore.json
-9a86d3c955ae37f90084b07ee06260a343d65ef9 data/et_ultra/loot_table/blocks/frigus_coarse_dirt.json
 f4e51dec42f78de5e2147856396b7dc9934b7240 data/et_ultra/loot_table/blocks/frigus_cobblestone.json
 8ea5d1fdc842aa506d0c597e5baabb8bc36b7d25 data/et_ultra/loot_table/blocks/frigus_cobblestone_slab.json
 f205d615704a55d0655e9a1f6590a8f91e6ce8ad data/et_ultra/loot_table/blocks/frigus_cobblestone_stairs.json
@@ -186,7 +186,7 @@ df6f54982a77c0f0194ec99bc443ba919d7e12e3 data/et_ultra/loot_table/blocks/marked_
 81d6194f21365dbbaef67dd33fa3809431fd709d data/et_ultra/loot_table/blocks/marked_ostrum_pillar.json
 03ca3f47e222ca889066a9fec83c74d2d07abfad data/et_ultra/loot_table/blocks/marked_steel_pillar.json
 83845e2ba0f42ce403dd72832a7e01b3ee044726 data/et_ultra/loot_table/blocks/mayura_button.json
-99f9770e1a9464a63f085ab2b00fd49816deabed data/et_ultra/loot_table/blocks/mayura_door.json
+978f810e095d212fc99331f3a0334953faa17efe data/et_ultra/loot_table/blocks/mayura_door.json
 f4c4e998ba7461cc03b233c62843b1382cceb4bd data/et_ultra/loot_table/blocks/mayura_fence.json
 faaa5eaeddf07e148c05830c6222fb3fbab089c8 data/et_ultra/loot_table/blocks/mayura_fence_gate.json
 99fa80a5de004a1accce0519ae53bd64593a211b data/et_ultra/loot_table/blocks/mayura_leaves.json
@@ -264,6 +264,10 @@ abf1bb2dfc3c8e0f8085ede45138be86389301f2 data/et_ultra/loot_table/blocks/polishe
 4bcb843932078af1c0a9b4f9a3733c5314885be6 data/et_ultra/loot_table/blocks/polished_salt_slab.json
 762c8f24e69ad9c4cd1d961b9680ec08c194b29e data/et_ultra/loot_table/blocks/polished_sulfur.json
 cc02157a5e5731a245cf9ad9e30cebbab9d48b1e data/et_ultra/loot_table/blocks/polished_sulfur_slab.json
+b765a7a1eea5d8581e48554959b837162d66c5c6 data/et_ultra/loot_table/blocks/potted_iceflower.json
+5e1789ba11e90e692c326c402bade3d299bc9455 data/et_ultra/loot_table/blocks/potted_mayura_sapling.json
+c058aac4dc07784730ed78ebd366860e5a72ce16 data/et_ultra/loot_table/blocks/potted_vivian.json
+1979935b809791bdef67f84d6b9514a32fb125af data/et_ultra/loot_table/blocks/potted_wickul.json
 9b85dd3a8cee1c06762a701ccacc068b86b84f77 data/et_ultra/loot_table/blocks/raw_malunite_block.json
 1f020dabffc6117c112f3b0a328c890c2960088e data/et_ultra/loot_table/blocks/raw_obdurium_block.json
 0e211810f98ac64656c164ba2a2c0846a459c2a8 data/et_ultra/loot_table/blocks/salt_block.json

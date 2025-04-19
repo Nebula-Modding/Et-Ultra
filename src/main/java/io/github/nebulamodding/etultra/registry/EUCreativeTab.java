@@ -5,29 +5,38 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EUCreativeTab {
-    public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EtUltra.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EtUltra.MOD_ID);
 
-    public static String ETULTRA_TAB_TITLE = "itemGroup.et_ultra.main";
+    public static String CREATIVE_TAB_TITLE = "itemGroup.et_ultra";
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ET_ULTRA = CREATIVE_MODE_TABS.register("et_ultra", () ->
+            CreativeModeTab.builder()
+                    .title(Component.translatable(CREATIVE_TAB_TITLE))
+                    .icon(() -> new ItemStack(EUBlocks.FRIGUS_GRASS_BLOCK.get()))
+                    .build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ETULTRA_TAB = CREATIVE_MODE_TABS.register("et_ultra_creative_tab", () -> {
-        CreativeModeTab.Builder builder = CreativeModeTab.builder();
+    public static void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
+        final List<DeferredBlock<? extends Block>> excludedItems = new ArrayList<>();
+        // Blocks excluded from the creative menu
+        excludedItems.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedItems.add(EUBlocks.POTTED_VIVIAN);
+        excludedItems.add(EUBlocks.POTTED_WICKUL);
+        excludedItems.add(EUBlocks.POTTED_ICEFLOWER);
 
-        builder.displayItems((itemDisplay, output) -> {
+        if(event.getTab() == ET_ULTRA.get()) {
             EUItems.ITEMS.getEntries()
-                    .forEach(item -> output.accept(item.get()));
-
-            EUBlocks.BLOCKS.getEntries()
-                    .forEach(block -> output.accept(block.get()));
-        });
-
-        builder.icon(() -> new ItemStack((ItemLike) EUItems.OBDURIUM_HAMMER));
-        builder.title(Component.translatable(ETULTRA_TAB_TITLE));
-
-        return builder.build();
-    });
+                    .stream()
+                    .filter(b -> !excludedItems.contains(b))
+                    .forEach(item -> event.accept(item.get()));
+        }
+    }
 }

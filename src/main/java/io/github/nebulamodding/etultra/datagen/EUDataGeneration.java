@@ -8,7 +8,7 @@ import io.github.nebulamodding.etultra.datagen.assets.EULanguageProvider;
 import io.github.nebulamodding.etultra.datagen.data.EUBuiltinEntriesProvider;
 import io.github.nebulamodding.etultra.datagen.data.loot.EULootTableProvider;
 import io.github.nebulamodding.etultra.datagen.data.tags.EUBlockTagsProvider;
-import io.github.nebulamodding.etultra.datagen.data.tags.EUItemTagProvider;
+import io.github.nebulamodding.etultra.datagen.data.tags.EUItemTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -35,7 +35,7 @@ public class EUDataGeneration {
                 // Generates the server-sided data
                 EUBlockTagsProvider blockTagsProvider = new EUBlockTagsProvider(output, event.getLookupProvider(), existingFileHelper);
                 generator.addProvider(true, blockTagsProvider);
-                generator.addProvider(true, new EUItemTagProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
+                generator.addProvider(true, new EUItemTagsProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
 
                 CompletableFuture<HolderLookup.Provider> newLookup = generator.addProvider(event.includeServer(), new EUBuiltinEntriesProvider(output, event.getLookupProvider())).getRegistryProvider();
                 generator.addProvider(true, new EULootTableProvider(output, newLookup));

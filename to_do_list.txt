@@ -1,14 +1,22 @@
 General To-Do:
-Change malunite in EUTiers
+Revisit neoforge.mods.toml and add some stuff
+https://github.com/NeoForgeMDKs/MDK-1.21-ModDevGradle/blob/main/src/main/templates/META-INF/neoforge.mods.toml
+
 Add a FrigusGrassBlock block type
 Add a FrigusDirtPathBlock block type
 Add a FrigusMudBlock block type
+
 Add Bruma
 Add Graphite Clusters
-Make flowers and saplings potable (Add exclusions for the automatic item to creative menu thingy)
+
 Make lower gravities give you a better step height so that jumping up blocks isn't annoying
 
 Ideas:
+Azurebread (gingerbread)
+Frigus Cake (name change needed)
+Golden Azure Root
+Fiber (string alternative) (Bruma around an animal's milk)
+
 Frigus Marshes
 Neuron trees, vines, etc. in a biome (Iris)
 

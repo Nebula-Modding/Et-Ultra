@@ -23,6 +23,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
     protected void generate() {
         final List<DeferredHolder<Block, ? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having a drop automatically provided
+        excludedBlocks.add(EUBlocks.MAYURA_DOOR);
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
@@ -48,10 +49,17 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_MALUNITE_ORE);
+        excludedBlocks.add(EUBlocks.BRAINROCK);
+        excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
+        excludedBlocks.add(EUBlocks.POTTED_WICKUL);
+        excludedBlocks.add(EUBlocks.POTTED_ICEFLOWER);
 
         /*
         Manual Loot Tables
          */
+
+        add(EUBlocks.MAYURA_DOOR.get(), this::createDoorTable);
 
         add(EUBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
@@ -83,6 +91,15 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, EUItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(EUBlocks.FRIGUS_DEEPSLATE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, EUItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+
+        /*
+        Potted Plant Loot Tables
+         */
+
+        dropPottedContents(EUBlocks.POTTED_MAYURA_SAPLING.get());
+        dropPottedContents(EUBlocks.POTTED_VIVIAN.get());
+        dropPottedContents(EUBlocks.POTTED_WICKUL.get());
+        dropPottedContents(EUBlocks.POTTED_ICEFLOWER.get());
 
         /*
         Automated Loot Tables

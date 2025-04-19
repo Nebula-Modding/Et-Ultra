@@ -16,8 +16,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EUItemTagProvider extends ItemTagsProvider {
-    public EUItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider provider, ExistingFileHelper existingFileHelper) {
+public class EUItemTagsProvider extends ItemTagsProvider {
+    public EUItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider provider, ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, provider.contentsGetter(), EtUltra.MOD_ID, existingFileHelper);
     }
 
@@ -74,11 +74,11 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.RAW_MATERIALS)
                 .addTag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
         ;
-        tag(Tags.Items.INGOTS)
-                .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
-        ;
         tag(Tags.Items.NUGGETS)
                 .addTag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
+        ;
+        tag(Tags.Items.INGOTS)
+                .addTag(EUTags.EUItemTags.INGOTS_OBDURIUM)
         ;
         tag(EUTags.EUItemTags.PLATES)
                 .addTag(EUTags.EUItemTags.PLATES_OBDURIUM)
@@ -89,11 +89,11 @@ public class EUItemTagProvider extends ItemTagsProvider {
         tag(EUTags.EUItemTags.RAW_MATERIALS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
         ;
-        tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
-                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_ingot").get())
-        ;
         tag(EUTags.EUItemTags.NUGGETS_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
+        ;
+        tag(EUTags.EUItemTags.INGOTS_OBDURIUM)
+                .add(EUItems.OBDURIUM_ITEMS.get("obdurium_ingot").get())
         ;
         tag(EUTags.EUItemTags.PLATES_OBDURIUM)
                 .add(EUItems.OBDURIUM_ITEMS.get("obdurium_plate").get())

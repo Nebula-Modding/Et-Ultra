@@ -4,6 +4,8 @@ import io.github.nebulamodding.etultra.datagen.EUDataGeneration;
 import io.github.nebulamodding.etultra.registry.EUBlocks;
 import io.github.nebulamodding.etultra.registry.EUCreativeTab;
 import io.github.nebulamodding.etultra.registry.EUItems;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -26,13 +28,15 @@ public class EtUltra {
     public static final String MOD_ID = "et_ultra";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public EtUltra(IEventBus modEventBus, ModContainer modContainer) {
-        EUBlocks.BLOCKS.register(modEventBus);
-        EUItems.ITEMS.register(modEventBus);
-        EUCreativeTab.CREATIVE_MODE_TABS.register(modEventBus);
-        modEventBus.addListener(EUDataGeneration::gatherData);
+    public EtUltra(IEventBus eventBus, ModContainer modContainer) {
+        EUBlocks.BLOCKS.register(eventBus);
+        EUItems.ITEMS.register(eventBus);
+        EUCreativeTab.CREATIVE_MODE_TABS.register(eventBus);
 
-        modEventBus.addListener(this::commonSetup);
+        eventBus.addListener(EUCreativeTab::buildCreativeTab);
+        eventBus.addListener(EUDataGeneration::gatherData);
+
+        eventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -40,6 +44,12 @@ public class EtUltra {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("Et Ultra common setup message");
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.MAYURA_SAPLING.getId(), EUBlocks.POTTED_MAYURA_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.VIVIAN.getId(), EUBlocks.POTTED_VIVIAN);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.WICKUL.getId(), EUBlocks.POTTED_WICKUL);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.ICEFLOWER.getId(), EUBlocks.POTTED_ICEFLOWER);
+        });
     }
 
     @SubscribeEvent

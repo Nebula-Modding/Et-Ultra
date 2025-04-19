@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "et_ultra:block/frigus_coarse_dirt"
+    "all": "et_ultra:block/coarse_frigus_dirt"
   }
 }

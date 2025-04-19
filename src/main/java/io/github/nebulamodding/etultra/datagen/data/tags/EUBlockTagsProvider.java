@@ -303,7 +303,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(EUBlocks.FRIGUS_DIRT_PATH.get())
                 .add(EUBlocks.FRIGUS_DIRT.get())
-                .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+                .add(EUBlocks.COARSE_FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_FARMLAND.get())
                 .add(EUBlocks.FRIGUS_MUD.get())
 
@@ -516,8 +516,8 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
-                .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
+                .addTag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE)
+                .addTag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE)
         ;
         tag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE)
                 .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
@@ -563,12 +563,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.DIRT)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(EUBlocks.FRIGUS_DIRT.get())
-                .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+                .add(EUBlocks.COARSE_FRIGUS_DIRT.get())
                 .add(EUBlocks.FRIGUS_MUD.get())
         ;
         tag(EUTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
                 .add(EUBlocks.FRIGUS_DIRT.get())
-                .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+                .add(EUBlocks.COARSE_FRIGUS_DIRT.get())
         ;
         tag(BlockTags.ANIMALS_SPAWNABLE_ON)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
@@ -576,7 +576,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.SNIFFER_DIGGABLE_BLOCK)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(EUBlocks.FRIGUS_DIRT.get())
-                .add(EUBlocks.FRIGUS_COARSE_DIRT.get())
+                .add(EUBlocks.COARSE_FRIGUS_DIRT.get())
         ;
         tag(BlockTags.VALID_SPAWN)
                 .add(EUBlocks.FRIGUS_GRASS_BLOCK.get())
