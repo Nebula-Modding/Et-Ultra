@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/tholin_poor_carbon_dioxide_ice_bricks",
+    "side": "et_ultra:block/tholin_poor_carbon_dioxide_ice_bricks",
+    "top": "et_ultra:block/tholin_poor_carbon_dioxide_ice_bricks"
+  }
+}

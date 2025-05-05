@@ -80,6 +80,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.BLACK_WATER_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"));
 
         excludedBlocks.add(EUBlocks.METHANE_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"));
@@ -94,6 +97,12 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"));
 
         excludedBlocks.add(EUBlocks.AMMONIA_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"));
@@ -108,6 +117,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"));
+        excludedBlocks.add(EUBlocks.RED_NITROGEN_ICE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"));
+        excludedBlocks.add(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"));
 
         excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"));
@@ -182,8 +194,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Manual Block Models
          */
 
-
-
         axisBlock(EUBlocks.MAYURA_WOOD, blockLoc(EUBlocks.MAYURA_LOG), blockLoc(EUBlocks.MAYURA_LOG));
         axisBlock(EUBlocks.STRIPPED_MAYURA_WOOD, blockLoc(EUBlocks.STRIPPED_MAYURA_LOG), blockLoc(EUBlocks.STRIPPED_MAYURA_LOG));
         stairsBlock(EUBlocks.MAYURA_STAIRS, blockLoc(EUBlocks.MAYURA_PLANKS));
@@ -232,6 +242,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
         slabBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
         wallBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        stairsBlock(EUBlocks.BLACK_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
+        slabBlock(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
+        wallBlock(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
 
         stairsBlock(EUBlocks.METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
         slabBlock(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
@@ -246,6 +259,12 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
         slabBlock(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
         wallBlock(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
+        stairsBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        slabBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        wallBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        stairsBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
+        slabBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
+        wallBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
 
         stairsBlock(EUBlocks.AMMONIA_ICE_BRICK_STAIRS, blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
         slabBlock(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
@@ -260,7 +279,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
         slabBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
         wallBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
-
+        stairsBlock(EUBlocks.RED_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        slabBlock(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        wallBlock(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        
         stairsBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
         slabBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
         wallBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));

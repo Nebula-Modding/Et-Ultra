@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "et_ultra:block/red_nitrogen_ice_bricks"
+  }
+}

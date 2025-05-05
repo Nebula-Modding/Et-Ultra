@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "et_ultra:block/tholin_rich_carbon_dioxide_ice"
+  }
+}

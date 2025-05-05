@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "et_ultra:block/obdurium_plating"
+  }
+}

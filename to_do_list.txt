@@ -17,6 +17,10 @@ Frigus Cake (name change needed)
 Golden Azure Root
 Fiber (string alternative) (Bruma around an animal's milk)
 
+Pluto Oxygen Ice Caves
+Oxygen caves would have a block which would act like an oxygen distributor but CAN'T DROP NO MATTER WHAT, encouraging building in pluto's oxygen ice caves.
+Oxygen Recycling upgrade for suits
+
 Frigus Marshes
 Neuron trees, vines, etc. in a biome (Iris)
 

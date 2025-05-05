@@ -342,6 +342,37 @@ public class EUBlocks {
                     "cobbled_tholin_rich_water_ice_wall",
                     "tholin_rich_water_ice_brick_wall")
             .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLACK_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_BLACK))
+            .register(
+                    "black_water_ice",
+                    "cobbled_black_water_ice",
+                    "black_water_ice_bricks",
+                    "cracked_black_water_ice_bricks")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("black_water_ice_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            BLACK_WATER_ICE_STAIRS = register("black_water_ice_stairs", () -> new StairBlock(BLACK_WATER_ICE_BLOCKS.get("black_water_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice").get()))),
+            COBBLED_BLACK_WATER_ICE_STAIRS = register("cobbled_black_water_ice_stairs", () -> new StairBlock(BLACK_WATER_ICE_BLOCKS.get("cobbled_black_water_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("cobbled_black_water_ice").get()))),
+            BLACK_WATER_ICE_BRICK_STAIRS = register("black_water_ice_brick_stairs", () -> new StairBlock(BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLACK_WATER_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_BLACK))
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "black_water_ice_slab",
+                    "cobbled_black_water_ice_slab",
+                    "black_water_ice_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "black_water_ice_wall",
+                    "cobbled_black_water_ice_wall",
+                    "black_water_ice_brick_wall")
+            .done();
 
     // Methane
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> METHANE_ICE_BLOCKS = new RegolithBlockBuilder<>(
@@ -470,6 +501,68 @@ public class EUBlocks {
                     "cobbled_carbon_dioxide_ice_wall",
                     "carbon_dioxide_ice_brick_wall")
             .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.TERRACOTTA_WHITE))
+            .register(
+                    "tholin_poor_carbon_dioxide_ice",
+                    "cobbled_tholin_poor_carbon_dioxide_ice",
+                    "tholin_poor_carbon_dioxide_ice_bricks",
+                    "cracked_tholin_poor_carbon_dioxide_ice_bricks")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_poor_carbon_dioxide_ice_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            THOLIN_POOR_CARBON_DIOXIDE_ICE_STAIRS = register("tholin_poor_carbon_dioxide_ice_stairs", () -> new StairBlock(THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice").get()))),
+            COBBLED_THOLIN_POOR_CARBON_DIOXIDE_ICE_STAIRS = register("cobbled_tholin_poor_carbon_dioxide_ice_stairs", () -> new StairBlock(THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_tholin_poor_carbon_dioxide_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_tholin_poor_carbon_dioxide_ice").get()))),
+            THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS = register("tholin_poor_carbon_dioxide_ice_brick_stairs", () -> new StairBlock(THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.TERRACOTTA_WHITE))
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "tholin_poor_carbon_dioxide_ice_slab",
+                    "cobbled_tholin_poor_carbon_dioxide_ice_slab",
+                    "tholin_poor_carbon_dioxide_ice_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "tholin_poor_carbon_dioxide_ice_wall",
+                    "cobbled_tholin_poor_carbon_dioxide_ice_wall",
+                    "tholin_poor_carbon_dioxide_ice_brick_wall")
+            .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_RED))
+            .register(
+                    "tholin_rich_carbon_dioxide_ice",
+                    "cobbled_tholin_rich_carbon_dioxide_ice",
+                    "tholin_rich_carbon_dioxide_ice_bricks",
+                    "cracked_tholin_rich_carbon_dioxide_ice_bricks")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("tholin_rich_carbon_dioxide_ice_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            THOLIN_RICH_CARBON_DIOXIDE_ICE_STAIRS = register("tholin_rich_carbon_dioxide_ice_stairs", () -> new StairBlock(THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice").get()))),
+            COBBLED_THOLIN_RICH_CARBON_DIOXIDE_ICE_STAIRS = register("cobbled_tholin_rich_carbon_dioxide_ice_stairs", () -> new StairBlock(THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_tholin_rich_carbon_dioxide_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_tholin_rich_carbon_dioxide_ice").get()))),
+            THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS = register("tholin_rich_carbon_dioxide_ice_brick_stairs", () -> new StairBlock(THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_RED))
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "tholin_rich_carbon_dioxide_ice_slab",
+                    "cobbled_tholin_rich_carbon_dioxide_ice_slab",
+                    "tholin_rich_carbon_dioxide_ice_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "tholin_rich_carbon_dioxide_ice_wall",
+                    "cobbled_tholin_rich_carbon_dioxide_ice_wall",
+                    "tholin_rich_carbon_dioxide_ice_brick_wall")
+            .done();
 
     // Ammonia
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> AMMONIA_ICE_BLOCKS = new RegolithBlockBuilder<>(
@@ -508,7 +601,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.SNOW))
             .register(
                     "nitrogen_ice",
                     "cobbled_nitrogen_ice",
@@ -524,7 +617,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> NITROGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.SNOW))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "nitrogen_ice_slab",
@@ -570,7 +663,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.TERRACOTTA_RED))
             .register(
                     "tholin_rich_nitrogen_ice",
                     "cobbled_tholin_rich_nitrogen_ice",
@@ -586,7 +679,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.TERRACOTTA_RED))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_rich_nitrogen_ice_slab",
@@ -598,12 +691,43 @@ public class EUBlocks {
                     "cobbled_tholin_rich_nitrogen_ice_wall",
                     "tholin_rich_nitrogen_ice_brick_wall")
             .done();
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> RED_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_RED))
+            .register(
+                    "red_nitrogen_ice",
+                    "cobbled_red_nitrogen_ice",
+                    "red_nitrogen_ice_bricks",
+                    "cracked_red_nitrogen_ice_bricks")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("red_nitrogen_ice_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            RED_NITROGEN_ICE_STAIRS = register("red_nitrogen_ice_stairs", () -> new StairBlock(RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice").get()))),
+            COBBLED_RED_NITROGEN_ICE_STAIRS = register("cobbled_red_nitrogen_ice_stairs", () -> new StairBlock(RED_NITROGEN_ICE_BLOCKS.get("cobbled_red_nitrogen_ice").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("cobbled_red_nitrogen_ice").get()))),
+            RED_NITROGEN_ICE_BRICK_STAIRS = register("red_nitrogen_ice_brick_stairs", () -> new StairBlock(RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> RED_NITROGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            iceProperties().mapColor(MapColor.COLOR_RED))
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "red_nitrogen_ice_slab",
+                    "cobbled_red_nitrogen_ice_slab",
+                    "red_nitrogen_ice_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "red_nitrogen_ice_wall",
+                    "cobbled_red_nitrogen_ice_wall",
+                    "red_nitrogen_ice_brick_wall")
+            .done();
 
     // Sulfur Dioxide
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.COLOR_YELLOW))
             .register(
                     "sulfur_dioxide_ice",
                     "cobbled_sulfur_dioxide_ice",
@@ -619,7 +743,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.COLOR_YELLOW))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "sulfur_dioxide_ice_slab",
@@ -636,7 +760,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OXYGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
             .register(
                     "oxygen_ice",
                     "cobbled_oxygen_ice",
@@ -652,7 +776,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OXYGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "oxygen_ice_slab",
@@ -818,11 +942,12 @@ public class EUBlocks {
                     "glowing_obdurium_pillar",
                     "marked_obdurium_pillar"
             )
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "obdurium_plating_slab"
-            )
             .done();
+    public static final DeferredBlock<Block>
+            OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_BLOCKS.get("obdurium_plating").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
+            OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
+            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
+            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get())));
 
     // Malunite
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MALUNITE_BLOCKS = new RegolithBlockBuilder<>(
@@ -937,22 +1062,12 @@ public class EUBlocks {
     private static BlockBehaviour.Properties rawBlockProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK);
     }
-
-    // Metal Properties
     private static BlockBehaviour.Properties steelProperties() {
         return BlockBehaviour.Properties.of()
                 .mapColor(MapColor.COLOR_GRAY)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
                 .strength(5, 12)
-                .sound(SoundType.COPPER);
-    }
-    private static BlockBehaviour.Properties etriumProperties() {
-        return BlockBehaviour.Properties.of()
-                .mapColor(MapColor.COLOR_BLUE)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops()
-                .strength(5, 5)
                 .sound(SoundType.COPPER);
     }
     private static BlockBehaviour.Properties deshProperties() {
@@ -969,14 +1084,6 @@ public class EUBlocks {
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
                 .strength(5, 16)
-                .sound(SoundType.COPPER);
-    }
-    private static BlockBehaviour.Properties aerolyteProperties() {
-        return BlockBehaviour.Properties.of()
-                .mapColor(MapColor.COLOR_YELLOW)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops()
-                .strength(5, 9)
                 .sound(SoundType.COPPER);
     }
     private static BlockBehaviour.Properties obduriumProperties() {
@@ -1002,5 +1109,3 @@ public class EUBlocks {
         return registeredBlock;
     }
 }
-
-
