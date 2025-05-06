@@ -6,6 +6,8 @@ Add a FrigusGrassBlock block type
 Add a FrigusDirtPathBlock block type
 Add a FrigusMudBlock block type
 
+Make the ices only drop when you have the correct tool
+
 Add Bruma
 Add Graphite Clusters
 
