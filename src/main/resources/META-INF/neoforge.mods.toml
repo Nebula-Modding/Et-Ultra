@@ -1,20 +1,35 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
+issueTrackerURL="https://github.com/Nebula-Modding/Et-Ultra/issues"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-
+displayURL="https://github.com/nebula-Modding/Et-Ultra"
 authors="${mod_authors}"
+credits="TheObviousLemon, Frogballoon, Agent_of_Azarath, shai1n"
 description='''${mod_description}'''
+
+# The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
+#[[mixins]]
+#config="${mod_id}.mixins.json"
+
+# The [[accessTransformers]] block allows you to declare where your AT file is.
+# If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
 
 [[dependencies.${mod_id}]]
 modId="neoforge"
+# required, optional, incompatible, discouraged
 type="required"
-versionRange="${neo_version_range}" #mandatory
+reason="Neoforge is literally the modloader..."
+versionRange="${neo_version_range}"
+# BEFORE, AFTER
 ordering="NONE"
+# BOTH, CLIENT, SERVER
 side="BOTH"
 
 [[dependencies.${mod_id}]]
