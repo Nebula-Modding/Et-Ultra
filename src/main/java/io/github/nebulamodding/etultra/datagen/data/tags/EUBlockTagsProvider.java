@@ -407,6 +407,24 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
+
+                // Mayura Woodset.
+                // For future woodsets, maybe we can copy and paste this?
+                .add(EUBlocks.MAYURA_LOG.get())
+                .add(EUBlocks.MAYURA_WOOD.get())
+                .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(EUBlocks.MAYURA_PLANKS.get())
+                .add(EUBlocks.MAYURA_STAIRS.get())
+                .add(EUBlocks.MAYURA_SLAB.get())
+                .add(EUBlocks.MAYURA_FENCE.get())
+                .add(EUBlocks.MAYURA_FENCE_GATE.get())
+                .add(EUBlocks.MAYURA_DOOR.get())
+                .add(EUBlocks.MAYURA_TRAPDOOR.get())
+
+                //I'm only adding these because I don't understand how the wooden pressure plates + buttons stuff works
+                .add(EUBlocks.MAYURA_PRESSURE_PLATE.get())
+                .add(EUBlocks.MAYURA_BUTTON.get())
         ;
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(EUBlocks.MAYURA_LEAVES.get())
@@ -650,7 +668,30 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.LOGS)
                 .add(EUBlocks.MAYURA_LOG.get())
+                .add(EUBlocks.MAYURA_WOOD.get())
+                .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(EUBlocks.MAYURA_LOG.get())
+                .add(EUBlocks.MAYURA_WOOD.get())
+                .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+        ;
+        tag(BlockTags.PLANKS)
+                .add(EUBlocks.MAYURA_PLANKS.get())
+        ;
+
+
+        tag(BlockTags.WOODEN_STAIRS)
+                .add(EUBlocks.MAYURA_STAIRS.get())
+        ;
+        tag(BlockTags.WOODEN_SLABS)
+                .add(EUBlocks.MAYURA_STAIRS.get())
+        ;
+
+
+
 
         /*
         Plant Tags
