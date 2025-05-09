@@ -672,6 +672,8 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
+        // Stripped Logs are missing. I don't know how to add them
+
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
@@ -687,7 +689,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.MAYURA_STAIRS.get())
         ;
         tag(BlockTags.WOODEN_SLABS)
-                .add(EUBlocks.MAYURA_STAIRS.get())
+                .add(EUBlocks.MAYURA_SLAB.get())
         ;
 
 

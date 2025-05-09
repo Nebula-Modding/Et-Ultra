@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-07T21:45:18.7714745	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-05-08T15:09:21.5897183	Tags for minecraft:block mod id et_ultra
 5375c3c9e45cc8ab251520c63ad9640de3ac7f37 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -67,6 +67,6 @@ ac4a270e264a9e70f62a4b7645a4098e85ca979a data/minecraft/tags/block/stone_buttons
 e8444256d6ae7ea51330df2fc5012bd22c4f4e13 data/minecraft/tags/block/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_buttons.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_pressure_plates.json
-18dd23dc4246666126a34a397113fa1daa6b7046 data/minecraft/tags/block/wooden_slabs.json
+cb51fc021dfbf3a77fbfc42f8db00699abed0458 data/minecraft/tags/block/wooden_slabs.json
 18dd23dc4246666126a34a397113fa1daa6b7046 data/minecraft/tags/block/wooden_stairs.json
 7f95501a42fa6a014e261e2d0285ce01f43ceaec data/neoforge/tags/block/villager_farmlands.json
