@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T21:23:27.928676	Tags for minecraft:block mod id et_ultra
+// 1.21.1	2025-05-08T15:09:21.5897183	Tags for minecraft:block mod id et_ultra
 5375c3c9e45cc8ab251520c63ad9640de3ac7f37 data/c/tags/block/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/block/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/block/cobblestones/frigus_stone.json
@@ -40,14 +40,16 @@ d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/block/emerald_ores.
 66a6a2d44b17366ab3f225971a0ef9abadf78d0f data/minecraft/tags/block/iron_ores.json
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/block/lapis_ores.json
 20afa81cc5fb9d4b46497d3ba9877553e903134f data/minecraft/tags/block/leaves.json
-e3181784b84ba57c461a1662800a789fd71529fd data/minecraft/tags/block/logs.json
-7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/mineable/axe.json
+c5593e38e294b2c7aad95993ed490b0b61a4d7c8 data/minecraft/tags/block/logs.json
+c5593e38e294b2c7aad95993ed490b0b61a4d7c8 data/minecraft/tags/block/logs_that_burn.json
+0a5a417f48467d9277c5d3d228c80f6483d3b38c data/minecraft/tags/block/mineable/axe.json
 20afa81cc5fb9d4b46497d3ba9877553e903134f data/minecraft/tags/block/mineable/hoe.json
 ed877e7db9d9b149b723fb7ad46a5887b17e29dc data/minecraft/tags/block/mineable/pickaxe.json
 c932ac79edc58b5115a9297a3834dcc13a272e5e data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 b30444b3827d3c9f6b667155461c51db8ca1a27c data/minecraft/tags/block/needs_iron_tool.json
 f524abbd347bb03ba85c900e869cacbf4f93c813 data/minecraft/tags/block/needs_stone_tool.json
+6c5fabe5b04fe767f0bea66fab3a92624312b908 data/minecraft/tags/block/planks.json
 e41945bddf1acc732011b4d4c8cd174337596e2e data/minecraft/tags/block/pressure_plates.json
 4b817b59f27f066294ae7ae224d7cbec4d4af9af data/minecraft/tags/block/redstone_ores.json
 7455c0851efa81b5d6a39c3e717128501d4ce482 data/minecraft/tags/block/replaceable.json
@@ -65,6 +67,6 @@ ac4a270e264a9e70f62a4b7645a4098e85ca979a data/minecraft/tags/block/stone_buttons
 e8444256d6ae7ea51330df2fc5012bd22c4f4e13 data/minecraft/tags/block/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_buttons.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_pressure_plates.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_slabs.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/wooden_stairs.json
+cb51fc021dfbf3a77fbfc42f8db00699abed0458 data/minecraft/tags/block/wooden_slabs.json
+18dd23dc4246666126a34a397113fa1daa6b7046 data/minecraft/tags/block/wooden_stairs.json
 7f95501a42fa6a014e261e2d0285ce01f43ceaec data/neoforge/tags/block/villager_farmlands.json

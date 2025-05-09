@@ -143,6 +143,17 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
         copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
+
+        /*
+        Wood Tags
+         */
+        copy(BlockTags.LEAVES, ItemTags.LEAVES);
+
+        copy(BlockTags.LOGS, ItemTags.LOGS);
+
+        copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
+
+        copy(BlockTags.PLANKS, ItemTags.PLANKS);
         /*
         Miscellaneous Tags
          */

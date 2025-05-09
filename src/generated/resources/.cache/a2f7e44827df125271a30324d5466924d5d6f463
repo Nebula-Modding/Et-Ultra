@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T21:23:27.9296759	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-05-08T15:09:21.5952148	Tags for minecraft:item mod id et_ultra
 5375c3c9e45cc8ab251520c63ad9640de3ac7f37 data/c/tags/item/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/item/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_stone.json
@@ -36,6 +36,10 @@ d6550c883c560fc60be562f90b70501406a3c58c data/minecraft/tags/item/emerald_ores.j
 206214f8a9107938e668e9a673b625b1bdae8905 data/minecraft/tags/item/gold_ores.json
 66a6a2d44b17366ab3f225971a0ef9abadf78d0f data/minecraft/tags/item/iron_ores.json
 087d0eaa7f03fd6ab049cba0e238c4a521ef7dbb data/minecraft/tags/item/lapis_ores.json
+20afa81cc5fb9d4b46497d3ba9877553e903134f data/minecraft/tags/item/leaves.json
+c5593e38e294b2c7aad95993ed490b0b61a4d7c8 data/minecraft/tags/item/logs.json
+c5593e38e294b2c7aad95993ed490b0b61a4d7c8 data/minecraft/tags/item/logs_that_burn.json
+6c5fabe5b04fe767f0bea66fab3a92624312b908 data/minecraft/tags/item/planks.json
 4b817b59f27f066294ae7ae224d7cbec4d4af9af data/minecraft/tags/item/redstone_ores.json
 551a71693e069514a18047b2cbb37beb3dfaa645 data/minecraft/tags/item/saplings.json
 b979dc723f512f8a9606a39c349f88ffa26186bd data/minecraft/tags/item/slabs.json
@@ -49,5 +53,5 @@ ac4a270e264a9e70f62a4b7645a4098e85ca979a data/minecraft/tags/item/stone_buttons.
 e8444256d6ae7ea51330df2fc5012bd22c4f4e13 data/minecraft/tags/item/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_buttons.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_pressure_plates.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_slabs.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_stairs.json
+cb51fc021dfbf3a77fbfc42f8db00699abed0458 data/minecraft/tags/item/wooden_slabs.json
+18dd23dc4246666126a34a397113fa1daa6b7046 data/minecraft/tags/item/wooden_stairs.json
