@@ -2,6 +2,7 @@ package io.github.nebulamodding.etultra.registry;
 
 import io.github.nebulamodding.etultra.EtUltra;
 import io.github.nebulamodding.etultra.blocktypes.FrigusFarmlandBlock;
+import io.github.nebulamodding.etultra.blocktypes.FrigusGrassBlock;
 import martian.regolith.DeferredHolders;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
@@ -65,7 +66,7 @@ public class EUBlocks {
      */
 
     public static final DeferredBlock<Block>
-            FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new GrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new FrigusGrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new DirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             COARSE_FRIGUS_DIRT = register("coarse_frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
