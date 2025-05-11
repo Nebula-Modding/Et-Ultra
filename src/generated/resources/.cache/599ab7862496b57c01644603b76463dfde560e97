@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T21:23:27.9185644	Block States: et_ultra
+// 1.21.1	2025-05-10T23:16:47.4424331	Block States: et_ultra
 cae549d044b9769f506c60ba2c742a369a8c1c61 assets/et_ultra/blockstates/ammonia_ice.json
 46fd2a18efe02ee181c0ab57fc7dba287e159344 assets/et_ultra/blockstates/ammonia_ice_bricks.json
 09df58d84dc08207ab1fbdcdf682ab7ba1c09870 assets/et_ultra/blockstates/ammonia_ice_brick_slab.json
@@ -843,7 +843,6 @@ ddce60564946b3b59659aa9e00d0b11c4f14d81e assets/et_ultra/models/block/mayura_doo
 164ee2ef8fd0259b49fe2c031946464a884e7108 assets/et_ultra/models/block/mayura_door_top_right.json
 2a7c6c9a00d287770f9f6f876ff8e8b995269539 assets/et_ultra/models/block/mayura_door_top_right_open.json
 00316f81ff168683ef49c2e68e3a2cd85533a0dd assets/et_ultra/models/block/mayura_fence_gate.json
-89c832acc9c19e5cf04996b1abc8fd5840fd96e3 assets/et_ultra/models/block/mayura_fence_gate_inventory.json
 d38297e82b0db74d939ce941ef920ef74688a489 assets/et_ultra/models/block/mayura_fence_gate_open.json
 73217ab11c4f970e4f1ba4c6b06d99e41f92fc5c assets/et_ultra/models/block/mayura_fence_gate_wall.json
 fa468b566438dd0d5b4915927de44add114d3616 assets/et_ultra/models/block/mayura_fence_gate_wall_open.json
@@ -1499,7 +1498,7 @@ a8b87dd04b8520b46de5a8ff13545f1459cf4098 assets/et_ultra/models/item/marked_malu
 cce7e014ebd28b4c05c84c4016d03db167747293 assets/et_ultra/models/item/marked_steel_pillar.json
 8318812bbe6cf1b357338508851d06aba3484eec assets/et_ultra/models/item/mayura_button.json
 0be64d1980f54a520f0796fe41f01ca7f8962240 assets/et_ultra/models/item/mayura_fence.json
-6287a5ff26eb8e48aa71c496665ddce2411c520f assets/et_ultra/models/item/mayura_fence_gate.json
+6c21aa620531f0a7b1dbad281113c24f82fbf879 assets/et_ultra/models/item/mayura_fence_gate.json
 1e56af27a89da03aa0d82529f86d7ccf3b136ab7 assets/et_ultra/models/item/mayura_leaves.json
 6a27ae87f9df0a6ec365ab8e2a49a63ce4a202b7 assets/et_ultra/models/item/mayura_log.json
 f6663ff3bbfe51866323fc9d9719b8fdefbac5d9 assets/et_ultra/models/item/mayura_planks.json

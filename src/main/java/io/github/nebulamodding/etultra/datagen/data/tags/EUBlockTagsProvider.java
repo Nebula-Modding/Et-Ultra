@@ -162,7 +162,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_wall"));
         pickaxeWalls.add(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("cobbled_black_water_ice_wall"));
         pickaxeWalls.add(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"));
-
         ices.add(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice"));
         ices.add(EUBlocks.METHANE_ICE_BLOCKS.get("cobbled_methane_ice"));
         ices.add(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks"));
@@ -205,7 +204,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_wall"));
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("cobbled_tholin_rich_methane_ice_wall"));
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"));
-
         ices.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice"));
         ices.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_carbon_dioxide_ice"));
         ices.add(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks"));
@@ -248,7 +246,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_wall"));
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_tholin_rich_carbon_dioxide_ice_wall"));
         pickaxeWalls.add(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"));
-
         ices.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice"));
         ices.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("cobbled_ammonia_ice"));
         ices.add(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks"));
@@ -263,7 +260,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_wall"));
         pickaxeWalls.add(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("cobbled_ammonia_ice_wall"));
         pickaxeWalls.add(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"));
-
         ices.add(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice"));
         ices.add(EUBlocks.NITROGEN_ICE_BLOCKS.get("cobbled_nitrogen_ice"));
         ices.add(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks"));
@@ -320,7 +316,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_wall"));
         pickaxeWalls.add(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("cobbled_red_nitrogen_ice_wall"));
         pickaxeWalls.add(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"));
-
         ices.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice"));
         ices.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("cobbled_sulfur_dioxide_ice"));
         ices.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks"));
@@ -335,7 +330,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeWalls.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_wall"));
         pickaxeWalls.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_sulfur_dioxide_ice_wall"));
         pickaxeWalls.add(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"));
-
         ices.add(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice"));
         ices.add(EUBlocks.OXYGEN_ICE_BLOCKS.get("cobbled_oxygen_ice"));
         ices.add(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks"));
@@ -407,24 +401,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
-
-                // Mayura Woodset.
-                // For future woodsets, maybe we can copy and paste this?
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
                 .add(EUBlocks.MAYURA_PLANKS.get())
-                .add(EUBlocks.MAYURA_STAIRS.get())
-                .add(EUBlocks.MAYURA_SLAB.get())
-                .add(EUBlocks.MAYURA_FENCE.get())
                 .add(EUBlocks.MAYURA_FENCE_GATE.get())
-                .add(EUBlocks.MAYURA_DOOR.get())
-                .add(EUBlocks.MAYURA_TRAPDOOR.get())
-
-                //I'm only adding these because I don't understand how the wooden pressure plates + buttons stuff works
-                .add(EUBlocks.MAYURA_PRESSURE_PLATE.get())
-                .add(EUBlocks.MAYURA_BUTTON.get())
         ;
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(EUBlocks.MAYURA_LEAVES.get())
@@ -475,14 +457,39 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.STAIRS)
         ;
         tag(BlockTags.WOODEN_STAIRS)
+                .add(EUBlocks.MAYURA_STAIRS.get())
         ;
         pickaxeSlabs.forEach(entry -> tag(BlockTags.SLABS).add(entry.get()));
         tag(BlockTags.SLABS)
         ;
         tag(BlockTags.WOODEN_SLABS)
+                .add(EUBlocks.MAYURA_SLAB.get())
+        ;
+        tag(BlockTags.FENCES)
+        ;
+        tag(BlockTags.WOODEN_FENCES)
+                .add(EUBlocks.MAYURA_FENCE.get())
+        ;
+        tag(BlockTags.FENCE_GATES)
+                .add(EUBlocks.MAYURA_FENCE_GATE.get())
+        ;
+        tag(Tags.Blocks.FENCE_GATES)
+        ;
+        tag(Tags.Blocks.FENCE_GATES_WOODEN)
+                .add(EUBlocks.MAYURA_FENCE_GATE.get())
         ;
         pickaxeWalls.forEach(entry -> tag(BlockTags.WALLS).add(entry.get()));
         tag(BlockTags.WALLS)
+        ;
+        tag(BlockTags.DOORS)
+        ;
+        tag(BlockTags.WOODEN_DOORS)
+                .add(EUBlocks.MAYURA_DOOR.get())
+        ;
+        tag(BlockTags.TRAPDOORS)
+        ;
+        tag(BlockTags.WOODEN_TRAPDOORS)
+                .add(EUBlocks.MAYURA_TRAPDOOR.get())
         ;
         tag(BlockTags.PRESSURE_PLATES)
                 .add(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
@@ -491,6 +498,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.STONE_PRESSURE_PLATES)
         ;
         tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(EUBlocks.MAYURA_PRESSURE_PLATE.get())
         ;
         tag(BlockTags.BUTTONS)
                 .add(EUBlocks.MALUNITE_PLATING_BUTTON.get())
@@ -499,6 +507,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.STONE_BUTTONS)
         ;
         tag(BlockTags.WOODEN_BUTTONS)
+                .add(EUBlocks.MAYURA_BUTTON.get())
         ;
 
         /*
@@ -672,8 +681,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
-        // Stripped Logs are missing. I don't know how to add them
-
+        tag(Tags.Blocks.STRIPPED_LOGS)
+                .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+        ;
+        tag(Tags.Blocks.STRIPPED_WOODS)
+                .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+        ;
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
@@ -683,22 +696,20 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.PLANKS)
                 .add(EUBlocks.MAYURA_PLANKS.get())
         ;
-
-
-        tag(BlockTags.WOODEN_STAIRS)
-                .add(EUBlocks.MAYURA_STAIRS.get())
+        tag(EUTags.EUBlockTags.MAYURA_LOGS)
+                .add(EUBlocks.MAYURA_LOG.get())
+                .add(EUBlocks.MAYURA_WOOD.get())
+                .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
-        tag(BlockTags.WOODEN_SLABS)
-                .add(EUBlocks.MAYURA_SLAB.get())
-        ;
-
-
-
 
         /*
         Plant Tags
          */
 
+        tag(BlockTags.REPLACEABLE_BY_TREES)
+                .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
+        ;
         tag(BlockTags.SAPLINGS)
                 .add(EUBlocks.MAYURA_SAPLING.get())
         ;
@@ -710,6 +721,9 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.TALL_FLOWERS)
         ;
         tag(BlockTags.FLOWER_POTS)
+                .add(EUBlocks.POTTED_VIVIAN.get())
+                .add(EUBlocks.POTTED_WICKUL.get())
+                .add(EUBlocks.POTTED_ICEFLOWER.get())
         ;
 
         /*
@@ -752,8 +766,10 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.REPLACEABLE)
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        tag(BlockTags.REPLACEABLE_BY_TREES)
-                .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
+        tag(BlockTags.ICE)
+                .add(EUBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
+                .add(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get())
+                .add(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice").get())
         ;
     }
 }

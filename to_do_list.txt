@@ -6,12 +6,10 @@ Add a FrigusGrassBlock block type
 Add a FrigusDirtPathBlock block type
 Add a FrigusMudBlock block type
 
-Make the ices only drop when you have the correct tool
-
+Add Frigus Signs
 Add Bruma
+Add Azure Root
 Add Graphite Clusters
-
-Make lower gravities give you a better step height so that jumping up blocks isn't annoying
 
 Ideas:
 Azurebread (gingerbread)
@@ -19,11 +17,15 @@ Frigus Cake (name change needed)
 Golden Azure Root
 Fiber (string alternative) (Bruma around an animal's milk)
 
-Pluto Oxygen Ice Caves
-Oxygen caves would have a block which would act like an oxygen distributor but CAN'T DROP NO MATTER WHAT, encouraging building in pluto's oxygen ice caves.
+Magma cream into liquid nitrogen makes something edible
+
+Later:
 Oxygen Recycling upgrade for suits
+Make lower gravities give you a better step height so that jumping up blocks isn't annoying
+
 
 Frigus Marshes
 Neuron trees, vines, etc. in a biome (Iris)
 
 Tags:
+Water ice to ice tags

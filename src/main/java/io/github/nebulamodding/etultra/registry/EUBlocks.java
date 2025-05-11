@@ -993,6 +993,7 @@ public class EUBlocks {
     private static BlockBehaviour.Properties iceProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.ICE)
                 .strength(1.5f, 1.5f)
+                .requiresCorrectToolForDrops()
                 .friction(0.85F);
     }
     private static BlockBehaviour.Properties plantProperties() {
@@ -1041,7 +1042,6 @@ public class EUBlocks {
     private static BlockBehaviour.Properties deepslateRedstoneOreProperties() {
         return BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_REDSTONE_ORE);
     }
-
     private static BlockBehaviour.Properties crystalProperties() {
         return BlockBehaviour.Properties.of()
                 .sound(SoundType.AMETHYST)

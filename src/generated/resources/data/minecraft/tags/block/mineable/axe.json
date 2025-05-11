@@ -6,13 +6,6 @@
     "et_ultra:stripped_mayura_log",
     "et_ultra:stripped_mayura_wood",
     "et_ultra:mayura_planks",
-    "et_ultra:mayura_stairs",
-    "et_ultra:mayura_slab",
-    "et_ultra:mayura_fence",
-    "et_ultra:mayura_fence_gate",
-    "et_ultra:mayura_door",
-    "et_ultra:mayura_trapdoor",
-    "et_ultra:mayura_pressure_plate",
-    "et_ultra:mayura_button"
+    "et_ultra:mayura_fence_gate"
   ]
 }

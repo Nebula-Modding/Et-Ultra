@@ -38,7 +38,16 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.WOODEN_STAIRS, ItemTags.WOODEN_STAIRS);
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.WOODEN_SLABS, ItemTags.WOODEN_SLABS);
+        copy(BlockTags.FENCES, ItemTags.FENCES);
+        copy(BlockTags.WOODEN_FENCES, ItemTags.WOODEN_FENCES);
+        copy(BlockTags.FENCE_GATES, ItemTags.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
         copy(BlockTags.WALLS, ItemTags.WALLS);
+        copy(BlockTags.DOORS, ItemTags.DOORS);
+        copy(BlockTags.WOODEN_DOORS, ItemTags.WOODEN_DOORS);
+        copy(BlockTags.TRAPDOORS, ItemTags.TRAPDOORS);
+        copy(BlockTags.WOODEN_TRAPDOORS, ItemTags.WOODEN_TRAPDOORS);
         copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
         copy(BlockTags.BUTTONS, ItemTags.BUTTONS);
         copy(BlockTags.STONE_BUTTONS, ItemTags.STONE_BUTTONS);
@@ -136,6 +145,18 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.DIRT, ItemTags.DIRT);
 
         /*
+        Tree Tags
+         */
+
+        copy(BlockTags.LEAVES, ItemTags.LEAVES);
+        copy(BlockTags.LOGS, ItemTags.LOGS);
+        copy(Tags.Blocks.STRIPPED_LOGS, Tags.Items.STRIPPED_LOGS);
+        copy(Tags.Blocks.STRIPPED_WOODS, Tags.Items.STRIPPED_WOODS);
+        copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
+        copy(BlockTags.PLANKS, ItemTags.PLANKS);
+        copy(EUTags.EUBlockTags.MAYURA_LOGS, EUTags.EUItemTags.MAYURA_LOGS);
+
+        /*
         Plant Tags
          */
 
@@ -143,17 +164,6 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
         copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
-
-        /*
-        Wood Tags
-         */
-        copy(BlockTags.LEAVES, ItemTags.LEAVES);
-
-        copy(BlockTags.LOGS, ItemTags.LOGS);
-
-        copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
-
-        copy(BlockTags.PLANKS, ItemTags.PLANKS);
         /*
         Miscellaneous Tags
          */

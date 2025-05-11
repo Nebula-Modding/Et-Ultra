@@ -323,8 +323,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
     }
     private void fenceGateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceGateBlock((FenceGateBlock) block.get(), texture);
-        models().fenceInventory(block.getId().getPath() + "_inventory", texture);
-        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
     private void pressurePlateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.pressurePlateBlock((PressurePlateBlock) block.get(), texture);

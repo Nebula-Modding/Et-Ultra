@@ -1,7 +1,6 @@
 package io.github.nebulamodding.etultra.registry;
 
 import io.github.nebulamodding.etultra.EtUltra;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -63,6 +62,9 @@ public class EUTags {
                 // Base Stones
                 BASE_STONE_FRIGUS = blockTag("base_stone_frigus"),
 
+                // Logs
+                MAYURA_LOGS = blockTag("mayura_logs"),
+
                 // Carver Replacables
                 FRIGUS_CARVER_REPLACEABLES = blockTag("frigus_carver_replaceables"),
 
@@ -97,7 +99,14 @@ public class EUTags {
                 STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium"),
                 STORAGE_BLOCKS_MALUNITE = commonItemTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonItemTag("storage_blocks/raw_obdurium"),
-                STORAGE_BLOCKS_RAW_MALUNITE = commonItemTag("storage_blocks/raw_malunite")
+                STORAGE_BLOCKS_RAW_MALUNITE = commonItemTag("storage_blocks/raw_malunite"),
+
+                /*
+                Et Ultra Tags
+                 */
+
+                // Logs
+                MAYURA_LOGS = itemTag("mayura_logs")
         ;
         // Items
         public static final TagKey<Item>
