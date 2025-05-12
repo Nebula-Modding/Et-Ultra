@@ -22,6 +22,10 @@ repositories {
         name = "Regolith Maven"
         url = "https://codeberg.org/EmmaTheMartian/regolith/raw/branch/main/repo/"
     }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
     mavenLocal()
 }
 
@@ -68,7 +72,8 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     jarJar(implementation("martian:regolith-neoforge:${regolith_version}"))
-
+    compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
+    runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

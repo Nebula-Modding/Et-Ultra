@@ -1,6 +1,6 @@
 package io.github.nebulamodding.etultra.blocktypes;
 
-import io.github.nebulamodding.etultra.registry.EUBlocks;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

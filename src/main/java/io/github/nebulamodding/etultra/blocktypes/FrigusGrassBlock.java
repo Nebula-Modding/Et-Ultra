@@ -1,13 +1,12 @@
 package io.github.nebulamodding.etultra.blocktypes;
 
 import com.mojang.serialization.MapCodec;
-import io.github.nebulamodding.etultra.registry.EUBlocks;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
 import io.github.nebulamodding.etultra.registry.EUVegetationPlacements;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
