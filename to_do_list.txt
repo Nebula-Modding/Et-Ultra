@@ -2,7 +2,7 @@ General To-Do:
 Revisit neoforge.mods.toml and add some stuff
 https://github.com/NeoForgeMDKs/MDK-1.21-ModDevGradle/blob/main/src/main/templates/META-INF/neoforge.mods.toml
 
-Add a FrigusGrassBlock block type
+Add frigus grass block bonemeal stuffs
 Add a FrigusDirtPathBlock block type
 Add a FrigusMudBlock block type
 
