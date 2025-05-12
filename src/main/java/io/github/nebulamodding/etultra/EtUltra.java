@@ -1,9 +1,9 @@
 package io.github.nebulamodding.etultra;
 
 import io.github.nebulamodding.etultra.datagen.EUDataGeneration;
-import io.github.nebulamodding.etultra.registry.EUBlocks;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
 import io.github.nebulamodding.etultra.registry.EUCreativeTab;
-import io.github.nebulamodding.etultra.registry.EUItems;
+import io.github.nebulamodding.etultra.registry.item.EUItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;

@@ -1,8 +1,8 @@
 package io.github.nebulamodding.etultra.datagen.assets;
 
 import io.github.nebulamodding.etultra.EtUltra;
-import io.github.nebulamodding.etultra.registry.EUBlocks;
-import io.github.nebulamodding.etultra.registry.EUItems;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
+import io.github.nebulamodding.etultra.registry.item.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;

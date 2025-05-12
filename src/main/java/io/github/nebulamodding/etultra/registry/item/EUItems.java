@@ -1,6 +1,9 @@
-package io.github.nebulamodding.etultra.registry;
+package io.github.nebulamodding.etultra.registry.item;
 
 import io.github.nebulamodding.etultra.EtUltra;
+import io.github.nebulamodding.etultra.registry.EUFoods;
+import io.github.nebulamodding.etultra.registry.EUTiers;
+import io.github.nebulamodding.etultra.registry.item.custom.PatchedHammerItem;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;
@@ -45,11 +48,13 @@ public class EUItems {
     );
 
     // Items
-    public static final DeferredItem<Item> PENCIL = ITEMS.registerSimpleItem("pencil", new Item.Properties());
+    public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
 
     // Tools
-    public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new MaceItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EUTiers.OBDURIUM, 3.0F, -3.2F))));
+    public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer",
+            () -> new PatchedHammerItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(EUTiers.OBDURIUM, 3.0F, -3.2F))));
 
     // Helper methods
     private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {

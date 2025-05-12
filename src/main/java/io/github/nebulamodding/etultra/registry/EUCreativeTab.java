@@ -1,6 +1,8 @@
 package io.github.nebulamodding.etultra.registry;
 
 import io.github.nebulamodding.etultra.EtUltra;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
+import io.github.nebulamodding.etultra.registry.item.EUItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

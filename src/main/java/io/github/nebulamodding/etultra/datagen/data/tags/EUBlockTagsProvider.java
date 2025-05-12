@@ -1,7 +1,7 @@
 package io.github.nebulamodding.etultra.datagen.data.tags;
 
 import io.github.nebulamodding.etultra.EtUltra;
-import io.github.nebulamodding.etultra.registry.EUBlocks;
+import io.github.nebulamodding.etultra.registry.block.EUBlocks;
 import io.github.nebulamodding.etultra.registry.EUTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

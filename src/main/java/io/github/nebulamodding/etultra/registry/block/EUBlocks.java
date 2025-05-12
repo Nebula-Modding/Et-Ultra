@@ -1,9 +1,10 @@
-package io.github.nebulamodding.etultra.registry;
+package io.github.nebulamodding.etultra.registry.block;
 
 import io.github.nebulamodding.etultra.EtUltra;
 import io.github.nebulamodding.etultra.blocktypes.FrigusDirtPathBlock;
 import io.github.nebulamodding.etultra.blocktypes.FrigusFarmlandBlock;
 import io.github.nebulamodding.etultra.blocktypes.FrigusGrassBlock;
+import io.github.nebulamodding.etultra.registry.item.EUItems;
 import martian.regolith.DeferredHolders;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
