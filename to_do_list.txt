@@ -8,8 +8,9 @@ Add Graphite Clusters
 Fix Leaf Drops
 Fix Obdurium Hammer+Anvil Interactions
 Fix Axe+Log Interactions
-Fix Dirt+Shovel Interactions
-Fix Dirt+Hoe Interactions
+Fix Shovel+Dirt Interactions
+Fix Hoe+Dirt Interactions
+Fix Water Bottle+Dirt Interactions
 
 Ideas:
 Azurebread (gingerbread)
