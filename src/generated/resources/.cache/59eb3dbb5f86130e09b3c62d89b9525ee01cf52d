@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T21:23:27.926676	Loot Tables
+// 1.21.1	2025-05-12T23:03:44.2292832	Loot Tables
 27d62b2cd869e6103f2d4253d38455ec9bc63b77 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -17,6 +17,7 @@ a77cb90f489f6c714f366fd1869bb891b6ac9b24 data/et_ultra/loot_table/blocks/black_w
 378971f79c594b744b1570e5e88b7762057f103c data/et_ultra/loot_table/blocks/black_water_ice_slab.json
 f69b429c579a0b16eaca0589628f1cf4b4554eb0 data/et_ultra/loot_table/blocks/black_water_ice_stairs.json
 a375a0f6929ab7515d347fbdd019315ba28af298 data/et_ultra/loot_table/blocks/black_water_ice_wall.json
+49b745b2af7b2a96fad0de0f6ac2e1bc777f1667 data/et_ultra/loot_table/blocks/bruma_block.json
 a693b02940f2b659afbb4210db823a84deb0f4f5 data/et_ultra/loot_table/blocks/carbon_dioxide_ice.json
 2ba90bc66ff45c13235ed0414c3403b00c69ed5c data/et_ultra/loot_table/blocks/carbon_dioxide_ice_bricks.json
 daf15fc722973f09bde42de464fd9d665f54e6dc data/et_ultra/loot_table/blocks/carbon_dioxide_ice_brick_slab.json

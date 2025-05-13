@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-10T23:16:47.4424331	Block States: et_ultra
+// 1.21.1	2025-05-12T23:03:44.2192661	Block States: et_ultra
 cae549d044b9769f506c60ba2c742a369a8c1c61 assets/et_ultra/blockstates/ammonia_ice.json
 46fd2a18efe02ee181c0ab57fc7dba287e159344 assets/et_ultra/blockstates/ammonia_ice_bricks.json
 09df58d84dc08207ab1fbdcdf682ab7ba1c09870 assets/et_ultra/blockstates/ammonia_ice_brick_slab.json
@@ -18,6 +18,7 @@ b088e243f5ecd1383e54aa5633e116caa840abad assets/et_ultra/blockstates/black_water
 f8c8991afa11dc65b6b7681eeac5e7fd18d2d46f assets/et_ultra/blockstates/black_water_ice_stairs.json
 c360e4acc9f6cb610c479bd1db536cfb8376d014 assets/et_ultra/blockstates/black_water_ice_wall.json
 5e739cdba93d41867aaa9f5bf4c58a94bbf73bcb assets/et_ultra/blockstates/brainrock.json
+03ce1e5c0cd0b3e555efa78d6402699e99cef22e assets/et_ultra/blockstates/bruma_block.json
 bcc2edccb6b8d3546e9d2a7a0f2d5d9dc02a931d assets/et_ultra/blockstates/carbon_dioxide_ice.json
 1b43bfe57b9055192ecd958e6180a745ea99ee01 assets/et_ultra/blockstates/carbon_dioxide_ice_bricks.json
 4c20820ee028679f19043ed7427156d267dbe451 assets/et_ultra/blockstates/carbon_dioxide_ice_brick_slab.json
@@ -456,6 +457,8 @@ c1377b23dd474693e03e1dd08b926a461869173d assets/et_ultra/models/block/black_wate
 f55228e7175e6d1fa57a986b036ba587453aa080 assets/et_ultra/models/block/black_water_ice_wall_side.json
 3b1ddad68a24a2bf5aabaac8c2218cb7b422facd assets/et_ultra/models/block/black_water_ice_wall_side_tall.json
 5e5d3e8de7e575269b782ba41c0980f08378cf3a assets/et_ultra/models/block/brainrock.json
+e99518da661510996d79ad34d055c68d403b865f assets/et_ultra/models/block/bruma_block.json
+703345dc67a2dff19bba43989b5e1aed759675ac assets/et_ultra/models/block/bruma_block_horizontal.json
 9c4ca06fa87bfced70ffc75e24016f6a7fb1bdc4 assets/et_ultra/models/block/carbon_dioxide_ice.json
 300b44a785536f6298952fe949d3ea22027e271d assets/et_ultra/models/block/carbon_dioxide_ice_bricks.json
 b2018d8693d3e4d43f1020696b5613e5c2d9ac51 assets/et_ultra/models/block/carbon_dioxide_ice_brick_slab.json
@@ -1306,6 +1309,7 @@ b1efa532c410993d4eb7589a38a57071cf8cfc92 assets/et_ultra/models/item/black_water
 f5acd59fddc11ddab1a9c2dff612693b71e63dcf assets/et_ultra/models/item/black_water_ice_stairs.json
 f14e20ab2582ad54395fd68c1ad1f917097bfa67 assets/et_ultra/models/item/black_water_ice_wall.json
 2484247f1075c41cdae5099ec1c3423dd656ca32 assets/et_ultra/models/item/brainrock.json
+01b376ec145926c8b8fcdead533772f2f9ca1311 assets/et_ultra/models/item/bruma_block.json
 3bbc0b36d257af94d9e38fe948d0abf2584bcbb2 assets/et_ultra/models/item/carbon_dioxide_ice.json
 1f51ad3a291b4855fd34a0e40ff815092dd6a3bc assets/et_ultra/models/item/carbon_dioxide_ice_bricks.json
 574254adfcb69078a17153c3d113e8a81c448d96 assets/et_ultra/models/item/carbon_dioxide_ice_brick_slab.json

@@ -7,6 +7,7 @@ import io.github.nebulamodding.etultra.registry.item.itemtypes.ObduriumHammerIte
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,11 +15,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class EUItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtUltra.MOD_ID);
 
-    //public static final DeferredItem<Item>
-    //        BRUMA = ITEMS.register("bruma", () -> new Item(new Item.Properties())),
-    //        BRUMA_LOAF = ITEMS.register("bruma_loaf", () -> new Item(new Item.Properties().food(EUFoods.BRUMA_LOAF)));
-    //public static final DeferredItem<Item>
-    //        AZURE_ROOT = ITEMS.register("azure_root", () -> new ItemNameBlockItem(EUBlocks.AZURE_ROOTS.get(), new Item.Properties().food(EUFoods.AZURE_ROOT)));
+    public static final DeferredItem<Item>
+            BRUMA = ITEMS.register("bruma", () -> new Item(new Item.Properties())),
+            BRUMA_LOAF = ITEMS.register("bruma_loaf", () -> new Item(new Item.Properties().food(EUFoods.BRUMA_LOAF)));
+    public static final DeferredItem<Item>
+            AZURE_ROOT = ITEMS.register("azure_root", () -> new Item(new Item.Properties().food(EUFoods.AZURE_ROOT))),
+            GOLDEN_AZURE_ROOT = ITEMS.register("golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(EUFoods.GOLDEN_AZURE_ROOT))),
+            ENCHANTED_GOLDEN_AZURE_ROOT = ITEMS.register("enchanted_golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(EUFoods.ENCHANTED_GOLDEN_AZURE_ROOT).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
 
     public static final DeferredItem<Item>
             FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(EUFoods.FLESH))),

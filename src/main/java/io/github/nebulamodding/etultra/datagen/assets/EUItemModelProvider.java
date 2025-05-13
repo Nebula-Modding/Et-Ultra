@@ -28,6 +28,7 @@ public class EUItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a model automatically provided
+        excludedItems.add(EUItems.ENCHANTED_GOLDEN_AZURE_ROOT);
         excludedItems.add(EUItems.OBDURIUM_HAMMER);
         excludedItems.add(EUItems.PENCIL);
         excludedItems.add(EUItems.DENSE_PENCIL);

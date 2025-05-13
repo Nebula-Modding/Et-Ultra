@@ -32,6 +32,10 @@ public class EUBlocks {
     private static final BlockSetType MAYURA_SET = BlockSetType.register(new BlockSetType("mayura"));
     public static final WoodType MAYURA = WoodType.register(new WoodType("mayura", MAYURA_SET));
 
+    public static final DeferredBlock<Block>
+            BRUMA_BLOCK = register("bruma_block", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS)));
+
+
     /*
     Seeds
      */

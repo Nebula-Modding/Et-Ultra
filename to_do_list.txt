@@ -2,13 +2,16 @@ General To-Do:
 Add frigus grass block bonemeal stuffs
 Add Frigus Signs
 Add Bruma
-Add Azure Root
+Add Azure Root (With Golden Variant)
 Add Graphite Clusters
+
+Fix Leaf Drops
+Fix Obdurium Hammer+Anvil Interactions
+Fix Axe+Log Interactions
 
 Ideas:
 Azurebread (gingerbread)
 Frigus Cake (name change needed)
-Golden Azure Root
 Fiber (string alternative) (Bruma around an animal's milk)
 Magma cream into liquid nitrogen makes something edible
 

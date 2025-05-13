@@ -25,6 +25,8 @@ public class EULanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having a translation automatically provided
+        excludedBlocks.add(EUBlocks.BRUMA_BLOCK);
+
         excludedBlocks.add(EUBlocks.SALT_CRYSTAL_BLOCK);
         excludedBlocks.add(EUBlocks.SALT_DUST_BLOCK);
         excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"));
@@ -41,6 +43,8 @@ public class EULanguageProvider extends LanguageProvider {
 
         final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
+        excludedItems.add(EUItems.GOLDEN_AZURE_ROOT);
+        excludedItems.add(EUItems.ENCHANTED_GOLDEN_AZURE_ROOT);
         excludedItems.add(EUItems.COOKED_FLESH);
 
         /*
@@ -48,6 +52,8 @@ public class EULanguageProvider extends LanguageProvider {
          */
 
         // Blocks
+        addBlock(EUBlocks.BRUMA_BLOCK, "Bruma Bale");
+
         addBlock(EUBlocks.SALT_CRYSTAL_BLOCK, "Block of Salt Crystal");
         addBlock(EUBlocks.SALT_PACKED_BLOCKS.get("salt_block"), "Block of Salt");
         addBlock(EUBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");
@@ -63,6 +69,8 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.FLESH_BLOCK, "Block of Flesh");
 
         // Items
+        addItem(EUItems.GOLDEN_AZURE_ROOT, "Golden Root");
+        addItem(EUItems.ENCHANTED_GOLDEN_AZURE_ROOT, "Enchanted Golden Root");
         addItem(EUItems.COOKED_FLESH, "Jerky");
 
         /*
