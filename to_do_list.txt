@@ -1,29 +1,28 @@
 General To-Do:
-Add frigus grass block bonemeal stuffs
 Add Frigus Signs
-Add Bruma
-Add Azure Root (With Golden Variant)
+Add Plants
 Add Graphite Clusters
 
 Fix Leaf Drops
-Fix Obdurium Hammer+Anvil Interactions
-Fix Axe+Log Interactions
-Fix Shovel+Dirt Interactions
-Fix Hoe+Dirt Interactions
-Fix Water Bottle+Dirt Interactions
+
+Fix Obdurium Hammer + Anvil Interactions
+Fix Axe + Log Interactions
+Fix Shovel + Dirt Interactions
+Fix Hoe + Dirt Interactions
+Fix Water Bottle + Dirt Interactions
+Fix Bonemeal + Frigus Grass Interactions
 
 Ideas:
-Azurebread (gingerbread)
+Azurebread (Gingerbread analog)
 Frigus Cake (name change needed)
-Fiber (string alternative) (Bruma around an animal's milk)
-Magma cream into liquid nitrogen makes something edible
+Fiber (String analog) (Bruma around milk)
+Magma Cream + Liquid Nitrogen = Edible Treat
+
+Frigus Biome: Marsh
+Karnis Biome: Neuron Forest
 
 Later:
-Oxygen Recycling upgrade for suits
-Make lower gravities give you a better step height so that jumping up blocks isn't annoying
-
-
-Frigus Marshes
-Neuron trees, vines, etc. in a biome (Iris)
+Suit Upgrade: Oxygen Recycling
+Lower Gravity Step Height Increase
 
 Tags:
