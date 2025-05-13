@@ -29,12 +29,16 @@ public class EUItemModelProvider extends ItemModelProvider {
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a model automatically provided
         excludedItems.add(EUItems.OBDURIUM_HAMMER);
+        excludedItems.add(EUItems.PENCIL);
+        excludedItems.add(EUItems.DENSE_PENCIL);
 
         /*
         Manual Item Models
          */
 
         itemModel(EUItems.OBDURIUM_HAMMER, HANDHELD);
+        itemModel(EUItems.PENCIL, HANDHELD);
+        itemModel(EUItems.DENSE_PENCIL, HANDHELD);
 
         /*
         Manual Block Models

@@ -1,27 +1,15 @@
 General To-Do:
-Revisit neoforge.mods.toml and add some stuff
-https://github.com/NeoForgeMDKs/MDK-1.21-ModDevGradle/blob/main/src/main/templates/META-INF/neoforge.mods.toml -- DONE FOR NOW
-
 Add frigus grass block bonemeal stuffs
-
 Add Frigus Signs
 Add Bruma
 Add Azure Root
 Add Graphite Clusters
-
-
-
-pencil
-
-
-:3
 
 Ideas:
 Azurebread (gingerbread)
 Frigus Cake (name change needed)
 Golden Azure Root
 Fiber (string alternative) (Bruma around an animal's milk)
-
 Magma cream into liquid nitrogen makes something edible
 
 Later:

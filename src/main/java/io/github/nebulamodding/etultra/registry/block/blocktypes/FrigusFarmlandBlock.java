@@ -1,4 +1,4 @@
-package io.github.nebulamodding.etultra.blocktypes;
+package io.github.nebulamodding.etultra.registry.block.blocktypes;
 
 import io.github.nebulamodding.etultra.registry.block.EUBlocks;
 import net.minecraft.core.BlockPos;

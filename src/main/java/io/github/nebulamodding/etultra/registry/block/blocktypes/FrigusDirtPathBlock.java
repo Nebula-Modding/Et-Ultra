@@ -1,4 +1,4 @@
-package io.github.nebulamodding.etultra.blocktypes;
+package io.github.nebulamodding.etultra.registry.block.blocktypes;
 
 import com.mojang.serialization.MapCodec;
 import io.github.nebulamodding.etultra.registry.block.EUBlocks;
