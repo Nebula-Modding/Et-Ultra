@@ -9,6 +9,7 @@ import martian.regolith.DeferredHolders;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -26,15 +27,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static io.github.nebulamodding.etultra.registry.block.EUWoodTypes.MAYURA;
+
 public class EUBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtUltra.MOD_ID);
-
-    private static final BlockSetType MAYURA_SET = BlockSetType.register(new BlockSetType("mayura"));
-    public static final WoodType MAYURA = WoodType.register(new WoodType("mayura", MAYURA_SET));
-
-    public static final DeferredBlock<Block>
-            BRUMA_BLOCK = register("bruma_block", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS)));
-
 
     /*
     Seeds
@@ -60,10 +56,10 @@ public class EUBlocks {
             MAYURA_SLAB = register("mayura_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.COLOR_LIGHT_BLUE))),
             MAYURA_FENCE = register("mayura_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
             MAYURA_FENCE_GATE = register("mayura_fence_gate", () -> new FenceGateBlock(MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(MAYURA_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(MAYURA_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(MAYURA_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_BUTTON = register("mayura_button", () -> new ButtonBlock(MAYURA_SET, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
+            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            MAYURA_BUTTON = register("mayura_button", () -> new ButtonBlock(EUBlockSetTypes.MAYURA, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
             MAYURA_LEAVES = register("mayura_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.COLOR_LIGHT_BLUE))),
             MAYURA_SAPLING = register("mayura_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.COLOR_LIGHT_BLUE)));
 
@@ -883,10 +879,11 @@ public class EUBlocks {
             BRAINROCK = register("brainrock", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.HONEY_BLOCK)));
 
     /*
-    Metal Blocks
+    Raw Material Blocks
      */
 
     public static final DeferredBlock<Block>
+            BRUMA_BLOCK = register("bruma_block", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS))),
             RAW_OBDURIUM_BLOCK = register("raw_obdurium_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_PURPLE))),
             RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN)));
 
@@ -953,8 +950,8 @@ public class EUBlocks {
     public static final DeferredBlock<Block>
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_BLOCKS.get("obdurium_plating").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
             OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
-            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
-            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get())));
+            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.OBDURIUM, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get()))),
+            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(EUBlockSetTypes.OBDURIUM, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_plating").get())));
 
     // Malunite
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> MALUNITE_BLOCKS = new RegolithBlockBuilder<>(
@@ -1109,7 +1106,7 @@ public class EUBlocks {
                 .strength(5, 9)
                 .sound(SoundType.COPPER);
     }
-    // Misc helpers
+    // Automatically Register Block Items
     private static <T extends Block> DeferredBlock<T> register(String id, Supplier<T> block) {
         var registeredBlock = BLOCKS.register(id, block);
         EUItems.ITEMS.registerSimpleBlockItem(registeredBlock);

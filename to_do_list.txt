@@ -4,6 +4,7 @@ Add Plants
 Add Graphite Clusters
 
 Fix Leaf Drops
+Fix Obdurium Plating Pressure Plate sound
 
 Fix Obdurium Hammer + Anvil Interactions
 Fix Axe + Log Interactions
