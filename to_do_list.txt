@@ -3,6 +3,8 @@ Add Frigus Signs
 Add Plants
 Add Graphite Clusters
 
+Fix Malunite and Obdurium AA Recolor Textures
+
 Fix Leaf Drops
 Fix Obdurium Plating Pressure Plate sound
 
@@ -21,6 +23,11 @@ Magma Cream + Liquid Nitrogen = Edible Treat
 
 Frigus Biome: Marsh
 Karnis Biome: Neuron Forest
+Karnis Biome: Perulent Caves
+
+Cancerous Flesh, which spreads to surrounding flesh like grass does to dirt
+
+Cysts for Karnis
 
 Later:
 Suit Upgrade: Oxygen Recycling
