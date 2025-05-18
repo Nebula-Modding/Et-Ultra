@@ -1,6 +1,9 @@
 {
   "values": [
     "et_ultra:frigus_iron_ore",
-    "et_ultra:frigus_deepslate_iron_ore"
+    "et_ultra:frigus_deepslate_iron_ore",
+    "et_ultra:water_ice_iron_ore",
+    "et_ultra:nitrogen_ice_iron_ore",
+    "et_ultra:oxygen_ice_iron_ore"
   ]
 }

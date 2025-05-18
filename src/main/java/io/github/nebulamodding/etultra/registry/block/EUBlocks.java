@@ -235,6 +235,7 @@ public class EUBlocks {
             FRIGUS_DIAMOND_ORE = register("frigus_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             FRIGUS_OBDURIUM_ORE = register("frigus_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
             FRIGUS_MALUNITE_ORE = register("frigus_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            FRIGUS_LUTRUM_ORE = register("frigus_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
 
             FRIGUS_DEEPSLATE_COAL_ORE = register("frigus_deepslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
             FRIGUS_DEEPSLATE_IRON_ORE = register("frigus_deepslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
@@ -245,7 +246,44 @@ public class EUBlocks {
             FRIGUS_DEEPSLATE_LAPIS_ORE = register("frigus_deepslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
             FRIGUS_DEEPSLATE_DIAMOND_ORE = register("frigus_deepslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
             FRIGUS_DEEPSLATE_OBDURIUM_ORE = register("frigus_deepslate_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_MALUNITE_ORE = register("frigus_deepslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE)));
+            FRIGUS_DEEPSLATE_MALUNITE_ORE = register("frigus_deepslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
+            FRIGUS_DEEPSLATE_LUTRUM_ORE = register("frigus_deepslate_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
+
+            WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_COPPER_ORE = register("water_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_GOLD_ORE = register("water_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_REDSTONE_ORE = register("water_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3f, 1f).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.ICE))),
+            WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_OBDURIUM_ORE = register("water_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_MALUNITE_ORE = register("water_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+            WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.ICE))),
+
+            NITROGEN_ICE_COAL_ORE = register("nitrogen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_IRON_ORE = register("nitrogen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_COPPER_ORE = register("nitrogen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_GOLD_ORE = register("nitrogen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_REDSTONE_ORE = register("nitrogen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3f, 1f).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_EMERALD_ORE = register("nitrogen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_LAPIS_ORE = register("nitrogen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_DIAMOND_ORE = register("nitrogen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_OBDURIUM_ORE = register("nitrogen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_MALUNITE_ORE = register("nitrogen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_LUTRUM_ORE = register("nitrogen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.SNOW))),
+
+            OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_IRON_ORE = register("oxygen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_COPPER_ORE = register("oxygen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_GOLD_ORE = register("oxygen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_REDSTONE_ORE = register("oxygen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3f, 1f).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_OBDURIUM_ORE = register("oxygen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3f, 1f).mapColor(MapColor.COLOR_LIGHT_BLUE)));
 
     /*
     Ice Blocks
@@ -794,80 +832,113 @@ public class EUBlocks {
 
     // Salt
     public static final DeferredBlock<Block>
-            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.SNOW))),
-            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.SNOW)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SALT_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
+            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xDFCDDD), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SALT_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            compressedDustProperties().mapColor(MapColor.SNOW)
-    )
+            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
             .register(
-                    "salt_block",
+                    "cut_salt",
                     "chiseled_salt",
-                    "polished_salt",
-                    "salt_bricks",
-                    "cracked_salt_bricks"
-            )
+                    "polished_cut_salt",
+                    "cut_salt_bricks",
+                    "cracked_cut_salt_bricks")
             .setBlockFunction(RotatedPillarBlock::new)
             .register("salt_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            CUT_SALT_STAIRS = register("cut_salt_stairs", () -> new StairBlock(CUT_SALT_BLOCKS.get("cut_salt").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt").get()))),
+            POLISHED_CUT_SALT_STAIRS = register("polished_cut_salt_stairs", () -> new StairBlock(CUT_SALT_BLOCKS.get("cut_salt").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt").get()))),
+            CUT_SALT_BRICK_STAIRS = register("cut_salt_brick_stairs", () -> new StairBlock(CUT_SALT_BLOCKS.get("cut_salt").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SALT_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "salt_slab",
-                    "polished_salt_slab",
-                    "salt_brick_slab"
-            )
+                    "cut_salt_slab",
+                    "polished_cut_salt_slab",
+                    "cut_salt_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "cut_salt_wall",
+                    "polished_cut_salt_wall",
+                    "cut_salt_brick_wall")
             .done();
 
     // Sulfur
     public static final DeferredBlock<Block>
             SULFUR_CRYSTAL_BLOCK = register("sulfur_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
-            SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xdfcddd), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            SULFUR_DUST_BLOCK = register("sulfur_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xDFCDDD), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SULFUR_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            compressedDustProperties().mapColor(MapColor.COLOR_YELLOW)
-    )
+            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
             .register(
-                    "sulfur_block",
+                    "cut_sulfur",
                     "chiseled_sulfur",
-                    "polished_sulfur",
-                    "sulfur_bricks",
-                    "cracked_sulfur_bricks"
-            )
+                    "polished_cut_sulfur",
+                    "cut_sulfur_bricks",
+                    "cracked_cut_sulfur_bricks")
             .setBlockFunction(RotatedPillarBlock::new)
             .register("sulfur_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            CUT_SULFUR_STAIRS = register("cut_sulfur_stairs", () -> new StairBlock(CUT_SULFUR_BLOCKS.get("cut_sulfur").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur").get()))),
+            POLISHED_CUT_SULFUR_STAIRS = register("polished_cut_sulfur_stairs", () -> new StairBlock(CUT_SULFUR_BLOCKS.get("cut_sulfur").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur").get()))),
+            CUT_SULFUR_BRICK_STAIRS = register("cut_sulfur_brick_stairs", () -> new StairBlock(CUT_SULFUR_BLOCKS.get("cut_sulfur").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SULFUR_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "sulfur_slab",
-                    "polished_sulfur_slab",
-                    "sulfur_brick_slab"
-            )
+                    "cut_sulfur_slab",
+                    "polished_cut_sulfur_slab",
+                    "cut_sulfur_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "cut_sulfur_wall",
+                    "polished_cut_sulfur_wall",
+                    "cut_sulfur_brick_wall")
             .done();
 
     // Graphite
     public static final DeferredBlock<Block>
-            GRAPHITE_CRYSTAL_BLOCK = register("graphite_crystal_block", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK))),
-            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0x2d261b), dustProperties().mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GRAPHITE_PACKED_BLOCKS = new RegolithBlockBuilder<>(
+            GRAPHITE_CRYSTAL_BLOCK = register("graphite_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_BLACK))),
+            GRAPHITE_DUST_BLOCK = register("graphite_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0x2D261B), dustProperties().mapColor(MapColor.COLOR_BLACK)));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_GRAPHITE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_BLACK)
-    )
+            stoneProperties().mapColor(MapColor.COLOR_BLACK))
             .register(
-                    "graphite_block",
+                    "cut_graphite",
                     "chiseled_graphite",
-                    "polished_graphite",
-                    "graphite_bricks",
-                    "cracked_graphite_bricks"
-            )
+                    "polished_cut_graphite",
+                    "cut_graphite_bricks",
+                    "cracked_cut_graphite_bricks")
             .setBlockFunction(RotatedPillarBlock::new)
             .register("graphite_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            CUT_GRAPHITE_STAIRS = register("cut_graphite_stairs", () -> new StairBlock(CUT_GRAPHITE_BLOCKS.get("cut_graphite").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite").get()))),
+            POLISHED_CUT_GRAPHITE_STAIRS = register("polished_cut_graphite_stairs", () -> new StairBlock(CUT_GRAPHITE_BLOCKS.get("cut_graphite").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite").get()))),
+            CUT_GRAPHITE_BRICK_STAIRS = register("cut_graphite_brick_stairs", () -> new StairBlock(CUT_GRAPHITE_BLOCKS.get("cut_graphite").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_GRAPHITE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_BLACK))
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "graphite_slab",
-                    "polished_graphite_slab",
-                    "graphite_brick_slab"
-            )
+                    "cut_graphite_slab",
+                    "polished_cut_graphite_slab",
+                    "cut_graphite_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "cut_graphite_wall",
+                    "polished_cut_graphite_wall",
+                    "cut_graphite_brick_wall")
             .done();
 
     /*
@@ -883,9 +954,11 @@ public class EUBlocks {
      */
 
     public static final DeferredBlock<Block>
-            BRUMA_BLOCK = register("bruma_block", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS))),
+            BRUMA_BLOCK = register("bruma_block", () -> new HayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS))),
             RAW_OBDURIUM_BLOCK = register("raw_obdurium_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_PURPLE))),
-            RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN)));
+            RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN))),
+            AMALGAMATED_ALLOY_BLOCK = register("amalgamated_alloy_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_CYAN))),
+            RAW_LUTRUM_BLOCK = register("raw_lutrum_block", () -> new Block(rawBlockProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
 
     // Iron
     // Blocks go here
@@ -979,6 +1052,38 @@ public class EUBlocks {
             MALUNITE_PLATING_SLAB = register("malunite_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get()))),
             MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get()))),
             MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.MALUNITE_BLOCKS.get("malunite_plating").get())));
+
+    // Lutrum
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> LUTRUM_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            lutrumProperties()
+    )
+            .register(
+                    "lutrum_factory_block",
+                    "encased_lutrum_block",
+                    "lutrum_plateblock",
+                    "lutrum_panel",
+                    "lutrum_block",
+                    "lutrum_plating"
+            )
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register(
+                    "lutrum_pillar",
+                    "glowing_lutrum_pillar",
+                    "marked_lutrum_pillar"
+            )
+            .done();
+    public static final DeferredBlock<Block>
+            CHISELED_LUTRUM = register("chiseled_lutrum", () -> new Block(lutrumProperties())),
+            LUTRUM_GRATE = register("lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
+            LUTRUM_PLATING_STAIRS = register("lutrum_plating_stairs", () -> new StairBlock(LUTRUM_BLOCKS.get("lutrum_plating").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.LUTRUM_BLOCKS.get("lutrum_plating").get()))),
+            LUTRUM_PLATING_SLAB = register("lutrum_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(EUBlocks.LUTRUM_BLOCKS.get("lutrum_plating").get()))),
+            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(EUBlocks.LUTRUM_BLOCKS.get("lutrum_plating").get()))),
+            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.LUTRUM_BLOCKS.get("lutrum_plating").get()))),
+            LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER_DOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
 
     /*
     Potted Plants
@@ -1103,7 +1208,15 @@ public class EUBlocks {
                 .mapColor(MapColor.COLOR_GREEN)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
-                .strength(5, 9)
+                .strength(6, 3)
+                .sound(SoundType.COPPER);
+    }
+    private static BlockBehaviour.Properties lutrumProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.TERRACOTTA_CYAN)
+                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
+                .strength(6, 3)
                 .sound(SoundType.COPPER);
     }
     // Automatically Register Block Items

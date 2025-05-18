@@ -1,8 +1,11 @@
 {
   "values": [
+    "#c:storage_blocks/bruma",
     "#c:storage_blocks/obdurium",
     "#c:storage_blocks/raw_obdurium",
     "#c:storage_blocks/malunite",
-    "#c:storage_blocks/raw_malunite"
+    "#c:storage_blocks/raw_malunite",
+    "#c:storage_blocks/lutrum",
+    "#c:storage_blocks/raw_lutrum"
   ]
 }

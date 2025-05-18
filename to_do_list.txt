@@ -1,19 +1,18 @@
 General To-Do:
 Add Frigus Signs
-Add Plants
-Add Graphite Clusters
+Add Crops
+Add Karnis Stuffs
+Add Graphite Cluster
+Add Dust Block Colors
 
-Fix Malunite and Obdurium AA Recolor Textures
-
-Fix Leaf Drops
-Fix Obdurium Plating Pressure Plate sound
-
+Rename all tholin stages to "stage_variant_compound_ice" instead of "variant_stage_compound_ice"
 Fix Obdurium Hammer + Anvil Interactions
 Fix Axe + Log Interactions
 Fix Shovel + Dirt Interactions
 Fix Hoe + Dirt Interactions
-Fix Water Bottle + Dirt Interactions
+Fix Water Bottle + Frigus Dirt Interactions
 Fix Bonemeal + Frigus Grass Interactions
+Fix Tool Mending
 
 Ideas:
 Azurebread (Gingerbread analog)
@@ -21,13 +20,14 @@ Frigus Cake (name change needed)
 Fiber (String analog) (Bruma around milk)
 Magma Cream + Liquid Nitrogen = Edible Treat
 
-Frigus Biome: Marsh
+Frigus Biome: Frigus Plains
+Frigus Biome: Frigus Forest
+Frigus Biome: Frigus Glaciers
+Frigus Biome: Frigus Underground Marsh
 Karnis Biome: Neuron Forest
 Karnis Biome: Perulent Caves
 
 Cancerous Flesh, which spreads to surrounding flesh like grass does to dirt
-
-Cysts for Karnis
 
 Later:
 Suit Upgrade: Oxygen Recycling

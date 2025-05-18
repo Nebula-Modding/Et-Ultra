@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-12T22:33:03.6574872	Item Models: et_ultra
+// 1.21.1	2025-05-18T00:06:43.7290963	Item Models: et_ultra
 92913d44165095a7246b46bad48552f88ba9b305 assets/et_ultra/models/item/azure_root.json
 f0d37e0871347e13409a055fbe75913da58c1717 assets/et_ultra/models/item/bruma.json
 ae8867bb316f0374c32a55cd0ca4bc8c1c8cce52 assets/et_ultra/models/item/bruma_loaf.json
@@ -11,6 +11,14 @@ c6443bfec422f02e769f0de7e419731ad5b04a98 assets/et_ultra/models/item/frigus_gras
 f19b91532c311d32d6a430dbc5d662db807b5284 assets/et_ultra/models/item/frigus_short_grass.json
 6de2dc5484e3e4e90e81c675ac89879f8ceca70e assets/et_ultra/models/item/golden_azure_root.json
 e69997f8215f5ec52e795e5fe5793c06668322e2 assets/et_ultra/models/item/iceflower.json
+9abf3a70a99a22278590a2d26a36c8c283de9e4c assets/et_ultra/models/item/lutrum_bulb.json
+4696b5e05b950bdb5ec82cb510cfbbc03195e9c0 assets/et_ultra/models/item/lutrum_door.json
+62230e6c44ad76b57fc409a0ee10db82b557e2bb assets/et_ultra/models/item/lutrum_grate.json
+1d0e3d36d82aea4569218b818317a1049d9ba226 assets/et_ultra/models/item/lutrum_ingot.json
+67028cb7bb6a7feab8a91296069c28460d2463ad assets/et_ultra/models/item/lutrum_nugget.json
+8f96e58c836168a7e1a4a21465c2ddb66028804f assets/et_ultra/models/item/lutrum_plate.json
+19a9aaa57d0aa7b0441ae46a2a9f4cf83a7e55c6 assets/et_ultra/models/item/lutrum_rod.json
+d559c896330efe7d28cb571185ff3e740541801f assets/et_ultra/models/item/lutrum_trapdoor.json
 7b8c0d4ac3e39b566ae01c4acaadce6ccfdf1075 assets/et_ultra/models/item/malunite_ingot.json
 1d585d58ff2cc5d58e7d01e5a5eb01b3e352e29e assets/et_ultra/models/item/malunite_nugget.json
 0cf35fd54250bd519b866292e0c4fbf87e994fa0 assets/et_ultra/models/item/malunite_plate.json
@@ -24,6 +32,7 @@ e69997f8215f5ec52e795e5fe5793c06668322e2 assets/et_ultra/models/item/iceflower.j
 a4a49e5289d0a612af0a3eaa0f14f25ab3096551 assets/et_ultra/models/item/obdurium_plate.json
 f8785c4b944d6f42c32b72e34408fd9889164fe1 assets/et_ultra/models/item/obdurium_rod.json
 e5e88b7c26d57ac15a276ae994a71382b6d7c4fe assets/et_ultra/models/item/pencil.json
+33a1db65f08b0da86c3ec295f599a67ce2c54f9d assets/et_ultra/models/item/raw_lutrum.json
 6786c03ea0ecafc9821e7491dbffcc47ee66e718 assets/et_ultra/models/item/raw_malunite.json
 7f79cb2f4d252ffcdacd11bd1e94837d5a920a5b assets/et_ultra/models/item/raw_obdurium.json
 f1a119132a5561a47b0fdc4368c0d71b158a3314 assets/et_ultra/models/item/vivian.json

@@ -1,6 +1,9 @@
 {
   "values": [
     "et_ultra:frigus_emerald_ore",
-    "et_ultra:frigus_deepslate_emerald_ore"
+    "et_ultra:frigus_deepslate_emerald_ore",
+    "et_ultra:water_ice_emerald_ore",
+    "et_ultra:nitrogen_ice_emerald_ore",
+    "et_ultra:oxygen_ice_emerald_ore"
   ]
 }

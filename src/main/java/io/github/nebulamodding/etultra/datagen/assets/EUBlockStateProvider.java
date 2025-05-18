@@ -50,7 +50,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
 
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
         excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
 
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
@@ -129,14 +128,22 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"));
 
-        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_slab"));
-        excludedBlocks.add(EUBlocks.SALT_PACKED_BLOCKS.get("salt_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_SALT_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"));
 
-        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_slab"));
-        excludedBlocks.add(EUBlocks.SULFUR_PACKED_BLOCKS.get("sulfur_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"));
 
-        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_slab"));
-        excludedBlocks.add(EUBlocks.GRAPHITE_PACKED_BLOCKS.get("graphite_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_SULFUR_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"));
+        excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
+
+        excludedBlocks.add(EUBlocks.LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.LUTRUM_BULB);
 
         excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
         excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
@@ -290,6 +297,21 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.OXYGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
         slabBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
         wallBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
+
+        stairsBlock(EUBlocks.CUT_SALT_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        slabBlock(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        wallBlock(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        
+        stairsBlock(EUBlocks.CUT_GRAPHITE_BRICK_STAIRS, blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        slabBlock(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        wallBlock(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        
+        stairsBlock(EUBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+        slabBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+        wallBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+
+        doorBlockWithRenderType(EUBlocks.LUTRUM_DOOR, blockLoc(EUBlocks.LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.LUTRUM_DOOR, "top"), "cutout");
+        trapDoorBlockWithRenderType(EUBlocks.LUTRUM_TRAPDOOR, blockLoc(EUBlocks.LUTRUM_TRAPDOOR), true, "cutout");
 
         simpleBlock(EUBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
         simpleBlock(EUBlocks.POTTED_VIVIAN.get(), models().withExistingParent(EUBlocks.POTTED_VIVIAN.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));

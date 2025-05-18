@@ -13,6 +13,27 @@
     "et_ultra:frigus_deepslate_emerald_ore",
     "et_ultra:frigus_deepslate_diamond_ore",
     "et_ultra:frigus_deepslate_obdurium_ore",
-    "et_ultra:frigus_deepslate_malunite_ore"
+    "et_ultra:frigus_deepslate_malunite_ore",
+    "et_ultra:water_ice_coal_ore",
+    "et_ultra:water_ice_iron_ore",
+    "et_ultra:water_ice_gold_ore",
+    "et_ultra:water_ice_emerald_ore",
+    "et_ultra:water_ice_diamond_ore",
+    "et_ultra:water_ice_obdurium_ore",
+    "et_ultra:water_ice_malunite_ore",
+    "et_ultra:nitrogen_ice_coal_ore",
+    "et_ultra:nitrogen_ice_iron_ore",
+    "et_ultra:nitrogen_ice_gold_ore",
+    "et_ultra:nitrogen_ice_emerald_ore",
+    "et_ultra:nitrogen_ice_diamond_ore",
+    "et_ultra:nitrogen_ice_obdurium_ore",
+    "et_ultra:nitrogen_ice_malunite_ore",
+    "et_ultra:oxygen_ice_coal_ore",
+    "et_ultra:oxygen_ice_iron_ore",
+    "et_ultra:oxygen_ice_gold_ore",
+    "et_ultra:oxygen_ice_emerald_ore",
+    "et_ultra:oxygen_ice_diamond_ore",
+    "et_ultra:oxygen_ice_obdurium_ore",
+    "et_ultra:oxygen_ice_malunite_ore"
   ]
 }

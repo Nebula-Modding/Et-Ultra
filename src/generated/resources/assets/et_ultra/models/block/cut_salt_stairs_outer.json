@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/cut_salt",
+    "side": "et_ultra:block/cut_salt",
+    "top": "et_ultra:block/cut_salt"
+  }
+}

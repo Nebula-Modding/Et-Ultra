@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/cut_sulfur_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/cut_sulfur"
+    },
+    "type=top": {
+      "model": "et_ultra:block/cut_sulfur_slab_top"
+    }
+  }
+}

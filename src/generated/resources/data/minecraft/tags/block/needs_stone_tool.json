@@ -3,8 +3,22 @@
     "et_ultra:frigus_copper_ore",
     "et_ultra:frigus_iron_ore",
     "et_ultra:frigus_lapis_ore",
+    "et_ultra:frigus_lutrum_ore",
     "et_ultra:frigus_deepslate_copper_ore",
     "et_ultra:frigus_deepslate_iron_ore",
-    "et_ultra:frigus_deepslate_lapis_ore"
+    "et_ultra:frigus_deepslate_lapis_ore",
+    "et_ultra:frigus_deepslate_lutrum_ore",
+    "et_ultra:water_ice_copper_ore",
+    "et_ultra:water_ice_iron_ore",
+    "et_ultra:water_ice_lapis_ore",
+    "et_ultra:water_ice_lutrum_ore",
+    "et_ultra:nitrogen_ice_copper_ore",
+    "et_ultra:nitrogen_ice_iron_ore",
+    "et_ultra:nitrogen_ice_lapis_ore",
+    "et_ultra:nitrogen_ice_lutrum_ore",
+    "et_ultra:oxygen_ice_copper_ore",
+    "et_ultra:oxygen_ice_iron_ore",
+    "et_ultra:oxygen_ice_lapis_ore",
+    "et_ultra:oxygen_ice_lutrum_ore"
   ]
 }

@@ -1,6 +1,9 @@
 {
   "values": [
     "et_ultra:frigus_coal_ore",
-    "et_ultra:frigus_deepslate_coal_ore"
+    "et_ultra:frigus_deepslate_coal_ore",
+    "et_ultra:water_ice_coal_ore",
+    "et_ultra:nitrogen_ice_coal_ore",
+    "et_ultra:oxygen_ice_coal_ore"
   ]
 }

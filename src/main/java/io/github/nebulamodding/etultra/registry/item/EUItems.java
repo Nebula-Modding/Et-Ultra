@@ -49,6 +49,15 @@ public class EUItems {
             "malunite_plate",
             "malunite_rod"
     );
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> LUTRUM_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            "raw_lutrum",
+            "lutrum_nugget",
+            "lutrum_ingot",
+            "lutrum_plate",
+            "lutrum_rod"
+    );
 
     // Items
     public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()));
