@@ -209,6 +209,7 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
         copy(BlockTags.PLANKS, ItemTags.PLANKS);
         copy(EUTags.EUBlockTags.MAYURA_LOGS, EUTags.EUItemTags.MAYURA_LOGS);
+        copy(EUTags.EUBlockTags.GRIMWOOD_LOGS, EUTags.EUItemTags.GRIMWOOD_LOGS);
 
         /*
         Plant Tags

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/exposed_lutrum_plating_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/exposed_lutrum_plating"
+    },
+    "type=top": {
+      "model": "et_ultra:block/exposed_lutrum_plating_slab_top"
+    }
+  }
+}

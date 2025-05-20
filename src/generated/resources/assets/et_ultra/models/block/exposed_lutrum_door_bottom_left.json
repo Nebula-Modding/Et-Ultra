@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "et_ultra:block/exposed_lutrum_door_bottom",
+    "top": "et_ultra:block/exposed_lutrum_door_top"
+  }
+}

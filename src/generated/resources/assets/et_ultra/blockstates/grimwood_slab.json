@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/grimwood_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/grimwood_planks"
+    },
+    "type=top": {
+      "model": "et_ultra:block/grimwood_slab_top"
+    }
+  }
+}

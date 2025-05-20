@@ -37,8 +37,6 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> pickaxeWalls = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stonePressurePlates = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stoneButtons = new ArrayList<>();
-        final List<DeferredBlock<? extends Block>> woodenPressurePlates = new ArrayList<>();
-        final List<DeferredBlock<? extends Block>> woodenButtons = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> ices = new ArrayList<>();
         // Ores
         frigusStoneOres.add(EUBlocks.FRIGUS_COAL_ORE);
@@ -449,9 +447,16 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
                 .add(EUBlocks.MAYURA_PLANKS.get())
                 .add(EUBlocks.MAYURA_FENCE_GATE.get())
+                .add(EUBlocks.GRIMWOOD_LOG.get())
+                .add(EUBlocks.GRIMWOOD_WOOD.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_WOOD.get())
+                .add(EUBlocks.GRIMWOOD_PLANKS.get())
+                .add(EUBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(EUBlocks.MAYURA_LEAVES.get())
+                .add(EUBlocks.GRIMWOOD_LEAVES.get())
                 .add(EUBlocks.BRUMA_BLOCK.get())
         ;
         tag(BlockTags.SWORD_EFFICIENT)
@@ -533,25 +538,30 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.WOODEN_STAIRS)
                 .add(EUBlocks.MAYURA_STAIRS.get())
+                .add(EUBlocks.GRIMWOOD_STAIRS.get())
         ;
         pickaxeSlabs.forEach(entry -> tag(BlockTags.SLABS).add(entry.get()));
         tag(BlockTags.SLABS)
         ;
         tag(BlockTags.WOODEN_SLABS)
                 .add(EUBlocks.MAYURA_SLAB.get())
+                .add(EUBlocks.GRIMWOOD_SLAB.get())
         ;
         tag(BlockTags.FENCES)
         ;
         tag(BlockTags.WOODEN_FENCES)
                 .add(EUBlocks.MAYURA_FENCE.get())
+                .add(EUBlocks.GRIMWOOD_FENCE.get())
         ;
         tag(BlockTags.FENCE_GATES)
                 .add(EUBlocks.MAYURA_FENCE_GATE.get())
+                .add(EUBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
         tag(Tags.Blocks.FENCE_GATES)
         ;
         tag(Tags.Blocks.FENCE_GATES_WOODEN)
                 .add(EUBlocks.MAYURA_FENCE_GATE.get())
+                .add(EUBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
         pickaxeWalls.forEach(entry -> tag(BlockTags.WALLS).add(entry.get()));
         tag(BlockTags.WALLS)
@@ -560,11 +570,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.WOODEN_DOORS)
                 .add(EUBlocks.MAYURA_DOOR.get())
+                .add(EUBlocks.GRIMWOOD_DOOR.get())
         ;
         tag(BlockTags.TRAPDOORS)
         ;
         tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(EUBlocks.MAYURA_TRAPDOOR.get())
+                .add(EUBlocks.GRIMWOOD_TRAPDOOR.get())
         ;
         tag(BlockTags.PRESSURE_PLATES)
                 .add(EUBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
@@ -574,6 +586,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(EUBlocks.MAYURA_PRESSURE_PLATE.get())
+                .add(EUBlocks.GRIMWOOD_PRESSURE_PLATE.get())
         ;
         tag(BlockTags.BUTTONS)
                 .add(EUBlocks.MALUNITE_PLATING_BUTTON.get())
@@ -583,6 +596,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(EUBlocks.MAYURA_BUTTON.get())
+                .add(EUBlocks.GRIMWOOD_BUTTON.get())
         ;
 
         /*
@@ -798,7 +812,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.RAW_OBDURIUM_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_MALUNITE)
-                .add(EUBlocks.MALUNITE_BLOCKS.get("malunite_block").get())
+                .add(EUBlocks.MALUNITE_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(EUBlocks.RAW_MALUNITE_BLOCK.get())
@@ -845,33 +859,51 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTags.LEAVES)
                 .add(EUBlocks.MAYURA_LEAVES.get())
+                .add(EUBlocks.GRIMWOOD_LEAVES.get())
         ;
         tag(BlockTags.LOGS)
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(EUBlocks.GRIMWOOD_LOG.get())
+                .add(EUBlocks.GRIMWOOD_WOOD.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
         tag(Tags.Blocks.STRIPPED_LOGS)
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_LOG.get())
         ;
         tag(Tags.Blocks.STRIPPED_WOODS)
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(EUBlocks.GRIMWOOD_LOG.get())
+                .add(EUBlocks.GRIMWOOD_WOOD.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
         tag(BlockTags.PLANKS)
                 .add(EUBlocks.MAYURA_PLANKS.get())
+                .add(EUBlocks.GRIMWOOD_PLANKS.get())
         ;
         tag(EUTags.EUBlockTags.MAYURA_LOGS)
                 .add(EUBlocks.MAYURA_LOG.get())
                 .add(EUBlocks.MAYURA_WOOD.get())
                 .add(EUBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(EUBlocks.STRIPPED_MAYURA_WOOD.get())
+        ;
+        tag(EUTags.EUBlockTags.GRIMWOOD_LOGS)
+                .add(EUBlocks.GRIMWOOD_LOG.get())
+                .add(EUBlocks.GRIMWOOD_WOOD.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(EUBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
 
         /*

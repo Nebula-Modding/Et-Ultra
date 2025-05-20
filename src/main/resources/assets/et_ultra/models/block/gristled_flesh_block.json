@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "et_ultra:block/flesh_block",
+    "particle": "et_ultra:block/flesh_block",
+    "side": "et_ultra:block/gristled_flesh_block_side",
+    "top": "et_ultra:block/gristled_flesh_block_top"
+  }
+}

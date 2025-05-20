@@ -30,6 +30,7 @@ public class EUCreativeTab {
         final List<DeferredBlock<? extends Block>> excludedItems = new ArrayList<>();
         // Blocks excluded from the creative menu
         excludedItems.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedItems.add(EUBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedItems.add(EUBlocks.POTTED_VIVIAN);
         excludedItems.add(EUBlocks.POTTED_WICKUL);
         excludedItems.add(EUBlocks.POTTED_ICEFLOWER);

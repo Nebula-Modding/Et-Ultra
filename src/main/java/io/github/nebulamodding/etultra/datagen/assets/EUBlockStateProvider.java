@@ -35,6 +35,18 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.MAYURA_BUTTON);
         excludedBlocks.add(EUBlocks.MAYURA_SAPLING);
 
+        excludedBlocks.add(EUBlocks.GRIMWOOD_WOOD);
+        excludedBlocks.add(EUBlocks.STRIPPED_GRIMWOOD_WOOD);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_STAIRS);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_SLAB);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_FENCE);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_FENCE_GATE);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_DOOR);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_BUTTON);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_SAPLING);
+
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
@@ -142,6 +154,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
 
         excludedBlocks.add(EUBlocks.TUMOR);
+        excludedBlocks.add(EUBlocks.GRISTLED_FLESH_BLOCK);
+        excludedBlocks.add(EUBlocks.SHORT_GRISTLES);
+        excludedBlocks.add(EUBlocks.TALL_GRISTLES);
         excludedBlocks.add(EUBlocks.GORESLATE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.GORESLATE_TILE_STAIRS);
         excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"));
@@ -156,7 +171,99 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.LUTRUM_BULB);
 
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_ENCASED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATEBLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PANEL);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATING);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_GLOWING_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_MARKED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_CHISELED_LUTRUM);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATING_STAIRS);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATING_SLAB);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATING_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_PLATING_BUTTON);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATEBLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PANEL);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATING);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_GLOWING_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_MARKED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_CHISELED_LUTRUM);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATING_STAIRS);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATING_SLAB);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATING_BUTTON);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATEBLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PANEL);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATING);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_GLOWING_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_MARKED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_CHISELED_LUTRUM);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATING_STAIRS);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATING_SLAB);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATING_BUTTON);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_BULB);
+
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATEBLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PANEL);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_BLOCK);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATING);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_GLOWING_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_MARKED_LUTRUM_PILLAR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_CHISELED_LUTRUM);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_GRATE);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_SLAB);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_BULB);
+
         excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedBlocks.add(EUBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
         excludedBlocks.add(EUBlocks.POTTED_WICKUL);
         excludedBlocks.add(EUBlocks.POTTED_ICEFLOWER);
@@ -212,126 +319,154 @@ public class EUBlockStateProvider extends BlockStateProvider {
         Manual Block Models
          */
 
-        axisBlock(EUBlocks.MAYURA_WOOD, blockLoc(EUBlocks.MAYURA_LOG), blockLoc(EUBlocks.MAYURA_LOG));
-        axisBlock(EUBlocks.STRIPPED_MAYURA_WOOD, blockLoc(EUBlocks.STRIPPED_MAYURA_LOG), blockLoc(EUBlocks.STRIPPED_MAYURA_LOG));
-        stairsBlock(EUBlocks.MAYURA_STAIRS, blockLoc(EUBlocks.MAYURA_PLANKS));
-        slabBlock(EUBlocks.MAYURA_SLAB, blockLoc(EUBlocks.MAYURA_PLANKS), blockLoc(EUBlocks.MAYURA_PLANKS));
-        fenceBlock(EUBlocks.MAYURA_FENCE, blockLoc(EUBlocks.MAYURA_PLANKS));
-        fenceGateBlock(EUBlocks.MAYURA_FENCE_GATE, blockLoc(EUBlocks.MAYURA_PLANKS));
-        doorBlockWithRenderType(EUBlocks.MAYURA_DOOR, blockLoc(EUBlocks.MAYURA_DOOR, "bottom"), blockLoc(EUBlocks.MAYURA_DOOR, "top"), "cutout");
-        trapDoorBlockWithRenderType(EUBlocks.MAYURA_TRAPDOOR, blockLoc(EUBlocks.MAYURA_TRAPDOOR), true, "cutout");
-        pressurePlateBlock(EUBlocks.MAYURA_PRESSURE_PLATE, blockLoc(EUBlocks.MAYURA_PLANKS));
-        buttonBlock(EUBlocks.MAYURA_BUTTON, blockLoc(EUBlocks.MAYURA_PLANKS));
+        axisBlockWithItem(EUBlocks.MAYURA_WOOD, blockLoc(EUBlocks.MAYURA_LOG), blockLoc(EUBlocks.MAYURA_LOG));
+        axisBlockWithItem(EUBlocks.STRIPPED_MAYURA_WOOD, blockLoc(EUBlocks.STRIPPED_MAYURA_LOG), blockLoc(EUBlocks.STRIPPED_MAYURA_LOG));
+        stairsBlockWithItem(EUBlocks.MAYURA_STAIRS, blockLoc(EUBlocks.MAYURA_PLANKS));
+        slabBlockWithItem(EUBlocks.MAYURA_SLAB, blockLoc(EUBlocks.MAYURA_PLANKS), blockLoc(EUBlocks.MAYURA_PLANKS));
+        fenceBlockWithItem(EUBlocks.MAYURA_FENCE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        fenceGateBlockWithItem(EUBlocks.MAYURA_FENCE_GATE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        doorBlockWithItem(EUBlocks.MAYURA_DOOR, blockLoc(EUBlocks.MAYURA_DOOR, "bottom"), blockLoc(EUBlocks.MAYURA_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.MAYURA_TRAPDOOR, blockLoc(EUBlocks.MAYURA_TRAPDOOR), true, "cutout");
+        pressurePlateBlockWithItem(EUBlocks.MAYURA_PRESSURE_PLATE, blockLoc(EUBlocks.MAYURA_PLANKS));
+        buttonBlockWithItem(EUBlocks.MAYURA_BUTTON, blockLoc(EUBlocks.MAYURA_PLANKS));
         simpleBlock(EUBlocks.MAYURA_SAPLING.get(), models().cross(EUBlocks.MAYURA_SAPLING.getId().getPath(), blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
 
-        simpleBlockWithoutItem(EUBlocks.FRIGUS_SHORT_GRASS, models().cross(EUBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(EUBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
-        simpleBlockWithoutItem(EUBlocks.VIVIAN, models().cross("vivian", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
-        simpleBlockWithoutItem(EUBlocks.WICKUL, models().cross("wickul", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
-        simpleBlockWithoutItem(EUBlocks.ICEFLOWER, models().cross("iceflower", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
+        axisBlockWithItem(EUBlocks.GRIMWOOD_WOOD, blockLoc(EUBlocks.GRIMWOOD_LOG), blockLoc(EUBlocks.GRIMWOOD_LOG));
+        axisBlockWithItem(EUBlocks.STRIPPED_GRIMWOOD_WOOD, blockLoc(EUBlocks.STRIPPED_GRIMWOOD_LOG), blockLoc(EUBlocks.STRIPPED_GRIMWOOD_LOG));
+        stairsBlockWithItem(EUBlocks.GRIMWOOD_STAIRS, blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        slabBlockWithItem(EUBlocks.GRIMWOOD_SLAB, blockLoc(EUBlocks.GRIMWOOD_PLANKS), blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        fenceBlockWithItem(EUBlocks.GRIMWOOD_FENCE, blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        fenceGateBlockWithItem(EUBlocks.GRIMWOOD_FENCE_GATE, blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        doorBlockWithItem(EUBlocks.GRIMWOOD_DOOR, blockLoc(EUBlocks.GRIMWOOD_DOOR, "bottom"), blockLoc(EUBlocks.GRIMWOOD_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.GRIMWOOD_TRAPDOOR, blockLoc(EUBlocks.GRIMWOOD_TRAPDOOR), true, "cutout");
+        pressurePlateBlockWithItem(EUBlocks.GRIMWOOD_PRESSURE_PLATE, blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        buttonBlockWithItem(EUBlocks.GRIMWOOD_BUTTON, blockLoc(EUBlocks.GRIMWOOD_PLANKS));
+        simpleBlock(EUBlocks.GRIMWOOD_SAPLING.get(), models().cross(EUBlocks.GRIMWOOD_SAPLING.getId().getPath(), blockLoc(EUBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
 
-        stairsBlock(EUBlocks.FRIGUS_MUD_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
-        slabBlock(EUBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS), blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
-        wallBlock(EUBlocks.FRIGUS_MUD_BRICK_WALL, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+        simpleBlock(EUBlocks.FRIGUS_SHORT_GRASS.get(), models().cross(EUBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(EUBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
+        simpleBlock(EUBlocks.VIVIAN.get(), models().cross("vivian", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
+        simpleBlock(EUBlocks.WICKUL.get(), models().cross("wickul", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
+        simpleBlock(EUBlocks.ICEFLOWER.get(), models().cross("iceflower", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
 
-        stairsBlock(EUBlocks.FRIGUS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
-        slabBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
-        wallBlock(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        stairsBlockWithItem(EUBlocks.FRIGUS_MUD_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+        slabBlockWithItem(EUBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS), blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
+        wallBlockWithItem(EUBlocks.FRIGUS_MUD_BRICK_WALL, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
 
-        stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
-        stairsBlock(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
-        slabBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
-        slabBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
-        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
-        wallBlock(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+        stairsBlockWithItem(EUBlocks.FRIGUS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        slabBlockWithItem(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        wallBlockWithItem(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
 
-        stairsBlock(EUBlocks.PERMAFROST_BRICK_STAIRS, blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        stairsBlock(EUBlocks.PERMAFROST_TILE_STAIRS, blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
-        slabBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        slabBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
-        wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        wallBlock(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+        stairsBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        stairsBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+        slabBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        slabBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_slab"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
+        wallBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_brick_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
+        wallBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS_CONTINUED.get("frigus_deepslate_tile_wall"), blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));
 
-        stairsBlock(EUBlocks.WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
-        slabBlock(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
-        wallBlock(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
-        stairsBlock(EUBlocks.BLACK_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
-        slabBlock(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
-        wallBlock(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.PERMAFROST_BRICK_STAIRS, blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
+        stairsBlockWithItem(EUBlocks.PERMAFROST_TILE_STAIRS, blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+        slabBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
+        slabBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+        wallBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
+        wallBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
 
-        stairsBlock(EUBlocks.METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
-        slabBlock(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
-        wallBlock(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_wall"), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_POOR_METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_RICH_METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        slabBlockWithItem(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        wallBlockWithItem(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.BLACK_WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
+        slabBlockWithItem(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
+        wallBlockWithItem(EUBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"), blockLoc(EUBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks")));
 
-        stairsBlock(EUBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
-        slabBlock(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
-        wallBlock(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
+        slabBlockWithItem(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
+        wallBlockWithItem(EUBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_wall"), blockLoc(EUBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_POOR_METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_RICH_METHANE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks")));
 
-        stairsBlock(EUBlocks.AMMONIA_ICE_BRICK_STAIRS, blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
-        slabBlock(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
-        wallBlock(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
+        slabBlockWithItem(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
+        wallBlockWithItem(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks")));
 
-        stairsBlock(EUBlocks.NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
-        slabBlock(EUBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_slab"), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
-        wallBlock(EUBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_wall"), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
-        stairsBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
-        slabBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
-        wallBlock(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
-        stairsBlock(EUBlocks.RED_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
-        slabBlock(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
-        wallBlock(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.AMMONIA_ICE_BRICK_STAIRS, blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
+        slabBlockWithItem(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
+        wallBlockWithItem(EUBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"), blockLoc(EUBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks")));
+
+        stairsBlockWithItem(EUBlocks.NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
+        slabBlockWithItem(EUBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_slab"), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
+        wallBlockWithItem(EUBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_wall"), blockLoc(EUBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
+        slabBlockWithItem(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
+        wallBlockWithItem(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.RED_NITROGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        slabBlockWithItem(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
+        wallBlockWithItem(EUBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"), blockLoc(EUBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
         
-        stairsBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
-        slabBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
-        wallBlock(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
+        slabBlockWithItem(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
+        wallBlockWithItem(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"), blockLoc(EUBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
 
-        stairsBlock(EUBlocks.OXYGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
-        slabBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
-        wallBlock(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
+        stairsBlockWithItem(EUBlocks.OXYGEN_ICE_BRICK_STAIRS, blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
+        slabBlockWithItem(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
+        wallBlockWithItem(EUBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"), blockLoc(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks")));
 
-        stairsBlock(EUBlocks.CUT_SALT_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-        slabBlock(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-        wallBlock(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        stairsBlockWithItem(EUBlocks.CUT_SALT_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        slabBlockWithItem(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
+        wallBlockWithItem(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"), blockLoc(EUBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
         
-        stairsBlock(EUBlocks.CUT_GRAPHITE_BRICK_STAIRS, blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-        slabBlock(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-        wallBlock(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        stairsBlockWithItem(EUBlocks.CUT_GRAPHITE_BRICK_STAIRS, blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        slabBlockWithItem(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
+        wallBlockWithItem(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"), blockLoc(EUBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
         
-        stairsBlock(EUBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
-        slabBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
-        wallBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+        stairsBlockWithItem(EUBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+        slabBlockWithItem(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+        wallBlockWithItem(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
 
-        stairsBlock(EUBlocks.GORESLATE_BRICK_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        stairsBlock(EUBlocks.GORESLATE_TILE_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
-        slabBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        slabBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
-        wallBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        wallBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
+        simpleBlock(EUBlocks.SHORT_GRISTLES.get(), models().cross(EUBlocks.SHORT_GRISTLES.getId().getPath(), blockLoc(EUBlocks.SHORT_GRISTLES)).renderType("cutout"));
+        simpleBlock(EUBlocks.TALL_GRISTLES.get(), models().cross(EUBlocks.TALL_GRISTLES.getId().getPath(), blockLoc(EUBlocks.TALL_GRISTLES)).renderType("cutout"));
+        stairsBlockWithItem(EUBlocks.GORESLATE_BRICK_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        stairsBlockWithItem(EUBlocks.GORESLATE_TILE_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
+        slabBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        slabBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
+        wallBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        wallBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
 
-        doorBlockWithRenderType(EUBlocks.LUTRUM_DOOR, blockLoc(EUBlocks.LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithRenderType(EUBlocks.LUTRUM_TRAPDOOR, blockLoc(EUBlocks.LUTRUM_TRAPDOOR), true, "cutout");
+        simpleBlockWithItem(EUBlocks.LUTRUM_GRATE.get(), models().cubeAll("lutrum_grate", blockLoc(EUBlocks.LUTRUM_GRATE)).renderType("cutout"));
+        doorBlockWithItem(EUBlocks.LUTRUM_DOOR, blockLoc(EUBlocks.LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.LUTRUM_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.LUTRUM_TRAPDOOR, blockLoc(EUBlocks.LUTRUM_TRAPDOOR), true, "cutout");
+
+        simpleBlockWithItem(EUBlocks.EXPOSED_LUTRUM_GRATE.get(), models().cubeAll("exposed_lutrum_grate", blockLoc(EUBlocks.EXPOSED_LUTRUM_GRATE)).renderType("cutout"));
+        doorBlockWithItem(EUBlocks.EXPOSED_LUTRUM_DOOR, blockLoc(EUBlocks.EXPOSED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.EXPOSED_LUTRUM_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR), true, "cutout");
+
+        simpleBlockWithItem(EUBlocks.WEATHERED_LUTRUM_GRATE.get(), models().cubeAll("weathered_lutrum_grate", blockLoc(EUBlocks.WEATHERED_LUTRUM_GRATE)).renderType("cutout"));
+        doorBlockWithItem(EUBlocks.WEATHERED_LUTRUM_DOOR, blockLoc(EUBlocks.WEATHERED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.WEATHERED_LUTRUM_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR), true, "cutout");
+
+        simpleBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_GRATE.get(), models().cubeAll("oxidized_lutrum_grate", blockLoc(EUBlocks.OXIDIZED_LUTRUM_GRATE)).renderType("cutout"));
+        doorBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_DOOR, blockLoc(EUBlocks.OXIDIZED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.OXIDIZED_LUTRUM_DOOR, "top"), "cutout");
+        trapDoorBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR), true, "cutout");
 
         simpleBlock(EUBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.MAYURA_SAPLING)).renderType("cutout"));
+        simpleBlock(EUBlocks.POTTED_GRIMWOOD_SAPLING.get(), models().withExistingParent(EUBlocks.POTTED_GRIMWOOD_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
         simpleBlock(EUBlocks.POTTED_VIVIAN.get(), models().withExistingParent(EUBlocks.POTTED_VIVIAN.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(EUBlocks.POTTED_WICKUL.get(), models().withExistingParent(EUBlocks.POTTED_WICKUL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.WICKUL)).renderType("cutout"));
         simpleBlock(EUBlocks.POTTED_ICEFLOWER.get(), models().withExistingParent(EUBlocks.POTTED_ICEFLOWER.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(EUBlocks.ICEFLOWER)).renderType("cutout"));
@@ -344,46 +479,54 @@ public class EUBlockStateProvider extends BlockStateProvider {
     public void simpleBlockWithoutItem(DeferredBlock<? extends Block> block, ModelFile model) {
         super.simpleBlock(block.get(), model);
     }
-    public void axisBlock(DeferredBlock<Block> block, ResourceLocation texture, ResourceLocation texture2) {
+    public void axisBlockWithItem(DeferredBlock<Block> block, ResourceLocation texture, ResourceLocation texture2) {
         super.axisBlock((RotatedPillarBlock) block.get(), texture, texture2);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    private void stairsBlock(DeferredBlock<Block> block, ResourceLocation texture) {
+    private void stairsBlockWithItem(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    private void slabBlock(DeferredBlock<? extends Block> block, ResourceLocation doubleslab, ResourceLocation texture) {
+    private void slabBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation doubleslab, ResourceLocation texture) {
         super.slabBlock((SlabBlock) block.get(), doubleslab, texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    private void fenceBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+    private void fenceBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceBlock((FenceBlock) block.get(), texture);
         models().fenceInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
-    private void fenceGateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+    private void fenceGateBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceGateBlock((FenceGateBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    private void pressurePlateBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+    private void pressurePlateBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.pressurePlateBlock((PressurePlateBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    public void buttonBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+    public void buttonBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.buttonBlock((ButtonBlock) block.get(), texture);
         models().buttonInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
-    public void wallBlock(DeferredBlock<? extends Block> block, ResourceLocation texture) {
+    public void wallBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.wallBlock((WallBlock) block.get(), texture);
         models().wallInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
-    public void doorBlockWithRenderType(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top, String renderType) {
+    public void doorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top) {
+        super.doorBlock((DoorBlock) block.get(), bottom, top);
+    }
+    public void doorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top, String renderType) {
         super.doorBlockWithRenderType((DoorBlock) block.get(), bottom, top, renderType);
     }
-    public void trapDoorBlockWithRenderType(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable, String renderType) {
+    public void trapDoorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable) {
+        super.trapdoorBlock((TrapDoorBlock) block.get(), texture, orientable);
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
+    }
+    public void trapDoorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable, String renderType) {
         super.trapdoorBlockWithRenderType((TrapDoorBlock) block.get(), texture, orientable, renderType);
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
     }
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());

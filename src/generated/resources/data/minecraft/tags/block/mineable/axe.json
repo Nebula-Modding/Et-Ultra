@@ -6,6 +6,12 @@
     "et_ultra:stripped_mayura_log",
     "et_ultra:stripped_mayura_wood",
     "et_ultra:mayura_planks",
-    "et_ultra:mayura_fence_gate"
+    "et_ultra:mayura_fence_gate",
+    "et_ultra:grimwood_log",
+    "et_ultra:grimwood_wood",
+    "et_ultra:stripped_grimwood_log",
+    "et_ultra:stripped_grimwood_wood",
+    "et_ultra:grimwood_planks",
+    "et_ultra:grimwood_fence_gate"
   ]
 }

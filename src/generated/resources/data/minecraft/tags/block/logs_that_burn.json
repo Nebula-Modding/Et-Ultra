@@ -3,6 +3,10 @@
     "et_ultra:mayura_log",
     "et_ultra:mayura_wood",
     "et_ultra:stripped_mayura_log",
-    "et_ultra:stripped_mayura_wood"
+    "et_ultra:stripped_mayura_wood",
+    "et_ultra:grimwood_log",
+    "et_ultra:grimwood_wood",
+    "et_ultra:stripped_grimwood_log",
+    "et_ultra:stripped_grimwood_wood"
   ]
 }

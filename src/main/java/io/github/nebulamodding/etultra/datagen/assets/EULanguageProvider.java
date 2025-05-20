@@ -41,11 +41,11 @@ public class EULanguageProvider extends LanguageProvider {
         excludedBlocks.add(EUBlocks.BRUMA_BLOCK);
         excludedBlocks.add(EUBlocks.RAW_OBDURIUM_BLOCK);
         excludedBlocks.add(EUBlocks.RAW_MALUNITE_BLOCK);
-        excludedBlocks.add(EUBlocks.AMALGAMATED_ALLOY_BLOCK);
+        excludedBlocks.add(EUBlocks.LUTRUM_AMALGAMATE_BLOCK);
         excludedBlocks.add(EUBlocks.RAW_LUTRUM_BLOCK);
 
         excludedBlocks.add(EUBlocks.OBDURIUM_BLOCK);
-        excludedBlocks.add(EUBlocks.MALUNITE_BLOCKS.get("malunite_block"));
+        excludedBlocks.add(EUBlocks.MALUNITE_BLOCK);
         excludedBlocks.add(EUBlocks.LUTRUM_BLOCK);
 
         final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
@@ -73,11 +73,11 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.BRUMA_BLOCK, "Bruma Bale");
         addBlock(EUBlocks.RAW_OBDURIUM_BLOCK, "Block of Raw Obdurium");
         addBlock(EUBlocks.RAW_MALUNITE_BLOCK, "Block of Raw Malunite");
-        addBlock(EUBlocks.AMALGAMATED_ALLOY_BLOCK, "Block of Amalgamated Alloy");
+        addBlock(EUBlocks.LUTRUM_AMALGAMATE_BLOCK, "Block of Lutrum Amalgamate");
         addBlock(EUBlocks.RAW_LUTRUM_BLOCK, "Block of Raw Lutrum");
 
         addBlock(EUBlocks.OBDURIUM_BLOCK, "Block of Obdurium");
-        addBlock(EUBlocks.MALUNITE_BLOCKS.get("malunite_block"), "Block of Malunite");
+        addBlock(EUBlocks.MALUNITE_BLOCK, "Block of Malunite");
         addBlock(EUBlocks.LUTRUM_BLOCK, "Block of Lutrum");
 
         // Items
@@ -124,6 +124,7 @@ public class EULanguageProvider extends LanguageProvider {
         add(EUTags.EUBlockTags.FRIGUS_DEEPSLATE_ORE_REPLACEABLES, "Frigus Deepslate Ore Replaceables");
         add(EUTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD, "Convertable to Frigus Mud");
         add(EUTags.EUBlockTags.MAYURA_LOGS, "Mayura Logs");
+        add(EUTags.EUBlockTags.GRIMWOOD_LOGS, "Grimwood Logs");
 
         // Block Item Tags
         add(EUTags.EUItemTags.COBBLESTONES_FRIGUS_STONE, "Frigus Stone Cobblestones");
@@ -152,6 +153,7 @@ public class EULanguageProvider extends LanguageProvider {
         add(EUTags.EUItemTags.STORAGE_BLOCKS_RAW_LUTRUM, "Raw Lutrum Storage Blocks");
         // Et Ultra Tags
         add(EUTags.EUItemTags.MAYURA_LOGS, "Mayura Logs");
+        add(EUTags.EUItemTags.GRIMWOOD_LOGS, "Grimwood Logs");
 
         // Item Tags
         add(EUTags.EUItemTags.PLATES, "Plates");

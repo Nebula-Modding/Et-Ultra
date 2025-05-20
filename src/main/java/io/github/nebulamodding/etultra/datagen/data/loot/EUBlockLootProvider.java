@@ -35,6 +35,8 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         // Blocks excluded from having a drop automatically provided
         excludedBlocks.add(EUBlocks.MAYURA_DOOR);
         excludedBlocks.add(EUBlocks.MAYURA_LEAVES);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_DOOR);
+        excludedBlocks.add(EUBlocks.GRIMWOOD_LEAVES);
         excludedBlocks.add(EUBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(EUBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(EUBlocks.FRIGUS_FARMLAND);
@@ -113,8 +115,9 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(EUBlocks.OXYGEN_ICE_MALUNITE_ORE);
         excludedBlocks.add(EUBlocks.OXYGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(EUBlocks.BRAINROCK);
-        excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
         excludedBlocks.add(EUBlocks.LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
+        excludedBlocks.add(EUBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
         excludedBlocks.add(EUBlocks.POTTED_WICKUL);
         excludedBlocks.add(EUBlocks.POTTED_ICEFLOWER);
@@ -124,6 +127,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
          */
 
         add(EUBlocks.MAYURA_LEAVES.get(), b -> createLeavesDrops(b, EUBlocks.MAYURA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(EUBlocks.GRIMWOOD_LEAVES.get(), b -> createLeavesDrops(b, EUBlocks.GRIMWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         add(EUBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(EUBlocks.FRIGUS_DIRT.get()));
         add(EUBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, EUBlocks.FRIGUS_DIRT.get()));
@@ -152,6 +156,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
          */
 
         add(EUBlocks.MAYURA_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.GRIMWOOD_DOOR.get(), this::createDoorTable);
         add(EUBlocks.LUTRUM_DOOR.get(), this::createDoorTable);
 
         /*
@@ -222,6 +227,7 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         dropPottedContents(EUBlocks.POTTED_VIVIAN.get());
         dropPottedContents(EUBlocks.POTTED_WICKUL.get());
         dropPottedContents(EUBlocks.POTTED_ICEFLOWER.get());
+        dropPottedContents(EUBlocks.POTTED_GRIMWOOD_SAPLING.get());
 
         /*
         Automated Loot Tables

@@ -46,6 +46,7 @@ public class EtUltra {
         LOGGER.info("Et Ultra common setup message");
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.MAYURA_SAPLING.getId(), EUBlocks.POTTED_MAYURA_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.GRIMWOOD_SAPLING.getId(), EUBlocks.POTTED_GRIMWOOD_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.VIVIAN.getId(), EUBlocks.POTTED_VIVIAN);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.WICKUL.getId(), EUBlocks.POTTED_WICKUL);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(EUBlocks.ICEFLOWER.getId(), EUBlocks.POTTED_ICEFLOWER);

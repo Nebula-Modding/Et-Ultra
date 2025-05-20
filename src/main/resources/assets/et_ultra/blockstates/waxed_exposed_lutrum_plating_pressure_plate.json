@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "et_ultra:block/exposed_lutrum_plating_pressure_plate"
+    },
+    "powered=true": {
+      "model": "et_ultra:block/exposed_lutrum_plating_pressure_plate_down"
+    }
+  }
+}

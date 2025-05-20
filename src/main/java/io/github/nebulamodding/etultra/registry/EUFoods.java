@@ -36,6 +36,12 @@ public class EUFoods {
             .saturationModifier(0.2F)
             .effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F)
             .build();
+    public static final FoodProperties VEIN_STALK = new FoodProperties.Builder()
+            .nutrition(-1)
+            .saturationModifier(-0.8F)
+            .effect(new MobEffectInstance(MobEffects.REGENERATION, 40, 0), 1.0F)
+            .alwaysEdible()
+            .build();
     public static final FoodProperties COOKED_FLESH = new FoodProperties.Builder()
             .nutrition(8)
             .saturationModifier(0.6F)

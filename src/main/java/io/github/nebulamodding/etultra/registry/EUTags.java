@@ -86,7 +86,8 @@ public class EUTags {
                 CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud"),
 
                 // Logs
-                MAYURA_LOGS = blockTag("mayura_logs")
+                MAYURA_LOGS = blockTag("mayura_logs"),
+                GRIMWOOD_LOGS = blockTag("grimwood_logs")
         ;
     }
     public static class EUItemTags {
@@ -131,7 +132,8 @@ public class EUTags {
                  */
 
                 // Logs
-                MAYURA_LOGS = itemTag("mayura_logs")
+                MAYURA_LOGS = itemTag("mayura_logs"),
+                GRIMWOOD_LOGS = itemTag("grimwood_logs")
         ;
         // Items
         public static final TagKey<Item>

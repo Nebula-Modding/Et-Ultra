@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "et_ultra:block/exposed_lutrum_plating"
+  }
+}

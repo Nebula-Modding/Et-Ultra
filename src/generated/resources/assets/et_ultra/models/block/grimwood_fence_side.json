@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "et_ultra:block/grimwood_planks"
+  }
+}

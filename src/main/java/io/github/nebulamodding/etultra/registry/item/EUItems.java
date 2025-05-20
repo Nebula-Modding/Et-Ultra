@@ -25,7 +25,8 @@ public class EUItems {
 
     public static final DeferredItem<Item>
             FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(EUFoods.FLESH))),
-            COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(EUFoods.COOKED_FLESH)));
+            COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(EUFoods.COOKED_FLESH))),
+            VEIN_STALK = ITEMS.register("vein_stalk", () -> new Item(new Item.Properties().food(EUFoods.VEIN_STALK)));
 
     /*
     Metal Items

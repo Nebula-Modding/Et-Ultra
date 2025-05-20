@@ -8,6 +8,7 @@ import static net.minecraft.world.level.block.state.properties.BlockSetType.regi
 
 public class EUBlockSetTypes {
     public static final BlockSetType MAYURA = register(new BlockSetType("mayura"));
+    public static final BlockSetType GRIMWOOD = register(new BlockSetType("grimwood"));
     public static final BlockSetType OBDURIUM = register(
             new BlockSetType(
                     "obdurium",
