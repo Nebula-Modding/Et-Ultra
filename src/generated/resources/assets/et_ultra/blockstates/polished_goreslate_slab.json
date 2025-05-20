@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/polished_goreslate_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/polished_goreslate"
+    },
+    "type=top": {
+      "model": "et_ultra:block/polished_goreslate_slab_top"
+    }
+  }
+}

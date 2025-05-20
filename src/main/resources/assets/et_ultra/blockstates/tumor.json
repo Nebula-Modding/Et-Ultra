@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=down": [
+      {
+        "model": "et_ultra:block/tumor",
+        "x": 180
+      },
+      {
+        "model": "et_ultra:block/tumor_alt",
+        "x": 180
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "et_ultra:block/tumor",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "et_ultra:block/tumor_alt",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "et_ultra:block/tumor",
+        "x": 90
+      },
+      {
+        "model": "et_ultra:block/tumor_alt",
+        "x": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "et_ultra:block/tumor",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "et_ultra:block/tumor_alt",
+        "x": 90,
+        "y": 180
+      }
+    ],
+    "facing=up": [
+      {
+        "model": "et_ultra:block/tumor"
+      },
+      {
+        "model": "et_ultra:block/tumor_alt"
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "et_ultra:block/tumor",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "et_ultra:block/tumor_alt",
+        "x": 90,
+        "y": 270
+      }
+    ]
+  }
+}

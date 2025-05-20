@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "et_ultra:block/graphite_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "et_ultra:block/graphite_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "et_ultra:block/graphite_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "et_ultra:block/graphite_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "et_ultra:block/graphite_cluster"
+    },
+    "facing=west": {
+      "model": "et_ultra:block/graphite_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

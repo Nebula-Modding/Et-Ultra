@@ -58,6 +58,10 @@ public class EUItemModelProvider extends ItemModelProvider {
         blockItemModel(EUBlocks.WICKUL, EUBlocks.WICKUL, GENERATED);
         blockItemModel(EUBlocks.ICEFLOWER, EUBlocks.ICEFLOWER, GENERATED);
 
+        blockItemModel(EUBlocks.GRAPHITE_CLUSTER, EUBlocks.GRAPHITE_CLUSTER, GENERATED);
+
+        blockItemModel(EUBlocks.TUMOR, EUBlocks.TUMOR, GENERATED);
+
         blockModel(EUBlocks.LUTRUM_GRATE);
         itemModel(EUBlocks.LUTRUM_DOOR, GENERATED);
         blockModel(EUBlocks.LUTRUM_TRAPDOOR, "bottom");

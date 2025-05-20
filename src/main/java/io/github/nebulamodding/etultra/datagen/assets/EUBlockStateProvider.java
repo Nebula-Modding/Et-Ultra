@@ -132,6 +132,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"));
         excludedBlocks.add(EUBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"));
 
+        excludedBlocks.add(EUBlocks.GRAPHITE_CLUSTER);
         excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"));
         excludedBlocks.add(EUBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"));
@@ -139,6 +140,16 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.CUT_SULFUR_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"));
         excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
+
+        excludedBlocks.add(EUBlocks.TUMOR);
+        excludedBlocks.add(EUBlocks.GORESLATE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.GORESLATE_TILE_STAIRS);
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"));
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"));
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"));
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"));
+        excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"));
 
         excludedBlocks.add(EUBlocks.LUTRUM_GRATE);
         excludedBlocks.add(EUBlocks.LUTRUM_DOOR);
@@ -309,6 +320,13 @@ public class EUBlockStateProvider extends BlockStateProvider {
         stairsBlock(EUBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
         slabBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
         wallBlock(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
+
+        stairsBlock(EUBlocks.GORESLATE_BRICK_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        stairsBlock(EUBlocks.GORESLATE_TILE_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
+        slabBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        slabBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
+        wallBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
+        wallBlock(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
 
         doorBlockWithRenderType(EUBlocks.LUTRUM_DOOR, blockLoc(EUBlocks.LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.LUTRUM_DOOR, "top"), "cutout");
         trapDoorBlockWithRenderType(EUBlocks.LUTRUM_TRAPDOOR, blockLoc(EUBlocks.LUTRUM_TRAPDOOR), true, "cutout");

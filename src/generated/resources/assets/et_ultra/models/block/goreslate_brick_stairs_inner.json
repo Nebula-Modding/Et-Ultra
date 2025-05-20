@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/goreslate_bricks",
+    "side": "et_ultra:block/goreslate_bricks",
+    "top": "et_ultra:block/goreslate_bricks"
+  }
+}

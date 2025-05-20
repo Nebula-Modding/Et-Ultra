@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "et_ultra:block/polished_goreslate",
+    "side": "et_ultra:block/polished_goreslate",
+    "top": "et_ultra:block/polished_goreslate"
+  }
+}

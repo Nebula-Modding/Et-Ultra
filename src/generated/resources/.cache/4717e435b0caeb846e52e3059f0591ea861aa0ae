@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-18T00:06:43.7290963	Item Models: et_ultra
+// 1.21.1	2025-05-19T22:12:37.6947541	Item Models: et_ultra
 92913d44165095a7246b46bad48552f88ba9b305 assets/et_ultra/models/item/azure_root.json
 f0d37e0871347e13409a055fbe75913da58c1717 assets/et_ultra/models/item/bruma.json
 ae8867bb316f0374c32a55cd0ca4bc8c1c8cce52 assets/et_ultra/models/item/bruma_loaf.json
@@ -10,6 +10,7 @@ f8a105b9db1a577ed6beae06f93ae94cb78b2c4b assets/et_ultra/models/item/frigus_farm
 c6443bfec422f02e769f0de7e419731ad5b04a98 assets/et_ultra/models/item/frigus_grass_block.json
 f19b91532c311d32d6a430dbc5d662db807b5284 assets/et_ultra/models/item/frigus_short_grass.json
 6de2dc5484e3e4e90e81c675ac89879f8ceca70e assets/et_ultra/models/item/golden_azure_root.json
+20f64cbc8bbe634b27e1da6ecf21ce3a99218ccd assets/et_ultra/models/item/graphite_cluster.json
 e69997f8215f5ec52e795e5fe5793c06668322e2 assets/et_ultra/models/item/iceflower.json
 9abf3a70a99a22278590a2d26a36c8c283de9e4c assets/et_ultra/models/item/lutrum_bulb.json
 4696b5e05b950bdb5ec82cb510cfbbc03195e9c0 assets/et_ultra/models/item/lutrum_door.json
@@ -35,5 +36,6 @@ e5e88b7c26d57ac15a276ae994a71382b6d7c4fe assets/et_ultra/models/item/pencil.json
 33a1db65f08b0da86c3ec295f599a67ce2c54f9d assets/et_ultra/models/item/raw_lutrum.json
 6786c03ea0ecafc9821e7491dbffcc47ee66e718 assets/et_ultra/models/item/raw_malunite.json
 7f79cb2f4d252ffcdacd11bd1e94837d5a920a5b assets/et_ultra/models/item/raw_obdurium.json
+b29516f1c1faef4e8f7659435995a3045b9e7eed assets/et_ultra/models/item/tumor.json
 f1a119132a5561a47b0fdc4368c0d71b158a3314 assets/et_ultra/models/item/vivian.json
 0282f5d6b0fdd5af07a3c44b396da3a51f4a2c21 assets/et_ultra/models/item/wickul.json

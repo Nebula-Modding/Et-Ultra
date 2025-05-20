@@ -792,7 +792,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.BRUMA_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
-                .add(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_block").get())
+                .add(EUBlocks.OBDURIUM_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
                 .add(EUBlocks.RAW_OBDURIUM_BLOCK.get())
@@ -804,7 +804,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.RAW_MALUNITE_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_LUTRUM)
-                .add(EUBlocks.LUTRUM_BLOCKS.get("lutrum_block").get())
+                .add(EUBlocks.LUTRUM_BLOCK.get())
         ;
         tag(EUTags.EUBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
                 .add(EUBlocks.RAW_LUTRUM_BLOCK.get())

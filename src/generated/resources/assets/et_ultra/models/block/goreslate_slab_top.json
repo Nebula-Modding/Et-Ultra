@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "et_ultra:block/goreslate",
+    "side": "et_ultra:block/goreslate",
+    "top": "et_ultra:block/goreslate"
+  }
+}

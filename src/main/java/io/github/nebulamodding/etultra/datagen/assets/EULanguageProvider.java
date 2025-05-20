@@ -44,9 +44,9 @@ public class EULanguageProvider extends LanguageProvider {
         excludedBlocks.add(EUBlocks.AMALGAMATED_ALLOY_BLOCK);
         excludedBlocks.add(EUBlocks.RAW_LUTRUM_BLOCK);
 
-        excludedBlocks.add(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_block"));
+        excludedBlocks.add(EUBlocks.OBDURIUM_BLOCK);
         excludedBlocks.add(EUBlocks.MALUNITE_BLOCKS.get("malunite_block"));
-        excludedBlocks.add(EUBlocks.LUTRUM_BLOCKS.get("lutrum_block"));
+        excludedBlocks.add(EUBlocks.LUTRUM_BLOCK);
 
         final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
@@ -76,9 +76,9 @@ public class EULanguageProvider extends LanguageProvider {
         addBlock(EUBlocks.AMALGAMATED_ALLOY_BLOCK, "Block of Amalgamated Alloy");
         addBlock(EUBlocks.RAW_LUTRUM_BLOCK, "Block of Raw Lutrum");
 
-        addBlock(EUBlocks.OBDURIUM_BLOCKS.get("obdurium_block"), "Block of Obdurium");
+        addBlock(EUBlocks.OBDURIUM_BLOCK, "Block of Obdurium");
         addBlock(EUBlocks.MALUNITE_BLOCKS.get("malunite_block"), "Block of Malunite");
-        addBlock(EUBlocks.LUTRUM_BLOCKS.get("lutrum_block"), "Block of Lutrum");
+        addBlock(EUBlocks.LUTRUM_BLOCK, "Block of Lutrum");
 
         // Items
         addItem(EUItems.GOLDEN_AZURE_ROOT, "Golden Root");
