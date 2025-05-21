@@ -116,6 +116,13 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(EUBlocks.OXYGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(EUBlocks.BRAINROCK);
         excludedBlocks.add(EUBlocks.LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
+        excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.POTTED_MAYURA_SAPLING);
         excludedBlocks.add(EUBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(EUBlocks.POTTED_VIVIAN);
@@ -158,6 +165,13 @@ public class EUBlockLootProvider extends BlockLootSubProvider {
         add(EUBlocks.MAYURA_DOOR.get(), this::createDoorTable);
         add(EUBlocks.GRIMWOOD_DOOR.get(), this::createDoorTable);
         add(EUBlocks.LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.EXPOSED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.WEATHERED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.WAXED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.WAXED_EXPOSED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.WAXED_WEATHERED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(EUBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
 
         /*
         Ore Drops

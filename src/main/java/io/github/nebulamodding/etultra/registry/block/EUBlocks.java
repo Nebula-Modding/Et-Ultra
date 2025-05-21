@@ -1088,14 +1088,14 @@ public class EUBlocks {
 
     // Lutrum
     public static final DeferredBlock<Block>
-            LUTRUM_FACTORY_BLOCK = register("lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            LUTRUM_FACTORY_BLOCK = register("lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             ENCASED_LUTRUM_BLOCK = register("encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_PLATEBLOCK = register("lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_PANEL = register("lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_BLOCK = register("lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_PLATING = register("lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_PILLAR = register("lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            GLOWING_LUTRUM_PILLAR = register("glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GLOWING_LUTRUM_PILLAR = register("glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
             MARKED_LUTRUM_PILLAR = register("marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             CHISELED_LUTRUM = register("chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_GRATE = register("lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1106,16 +1106,15 @@ public class EUBlocks {
             LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
             LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-
     public static final DeferredBlock<Block>
-            EXPOSED_LUTRUM_FACTORY_BLOCK = register("exposed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            EXPOSED_LUTRUM_FACTORY_BLOCK = register("exposed_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_ENCASED_LUTRUM_BLOCK = register("exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_PLATEBLOCK = register("exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_PANEL = register("exposed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_BLOCK = register("exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_GLOWING_LUTRUM_PILLAR = register("exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
+            EXPOSED_GLOWING_LUTRUM_PILLAR = register("exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_MARKED_LUTRUM_PILLAR = register("exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_CHISELED_LUTRUM = register("exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_GRATE = register("exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1126,9 +1125,8 @@ public class EUBlocks {
             EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
             EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-
     public static final DeferredBlock<Block>
-            WEATHERED_LUTRUM_FACTORY_BLOCK = register("weathered_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            WEATHERED_LUTRUM_FACTORY_BLOCK = register("weathered_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WEATHERED_ENCASED_LUTRUM_BLOCK = register("weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WEATHERED_LUTRUM_PLATEBLOCK = register("weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WEATHERED_LUTRUM_PANEL = register("weathered_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1146,9 +1144,8 @@ public class EUBlocks {
             WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
             WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-
     public static final DeferredBlock<Block>
-            OXIDIZED_LUTRUM_FACTORY_BLOCK = register("oxidized_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            OXIDIZED_LUTRUM_FACTORY_BLOCK = register("oxidized_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             OXIDIZED_ENCASED_LUTRUM_BLOCK = register("oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             OXIDIZED_LUTRUM_PLATEBLOCK = register("oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             OXIDIZED_LUTRUM_PANEL = register("oxidized_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1166,7 +1163,6 @@ public class EUBlocks {
             OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             OXIDIZED_LUTRUM_TRAPDOOR = register("oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
             OXIDIZED_LUTRUM_BULB = register("oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-
     public static final DeferredBlock<Block>
             WAXED_LUTRUM_FACTORY_BLOCK = register("waxed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_ENCASED_LUTRUM_BLOCK = register("waxed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1175,7 +1171,7 @@ public class EUBlocks {
             WAXED_LUTRUM_BLOCK = register("waxed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_LUTRUM_PLATING = register("waxed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_LUTRUM_PILLAR = register("waxed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_GLOWING_LUTRUM_PILLAR = register("waxed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
+            WAXED_GLOWING_LUTRUM_PILLAR = register("waxed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_MARKED_LUTRUM_PILLAR = register("waxed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_CHISELED_LUTRUM = register("waxed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_LUTRUM_GRATE = register("waxed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1185,8 +1181,7 @@ public class EUBlocks {
             WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-
+            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
     public static final DeferredBlock<Block>
             WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK = register("waxed_exposed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK = register("waxed_exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1195,7 +1190,7 @@ public class EUBlocks {
             WAXED_EXPOSED_LUTRUM_BLOCK = register("waxed_exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_LUTRUM_PLATING = register("waxed_exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_LUTRUM_PILLAR = register("waxed_exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_GLOWING_LUTRUM_PILLAR = register("waxed_exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
+            WAXED_EXPOSED_GLOWING_LUTRUM_PILLAR = register("waxed_exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_MARKED_LUTRUM_PILLAR = register("waxed_exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_CHISELED_LUTRUM = register("waxed_exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_LUTRUM_GRATE = register("waxed_exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1205,8 +1200,7 @@ public class EUBlocks {
             WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-    
+            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
     public static final DeferredBlock<Block>
             WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK = register("waxed_weathered_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK = register("waxed_weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
@@ -1226,7 +1220,6 @@ public class EUBlocks {
             WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
-    
     public static final DeferredBlock<Block>
             WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK = register("waxed_oxidized_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
             WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK = register("waxed_oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
