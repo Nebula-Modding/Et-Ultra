@@ -82,6 +82,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
         excludedBlocks.add(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
 
+        excludedBlocks.add(EUBlocks.KARCASS_STONE_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"));
+        excludedBlocks.add(EUBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"));
+
         excludedBlocks.add(EUBlocks.WATER_ICE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"));
         excludedBlocks.add(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"));
@@ -369,6 +373,10 @@ public class EUBlockStateProvider extends BlockStateProvider {
         slabBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
         wallBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
         wallBlockWithItem(EUBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(EUBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+
+        stairsBlockWithItem(EUBlocks.KARCASS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
+        slabBlockWithItem(EUBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"), blockLoc(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")), blockLoc(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
+        wallBlockWithItem(EUBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"), blockLoc(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
 
         stairsBlockWithItem(EUBlocks.WATER_ICE_BRICK_STAIRS, blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
         slabBlockWithItem(EUBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")), blockLoc(EUBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));

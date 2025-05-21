@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "et_ultra:block/karcass_stone_slab"
+    },
+    "type=double": {
+      "model": "et_ultra:block/karcass_stone"
+    },
+    "type=top": {
+      "model": "et_ultra:block/karcass_stone_slab_top"
+    }
+  }
+}

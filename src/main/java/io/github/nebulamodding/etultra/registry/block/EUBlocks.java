@@ -44,77 +44,67 @@ public class EUBlocks {
     Wood Blocks
      */
 
-    //public static final TreeGrower MAYURA_TREE = new TreeGrower("mayura", Optional.empty(), Optional.of(EUConfiguredFeatures.TREE_MAYURA), Optional.empty());
-
     public static final DeferredBlock<Block>
-            MAYURA_LOG = register("mayura_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.COLOR_LIGHT_BLUE : MapColor.TERRACOTTA_CYAN))),
-            MAYURA_WOOD = register("mayura_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_WOOD).mapColor(MapColor.TERRACOTTA_CYAN))),
-            STRIPPED_MAYURA_LOG = register("stripped_mayura_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_LOG).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            STRIPPED_MAYURA_WOOD = register("stripped_mayura_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_WOOD).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_PLANKS = register("mayura_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_STAIRS = register("mayura_stairs", () -> new StairBlock(MAYURA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_STAIRS).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_SLAB = register("mayura_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_FENCE = register("mayura_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_FENCE_GATE = register("mayura_fence_gate", () -> new FenceGateBlock(MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            MAYURA_LOG = register("mayura_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.GLOW_LICHEN : MapColor.TERRACOTTA_LIGHT_BLUE))),
+            MAYURA_WOOD = register("mayura_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_WOOD).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            STRIPPED_MAYURA_LOG = register("stripped_mayura_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_LOG).mapColor(MapColor.GLOW_LICHEN))),
+            STRIPPED_MAYURA_WOOD = register("stripped_mayura_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_WOOD).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_PLANKS = register("mayura_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_STAIRS = register("mayura_stairs", () -> new StairBlock(MAYURA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_STAIRS).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_SLAB = register("mayura_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_FENCE = register("mayura_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_FENCE_GATE = register("mayura_fence_gate", () -> new FenceGateBlock(MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.GLOW_LICHEN))),
             MAYURA_BUTTON = register("mayura_button", () -> new ButtonBlock(EUBlockSetTypes.MAYURA, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
-            MAYURA_LEAVES = register("mayura_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            MAYURA_SAPLING = register("mayura_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.COLOR_LIGHT_BLUE)));
+            MAYURA_LEAVES = register("mayura_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_SAPLING = register("mayura_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.GLOW_LICHEN)));
 
     public static final DeferredBlock<Block>
-            GRIMWOOD_LOG = register("grimwood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.TERRACOTTA_LIGHT_BLUE : MapColor.COLOR_GRAY))),
-            GRIMWOOD_WOOD = register("grimwood_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_WOOD).mapColor(MapColor.COLOR_GRAY))),
-            STRIPPED_GRIMWOOD_LOG = register("stripped_grimwood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_LOG).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            STRIPPED_GRIMWOOD_WOOD = register("stripped_grimwood_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_WOOD).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_PLANKS = register("grimwood_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_STAIRS = register("grimwood_stairs", () -> new StairBlock(GRIMWOOD_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_STAIRS).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_SLAB = register("grimwood_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_FENCE = register("grimwood_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_FENCE_GATE = register("grimwood_fence_gate", () -> new FenceGateBlock(GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_DOOR = register("grimwood_door", () -> new DoorBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_TRAPDOOR = register("grimwood_trapdoor", () -> new TrapDoorBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_PRESSURE_PLATE = register("grimwood_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GRIMWOOD_LOG = register("grimwood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.TERRACOTTA_CYAN : MapColor.TERRACOTTA_BLACK))),
+            GRIMWOOD_WOOD = register("grimwood_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_WOOD).mapColor(MapColor.TERRACOTTA_BLACK))),
+            STRIPPED_GRIMWOOD_LOG = register("stripped_grimwood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_LOG).mapColor(MapColor.TERRACOTTA_CYAN))),
+            STRIPPED_GRIMWOOD_WOOD = register("stripped_grimwood_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_WOOD).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_PLANKS = register("grimwood_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_STAIRS = register("grimwood_stairs", () -> new StairBlock(GRIMWOOD_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_STAIRS).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_SLAB = register("grimwood_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_FENCE = register("grimwood_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_FENCE_GATE = register("grimwood_fence_gate", () -> new FenceGateBlock(GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_DOOR = register("grimwood_door", () -> new DoorBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_TRAPDOOR = register("grimwood_trapdoor", () -> new TrapDoorBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_PRESSURE_PLATE = register("grimwood_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_CYAN))),
             GRIMWOOD_BUTTON = register("grimwood_button", () -> new ButtonBlock(EUBlockSetTypes.GRIMWOOD, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
-            GRIMWOOD_LEAVES = register("grimwood_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            GRIMWOOD_SAPLING = register("grimwood_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+            GRIMWOOD_LEAVES = register("grimwood_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.SNOW))),
+            GRIMWOOD_SAPLING = register("grimwood_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.TERRACOTTA_CYAN)));
 
     /*
-    Frigus Soil Blocks
+    Frigus
      */
 
     public static final DeferredBlock<Block>
-            FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new FrigusGrassBlock(grassProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            FRIGUS_GRASS_BLOCK = register("frigus_grass_block", () -> new FrigusGrassBlock(grassProperties().mapColor(MapColor.GLOW_LICHEN))),
+            FRIGUS_DIRT = register("frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_DIRT_PATH = register("frigus_dirt_path", () -> new FrigusDirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            COARSE_FRIGUS_DIRT = register("coarse_frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_FARMLAND = register("frigus_farmland", () -> new FrigusFarmlandBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_MUD = register("frigus_mud", () -> new MudBlock(mudProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            PACKED_FRIGUS_MUD = register("packed_frigus_mud", () -> new Block(packedMudProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_MUD_BRICKS = register("frigus_mud_bricks", () -> new Block(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
+            COARSE_FRIGUS_DIRT = register("coarse_frigus_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_FARMLAND = register("frigus_farmland", () -> new FrigusFarmlandBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_MUD = register("frigus_mud", () -> new MudBlock(mudProperties().mapColor(MapColor.TERRACOTTA_BLUE))),
+            PACKED_FRIGUS_MUD = register("packed_frigus_mud", () -> new Block(packedMudProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_MUD_BRICKS = register("frigus_mud_bricks", () -> new Block(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_MUD_BRICK_STAIRS = register("frigus_mud_brick_stairs", () -> new StairBlock(FRIGUS_MUD_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_MUD_BRICKS.get()))),
-            FRIGUS_MUD_BRICK_SLAB = register("frigus_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_MUD_BRICK_WALL = register("frigus_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.COLOR_LIGHT_BLUE)));
-
-    /*
-    Frigus Plants
-     */
+            FRIGUS_MUD_BRICK_SLAB = register("frigus_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_MUD_BRICK_WALL = register("frigus_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.GLOW_LICHEN)));
 
     public static final DeferredBlock<Block>
             VIVIAN = register("vivian", () -> new FlowerBlock(MobEffects.INVISIBILITY, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             WICKUL = register("wickul", () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             ICEFLOWER = register("iceflower", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5.0F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ)));
 
-    /*
-    Frigus Stone Blocks
-     */
-
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            stoneProperties().mapColor(MapColor.ICE))
             .register(
                     "frigus_stone",
                     "frigus_cobblestone",
@@ -133,7 +123,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            stoneProperties().mapColor(MapColor.ICE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "frigus_stone_slab",
@@ -158,7 +148,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_BLUE))
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))
             .register(
                     "frigus_deepslate",
                     "cobbled_frigus_deepslate",
@@ -179,7 +169,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_DEEPSLATE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.COLOR_BLUE))
+            deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "frigus_deepslate_slab",
@@ -203,7 +193,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            stoneProperties().mapColor(MapColor.QUARTZ))
             .register(
                     "permafrost",
                     "chiseled_permafrost",
@@ -222,7 +212,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> PERMAFROST_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            stoneProperties().mapColor(MapColor.QUARTZ))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "permafrost_slab",
@@ -238,45 +228,89 @@ public class EUBlocks {
             .done();
 
     /*
+    Karcass Stone
+     */
+    
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> KARCASS_STONE_BLOCKS = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            .register(
+                    "karcass_stone",
+                    "karcass_cobblestone",
+                    "chiseled_karcass_stone",
+                    "polished_karcass_stone",
+                    "karcass_stone_bricks",
+                    "cracked_karcass_stone_bricks")
+            .setBlockFunction(RotatedPillarBlock::new)
+            .register("karcass_stone_pillar")
+            .done();
+    public static final DeferredBlock<Block>
+            KARCASS_STONE_STAIRS = register("karcass_stone_stairs", () -> new StairBlock(KARCASS_STONE_BLOCKS.get("karcass_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()))),
+            KARCASS_COBBLESTONE_STAIRS = register("karcass_cobblestone_stairs", () -> new StairBlock(KARCASS_STONE_BLOCKS.get("karcass_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()))),
+            POLISHED_KARCASS_STONE_STAIRS = register("polished_karcass_stone_stairs", () -> new StairBlock(KARCASS_STONE_BLOCKS.get("karcass_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()))),
+            KARCASS_STONE_BRICK_STAIRS = register("karcass_stone_brick_stairs", () -> new StairBlock(KARCASS_STONE_BLOCKS.get("karcass_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> KARCASS_STONE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            RegolithNeoForge.wrapBlocks(BLOCKS),
+            RegolithNeoForge.wrapItems(EUItems.ITEMS),
+            stoneProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            .setBlockFunction(SlabBlock::new)
+            .register(
+                    "karcass_stone_slab",
+                    "karcass_cobblestone_slab",
+                    "polished_karcass_stone_slab",
+                    "karcass_stone_brick_slab")
+            .setBlockFunction(WallBlock::new)
+            .register(
+                    "karcass_stone_wall",
+                    "karcass_cobblestone_wall",
+                    "polished_karcass_stone_wall",
+                    "karcass_stone_brick_wall")
+            .done();
+    public static final DeferredBlock<Block>
+            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()))),
+            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())));
+
+    /*
     Ore Blocks
      */
 
     public static final DeferredBlock<Block>
-            FRIGUS_COAL_ORE = register("frigus_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_IRON_ORE = register("frigus_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_COPPER_ORE = register("frigus_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_GOLD_ORE = register("frigus_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_REDSTONE_ORE = register("frigus_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_EMERALD_ORE = register("frigus_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_LAPIS_ORE = register("frigus_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_DIAMOND_ORE = register("frigus_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_OBDURIUM_ORE = register("frigus_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_MALUNITE_ORE = register("frigus_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            FRIGUS_LUTRUM_ORE = register("frigus_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))),
+            FRIGUS_COAL_ORE = register("frigus_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_IRON_ORE = register("frigus_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_COPPER_ORE = register("frigus_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_GOLD_ORE = register("frigus_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_REDSTONE_ORE = register("frigus_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_EMERALD_ORE = register("frigus_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_LAPIS_ORE = register("frigus_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_DIAMOND_ORE = register("frigus_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_OBDURIUM_ORE = register("frigus_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_MALUNITE_ORE = register("frigus_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
+            FRIGUS_LUTRUM_ORE = register("frigus_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
 
-            FRIGUS_DEEPSLATE_COAL_ORE = register("frigus_deepslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_IRON_ORE = register("frigus_deepslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_COPPER_ORE = register("frigus_deepslate_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_GOLD_ORE = register("frigus_deepslate_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_REDSTONE_ORE = register("frigus_deepslate_redstone_ore", () -> new RedStoneOreBlock(deepslateRedstoneOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_EMERALD_ORE = register("frigus_deepslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_LAPIS_ORE = register("frigus_deepslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_DIAMOND_ORE = register("frigus_deepslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_OBDURIUM_ORE = register("frigus_deepslate_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_MALUNITE_ORE = register("frigus_deepslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
-            FRIGUS_DEEPSLATE_LUTRUM_ORE = register("frigus_deepslate_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.COLOR_BLUE))),
+            FRIGUS_DEEPSLATE_COAL_ORE = register("frigus_deepslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_IRON_ORE = register("frigus_deepslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_COPPER_ORE = register("frigus_deepslate_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_GOLD_ORE = register("frigus_deepslate_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_REDSTONE_ORE = register("frigus_deepslate_redstone_ore", () -> new RedStoneOreBlock(deepslateRedstoneOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_EMERALD_ORE = register("frigus_deepslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_LAPIS_ORE = register("frigus_deepslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_DIAMOND_ORE = register("frigus_deepslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_OBDURIUM_ORE = register("frigus_deepslate_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_MALUNITE_ORE = register("frigus_deepslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            FRIGUS_DEEPSLATE_LUTRUM_ORE = register("frigus_deepslate_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
 
-            WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_COPPER_ORE = register("water_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_GOLD_ORE = register("water_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_REDSTONE_ORE = register("water_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.ICE))),
-            WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_OBDURIUM_ORE = register("water_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_MALUNITE_ORE = register("water_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
-            WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.ICE))),
+            WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_COPPER_ORE = register("water_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_GOLD_ORE = register("water_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_REDSTONE_ORE = register("water_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME))),
+            WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_OBDURIUM_ORE = register("water_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_MALUNITE_ORE = register("water_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
 
             NITROGEN_ICE_COAL_ORE = register("nitrogen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_IRON_ORE = register("nitrogen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
@@ -290,17 +324,17 @@ public class EUBlocks {
             NITROGEN_ICE_MALUNITE_ORE = register("nitrogen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_LUTRUM_ORE = register("nitrogen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
 
-            OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_IRON_ORE = register("oxygen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_COPPER_ORE = register("oxygen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_GOLD_ORE = register("oxygen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_REDSTONE_ORE = register("oxygen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_OBDURIUM_ORE = register("oxygen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE))),
-            OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+            OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_IRON_ORE = register("oxygen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_COPPER_ORE = register("oxygen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_GOLD_ORE = register("oxygen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_REDSTONE_ORE = register("oxygen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME))),
+            OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_OBDURIUM_ORE = register("oxygen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F)));
 
     /*
     Ice Blocks
@@ -403,7 +437,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLACK_WATER_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_BLACK))
+            iceProperties().mapColor(MapColor.TERRACOTTA_BLACK))
             .register(
                     "black_water_ice",
                     "cobbled_black_water_ice",
@@ -419,7 +453,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLACK_WATER_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_BLACK))
+            iceProperties().mapColor(MapColor.TERRACOTTA_BLACK))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "black_water_ice_slab",
@@ -531,7 +565,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.QUARTZ))
             .register(
                     "carbon_dioxide_ice",
                     "cobbled_carbon_dioxide_ice",
@@ -547,7 +581,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties())
+            iceProperties().mapColor(MapColor.QUARTZ))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "carbon_dioxide_ice_slab",
@@ -562,7 +596,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.TERRACOTTA_WHITE))
+            iceProperties().mapColor(MapColor.METAL))
             .register(
                     "tholin_poor_carbon_dioxide_ice",
                     "cobbled_tholin_poor_carbon_dioxide_ice",
@@ -578,7 +612,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.TERRACOTTA_WHITE))
+            iceProperties().mapColor(MapColor.METAL))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_poor_carbon_dioxide_ice_slab",
@@ -593,7 +627,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.STONE))
             .register(
                     "tholin_rich_carbon_dioxide_ice",
                     "cobbled_tholin_rich_carbon_dioxide_ice",
@@ -609,7 +643,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.STONE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "tholin_rich_carbon_dioxide_ice_slab",
@@ -785,7 +819,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_YELLOW))
+            iceProperties().mapColor(MapColor.SAND))
             .register(
                     "sulfur_dioxide_ice",
                     "cobbled_sulfur_dioxide_ice",
@@ -801,7 +835,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_YELLOW))
+            iceProperties().mapColor(MapColor.SAND))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "sulfur_dioxide_ice_slab",
@@ -818,7 +852,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OXYGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            iceProperties())
             .register(
                     "oxygen_ice",
                     "cobbled_oxygen_ice",
@@ -834,7 +868,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> OXYGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_LIGHT_BLUE))
+            iceProperties())
             .setBlockFunction(SlabBlock::new)
             .register(
                     "oxygen_ice_slab",
@@ -849,12 +883,12 @@ public class EUBlocks {
 
     // Salt
     public static final DeferredBlock<Block>
-            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.COLOR_YELLOW))),
-            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xDFCDDD), dustProperties().mapColor(MapColor.COLOR_YELLOW)));
+            SALT_CRYSTAL_BLOCK = register("salt_crystal_block", () -> new Block(crystalProperties().mapColor(MapColor.QUARTZ))),
+            SALT_DUST_BLOCK = register("salt_dust_block", () -> new ColoredFallingBlock(new ColorRGBA(0xDFCDDD), dustProperties().mapColor(MapColor.QUARTZ)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SALT_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
+            stoneProperties().mapColor(MapColor.QUARTZ))
             .register(
                     "cut_salt",
                     "chiseled_salt",
@@ -871,7 +905,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> CUT_SALT_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().mapColor(MapColor.COLOR_YELLOW))
+            stoneProperties().mapColor(MapColor.QUARTZ))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "cut_salt_slab",
@@ -964,17 +998,17 @@ public class EUBlocks {
      */
 
     public static final DeferredBlock<Block>
-            TUMOR = register("tumor", () -> new AmethystClusterBlock(7.0F, 3.0F, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).forceSolidOn().noOcclusion().sound(SoundType.HONEY_BLOCK).strength(0.2F, 0.2F).pushReaction(PushReaction.DESTROY).noCollission())),
-            FLESH_BLOCK = register("flesh_block", () -> new MudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
-            GRISTLED_FLESH_BLOCK = register("gristled_flesh_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.MOSS).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
-            SHORT_GRISTLES = register("short_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.COLOR_RED))),
-            TALL_GRISTLES = register("tall_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.COLOR_RED))),
-            BRAINROCK = register("brainrock", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.HONEY_BLOCK))),
-            BLOOD_VESSEL = register("blood_vessel", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F)));
+            TUMOR = register("tumor", () -> new AmethystClusterBlock(7.0F, 3.0F, BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).forceSolidOn().noOcclusion().sound(SoundType.HONEY_BLOCK).strength(0.2F, 0.2F).pushReaction(PushReaction.DESTROY).noCollission())),
+            FLESH_BLOCK = register("flesh_block", () -> new MudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
+            GRISTLED_FLESH_BLOCK = register("gristled_flesh_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
+            SHORT_GRISTLES = register("short_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE))),
+            TALL_GRISTLES = register("tall_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE))),
+            BRAINROCK = register("brainrock", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).mapColor(MapColor.RAW_IRON).sound(SoundType.HONEY_BLOCK))),
+            BLOOD_VESSEL = register("blood_vessel", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GORESLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_RED))
+            stoneProperties().sound(SoundType.CORAL_BLOCK).mapColor(MapColor.CRIMSON_HYPHAE))
             .register(
                     "goreslate",
                     "chiseled_goreslate",
@@ -992,7 +1026,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GORESLATE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            stoneProperties().sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_RED))
+            stoneProperties().sound(SoundType.CORAL_BLOCK).mapColor(MapColor.CRIMSON_HYPHAE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "goreslate_slab",
@@ -1015,8 +1049,8 @@ public class EUBlocks {
             BRUMA_BLOCK = register("bruma_block", () -> new HayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS))),
             RAW_OBDURIUM_BLOCK = register("raw_obdurium_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_PURPLE))),
             RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN))),
-            LUTRUM_AMALGAMATE_BLOCK = register("lutrum_amalgamate_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_CYAN))),
-            RAW_LUTRUM_BLOCK = register("raw_lutrum_block", () -> new Block(rawBlockProperties().mapColor(MapColor.TERRACOTTA_CYAN)));
+            LUTRUM_AMALGAMATE_BLOCK = register("lutrum_amalgamate_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_GRAY))),
+            RAW_LUTRUM_BLOCK = register("raw_lutrum_block", () -> new Block(rawBlockProperties().mapColor(MapColor.CLAY)));
 
     // Iron
     // Blocks go here
@@ -1088,157 +1122,157 @@ public class EUBlocks {
 
     // Lutrum
     public static final DeferredBlock<Block>
-            LUTRUM_FACTORY_BLOCK = register("lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            ENCASED_LUTRUM_BLOCK = register("encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATEBLOCK = register("lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PANEL = register("lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_BLOCK = register("lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATING = register("lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PILLAR = register("lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            GLOWING_LUTRUM_PILLAR = register("glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
-            MARKED_LUTRUM_PILLAR = register("marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            CHISELED_LUTRUM = register("chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_GRATE = register("lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATING_STAIRS = register("lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATING_SLAB = register("lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            LUTRUM_FACTORY_BLOCK = register("lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY))),
+            ENCASED_LUTRUM_BLOCK = register("encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATEBLOCK = register("lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PANEL = register("lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_BLOCK = register("lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING = register("lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PILLAR = register("lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            GLOWING_LUTRUM_PILLAR = register("glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.CLAY))),
+            MARKED_LUTRUM_PILLAR = register("marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            CHISELED_LUTRUM = register("chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_GRATE = register("lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING_STAIRS = register("lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING_SLAB = register("lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
+            LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
+            LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY)));
     public static final DeferredBlock<Block>
-            EXPOSED_LUTRUM_FACTORY_BLOCK = register("exposed_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_ENCASED_LUTRUM_BLOCK = register("exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATEBLOCK = register("exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PANEL = register("exposed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_BLOCK = register("exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_GLOWING_LUTRUM_PILLAR = register("exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_MARKED_LUTRUM_PILLAR = register("exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_CHISELED_LUTRUM = register("exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_GRATE = register("exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATING_STAIRS = register("exposed_lutrum_plating_stairs", () -> new StairBlock(EXPOSED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATING_SLAB = register("exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            EXPOSED_LUTRUM_FACTORY_BLOCK = register("exposed_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_ENCASED_LUTRUM_BLOCK = register("exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATEBLOCK = register("exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PANEL = register("exposed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_BLOCK = register("exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_GLOWING_LUTRUM_PILLAR = register("exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_MARKED_LUTRUM_PILLAR = register("exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_CHISELED_LUTRUM = register("exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_GRATE = register("exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING_STAIRS = register("exposed_lutrum_plating_stairs", () -> new StairBlock(EXPOSED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING_SLAB = register("exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final DeferredBlock<Block>
-            WEATHERED_LUTRUM_FACTORY_BLOCK = register("weathered_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_ENCASED_LUTRUM_BLOCK = register("weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATEBLOCK = register("weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PANEL = register("weathered_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_BLOCK = register("weathered_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATING = register("weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PILLAR = register("weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_GLOWING_LUTRUM_PILLAR = register("weathered_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_MARKED_LUTRUM_PILLAR = register("weathered_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_CHISELED_LUTRUM = register("weathered_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_GRATE = register("weathered_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATING_STAIRS = register("weathered_lutrum_plating_stairs", () -> new StairBlock(WEATHERED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATING_SLAB = register("weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            WEATHERED_LUTRUM_FACTORY_BLOCK = register("weathered_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_ENCASED_LUTRUM_BLOCK = register("weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATEBLOCK = register("weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PANEL = register("weathered_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_BLOCK = register("weathered_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING = register("weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PILLAR = register("weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_GLOWING_LUTRUM_PILLAR = register("weathered_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.STONE))),
+            WEATHERED_MARKED_LUTRUM_PILLAR = register("weathered_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_CHISELED_LUTRUM = register("weathered_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_GRATE = register("weathered_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING_STAIRS = register("weathered_lutrum_plating_stairs", () -> new StairBlock(WEATHERED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING_SLAB = register("weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE)));
     public static final DeferredBlock<Block>
-            OXIDIZED_LUTRUM_FACTORY_BLOCK = register("oxidized_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_ENCASED_LUTRUM_BLOCK = register("oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATEBLOCK = register("oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PANEL = register("oxidized_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_BLOCK = register("oxidized_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATING = register("oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PILLAR = register("oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_GLOWING_LUTRUM_PILLAR = register("oxidized_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_MARKED_LUTRUM_PILLAR = register("oxidized_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_CHISELED_LUTRUM = register("oxidized_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_GRATE = register("oxidized_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATING_STAIRS = register("oxidized_lutrum_plating_stairs", () -> new StairBlock(OXIDIZED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATING_SLAB = register("oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_TRAPDOOR = register("oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            OXIDIZED_LUTRUM_BULB = register("oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            OXIDIZED_LUTRUM_FACTORY_BLOCK = register("oxidized_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_ENCASED_LUTRUM_BLOCK = register("oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATEBLOCK = register("oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PANEL = register("oxidized_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_BLOCK = register("oxidized_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING = register("oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PILLAR = register("oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_GLOWING_LUTRUM_PILLAR = register("oxidized_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_MARKED_LUTRUM_PILLAR = register("oxidized_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_CHISELED_LUTRUM = register("oxidized_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_GRATE = register("oxidized_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING_STAIRS = register("oxidized_lutrum_plating_stairs", () -> new StairBlock(OXIDIZED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING_SLAB = register("oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_TRAPDOOR = register("oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_BULB = register("oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.COLOR_GRAY)));
     public static final DeferredBlock<Block>
-            WAXED_LUTRUM_FACTORY_BLOCK = register("waxed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_ENCASED_LUTRUM_BLOCK = register("waxed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATEBLOCK = register("waxed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PANEL = register("waxed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_BLOCK = register("waxed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATING = register("waxed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PILLAR = register("waxed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_GLOWING_LUTRUM_PILLAR = register("waxed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_MARKED_LUTRUM_PILLAR = register("waxed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_CHISELED_LUTRUM = register("waxed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_GRATE = register("waxed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATING_STAIRS = register("waxed_lutrum_plating_stairs", () -> new StairBlock(WAXED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATING_SLAB = register("waxed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            WAXED_LUTRUM_FACTORY_BLOCK = register("waxed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_ENCASED_LUTRUM_BLOCK = register("waxed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATEBLOCK = register("waxed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PANEL = register("waxed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_BLOCK = register("waxed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATING = register("waxed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PILLAR = register("waxed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_GLOWING_LUTRUM_PILLAR = register("waxed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.CLAY))),
+            WAXED_MARKED_LUTRUM_PILLAR = register("waxed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_CHISELED_LUTRUM = register("waxed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_GRATE = register("waxed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATING_STAIRS = register("waxed_lutrum_plating_stairs", () -> new StairBlock(WAXED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATING_SLAB = register("waxed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY)));
     public static final DeferredBlock<Block>
-            WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK = register("waxed_exposed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK = register("waxed_exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATEBLOCK = register("waxed_exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PANEL = register("waxed_exposed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_BLOCK = register("waxed_exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATING = register("waxed_exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PILLAR = register("waxed_exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_GLOWING_LUTRUM_PILLAR = register("waxed_exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_MARKED_LUTRUM_PILLAR = register("waxed_exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_CHISELED_LUTRUM = register("waxed_exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_GRATE = register("waxed_exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATING_STAIRS = register("waxed_exposed_lutrum_plating_stairs", () -> new StairBlock(WAXED_EXPOSED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATING_SLAB = register("waxed_exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK = register("waxed_exposed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK = register("waxed_exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATEBLOCK = register("waxed_exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PANEL = register("waxed_exposed_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_BLOCK = register("waxed_exposed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATING = register("waxed_exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PILLAR = register("waxed_exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_GLOWING_LUTRUM_PILLAR = register("waxed_exposed_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 15).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_MARKED_LUTRUM_PILLAR = register("waxed_exposed_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_CHISELED_LUTRUM = register("waxed_exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_GRATE = register("waxed_exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATING_STAIRS = register("waxed_exposed_lutrum_plating_stairs", () -> new StairBlock(WAXED_EXPOSED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATING_SLAB = register("waxed_exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final DeferredBlock<Block>
-            WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK = register("waxed_weathered_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK = register("waxed_weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATEBLOCK = register("waxed_weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PANEL = register("waxed_weathered_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_BLOCK = register("waxed_weathered_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATING = register("waxed_weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PILLAR = register("waxed_weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_GLOWING_LUTRUM_PILLAR = register("waxed_weathered_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_MARKED_LUTRUM_PILLAR = register("waxed_weathered_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_CHISELED_LUTRUM = register("waxed_weathered_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_GRATE = register("waxed_weathered_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATING_STAIRS = register("waxed_weathered_lutrum_plating_stairs", () -> new StairBlock(WAXED_WEATHERED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATING_SLAB = register("waxed_weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_PLATING_BUTTON = register("waxed_weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK = register("waxed_weathered_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK = register("waxed_weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATEBLOCK = register("waxed_weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PANEL = register("waxed_weathered_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_BLOCK = register("waxed_weathered_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATING = register("waxed_weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PILLAR = register("waxed_weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_GLOWING_LUTRUM_PILLAR = register("waxed_weathered_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_MARKED_LUTRUM_PILLAR = register("waxed_weathered_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_CHISELED_LUTRUM = register("waxed_weathered_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_GRATE = register("waxed_weathered_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATING_STAIRS = register("waxed_weathered_lutrum_plating_stairs", () -> new StairBlock(WAXED_WEATHERED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATING_SLAB = register("waxed_weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_PLATING_BUTTON = register("waxed_weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE)));
     public static final DeferredBlock<Block>
-            WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK = register("waxed_oxidized_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK = register("waxed_oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATEBLOCK = register("waxed_oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PANEL = register("waxed_oxidized_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_BLOCK = register("waxed_oxidized_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATING = register("waxed_oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PILLAR = register("waxed_oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_GLOWING_LUTRUM_PILLAR = register("waxed_oxidized_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_MARKED_LUTRUM_PILLAR = register("waxed_oxidized_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_CHISELED_LUTRUM = register("waxed_oxidized_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_GRATE = register("waxed_oxidized_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS = register("waxed_oxidized_lutrum_plating_stairs", () -> new StairBlock(WAXED_OXIDIZED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_SLAB = register("waxed_oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON = register("waxed_oxidized_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_DOOR = register("waxed_oxidized_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_TRAPDOOR = register("waxed_oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            WAXED_OXIDIZED_LUTRUM_BULB = register("waxed_oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.TERRACOTTA_CYAN)));
+            WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK = register("waxed_oxidized_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK = register("waxed_oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATEBLOCK = register("waxed_oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PANEL = register("waxed_oxidized_lutrum_panel", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_BLOCK = register("waxed_oxidized_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING = register("waxed_oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PILLAR = register("waxed_oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_GLOWING_LUTRUM_PILLAR = register("waxed_oxidized_glowing_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().lightLevel(state -> 12).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_MARKED_LUTRUM_PILLAR = register("waxed_oxidized_marked_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_CHISELED_LUTRUM = register("waxed_oxidized_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_GRATE = register("waxed_oxidized_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS = register("waxed_oxidized_lutrum_plating_stairs", () -> new StairBlock(WAXED_OXIDIZED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_SLAB = register("waxed_oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(BlockSetType.COPPER, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON = register("waxed_oxidized_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_DOOR = register("waxed_oxidized_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_TRAPDOOR = register("waxed_oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_OXIDIZED_COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_BULB = register("waxed_oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.COLOR_GRAY)));
     
     /*
     Potted Plants
