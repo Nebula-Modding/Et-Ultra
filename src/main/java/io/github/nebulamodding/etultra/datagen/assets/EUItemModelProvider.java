@@ -6,8 +6,6 @@ import io.github.nebulamodding.etultra.registry.item.EUItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -66,17 +64,25 @@ public class EUItemModelProvider extends ItemModelProvider {
         blockItemModel(EUBlocks.GRAPHITE_CLUSTER, EUBlocks.GRAPHITE_CLUSTER, GENERATED);
 
         blockItemModel(EUBlocks.TUMOR, EUBlocks.TUMOR, GENERATED);
-        blockModel(EUBlocks.GRISTLED_FLESH_BLOCK);
+        blockModel(EUBlocks.GRISTLED_FLESH);
         blockItemModel(EUBlocks.SHORT_GRISTLES, EUBlocks.SHORT_GRISTLES, GENERATED);
         blockItemModel(EUBlocks.TALL_GRISTLES, EUBlocks.TALL_GRISTLES, GENERATED);
 
+        blockModel(EUBlocks.OBDURIUM_FACTORY_BLOCK);
+
+        blockModel(EUBlocks.MALUNITE_FACTORY_BLOCK);
+
+        blockModel(EUBlocks.LUTRUM_FACTORY_BLOCK);
         itemModel(EUBlocks.LUTRUM_DOOR, GENERATED);
-        itemModel(EUBlocks.EXPOSED_LUTRUM_DOOR, GENERATED);
-        itemModel(EUBlocks.WEATHERED_LUTRUM_DOOR, GENERATED);
-        itemModel(EUBlocks.OXIDIZED_LUTRUM_DOOR, GENERATED);
         blockModel(EUBlocks.LUTRUM_BULB);
+        blockModel(EUBlocks.EXPOSED_LUTRUM_FACTORY_BLOCK);
+        itemModel(EUBlocks.EXPOSED_LUTRUM_DOOR, GENERATED);
         blockModel(EUBlocks.EXPOSED_LUTRUM_BULB);
+        blockModel(EUBlocks.WEATHERED_LUTRUM_FACTORY_BLOCK);
+        itemModel(EUBlocks.WEATHERED_LUTRUM_DOOR, GENERATED);
         blockModel(EUBlocks.WEATHERED_LUTRUM_BULB);
+        blockModel(EUBlocks.OXIDIZED_LUTRUM_FACTORY_BLOCK);
+        itemModel(EUBlocks.OXIDIZED_LUTRUM_DOOR, GENERATED);
         blockModel(EUBlocks.OXIDIZED_LUTRUM_BULB);
 
         /*

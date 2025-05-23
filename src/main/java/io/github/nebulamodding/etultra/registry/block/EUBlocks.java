@@ -95,12 +95,10 @@ public class EUBlocks {
             FRIGUS_MUD_BRICK_SLAB = register("frigus_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_MUD_BRICK_WALL = register("frigus_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_SHORT_GRASS = register("frigus_short_grass", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.GLOW_LICHEN)));
-
     public static final DeferredBlock<Block>
             VIVIAN = register("vivian", () -> new FlowerBlock(MobEffects.INVISIBILITY, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             WICKUL = register("wickul", () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             ICEFLOWER = register("iceflower", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5.0F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ)));
-
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -786,7 +784,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> RED_NITROGEN_ICE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.FIRE))
             .register(
                     "red_nitrogen_ice",
                     "cobbled_red_nitrogen_ice",
@@ -802,7 +800,7 @@ public class EUBlocks {
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> RED_NITROGEN_ICE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
-            iceProperties().mapColor(MapColor.COLOR_RED))
+            iceProperties().mapColor(MapColor.FIRE))
             .setBlockFunction(SlabBlock::new)
             .register(
                     "red_nitrogen_ice_slab",
@@ -999,12 +997,13 @@ public class EUBlocks {
 
     public static final DeferredBlock<Block>
             TUMOR = register("tumor", () -> new AmethystClusterBlock(7.0F, 3.0F, BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).forceSolidOn().noOcclusion().sound(SoundType.HONEY_BLOCK).strength(0.2F, 0.2F).pushReaction(PushReaction.DESTROY).noCollission())),
-            FLESH_BLOCK = register("flesh_block", () -> new MudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
-            GRISTLED_FLESH_BLOCK = register("gristled_flesh_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F))),
-            SHORT_GRISTLES = register("short_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE))),
-            TALL_GRISTLES = register("tall_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE))),
+            FLESH_BLOCK = register("flesh_block", () -> new MudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.HONEY_BLOCK).strength(0.4F, 0.4F))),
+            GRISTLED_FLESH = register("gristled_flesh", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS).strength(0.4F, 0.4F))),
+            GRISTLE_BLOCK = register("gristle_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS).strength(0.1F, 0.1F))),
+            SHORT_GRISTLES = register("short_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS))),
+            TALL_GRISTLES = register("tall_gristles", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.CRIMSON_HYPHAE).sound(SoundType.MOSS))),
             BRAINROCK = register("brainrock", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).mapColor(MapColor.RAW_IRON).sound(SoundType.HONEY_BLOCK))),
-            BLOOD_VESSEL = register("blood_vessel", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.HONEY_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).strength(0.4F, 0.4F)));
+            BLOOD_VESSEL = register("blood_vessel", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.HONEY_BLOCK).strength(0.4F, 0.4F)));
     public static final DeferredHolders<Block, DeferredBlock<? extends Block>> GORESLATE_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
@@ -1102,7 +1101,7 @@ public class EUBlocks {
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_PLATING.get().defaultBlockState(), obduriumProperties())),
             OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(obduriumProperties())),
             OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.OBDURIUM, obduriumProperties())),
-            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(EUBlockSetTypes.OBDURIUM, 20, obduriumProperties()));
+            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(EUBlockSetTypes.OBDURIUM, 40, obduriumProperties()));
 
     // Malunite
     public static final DeferredBlock<Block>
@@ -1113,7 +1112,7 @@ public class EUBlocks {
             MALUNITE_BLOCK = register("malunite_block", () -> new Block(maluniteProperties())),
             MALUNITE_PLATING = register("malunite_plating", () -> new Block(maluniteProperties())),
             MALUNITE_PILLAR = register("malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties())),
-            GLOWING_MALUNITE_PILLAR = register("glowing_malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties().lightLevel(state -> 12))),
+            GLOWING_MALUNITE_PILLAR = register("glowing_malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties().lightLevel(state -> 15))),
             MARKED_MALUNITE_PILLAR = register("marked_malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties())),
             MALUNITE_PLATING_STAIRS = register("malunite_plating_stairs", () -> new StairBlock(MALUNITE_PLATING.get().defaultBlockState(), maluniteProperties())),
             MALUNITE_PLATING_SLAB = register("malunite_plating_slab", () -> new SlabBlock(maluniteProperties())),
@@ -1139,8 +1138,7 @@ public class EUBlocks {
             LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
             LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
-            LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY)));
-    public static final DeferredBlock<Block>
+            LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY))),
             EXPOSED_LUTRUM_FACTORY_BLOCK = register("exposed_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_ENCASED_LUTRUM_BLOCK = register("exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATEBLOCK = register("exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1158,8 +1156,7 @@ public class EUBlocks {
             EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
-    public static final DeferredBlock<Block>
+            EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WEATHERED_LUTRUM_FACTORY_BLOCK = register("weathered_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_ENCASED_LUTRUM_BLOCK = register("weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATEBLOCK = register("weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
@@ -1177,8 +1174,7 @@ public class EUBlocks {
             WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE)));
-    public static final DeferredBlock<Block>
+            WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE))),
             OXIDIZED_LUTRUM_FACTORY_BLOCK = register("oxidized_lutrum_factory_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_ENCASED_LUTRUM_BLOCK = register("oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATEBLOCK = register("oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
@@ -1215,8 +1211,7 @@ public class EUBlocks {
             WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
-            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY)));
-    public static final DeferredBlock<Block>
+            WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY))),
             WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK = register("waxed_exposed_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK = register("waxed_exposed_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_PLATEBLOCK = register("waxed_exposed_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1234,8 +1229,7 @@ public class EUBlocks {
             WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_EXPOSED_COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
-    public static final DeferredBlock<Block>
+            WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK = register("waxed_weathered_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK = register("waxed_weathered_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_PLATEBLOCK = register("waxed_weathered_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
@@ -1253,8 +1247,7 @@ public class EUBlocks {
             WAXED_WEATHERED_LUTRUM_PLATING_BUTTON = register("waxed_weathered_lutrum_plating_button", () -> new ButtonBlock(BlockSetType.COPPER, 20, lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(BlockSetType.COPPER, lutrumProperties().noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_WEATHERED_COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
-            WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE)));
-    public static final DeferredBlock<Block>
+            WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER_BULB).mapColor(MapColor.STONE))),
             WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK = register("waxed_oxidized_lutrum_factory_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK = register("waxed_oxidized_encased_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_PLATEBLOCK = register("waxed_oxidized_lutrum_plateblock", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),

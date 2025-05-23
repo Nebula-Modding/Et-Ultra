@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-21T19:22:09.8266701	Loot Tables
+// 1.21.1	2025-05-22T23:50:47.4307216	Loot Tables
 2c5a12638f2077e40d933e9558437a5a8672cf28 data/et_ultra/loot_table/blocks/ammonia_ice.json
 9af62665baf64eb61e56ae4da31efc7b1ab040eb data/et_ultra/loot_table/blocks/ammonia_ice_bricks.json
 22283104783987c646dfcaf0118b82a505b322ff data/et_ultra/loot_table/blocks/ammonia_ice_brick_slab.json
@@ -273,7 +273,8 @@ be9828fd4ccc1b26be2214b097886e0227bc6f58 data/et_ultra/loot_table/blocks/grimwoo
 30df6066b11b570239871079e42436085e3c9ab8 data/et_ultra/loot_table/blocks/grimwood_stairs.json
 ed855d640f68075840b685e8c5d16aab87898790 data/et_ultra/loot_table/blocks/grimwood_trapdoor.json
 11cdf5349aad04f29167f2369f45d9269450d02c data/et_ultra/loot_table/blocks/grimwood_wood.json
-95e4fb1390422a66a4717447b87c0f46bc39f3a2 data/et_ultra/loot_table/blocks/gristled_flesh_block.json
+07aaa2c431d5618b2f53296ecff649db9617764f data/et_ultra/loot_table/blocks/gristled_flesh.json
+d0c2c2b2f11a16380be1773eb95cbb479c208ba2 data/et_ultra/loot_table/blocks/gristle_block.json
 602992ecc2b0367a7dddebbb0c4288369189a1c3 data/et_ultra/loot_table/blocks/iceflower.json
 84e39d99ed3b094385769e54f39c289300115871 data/et_ultra/loot_table/blocks/karcass_cobblestone.json
 b90236095d3c7bf0de1d72fcd4ed1a00520b2f45 data/et_ultra/loot_table/blocks/karcass_cobblestone_slab.json

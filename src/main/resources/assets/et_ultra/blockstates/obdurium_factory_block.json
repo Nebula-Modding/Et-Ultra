@@ -1,0 +1,15 @@
+{
+    "athena:loader": "athena:ctm",
+    "ctm_textures": {
+        "center": "et_ultra:block/ctm/obdurium_factory_block/3",
+        "empty": "ad_astra:block/ctm/empty",
+        "horizontal": "et_ultra:block/ctm/obdurium_factory_block/2",
+        "particle": "et_ultra:block/obdurium_factory_block",
+        "vertical": "et_ultra:block/ctm/obdurium_factory_block/1"
+    },
+    "variants": {
+        "": {
+            "model": "et_ultra:block/obdurium_factory_block"
+        }
+    }
+}

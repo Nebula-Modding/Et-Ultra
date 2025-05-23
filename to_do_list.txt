@@ -1,8 +1,6 @@
 General To-Do:
 Add Frigus Signs
 Add Crops
-Add Karnis Stuffs
-Add Graphite Cluster
 Add Dust Block Colors
 
 Rename all tholin stages to "stage_variant_compound_ice" instead of "variant_stage_compound_ice"
@@ -25,7 +23,6 @@ Frigus Biome: Frigus Forest
 Frigus Biome: Frigus Glaciers
 Frigus Biome: Frigus Underground Marsh
 Karnis Biome: Neuron Forest
-Karnis Biome: Perulent Caves
 
 Cancerous Flesh, which spreads to surrounding flesh like grass does to dirt
 

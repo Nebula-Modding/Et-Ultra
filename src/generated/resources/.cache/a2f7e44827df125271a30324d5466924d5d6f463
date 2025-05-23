@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-21T19:22:09.8296704	Tags for minecraft:item mod id et_ultra
+// 1.21.1	2025-05-22T23:50:47.4342921	Tags for minecraft:item mod id et_ultra
 5375c3c9e45cc8ab251520c63ad9640de3ac7f37 data/c/tags/item/cobblestones.json
 0898b130edd37b1538a476cb0722ca1297d18d9b data/c/tags/item/cobblestones/frigus_deepslate.json
 f0b45fa54eab803b62803e8f3f68af811647ee11 data/c/tags/item/cobblestones/frigus_stone.json
@@ -28,7 +28,7 @@ c79441f769a7e2b6a573747708c1cc8e430e687d data/c/tags/item/ores_in_ground/frigus_
 e37109df3ca9f60ec348bf01951e59529f5ffcaf data/c/tags/item/ore_bearing_ground/nitrogen_ice.json
 91c0763abc9243039ca8f892decbbc4b5f402adc data/c/tags/item/ore_bearing_ground/oxygen_ice.json
 67c057677ed57e7e3b462cf9a370fcdbe573dc96 data/c/tags/item/ore_bearing_ground/water_ice.json
-94270083ad08949279413e87cc5d2fd0989ec689 data/c/tags/item/ore_rates/singular.json
+08aa0b2073e3f1d7c56db619486df37c7953b2ed data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 2e9c6862b01f84ce75b377a29e5024ea653774d2 data/c/tags/item/plates.json
 eb873579f1474e736fa26e51f0c50f6f79903b8f data/c/tags/item/plates/lutrum.json

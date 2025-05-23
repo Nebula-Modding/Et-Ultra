@@ -158,7 +158,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
 
         excludedBlocks.add(EUBlocks.TUMOR);
-        excludedBlocks.add(EUBlocks.GRISTLED_FLESH_BLOCK);
+        excludedBlocks.add(EUBlocks.GRISTLED_FLESH);
         excludedBlocks.add(EUBlocks.SHORT_GRISTLES);
         excludedBlocks.add(EUBlocks.TALL_GRISTLES);
         excludedBlocks.add(EUBlocks.GORESLATE_BRICK_STAIRS);
@@ -170,21 +170,29 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"));
         excludedBlocks.add(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"));
 
+        excludedBlocks.add(EUBlocks.MALUNITE_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.OBDURIUM_FACTORY_BLOCK);
+
+        excludedBlocks.add(EUBlocks.LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.CHISELED_LUTRUM);
         excludedBlocks.add(EUBlocks.LUTRUM_GRATE);
         excludedBlocks.add(EUBlocks.LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.LUTRUM_BULB);
-
+        excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.EXPOSED_CHISELED_LUTRUM);
         excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_GRATE);
         excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.EXPOSED_LUTRUM_BULB);
-
+        excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.WEATHERED_CHISELED_LUTRUM);
         excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_GRATE);
         excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.WEATHERED_LUTRUM_BULB);
-
+        excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_FACTORY_BLOCK);
+        excludedBlocks.add(EUBlocks.OXIDIZED_CHISELED_LUTRUM);
         excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_GRATE);
         excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR);
@@ -208,7 +216,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.WAXED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.WAXED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.WAXED_LUTRUM_BULB);
-
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_FACTORY_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_ENCASED_LUTRUM_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_PLATEBLOCK);
@@ -227,7 +234,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.WAXED_EXPOSED_LUTRUM_BULB);
-
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_FACTORY_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_ENCASED_LUTRUM_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_PLATEBLOCK);
@@ -246,7 +252,6 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(EUBlocks.WAXED_WEATHERED_LUTRUM_BULB);
-
         excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_FACTORY_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_ENCASED_LUTRUM_BLOCK);
         excludedBlocks.add(EUBlocks.WAXED_OXIDIZED_LUTRUM_PLATEBLOCK);
@@ -448,6 +453,7 @@ public class EUBlockStateProvider extends BlockStateProvider {
         slabBlockWithItem(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
         wallBlockWithItem(EUBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(EUBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
 
+        simpleBlockWithItem(EUBlocks.GRISTLED_FLESH.get(), models().cubeBottomTop("gristled_flesh", blockLoc(EUBlocks.GRISTLED_FLESH), blockLoc(EUBlocks.FLESH_BLOCK), blockLoc(EUBlocks.GRISTLE_BLOCK)));
         simpleBlock(EUBlocks.SHORT_GRISTLES.get(), models().cross(EUBlocks.SHORT_GRISTLES.getId().getPath(), blockLoc(EUBlocks.SHORT_GRISTLES)).renderType("cutout"));
         simpleBlock(EUBlocks.TALL_GRISTLES.get(), models().cross(EUBlocks.TALL_GRISTLES.getId().getPath(), blockLoc(EUBlocks.TALL_GRISTLES)).renderType("cutout"));
         stairsBlockWithItem(EUBlocks.GORESLATE_BRICK_STAIRS, blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
@@ -457,18 +463,19 @@ public class EUBlockStateProvider extends BlockStateProvider {
         wallBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
         wallBlockWithItem(EUBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"), blockLoc(EUBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
 
+        simpleBlockWithItem(EUBlocks.CHISELED_LUTRUM.get(), models().cubeColumn("chiseled_lutrum", blockLoc(EUBlocks.CHISELED_LUTRUM), blockLoc(EUBlocks.CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(EUBlocks.LUTRUM_GRATE.get(), models().cubeAll("lutrum_grate", blockLoc(EUBlocks.LUTRUM_GRATE)).renderType("cutout"));
         doorBlockWithItem(EUBlocks.LUTRUM_DOOR, blockLoc(EUBlocks.LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.LUTRUM_DOOR, "top"), "cutout");
         trapDoorBlockWithItem(EUBlocks.LUTRUM_TRAPDOOR, blockLoc(EUBlocks.LUTRUM_TRAPDOOR), true, "cutout");
-
+        simpleBlockWithItem(EUBlocks.EXPOSED_CHISELED_LUTRUM.get(), models().cubeColumn("exposed_chiseled_lutrum", blockLoc(EUBlocks.EXPOSED_CHISELED_LUTRUM), blockLoc(EUBlocks.EXPOSED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(EUBlocks.EXPOSED_LUTRUM_GRATE.get(), models().cubeAll("exposed_lutrum_grate", blockLoc(EUBlocks.EXPOSED_LUTRUM_GRATE)).renderType("cutout"));
         doorBlockWithItem(EUBlocks.EXPOSED_LUTRUM_DOOR, blockLoc(EUBlocks.EXPOSED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.EXPOSED_LUTRUM_DOOR, "top"), "cutout");
         trapDoorBlockWithItem(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.EXPOSED_LUTRUM_TRAPDOOR), true, "cutout");
-
+        simpleBlockWithItem(EUBlocks.WEATHERED_CHISELED_LUTRUM.get(), models().cubeColumn("weathered_chiseled_lutrum", blockLoc(EUBlocks.WEATHERED_CHISELED_LUTRUM), blockLoc(EUBlocks.WEATHERED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(EUBlocks.WEATHERED_LUTRUM_GRATE.get(), models().cubeAll("weathered_lutrum_grate", blockLoc(EUBlocks.WEATHERED_LUTRUM_GRATE)).renderType("cutout"));
         doorBlockWithItem(EUBlocks.WEATHERED_LUTRUM_DOOR, blockLoc(EUBlocks.WEATHERED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.WEATHERED_LUTRUM_DOOR, "top"), "cutout");
         trapDoorBlockWithItem(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.WEATHERED_LUTRUM_TRAPDOOR), true, "cutout");
-
+        simpleBlockWithItem(EUBlocks.OXIDIZED_CHISELED_LUTRUM.get(), models().cubeColumn("oxidized_chiseled_lutrum", blockLoc(EUBlocks.OXIDIZED_CHISELED_LUTRUM), blockLoc(EUBlocks.OXIDIZED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_GRATE.get(), models().cubeAll("oxidized_lutrum_grate", blockLoc(EUBlocks.OXIDIZED_LUTRUM_GRATE)).renderType("cutout"));
         doorBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_DOOR, blockLoc(EUBlocks.OXIDIZED_LUTRUM_DOOR, "bottom"), blockLoc(EUBlocks.OXIDIZED_LUTRUM_DOOR, "top"), "cutout");
         trapDoorBlockWithItem(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(EUBlocks.OXIDIZED_LUTRUM_TRAPDOOR), true, "cutout");
@@ -487,16 +494,16 @@ public class EUBlockStateProvider extends BlockStateProvider {
     public void simpleBlockWithoutItem(DeferredBlock<? extends Block> block, ModelFile model) {
         super.simpleBlock(block.get(), model);
     }
-    public void axisBlockWithItem(DeferredBlock<Block> block, ResourceLocation texture, ResourceLocation texture2) {
-        super.axisBlock((RotatedPillarBlock) block.get(), texture, texture2);
+    public void axisBlockWithItem(DeferredBlock<Block> block, ResourceLocation side, ResourceLocation end) {
+        super.axisBlock((RotatedPillarBlock) block.get(), side, end);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
     private void stairsBlockWithItem(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
-    private void slabBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation doubleslab, ResourceLocation texture) {
-        super.slabBlock((SlabBlock) block.get(), doubleslab, texture);
+    private void slabBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation doubleSlab, ResourceLocation texture) {
+        super.slabBlock((SlabBlock) block.get(), doubleSlab, texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
     private void fenceBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
@@ -535,6 +542,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
     public void trapDoorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable, String renderType) {
         super.trapdoorBlockWithRenderType((TrapDoorBlock) block.get(), texture, orientable, renderType);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
+    }
+    private ResourceLocation extend(ResourceLocation rl, String suffix) {
+        return ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), rl.getPath() + suffix);
     }
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
