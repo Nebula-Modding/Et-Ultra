@@ -26,7 +26,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // Lists with collections of blocks with multiple of the same tag to save on lines of code and make this file more readable
-        final List<DeferredBlock<? extends Block>> frigusStoneOres = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> blueschistOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> frigusDeepslateOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> waterIceOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> methaneIceOres = new ArrayList<>();
@@ -39,17 +39,17 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> stoneButtons = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> ices = new ArrayList<>();
         // Ores
-        frigusStoneOres.add(EUBlocks.FRIGUS_COAL_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_IRON_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_COPPER_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_GOLD_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_REDSTONE_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_EMERALD_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_LAPIS_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_DIAMOND_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_OBDURIUM_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_MALUNITE_ORE);
-        frigusStoneOres.add(EUBlocks.FRIGUS_LUTRUM_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_COAL_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_IRON_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_COPPER_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_GOLD_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_REDSTONE_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_EMERALD_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_LAPIS_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_DIAMOND_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_OBDURIUM_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_MALUNITE_ORE);
+        blueschistOres.add(EUBlocks.BLUESCHIST_LUTRUM_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE);
         frigusDeepslateOres.add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE);
@@ -99,20 +99,20 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         pickaxeSlabs.add(EUBlocks.FRIGUS_MUD_BRICK_SLAB);
         pickaxeWalls.add(EUBlocks.FRIGUS_MUD_BRICK_WALL);
         // Frigus Stone
-        pickaxeStairs.add(EUBlocks.FRIGUS_STONE_STAIRS);
+        pickaxeStairs.add(EUBlocks.BLUESCHIST_STAIRS);
         pickaxeStairs.add(EUBlocks.FRIGUS_COBBLESTONE_STAIRS);
-        pickaxeStairs.add(EUBlocks.POLISHED_FRIGUS_STONE_STAIRS);
-        pickaxeStairs.add(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
-        pickaxeSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_slab"));
-        pickaxeSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_slab"));
-        pickaxeSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_slab"));
-        pickaxeSlabs.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
-        pickaxeWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_wall"));
-        pickaxeWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_cobblestone_wall"));
-        pickaxeWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("polished_frigus_stone_wall"));
-        pickaxeWalls.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
-        stonePressurePlates.add(EUBlocks.FRIGUS_STONE_PRESSURE_PLATE);
-        stoneButtons.add(EUBlocks.FRIGUS_STONE_BUTTON);
+        pickaxeStairs.add(EUBlocks.POLISHED_BLUESCHIST_STAIRS);
+        pickaxeStairs.add(EUBlocks.BLUESCHIST_BRICK_STAIRS);
+        pickaxeSlabs.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_slab"));
+        pickaxeSlabs.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("cobbled_blueschist_slab"));
+        pickaxeSlabs.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("polished_blueschist_slab"));
+        pickaxeSlabs.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_slab"));
+        pickaxeWalls.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_wall"));
+        pickaxeWalls.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("cobbled_blueschist_wall"));
+        pickaxeWalls.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("polished_blueschist_wall"));
+        pickaxeWalls.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"));
+        stonePressurePlates.add(EUBlocks.BLUESCHIST_PRESSURE_PLATE);
+        stoneButtons.add(EUBlocks.BLUESCHIST_BUTTON);
         // Frigus Deepslate
         pickaxeStairs.add(EUBlocks.FRIGUS_DEEPSLATE_STAIRS);
         pickaxeStairs.add(EUBlocks.COBBLED_FRIGUS_DEEPSLATE_STAIRS);
@@ -398,7 +398,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.SULFUR_DUST_BLOCK.get())
                 .add(EUBlocks.GRAPHITE_DUST_BLOCK.get())
         ;
-        frigusStoneOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        blueschistOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         frigusDeepslateOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -409,13 +409,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ices.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 // Frigus Stones
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("chiseled_frigus_stone").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("polished_frigus_stone").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("cracked_frigus_stone_bricks").get())
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_pillar").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("chiseled_blueschist").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("polished_blueschist").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("cracked_blueschist_bricks").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_pillar").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("chiseled_frigus_deepslate").get())
@@ -463,10 +463,10 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.FRIGUS_SHORT_GRASS.get())
         ;
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(EUBlocks.FRIGUS_COPPER_ORE.get())
-                .add(EUBlocks.FRIGUS_IRON_ORE.get())
-                .add(EUBlocks.FRIGUS_LAPIS_ORE.get())
-                .add(EUBlocks.FRIGUS_LUTRUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_COPPER_ORE.get())
+                .add(EUBlocks.BLUESCHIST_IRON_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LAPIS_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LUTRUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE.get())
@@ -485,12 +485,12 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(EUBlocks.FRIGUS_GOLD_ORE.get())
-                .add(EUBlocks.FRIGUS_REDSTONE_ORE.get())
-                .add(EUBlocks.FRIGUS_EMERALD_ORE.get())
-                .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
-                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
-                .add(EUBlocks.FRIGUS_MALUNITE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_GOLD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_REDSTONE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_EMERALD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_DIAMOND_ORE.get())
+                .add(EUBlocks.BLUESCHIST_OBDURIUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_MALUNITE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_GOLD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_REDSTONE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE.get())
@@ -604,87 +604,87 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
          */
 
         tag(BlockTags.COAL_ORES)
-                .add(EUBlocks.FRIGUS_COAL_ORE.get())
+                .add(EUBlocks.BLUESCHIST_COAL_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE.get())
                 .add(EUBlocks.WATER_ICE_COAL_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_COAL_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_COAL_ORE.get())
         ;
         tag(BlockTags.IRON_ORES)
-                .add(EUBlocks.FRIGUS_IRON_ORE.get())
+                .add(EUBlocks.BLUESCHIST_IRON_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get())
                 .add(EUBlocks.WATER_ICE_IRON_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_IRON_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_IRON_ORE.get())
         ;
         tag(BlockTags.COPPER_ORES)
-                .add(EUBlocks.FRIGUS_COPPER_ORE.get())
+                .add(EUBlocks.BLUESCHIST_COPPER_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE.get())
                 .add(EUBlocks.WATER_ICE_COPPER_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_COPPER_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_COPPER_ORE.get())
         ;
         tag(BlockTags.GOLD_ORES)
-                .add(EUBlocks.FRIGUS_GOLD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_GOLD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_GOLD_ORE.get())
                 .add(EUBlocks.WATER_ICE_GOLD_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_GOLD_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_GOLD_ORE.get())
         ;
         tag(BlockTags.REDSTONE_ORES)
-                .add(EUBlocks.FRIGUS_REDSTONE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_REDSTONE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_REDSTONE_ORE.get())
                 .add(EUBlocks.WATER_ICE_REDSTONE_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_REDSTONE_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_REDSTONE_ORE.get())
         ;
         tag(BlockTags.EMERALD_ORES)
-                .add(EUBlocks.FRIGUS_EMERALD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_EMERALD_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_EMERALD_ORE.get())
                 .add(EUBlocks.WATER_ICE_EMERALD_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_EMERALD_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_EMERALD_ORE.get())
         ;
         tag(BlockTags.LAPIS_ORES)
-                .add(EUBlocks.FRIGUS_LAPIS_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LAPIS_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE.get())
                 .add(EUBlocks.WATER_ICE_LAPIS_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_LAPIS_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_LAPIS_ORE.get())
         ;
         tag(BlockTags.DIAMOND_ORES)
-                .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
+                .add(EUBlocks.BLUESCHIST_DIAMOND_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_DIAMOND_ORE.get())
                 .add(EUBlocks.WATER_ICE_DIAMOND_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_DIAMOND_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_DIAMOND_ORE.get())
         ;
         tag(EUTags.EUBlockTags.ORES_OBDURIUM)
-                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_OBDURIUM_ORE.get())
                 .add(EUBlocks.WATER_ICE_OBDURIUM_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_OBDURIUM_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_OBDURIUM_ORE.get())
         ;
         tag(EUTags.EUBlockTags.ORES_MALUNITE)
-                .add(EUBlocks.FRIGUS_MALUNITE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_MALUNITE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_MALUNITE_ORE.get())
                 .add(EUBlocks.WATER_ICE_MALUNITE_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_MALUNITE_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_MALUNITE_ORE.get())
         ;
         tag(EUTags.EUBlockTags.ORES_LUTRUM)
-                .add(EUBlocks.FRIGUS_LUTRUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LUTRUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_LUTRUM_ORE.get())
                 .add(EUBlocks.WATER_ICE_LUTRUM_ORE.get())
                 .add(EUBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
                 .add(EUBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
         tag(Tags.Blocks.ORE_RATES_DENSE)
-                .add(EUBlocks.FRIGUS_COPPER_ORE.get())
-                .add(EUBlocks.FRIGUS_REDSTONE_ORE.get())
-                .add(EUBlocks.FRIGUS_LAPIS_ORE.get())
-                .add(EUBlocks.FRIGUS_LUTRUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_COPPER_ORE.get())
+                .add(EUBlocks.BLUESCHIST_REDSTONE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LAPIS_ORE.get())
+                .add(EUBlocks.BLUESCHIST_LUTRUM_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COPPER_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_REDSTONE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_LAPIS_ORE.get())
@@ -703,13 +703,13 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
                 .add(EUBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
         tag(Tags.Blocks.ORE_RATES_SINGULAR)
-                .add(EUBlocks.FRIGUS_COAL_ORE.get())
-                .add(EUBlocks.FRIGUS_IRON_ORE.get())
-                .add(EUBlocks.FRIGUS_GOLD_ORE.get())
-                .add(EUBlocks.FRIGUS_EMERALD_ORE.get())
-                .add(EUBlocks.FRIGUS_DIAMOND_ORE.get())
-                .add(EUBlocks.FRIGUS_OBDURIUM_ORE.get())
-                .add(EUBlocks.FRIGUS_MALUNITE_ORE.get())
+                .add(EUBlocks.BLUESCHIST_COAL_ORE.get())
+                .add(EUBlocks.BLUESCHIST_IRON_ORE.get())
+                .add(EUBlocks.BLUESCHIST_GOLD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_EMERALD_ORE.get())
+                .add(EUBlocks.BLUESCHIST_DIAMOND_ORE.get())
+                .add(EUBlocks.BLUESCHIST_OBDURIUM_ORE.get())
+                .add(EUBlocks.BLUESCHIST_MALUNITE_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_COAL_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_IRON_ORE.get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_GOLD_ORE.get())
@@ -741,8 +741,8 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
-        tag(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_STONE)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+        tag(EUTags.EUBlockTags.ORE_BEARING_GROUND_BLUESCHIST)
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
         ;
         tag(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE)
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
@@ -756,7 +756,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         tag(EUTags.EUBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
                 .add(EUBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get())
         ;
-        frigusStoneOres.forEach(entry -> tag(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_STONE).add(entry.get()));
+        blueschistOres.forEach(entry -> tag(EUTags.EUBlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
         frigusDeepslateOres.forEach(entry -> tag(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(EUTags.EUBlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(EUTags.EUBlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
@@ -767,16 +767,16 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
          */
 
         tag(Tags.Blocks.STONES)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
-                .addTag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE)
+                .addTag(EUTags.EUBlockTags.COBBLESTONES_BLUESCHIST)
                 .addTag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE)
         ;
-        tag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get())
+        tag(EUTags.EUBlockTags.COBBLESTONES_BLUESCHIST)
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
         ;
         tag(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE)
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get())
@@ -784,7 +784,7 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
 
         // Base Stone Tags
         tag(EUTags.EUBlockTags.BASE_STONE_FRIGUS)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
@@ -950,8 +950,8 @@ public class EUBlockTagsProvider extends BlockTagsProvider {
         Ore Replaceable Tags
          */
 
-        tag(EUTags.EUBlockTags.FRIGUS_STONE_ORE_REPLACEABLES)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())
+        tag(EUTags.EUBlockTags.BLUESCHIST_ORE_REPLACEABLES)
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(EUBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(EUTags.EUBlockTags.FRIGUS_DEEPSLATE_ORE_REPLACEABLES)

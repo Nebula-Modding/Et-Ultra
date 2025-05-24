@@ -30,4 +30,33 @@ Later:
 Suit Upgrade: Oxygen Recycling
 Lower Gravity Step Height Increase
 
-Tags:
+
+### Et Ultra's To-Do List ###
+"It's like Trello but 1000x worse!"
+This to-do list is structured very specifically, so if your name isn't Avery Juniper Hazel, I *highly* suggest not adding anything here.
+After a large task, there is a priority marker. There are three main priority rankings: high, medium, and low. Priority rankings are declared in parentheses.
+Once a task started, the person doing the task will declare their name in square brackets [like this]. Under large tasks, there may be a declaration of a pre-requisite.
+This means that you must do a different task first in order to do that task. Under that, there is a short description of what must be done. This may be either a sentence or two, bullet points, or both.
+
+### Add Tags ### (High)
+Go through and add tags for each and every block.
+
+### Set Up Worldgen ### (High)
+- Set up configured features
+- Set up placed features
+
+### Add Blocks ###
+
+
+### Set Up Crops ### (Low)
+- Make a crop block type
+
+### Karnis Worldgen ### (Low)
+-
+
+### Refactor ### (Low)
+Go through every file you've done and clean up the code, add comments, and try to make sure a minimal amount of things is done manually rather than through datagen or code.
+There are also some other things that you should look out for, such as:
+- Falling block particle colors
+- Map colors
+- Unused or unnecessary code

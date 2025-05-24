@@ -30,11 +30,11 @@ public class EUTags {
                  */
 
                 // Cobblestones
-                COBBLESTONES_FRIGUS_STONE = commonBlockTag("cobblestones/frigus_stone"),
+                COBBLESTONES_BLUESCHIST = commonBlockTag("cobblestones/blueschist"),
                 COBBLESTONES_FRIGUS_DEEPSLATE = commonBlockTag("cobblestones/frigus_deepslate"),
 
                 // Ore Bearing Ground
-                ORE_BEARING_GROUND_FRIGUS_STONE = commonBlockTag("ore_bearing_ground/frigus_stone"),
+                ORE_BEARING_GROUND_BLUESCHIST = commonBlockTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonBlockTag("ore_bearing_ground/frigus_deepslate"),
                 ORE_BEARING_GROUND_WATER_ICE = commonBlockTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonBlockTag("ore_bearing_ground/methane_ice"),
@@ -42,7 +42,7 @@ public class EUTags {
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonBlockTag("ore_bearing_ground/oxygen_ice"),
 
                 // Ores In Ground
-                ORES_IN_GROUND_FRIGUS_STONE = commonBlockTag("ores_in_ground/frigus_stone"),
+                ORES_IN_GROUND_BLUESCHIST = commonBlockTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_FRIGUS_DEEPSLATE = commonBlockTag("ores_in_ground/frigus_deepslate"),
                 ORES_IN_GROUND_WATER_ICE = commonBlockTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonBlockTag("ores_in_ground/methane_ice"),
@@ -79,7 +79,7 @@ public class EUTags {
                 FRIGUS_CARVER_REPLACEABLES = blockTag("frigus_carver_replaceables"),
 
                 // Ore Replacables
-                FRIGUS_STONE_ORE_REPLACEABLES = blockTag("frigus_stone_ore_replaceables"),
+                BLUESCHIST_ORE_REPLACEABLES = blockTag("blueschist_ore_replaceables"),
                 FRIGUS_DEEPSLATE_ORE_REPLACEABLES = blockTag("frigus_deepslate_ore_replaceables"),
 
                 // Convertable to Mud
@@ -94,11 +94,11 @@ public class EUTags {
         // Block Items
         public static final TagKey<Item>
                 // Cobblestones
-                COBBLESTONES_FRIGUS_STONE = commonItemTag("cobblestones/frigus_stone"),
+                COBBLESTONES_BLUESCHIST = commonItemTag("cobblestones/blueschist"),
                 COBBLESTONES_FRIGUS_DEEPSLATE = commonItemTag("cobblestones/frigus_deepslate"),
 
                 // Ore Bearing Ground
-                ORE_BEARING_GROUND_FRIGUS_STONE = commonItemTag("ore_bearing_ground/frigus_stone"),
+                ORE_BEARING_GROUND_BLUESCHIST = commonItemTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_FRIGUS_DEEPSLATE = commonItemTag("ore_bearing_ground/frigus_deepslate"),
                 ORE_BEARING_GROUND_WATER_ICE = commonItemTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonItemTag("ore_bearing_ground/methane_ice"),
@@ -106,7 +106,7 @@ public class EUTags {
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonItemTag("ore_bearing_ground/oxygen_ice"),
 
                 // Ores In Ground
-                ORES_IN_GROUND_FRIGUS_STONE = commonItemTag("ores_in_ground/frigus_stone"),
+                ORES_IN_GROUND_BLUESCHIST = commonItemTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_FRIGUS_DEEPSLATE = commonItemTag("ores_in_ground/frigus_deepslate"),
                 ORES_IN_GROUND_WATER_ICE = commonItemTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonItemTag("ores_in_ground/methane_ice"),

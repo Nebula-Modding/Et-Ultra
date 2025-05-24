@@ -71,12 +71,12 @@ public class EUItemTagsProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORE_RATES_DENSE, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);
-        copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_STONE, EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_STONE);
+        copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_BLUESCHIST, EUTags.EUItemTags.ORE_BEARING_GROUND_BLUESCHIST);
         copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE);
         copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_WATER_ICE, EUTags.EUItemTags.ORE_BEARING_GROUND_WATER_ICE);
         copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, EUTags.EUItemTags.ORE_BEARING_GROUND_NITROGEN_ICE);
         copy(EUTags.EUBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, EUTags.EUItemTags.ORE_BEARING_GROUND_OXYGEN_ICE);
-        copy(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_STONE, EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_STONE);
+        copy(EUTags.EUBlockTags.ORES_IN_GROUND_BLUESCHIST, EUTags.EUItemTags.ORES_IN_GROUND_BLUESCHIST);
         copy(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE, EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE);
         copy(EUTags.EUBlockTags.ORES_IN_GROUND_WATER_ICE, EUTags.EUItemTags.ORES_IN_GROUND_WATER_ICE);
         copy(EUTags.EUBlockTags.ORES_IN_GROUND_NITROGEN_ICE, EUTags.EUItemTags.ORES_IN_GROUND_NITROGEN_ICE);
@@ -168,14 +168,14 @@ public class EUItemTagsProvider extends ItemTagsProvider {
 
         copy(Tags.Blocks.STONES, Tags.Items.STONES);
         copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
-        copy(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE, EUTags.EUItemTags.COBBLESTONES_FRIGUS_STONE);
+        copy(EUTags.EUBlockTags.COBBLESTONES_BLUESCHIST, EUTags.EUItemTags.COBBLESTONES_BLUESCHIST);
         copy(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE, EUTags.EUItemTags.COBBLESTONES_FRIGUS_DEEPSLATE);
         tag(ItemTags.STONE_CRAFTING_MATERIALS)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
         ;
         tag(ItemTags.STONE_TOOL_MATERIALS)
-                .add(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_cobblestone").get().asItem())
+                .add(EUBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
                 .add(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("cobbled_frigus_deepslate").get().asItem())
         ;
 

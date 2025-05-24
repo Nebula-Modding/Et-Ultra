@@ -99,45 +99,45 @@ public class EUBlocks {
             VIVIAN = register("vivian", () -> new FlowerBlock(MobEffects.INVISIBILITY, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             WICKUL = register("wickul", () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             ICEFLOWER = register("iceflower", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5.0F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS = new RegolithBlockBuilder<>(
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUESCHIST_BLOCKS = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
             stoneProperties().mapColor(MapColor.ICE))
             .register(
-                    "frigus_stone",
-                    "frigus_cobblestone",
-                    "chiseled_frigus_stone",
-                    "polished_frigus_stone",
-                    "frigus_stone_bricks",
-                    "cracked_frigus_stone_bricks")
+                    "blueschist",
+                    "cobbled_blueschist",
+                    "chiseled_blueschist",
+                    "polished_blueschist",
+                    "blueschist_bricks",
+                    "cracked_blueschist_bricks")
             .setBlockFunction(RotatedPillarBlock::new)
-            .register("frigus_stone_pillar")
+            .register("blueschist_pillar")
             .done();
     public static final DeferredBlock<Block>
-            FRIGUS_STONE_STAIRS = register("frigus_stone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
-            FRIGUS_COBBLESTONE_STAIRS = register("frigus_cobblestone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
-            POLISHED_FRIGUS_STONE_STAIRS = register("polished_frigus_stone_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
-            FRIGUS_STONE_BRICK_STAIRS = register("frigus_stone_brick_stairs", () -> new StairBlock(FRIGUS_STONE_BLOCKS.get("frigus_stone").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> FRIGUS_STONE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
+            BLUESCHIST_STAIRS = register("blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()))),
+            FRIGUS_COBBLESTONE_STAIRS = register("cobbled_blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get()))),
+            POLISHED_BLUESCHIST_STAIRS = register("polished_blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("polished_blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("polished_blueschist").get()))),
+            BLUESCHIST_BRICK_STAIRS = register("blueschist_brick_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("blueschist_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks").get())));
+    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUESCHIST_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
             RegolithNeoForge.wrapBlocks(BLOCKS),
             RegolithNeoForge.wrapItems(EUItems.ITEMS),
             stoneProperties().mapColor(MapColor.ICE))
             .setBlockFunction(SlabBlock::new)
             .register(
-                    "frigus_stone_slab",
-                    "frigus_cobblestone_slab",
-                    "polished_frigus_stone_slab",
-                    "frigus_stone_brick_slab")
+                    "blueschist_slab",
+                    "cobbled_blueschist_slab",
+                    "polished_blueschist_slab",
+                    "blueschist_brick_slab")
             .setBlockFunction(WallBlock::new)
             .register(
-                    "frigus_stone_wall",
-                    "frigus_cobblestone_wall",
-                    "polished_frigus_stone_wall",
-                    "frigus_stone_brick_wall")
+                    "blueschist_wall",
+                    "cobbled_blueschist_wall",
+                    "polished_blueschist_wall",
+                    "blueschist_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            FRIGUS_STONE_PRESSURE_PLATE = register("frigus_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get()))),
-            FRIGUS_STONE_BUTTON = register("frigus_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone").get())));
+            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(EUBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()))),
+            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(EUBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())));
 
     /*
     Frigus Deepslate Blocks
@@ -274,17 +274,17 @@ public class EUBlocks {
      */
 
     public static final DeferredBlock<Block>
-            FRIGUS_COAL_ORE = register("frigus_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_IRON_ORE = register("frigus_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_COPPER_ORE = register("frigus_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_GOLD_ORE = register("frigus_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_REDSTONE_ORE = register("frigus_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_EMERALD_ORE = register("frigus_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_LAPIS_ORE = register("frigus_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_DIAMOND_ORE = register("frigus_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_OBDURIUM_ORE = register("frigus_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_MALUNITE_ORE = register("frigus_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
-            FRIGUS_LUTRUM_ORE = register("frigus_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_COAL_ORE = register("blueschist_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_IRON_ORE = register("blueschist_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_COPPER_ORE = register("blueschist_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_GOLD_ORE = register("blueschist_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_REDSTONE_ORE = register("blueschist_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_EMERALD_ORE = register("blueschist_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_LAPIS_ORE = register("blueschist_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_DIAMOND_ORE = register("blueschist_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_OBDURIUM_ORE = register("blueschist_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_MALUNITE_ORE = register("blueschist_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_LUTRUM_ORE = register("blueschist_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
 
             FRIGUS_DEEPSLATE_COAL_ORE = register("frigus_deepslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGUS_DEEPSLATE_IRON_ORE = register("frigus_deepslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),

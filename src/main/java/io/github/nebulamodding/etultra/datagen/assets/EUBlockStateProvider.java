@@ -60,9 +60,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(EUBlocks.WICKUL);
         excludedBlocks.add(EUBlocks.ICEFLOWER);
 
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BRICK_STAIRS);
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"));
-        excludedBlocks.add(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"));
+        excludedBlocks.add(EUBlocks.BLUESCHIST_BRICK_STAIRS);
+        excludedBlocks.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_slab"));
+        excludedBlocks.add(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"));
 
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS);
         excludedBlocks.add(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS);
@@ -361,9 +361,9 @@ public class EUBlockStateProvider extends BlockStateProvider {
         slabBlockWithItem(EUBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS), blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
         wallBlockWithItem(EUBlocks.FRIGUS_MUD_BRICK_WALL, blockLoc(EUBlocks.FRIGUS_MUD_BRICKS));
 
-        stairsBlockWithItem(EUBlocks.FRIGUS_STONE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
-        slabBlockWithItem(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_slab"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
-        wallBlockWithItem(EUBlocks.FRIGUS_STONE_BLOCKS_CONTINUED.get("frigus_stone_brick_wall"), blockLoc(EUBlocks.FRIGUS_STONE_BLOCKS.get("frigus_stone_bricks")));
+        stairsBlockWithItem(EUBlocks.BLUESCHIST_BRICK_STAIRS, blockLoc(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks")));
+        slabBlockWithItem(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_slab"), blockLoc(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks")), blockLoc(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks")));
+        wallBlockWithItem(EUBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"), blockLoc(EUBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks")));
 
         stairsBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_BRICK_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_bricks")));
         stairsBlockWithItem(EUBlocks.FRIGUS_DEEPSLATE_TILE_STAIRS, blockLoc(EUBlocks.FRIGUS_DEEPSLATE_BLOCKS.get("frigus_deepslate_tiles")));

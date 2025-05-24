@@ -90,15 +90,15 @@ public class EULanguageProvider extends LanguageProvider {
          */
 
         // Block Tags
-        add(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_STONE, "Frigus Stone Cobblestones");
+        add(EUTags.EUBlockTags.COBBLESTONES_BLUESCHIST, "Blueschist Cobblestones");
         add(EUTags.EUBlockTags.COBBLESTONES_FRIGUS_DEEPSLATE, "Frigus Deepslate Cobblestones");
-        add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
+        add(EUTags.EUBlockTags.ORE_BEARING_GROUND_BLUESCHIST, "Blueschist Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_WATER_ICE, "Water Ice Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(EUTags.EUBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
-        add(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_STONE, "Frigus Stone Ores In Ground");
+        add(EUTags.EUBlockTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(EUTags.EUBlockTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ores In Ground");
         add(EUTags.EUBlockTags.ORES_IN_GROUND_WATER_ICE, "Water Ice Ores In Ground");
         add(EUTags.EUBlockTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
@@ -120,22 +120,22 @@ public class EULanguageProvider extends LanguageProvider {
         add(EUTags.EUBlockTags.NEEDS_LUTRUM_TOOL, "Needs Lutrum Tool");
         add(EUTags.EUBlockTags.BASE_STONE_FRIGUS, "Frigus Base Stones");
         add(EUTags.EUBlockTags.FRIGUS_CARVER_REPLACEABLES, "Frigus Carver Replaceables");
-        add(EUTags.EUBlockTags.FRIGUS_STONE_ORE_REPLACEABLES, "Frigus Stone Ore Replaceables");
+        add(EUTags.EUBlockTags.BLUESCHIST_ORE_REPLACEABLES, "Blueschist Ore Replaceables");
         add(EUTags.EUBlockTags.FRIGUS_DEEPSLATE_ORE_REPLACEABLES, "Frigus Deepslate Ore Replaceables");
         add(EUTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD, "Convertable to Frigus Mud");
         add(EUTags.EUBlockTags.MAYURA_LOGS, "Mayura Logs");
         add(EUTags.EUBlockTags.GRIMWOOD_LOGS, "Grimwood Logs");
 
         // Block Item Tags
-        add(EUTags.EUItemTags.COBBLESTONES_FRIGUS_STONE, "Frigus Stone Cobblestones");
+        add(EUTags.EUItemTags.COBBLESTONES_BLUESCHIST, "Blueschist Cobblestones");
         add(EUTags.EUItemTags.COBBLESTONES_FRIGUS_DEEPSLATE, "Frigus Deepslate Cobblestones");
-        add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_STONE, "Frigus Stone Ore Bearing Ground");
+        add(EUTags.EUItemTags.ORE_BEARING_GROUND_BLUESCHIST, "Blueschist Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_WATER_ICE, "Water Ice Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(EUTags.EUItemTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
-        add(EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_STONE, "Frigus Stone Ores In Ground");
+        add(EUTags.EUItemTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(EUTags.EUItemTags.ORES_IN_GROUND_FRIGUS_DEEPSLATE, "Frigus Deepslate Ores In Ground");
         add(EUTags.EUItemTags.ORES_IN_GROUND_WATER_ICE, "Water Ice Ores In Ground");
         add(EUTags.EUItemTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
